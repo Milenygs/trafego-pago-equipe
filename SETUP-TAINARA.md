@@ -24,7 +24,7 @@ Abra o **PowerShell** (menu Iniciar → digite "PowerShell") e cole um bloco por
 
 ```powershell
 New-Item -ItemType Directory -Force "$HOME\OneDrive\.claude" | Out-Null
-git clone https://github.com/Milenygs/trafego-equipe.git "$HOME\OneDrive\.claude\skills"
+git clone https://github.com/Milenygs/trafego-pago-equipe.git "$HOME\OneDrive\.claude\skills"
 ```
 
 Na primeira vez, o Git abre uma janela para você entrar na sua conta do GitHub.
