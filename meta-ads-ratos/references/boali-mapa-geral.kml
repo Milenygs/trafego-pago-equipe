@@ -1,0 +1,5465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>BOALI - MAPA GERAL </name>
+    <description/>
+    <Style id="icon-1546-FFEA00-labelson">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1574-0F9D58-nodesc-normal">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1574-0F9D58-nodesc-highlight">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1574-0F9D58-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1574-0F9D58-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1574-0F9D58-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-FBC02D-labelson">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1722-F9A825-labelson">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-000000-labelson">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-000000-nodesc-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-000000-nodesc-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-000000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-000000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-000000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0F9D58-labelson">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-0F9D58-nodesc-normal">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0F9D58-nodesc-highlight">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0F9D58-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0F9D58-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0F9D58-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-9C27B0-labelson">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-9C27B0-nodesc-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-C2185B-labelson">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-E65100-labelson">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-E65100-nodesc-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-E65100-nodesc-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-E65100-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-E65100-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-E65100-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-F9A825-labelson">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-F9A825-nodesc-normal">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-F9A825-nodesc-highlight">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-F9A825-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-F9A825-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-F9A825-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FBC02D-labelson">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-FFD600-labelson">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Boali | Brasil</name>
+      <Placemark>
+        <name>Boali | Shopping Center Norte - Quiosque</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.618052,-23.51571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Map Barra - Street Mall </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.414288,-22.9994927,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Santana Parque Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.644696,-23.483036,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Ibirapuera - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6666371,-23.6102796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Iguatemi Alphaville - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.8480604,-23.5043417,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Center 3 - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6589521,-23.5578455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Barra Funda - Corporativa</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6741696,-23.5257279,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Conceição - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6411272,-23.6340637,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Almirante Maceió - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -35.705292,-9.645382,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Ribeirão Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.8141362,-21.2116511,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Colinas - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -45.9087147,-23.2041699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Recife - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -34.9048216,-8.1195815,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping RioMar - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -34.8936762,-8.0862402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Estação Cuiabá - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -56.1206927,-15.5901722,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Diamond Mall - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.9474041,-19.9279851,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Ventura Corporate Towers - Corporativa</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.1815925,-22.9092325,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Cambui - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.0518972,-22.9016963,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Asa Sul - Loja de Rua</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.8904333,-15.8136523,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Amazonas Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -60.0226345,-3.0941094,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Mega Polo - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6185066,-23.5368961,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Iguatemi Esplanada - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.4634434,-23.5336612,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Guarulhos Maia - Corporativa</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.527059,-23.4640161,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping ABC - Quiosque</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-FFD600-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.5333943,-23.6678306,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Metropolitan Mall - Corporativa</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -49.2410884,-16.704717,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Cidade de Deus Bradesco - Corporativa</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.7707713,-23.5489986,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Difusora - Corporativa</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -35.9718772,-8.277779,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Santa Ursula - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.8083188,-21.1824408,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Clínica Colucci - Corporativa</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.8185897,-21.2404068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Brasilia Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.8892596,-15.7866651,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Capim Dourado - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -48.3478503,-10.1837717,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Natal Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -35.2124227,-5.8420181,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Pátio Cianê Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.4590398,-23.4966342,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Continental Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.7570686,-23.5474428,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Del Rey - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.967888,-19.8891253,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Frei Caneca - Quiosque</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-FFD600-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6526753,-23.554048,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Gramado - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -50.8766508,-29.3730825,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Pantanal Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -56.0724411,-15.5755796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Paraíso Shopping Center - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -54.7330918,-2.4271279,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Plaza - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -34.9125792,-8.0370111,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Praiamar Shopping - Quiosque</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-FFD600-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.3101753,-23.9764959,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Metrô Santa Cruz - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6372072,-23.59909,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Vila Olímpia - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6866818,-23.5952979,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Villa Lobos - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.7219587,-23.5511329,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Double Mall - Quiosque </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-FFD600-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.8677133,-23.5061788,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | São Paulo Expo - Eventos Fixa </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6296564,-23.6460103,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Ipanema Mall  - Street Mall</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -67.8198678,-9.9578933,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Light - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.638631,-23.5467264,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Mogi Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.1797389,-23.5157811,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Juá Garden Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -40.4856582,-9.4523591,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Praia da Costa - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -40.2889761,-20.3420856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Sede Banco do Brasil - Quiosque</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.876655,-15.7845955,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Araruama - Praça e Fachada Ativa Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.3411676,-22.8787796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Open Mall The Square - Street Mall</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-FFD600-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.8250482,-23.5901935,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Downtown </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.3495368,-22.9994533,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Americana Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.3067594,-22.7466456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | SPFC Morumbis - Loja de Clube</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.7188031,-23.6027429,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Itaim bibi João Cachoeira - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6768816,-23.5870961,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Vale do Aço</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.5654653,-19.4966525,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali Escola | Colégio Parthenon Unidade I</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1603-FBC02D-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.518989,-23.4582225,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Lajeado - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.9679026,-29.4606311,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Dourados - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -54.8130758,-22.228023,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Vila Madalena - Loja de Rua</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6896766,-23.5555222,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Macaé - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -41.7827676,-22.3836956,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Londrina - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1662008,-23.3197305,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Copacabana - Loja de Rua</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.1867944,-22.9692808,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Ipanema Anibal - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.2115925,-22.9848253,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | São Carlos - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.8960683,-22.0118211,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Passeo Corporate - Loja Corporativa </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.1772664,-22.9126702,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Academia Sky Fit Tatuapé - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.5826016,-23.5355653,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Jardim Pamplona Shopping - Quiosque</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-FFD600-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6614179,-23.5703849,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CASA BOALI - SEDE </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.8715976,-23.4856832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Nações Unidas 17007 - Corporativa</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.7223278,-23.6401323,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | O Parque Open Mall - Corporativa</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1546-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6932541,-23.6243462,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Boulevard Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -40.8179523,-14.8772199,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Jardins Open Mall - Street Mall </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -38.4974725,-3.7349237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Terraço Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.9403387,-15.8035862,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Setor Marista - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -49.2611503,-16.7030259,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Av. Litorânea - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -44.2562973,-2.483416,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Recreio - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-FBC02D-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.4647389,-23.0148414,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Bourbon Carlos Gomes - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1820429,-30.028107,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Boali | L'Avenue Mall - Street Mall ]]></name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -37.0535673,-10.9421843,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Garten Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -48.8531025,-26.2538741,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Beiramar Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -48.5450349,-27.5848902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Matrix Fit - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -63.8780881,-8.7383473,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Rio Poty - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.8016954,-5.0772666,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Galeria Delta - Street Mall </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -41.7468616,-2.9102802,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Mag Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -34.8340447,-7.0975715,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Parque Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -48.446381,-1.3699133,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Sinop Av. dos Ingás - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -55.5165868,-11.8607455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | River Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -40.4929664,-9.3939117,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Montes Claros - Loja de Rua</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.8765747,-16.7319699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Novo Hamburgo - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.1177152,-29.680986,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Santa Maria - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -53.8090922,-29.692827,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Galleria Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.0233024,-22.8634858,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Indaiatuba Arena Deco Beach - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.1989039,-23.0662201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Park Shopping São Caetano - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.5803881,-23.6260653,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Moema Arapanés - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6665558,-23.6060229,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Butantã Shopping - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.7250735,-23.5844066,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Boali | D&D Shopping - Praça de Alimentação]]></name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6966236,-23.6089856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Top Center Shopping - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6508012,-23.5658059,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Metrô Tatuapé - Praça de Alimentação </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.5766705,-23.5417122,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | São Paulo Expo Móvel - Eventos </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6296725,-23.6459496,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Distrito Anhembi Móvel - Eventos </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-FFD600-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6378816,-23.5148518,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Expo Pavilhões Distrito Anhembi Fixa - Eventos </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6360211,-23.5165301,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Expo Center Norte 1 - Eventos </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6153497,-23.5093182,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Expo Center Norte 2 - Eventos </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6120581,-23.5106011,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Transamerica Expo Center - Eventos </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.718862,-23.6492342,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Food Truck - Eventos </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1722-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.5271551,-23.4640432,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Boali | Manaus Plaza Shopping & Centro de Convenções - Quiosque]]></name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-000000-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -60.0232903,-3.0974689,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping da Gávea - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.2283287,-22.9754639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Clube Lemon Jardins - Loja de Academia </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6582033,-23.5762903,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Pouso Alegre - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -45.9212874,-22.2223134,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Cabo Frio - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.0178589,-22.8780899,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Shopping Metrô Tucuruvi - Praça de Alimentação</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6027363,-23.4802493,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | São Pedro da Aldeia - Loja de Rua</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.1032541,-22.8376247,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Rio das Ostras - Loja de Rua</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -41.9463938,-22.5273001,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Maceió 2 - À definir</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -35.7352167,-9.6660417,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Salvador Pituba - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -38.5016363,-12.9777378,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Salvador 2 Caminho das Árvores - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -38.4584577,-12.9803296,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Campinas 3 - À definir </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.0626332,-22.9099384,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Santos - À definir</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.3317806,-23.9592038,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Botafogo - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -43.1807461,-22.9510978,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Araraquara - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -48.1742397,-21.7742763,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Santo André - À definir </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.493085,-23.6876695,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | São Luís 2 - Loja de Rua</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -44.2988947,-2.5306721,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali I Maringá - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-0F9D58-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -51.9330558,-23.4209995,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali Mana I Araras - DK</name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -47.3798156,-22.3604487,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali I Perdizes - Loja de Rua </name>
+        <description><![CDATA[descrição: <br>Nome: <br>Descricao: <br>Latitude: <br>Longitude: ]]></description>
+        <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="Nome">
+            <value/>
+          </Data>
+          <Data name="Descricao">
+            <value/>
+          </Data>
+          <Data name="Latitude">
+            <value/>
+          </Data>
+          <Data name="Longitude">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -46.6719864,-23.5376799,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Boali | Internacional</name>
+      <Placemark>
+        <name>Boali | Saldanha Residence Lisboa - Praça de Alimentação </name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -9.1455367,38.7323116,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Plantation FL - Street Mall </name>
+        <styleUrl>#icon-1899-F9A825-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -80.2623151,26.1485928,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Lisboa 2 Portugal - Corporativa</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -9.1641162,38.7455889,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Lisboa 3 Portugal </name>
+        <styleUrl>#icon-1899-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -9.3093097,38.7151302,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boali | Barcelona Espanha - Loja de Rua </name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            2.1534066,41.3981284,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Expansão - Brasil </name>
+      <Placemark>
+        <name>Bauru - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.0493718,-22.3423838,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Eusebio - CE</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -38.4654274,-3.8716433,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maringá - PR</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.9337607,-23.4240457,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São Gonçalo - RJ</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -43.0637646,-22.8272883,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santo André - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.5436003,-23.6742228,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São Bernardo do Campo - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.5648481,-23.6898429,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São José do Rio Preto - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.376521,-20.8127115,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Feira de Santana - BA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -38.9646782,-12.2637506,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boa Vista - RR</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6737553,2.8206339,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Macapá - AP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.0560957,0.0405217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Araguaína - TO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.2094801,-7.1915633,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ananindeua - PA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.3739943,-1.3649909,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parauapebas - PA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.9035717,-6.0687275,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Belém - PA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.501299,-1.4563432,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ji-Paraná - RO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -61.9592887,-10.8724473,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porto Velho - RO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.8971723,-8.7635475,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rio Branco - AC
+</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -67.8098191,-9.9740249,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parintins - AM</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -56.733116,-2.6320163,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Itacoatiara - AM</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -58.438531,-3.1350415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Campo Grande - MS</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -54.6218477,-20.4648517,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dourados - MS</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -54.8130758,-22.228023,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Três Lagoas - MS</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.7030845,-20.7881843,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sorriso - MT </name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -55.7273709,-12.5461191,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Várzea Grande - MT</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -56.1354693,-15.6505125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rondonópolis - MT</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -54.6284739,-16.469331,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Goiânia - GO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.2707899,-16.6868491,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Anápolis - GO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.953408,-16.328649,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Aparecida de Goiânia - GO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.2473476,-16.8226787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rio Verde - GO </name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -50.9204571,-17.7896277,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Águas Lindas de Goiás - GO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.2794916,-15.7442065,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Valparaíso de Goiás - GO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.9860661,-16.0753576,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Luziânia - GO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.9261172,-16.2506453,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Senador Canedo - GO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.0999646,-16.7001402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trindade - GO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.4950175,-16.649254,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Formosa - GO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.33571,-15.540641,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Distrito Federal - DF</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.9218204,-15.826691,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São Luís - MA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -44.2988947,-2.5306721,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balsas - MA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.0406425,-7.5335065,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Imperatriz - MA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.4761729,-5.5237231,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Teresina - PI</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -42.8023065,-5.0961242,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fortaleza - CE</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -38.5270134,-3.7327203,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sobral - CE</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -40.3561794,-3.6844057,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maracanaú - CE</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -38.6264568,-3.8682838,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Juazeiro do Norte - CE</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -39.3130162,-7.2242054,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Natal - RN</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -35.1999708,-5.7841695,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mossoró - RN</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -37.3423886,-5.1919109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parnamirim - RN</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -35.26639,-5.924287,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>João Pessoa - PB</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -34.8814339,-7.1188352,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Campina Grande - PB</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -35.8888328,-7.2206167,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Recife - PE</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -34.8828969,-8.0578381,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Olinda - PE</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -34.8422297,-7.9920228,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maceió - AL</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -35.7352167,-9.6660417,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arapiraca - AL</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -36.6639697,-9.7555596,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Aracaju - SE</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -37.0731147,-10.9265404,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nossa Senhora do Socorro - SE</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -37.1261924,-10.8550363,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Salvador - BA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -38.5016363,-12.9777378,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ilhéus - BA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -39.0346984,-14.7981287,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Camaçari - BA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -38.325345,-12.7001932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lauro de Freitas - BA</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -38.3185595,-12.8857737,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cascavel - PR</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -53.480283,-24.9541715,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Foz do Iguaçu - PR</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -54.585403,-25.5165101,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ponta Grossa - PR</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -50.1582927,-25.0993784,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São José dos Pinhais - PR</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.2032653,-25.5345818,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Londrina - PR</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.1662008,-23.3197305,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Curitiba - PR</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.2651984,-25.4268985,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Florianópolis - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.5468118,-27.5968578,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jaraguá do Sul - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.0842138,-26.4813798,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blumenau - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.0717331,-26.9165792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São Bento do Sul - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.3839372,-26.2497682,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Criciúma - SC</name>
+        <styleUrl>#icon-1899-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.3704155,-28.6774759,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balneário Camboriú - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.63258,-26.9979839,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Itajaí - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.6775167,-26.9082859,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lages - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -50.3381134,-27.8287621,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chapecó - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -52.6169738,-27.0954122,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São José - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.6137681,-27.5950396,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Palhoça - SC</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.6789533,-27.6411215,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porto Alegre - RS</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.2089887,-30.0368176,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Caxias do Sul - RS</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.1812032,-29.1740137,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canoas - RS</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.1847036,-29.9077898,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gravataí - RS</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -50.9947529,-29.9398869,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Passo Fundo - RS</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -52.4102795,-28.2622601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pelotas - RS</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -52.3313261,-31.769965,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vitória - ES</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -40.3385246,-20.3196711,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Serra - ES</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -40.3081077,-20.1279854,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cariacica - ES</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -40.4203022,-20.2643105,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rio de Janeiro - RJ</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -43.1728965,-22.9068467,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Niterói - RJ</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -43.1152211,-22.8858975,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Campos dos Goytacazes - RJ</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -41.3167841,-21.7614561,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petrópolis - RJ</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -43.1821993,-22.5091476,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Teresópolis - RJ</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -42.9720399,-22.4161561,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Volta Redonda - RJ</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -44.0934196,-22.5082014,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nova Iguaçu - RJ</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -43.449505,-22.759464,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Belo Horizonte - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -43.9386685,-19.919052,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Juiz de Fora - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -43.3434669,-21.7623932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Uberlândia - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.2755227,-18.9127749,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nova Lima - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -43.8469634,-19.9849058,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Divinópolis - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -44.8904062,-20.1435294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Governador Valadares - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -41.9572086,-18.8558393,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Uberaba - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.9385299,-19.7456327,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Contagem - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -44.0809035,-19.9161522,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Betim - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -44.2032108,-19.9697308,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Poços de Caldas - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.5619303,-21.7853787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ribeirão das Neves - MG</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -44.0871942,-19.7664446,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Campinas - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.0626332,-22.9099384,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Guarulhos - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.5328559,-23.4596858,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São Caetano do Sul - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.567958,-23.6164434,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Botucatu - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.444658,-22.8873233,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jacareí - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -45.9674759,-23.3028791,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Presidente Prudente - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -51.3874076,-22.1205939,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Praia Grande - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.4178426,-24.0030855,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Votuporanga - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.9762563,-20.4182603,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jundiaí - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.8892603,-23.1856699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Piracicaba - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.6480315,-22.7344425,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Paulínia - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.1743007,-22.7410533,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Limeira - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.413454,-22.558186,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Diadema - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.6251796,-23.6879922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mauá - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.4599145,-23.666558,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hortolândia - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.2210564,-22.8573469,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sumaré - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.2707792,-22.8244116,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Valinhos - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.9958185,-22.9691172,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Santa Bárbara d'Oeste - SP]]></name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.4153925,-22.7560892,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taubaté - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -45.5638792,-23.024996,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sertãozinho - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.9946028,-21.1322812,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Franca - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.4010979,-20.5394298,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Araraquara - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.1742397,-21.7742763,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Itu - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.3011001,-23.2636895,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Salto - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.293497,-23.2001452,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tatuí - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.8474222,-23.3475079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Catanduva - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.973923,-21.1374204,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Barretos - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.5675643,-20.5723981,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jaú - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.5723053,-22.3023754,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ourinhos - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.8666218,-22.9796575,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avaré - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.9228793,-23.0991209,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São Vicente - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.3968727,-23.9603273,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Guarujá - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.2568564,-23.9947975,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Araçatuba - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -50.4387286,-21.2066711,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marília - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.9487485,-22.2175968,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rio Claro - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.5596215,-22.4107652,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mogi Mirim - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.9569108,-22.4314429,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bragança Paulista - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.5423239,-22.9531705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santos - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.3317806,-23.9592038,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São José dos Campos - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -45.8915658,-23.2198396,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>São Carlos - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.8908261,-22.0123291,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Americana - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -47.3340223,-22.7380303,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mogi das Cruzes - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.216729,-23.5393849,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cotia - SP</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -46.9194755,-23.6026939,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Palmas - TO</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -48.3242858,-10.249091,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Expansão - Internacional </name>
+      <Placemark>
+        <name>Espanha</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -3.74922,40.463667,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Portugal</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -8.224454,39.399872,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Estados Unidos</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -106.5348379,38.7945952,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canadá</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -106.346771,56.130366,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Emirados Árabes Unidos</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            53.847818,23.424076,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Austrália</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            133.775136,-25.274398,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arábia Saudita</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            45.079162,23.885942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Argentina</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.616672,-38.416097,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Uruguai</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -55.765835,-32.522779,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Itália</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            12.56738,41.87194,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Malta</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            14.375416,35.937496,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Áustria</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            14.550072,47.516231,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>França</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            2.213749,46.227638,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Suíça</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            8.227512,46.818188,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Reino Unido</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -3.435973,55.378051,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Irlanda</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -8.24389,53.41291,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Catar</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            51.183884,25.354826,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bahrein</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            50.5577,26.0667,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Omã</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.975413,21.4735329,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kuwait</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            47.481766,29.31166,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Líbano</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            35.862285,33.854721,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alemanha</name>
+        <styleUrl>#icon-1574-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            10.451526,51.165691,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Tasty</name>
+      <Placemark>
+        <name>Tasty Salad Shop Moysés Marcondes - Loja de Rua </name>
+        <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.2579075,-25.4134165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tasty Salad Shop Shopping Mueller - Praça de Alimentação </name>
+        <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.2703071,-25.4228693,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tasty Salad Shop Comendador Araújo - Loja de Rua </name>
+        <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.2798854,-25.43642,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tasty Salad Shop Prudente de Moares - Loja de Rua </name>
+        <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.2813448,-25.4323117,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tasty Salad Park Shopping Barigui - Praça de Alimentação </name>
+        <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.317736,-25.435922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tasty Salad Shop Bigorrilho - Loja de Rua </name>
+        <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.297601,-25.4320578,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tasty Salad Shop Praça do Japão - Loja de Rua </name>
+        <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -49.2872582,-25.445209,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

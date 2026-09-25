@@ -1,0 +1,20 @@
+{
+  "video_id": "1469796078344074",
+  "arquivo": "AFS BANNA E MORANGO.mp4",
+  "thumbnail": "https://scontent-gru1-1.xx.fbcdn.net/v/t15.5256-10/806336420_1091315476646159_4337706551678424339_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e3495b&_nc_ohc=6gkvcHs1DKwQ7kNvwF5e6E3&_nc_oc=AdoDLxkN_xrHi6msYMoq3scXWkMRjHYMonTJ3MkAPX7jo_cKhLEMHvcYfJkH83j4nFc&_nc_zt=23&_nc_ht=scontent-gru1-1.xx&edm=AF0wKlEEAAAA&_nc_gid=BbNVMsdVs7hWK-XR0OqtQQ&_nc_tpa=Q5bMBQLqWfygGCC4-4UFOM67Q21nCu4adwEE7ArnlnSuNYS25cIKVSpzEfKl8vzsrhyfYU2sMaQ7_i2PBA&oh=00_AQI3HB38ephNe9xZoDEj2mt3l110EZSGoA_PjiYpw3oTYw&oe=6AAA3A2B",
+  "status": {
+    "video_status": "ready",
+    "uploading_phase": {
+      "status": "complete"
+    },
+    "processing_phase": {
+      "status": "complete"
+    },
+    "publishing_phase": {
+      "status": "complete",
+      "publish_status": "published",
+      "publish_time": "2026-09-11T20:07:44+0000"
+    }
+  },
+  "length": 14.675
+}

@@ -1,0 +1,13 @@
+# Credenciais: cada pessoa tem o seu .env, que nunca sobe
+.env
+*.env
+
+# Gerado na maquina de cada uma
+relatorios/
+__pycache__/
+*.pyc
+*.log
+
+# Dados de lead (LGPD)
+*.csv
+*.xlsx

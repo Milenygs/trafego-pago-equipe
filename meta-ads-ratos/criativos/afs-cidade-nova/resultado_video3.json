@@ -1,0 +1,20 @@
+{
+  "video_id": "1101390129039889",
+  "arquivo": "AF - PAÇOCA.mp4",
+  "thumbnail": "https://scontent-gru2-2.xx.fbcdn.net/v/t15.5256-10/806093054_1450952306964942_8142916896605753984_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3495b&_nc_ohc=_3fMAsshBsUQ7kNvwFC7X7j&_nc_oc=AdrvCLV3sdCyMJhNtHGI0CxyrVZh6O2HygQaOcUwfVnOy4LH4lZzK23OkKbB8WOZp48&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&edm=AF0wKlEEAAAA&_nc_gid=Nlark0OcGTmKTR2PUrSQRQ&_nc_tpa=Q5bMBQJIsZNpqy1T7jF7mL1Vz6nmtfWVnniMa9195iLsYWGqPl3pgLqH6EmOYFrKpFX4-cC6-xEhmCG5jw&oh=00_AQLLwJXvl6eJb5cY4fu-dLRhzRpEk9W8cckIWCD6r8xY1A&oe=6AAA3A4B",
+  "status": {
+    "video_status": "ready",
+    "uploading_phase": {
+      "status": "complete"
+    },
+    "processing_phase": {
+      "status": "complete"
+    },
+    "publishing_phase": {
+      "status": "complete",
+      "publish_status": "published",
+      "publish_time": "2026-09-11T20:19:07+0000"
+    }
+  },
+  "length": 13.607
+}

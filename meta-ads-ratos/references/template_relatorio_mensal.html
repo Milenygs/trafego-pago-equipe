@@ -1,0 +1,566 @@
+<!--
+  TEMPLATE — Relatório mensal de tráfego para franquia (Mileny)
+  Baseado no relatório real do Cheirin Bão, julho/2026.
+
+  COMO USAR:
+  1. Copie este arquivo, preencha os placeholders {{...}} com os dados reais do cliente/mês.
+  2. Publique com a ferramenta Artifact (favicon: escolha um emoji temático) para link interno/revisão.
+  3. Para enviar externamente (cliente/chefe) sem a marca da claude.ai, gere PDF:
+     - Abra o Chrome/Edge instalado e rode em modo headless:
+       & "C:\Program Files\Google\Chrome\Application\chrome.exe" --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf="SAIDA.pdf" --print-to-pdf-no-header "file:///CAMINHO/DO/ARQUIVO.html"
+     - As regras @media print já no CSS evitam quebrar cards/tabelas no meio da página.
+  4. Se quiser um link sem marca nenhuma (não gerado por mim, feito manualmente pela Mileny):
+     Netlify Drop (app.netlify.com/drop) ou tiiny.host — arrastar o .html e pronto.
+
+  ESTRUTURA (7 seções, nem toda precisa ser usada — corte o que não fizer sentido pro cliente):
+  01 Resumo do mês       — stat tiles: investido, leads, CPL blended, CPL só captação (sem topo de funil), CPL do período mais recente
+  02 Evolução semanal    — 3 mini-gráficos de barra (investido / leads / CPL) lado a lado, pra mostrar tendência
+  03 Virada de chave     — SÓ SE houve uma mudança estrutural relevante no mês (ex.: reestruturação de funil). Senão, pular.
+  04 Cruzando com o CRM  — funil de qualidade (stacked bar) por campanha + destaques de criativo + gargalos reais
+  05 Pontos de atenção   — coisas que a Mileny observou fora do ajuste de campanha (comercial, conteúdo, operação) — sempre em 1ª pessoa ("eu observei", "eu já fiz", "eu sugeri")
+  06 O que usei, e por quê — decisões datadas, em ordem cronológica, cada uma resolvendo o que a anterior deixou exposto
+  07 Plano do próximo mês — itens de ação, agrupados por prioridade (Alta primeiro, depois Média) — não misturar
+
+  REGRAS DE ESCRITA (aprendidas nas revisões da Mileny):
+  - Primeira pessoa sempre: "eu criei", "eu sugeri", "eu observei" — nunca voz passiva ("foi feito", "foi sugerido").
+  - Cortar o "por quê"/racional longo quando o dado já fala por si — a Mileny prefere direto pra ação.
+  - Nunca citar "campanha de outro gestor" pra explicar perda de atribuição — em vez disso, buscar o padrão real
+    nos dados (ex.: recadastro múltiplo antes de fechar) e usar isso como justificativa.
+  - Casos reais (nome do lead, UTM de origem) valem mais que generalização — se a Mileny mandar um caso específico
+    (print do CRM, nome+email), usar ele em vez de inventar.
+  - Plano de ação: agrupar por prioridade (Alta / Média), não misturar ao longo da lista.
+-->
+<title>{{Cliente}} — Tráfego de {{Mês/Ano}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    color-scheme: light;
+    --page:      #f9f9f7;
+    --surface:   #fcfcfb;
+    --surface-2: #f3f2ee;
+    --ink:       #0b0b0b;
+    --ink-2:     #52514e;
+    --muted:     #898781;
+    --grid:      #e1e0d9;
+    --baseline:  #c3c2b7;
+    --border:    rgba(11,11,11,0.10);
+    --accent:    #4a3aa7;
+    --accent-ink:#3a2d86;
+    --series:    #2a78d6;
+    --good:      #0ca30c;
+    --good-bg:   rgba(12,163,12,0.10);
+    --warning:   #fab219;
+    --warning-bg:rgba(250,178,25,0.16);
+    --serious:   #ec835a;
+    --serious-bg:rgba(236,131,90,0.14);
+    --critical:  #d03b3b;
+    --critical-bg:rgba(208,59,59,0.10);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:where(:not([data-theme="light"])){
+      color-scheme: dark;
+      --page:      #0d0d0d;
+      --surface:   #1a1a19;
+      --surface-2: #202020;
+      --ink:       #ffffff;
+      --ink-2:     #c3c2b7;
+      --muted:     #898781;
+      --grid:      #2c2c2a;
+      --baseline:  #383835;
+      --border:    rgba(255,255,255,0.12);
+      --accent:    #9085e9;
+      --accent-ink:#aba2ef;
+      --series:    #3987e5;
+      --good:      #0ca30c;
+      --good-bg:   rgba(12,163,12,0.16);
+      --warning:   #fab219;
+      --warning-bg:rgba(250,178,25,0.14);
+      --serious:   #ec835a;
+      --serious-bg:rgba(236,131,90,0.16);
+      --critical:  #e66767;
+      --critical-bg:rgba(230,103,103,0.14);
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --page:      #0d0d0d;
+    --surface:   #1a1a19;
+    --surface-2: #202020;
+    --ink:       #ffffff;
+    --ink-2:     #c3c2b7;
+    --muted:     #898781;
+    --grid:      #2c2c2a;
+    --baseline:  #383835;
+    --border:    rgba(255,255,255,0.12);
+    --accent:    #9085e9;
+    --accent-ink:#aba2ef;
+    --series:    #3987e5;
+    --good:      #0ca30c;
+    --good-bg:   rgba(12,163,12,0.16);
+    --warning:   #fab219;
+    --warning-bg:rgba(250,178,25,0.14);
+    --serious:   #ec835a;
+    --serious-bg:rgba(236,131,90,0.16);
+    --critical:  #e66767;
+    --critical-bg:rgba(230,103,103,0.14);
+  }
+  :root[data-theme="light"]{
+    color-scheme: light;
+    --page: #f9f9f7; --surface:#fcfcfb; --surface-2:#f3f2ee;
+    --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --baseline:#c3c2b7; --border: rgba(11,11,11,0.10);
+    --accent:#4a3aa7; --accent-ink:#3a2d86; --series:#2a78d6;
+    --good:#0ca30c; --good-bg: rgba(12,163,12,0.10);
+    --warning:#fab219; --warning-bg: rgba(250,178,25,0.16);
+    --serious:#ec835a; --serious-bg: rgba(236,131,90,0.14);
+    --critical:#d03b3b; --critical-bg: rgba(208,59,59,0.10);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--page);
+    color:var(--ink);
+    font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .display{
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    text-wrap:balance;
+  }
+  .tnum{font-variant-numeric:tabular-nums;}
+
+  .wrap{max-width:900px;margin:0 auto;padding:56px 24px 96px;}
+
+  .masthead{
+    display:flex; flex-direction:column; gap:10px;
+    padding-bottom:28px; margin-bottom:36px;
+    border-bottom:2px solid var(--ink);
+  }
+  .eyebrow{
+    font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--accent); font-weight:600;
+  }
+  .masthead h1{
+    font-size:clamp(28px,4vw,40px); margin:0; font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  .masthead .sub{
+    display:flex; flex-wrap:wrap; gap:18px; color:var(--ink-2); font-size:14.5px;
+  }
+  .masthead .sub b{color:var(--ink); font-weight:600;}
+
+  section{margin-bottom:52px;}
+  .section-head{
+    display:flex; align-items:baseline; gap:12px; margin-bottom:18px;
+  }
+  .section-num{
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    font-size:15px; color:var(--accent); font-weight:600; flex:none;
+  }
+  .section-head h2{
+    font-size:22px; margin:0; font-weight:600; letter-spacing:-0.01em;
+  }
+  .lede{color:var(--ink-2); font-size:15.5px; max-width:66ch; margin:0 0 22px;}
+  p.narrative{max-width:70ch; font-size:15px; color:var(--ink-2);}
+  p.narrative strong{color:var(--ink); font-weight:600;}
+
+  .stat-row{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    background:var(--border); border:1px solid var(--border); border-radius:10px;
+    overflow:hidden;
+  }
+  @media (max-width:920px){ .stat-row{grid-template-columns:repeat(2,1fr);} }
+  .stat{
+    background:var(--surface); padding:20px 18px; display:flex; flex-direction:column; gap:6px;
+  }
+  .stat .label{font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted);}
+  .stat .value{
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    font-size:27px; font-weight:600; line-height:1.1;
+  }
+  .stat .delta{font-size:12.5px; font-weight:600;}
+  .stat .delta.good{color:var(--good);}
+  .stat .delta.serious{color:var(--serious);}
+  .stat .note{font-size:12px; color:var(--muted);}
+
+  .chart-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:16px;
+  }
+  @media (max-width:760px){ .chart-grid{grid-template-columns:1fr;} }
+  .chart-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:10px;
+    padding:18px 18px 14px;
+  }
+  .chart-card h3{
+    font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em;
+    color:var(--ink-2); margin:0 0 14px; font-weight:600;
+  }
+  .bars{
+    display:flex; align-items:flex-end; gap:6px; height:120px;
+    border-bottom:1px solid var(--baseline); position:relative;
+    padding-top:20px;
+  }
+  .bars::before{
+    content:""; position:absolute; top:0; left:0; right:0; height:1px;
+    background:var(--grid);
+  }
+  .bar-col{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%; gap:6px; position:relative;}
+  .bar-col .v{
+    font-size:10.5px; color:var(--ink-2); font-weight:600; white-space:nowrap;
+  }
+  .bar{
+    width:100%; max-width:34px; background:var(--series); border-radius:3px 3px 0 0;
+    transition:opacity .15s;
+  }
+  .bar.hi{background:var(--good);}
+  .bar.lo{background:var(--serious);}
+  .bar-col:hover .bar{opacity:0.75;}
+  .bar-labels{display:flex; gap:6px; margin-top:8px;}
+  .bar-labels span{flex:1; text-align:center; font-size:10px; color:var(--muted);}
+
+  .layer-list{display:flex; flex-direction:column; gap:0; border:1px solid var(--border); border-radius:10px; overflow:hidden;}
+  .layer{
+    display:grid; grid-template-columns:170px 1fr 110px; gap:16px;
+    padding:16px 18px; background:var(--surface); align-items:center;
+    border-bottom:1px solid var(--border);
+  }
+  .layer:last-child{border-bottom:none;}
+  .layer .name{font-weight:600; font-size:14.5px;}
+  .layer .name .tag{display:block; font-size:11.5px; color:var(--muted); font-weight:400; margin-top:2px;}
+  .layer .desc{font-size:13.5px; color:var(--ink-2);}
+  .layer .budget{font-size:15px; font-weight:600; text-align:right; font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;}
+  @media (max-width:680px){
+    .layer{grid-template-columns:1fr; text-align:left;}
+    .layer .budget{text-align:left;}
+  }
+
+  table.eod{width:100%; border-collapse:collapse; font-size:13.5px;}
+  table.eod caption{text-align:left; font-size:12px; color:var(--muted); margin-bottom:10px;}
+  table.eod th, table.eod td{padding:10px 12px; text-align:right; border-bottom:1px solid var(--border);}
+  table.eod th:first-child, table.eod td:first-child{text-align:left;}
+  table.eod th{
+    font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted);
+    font-weight:600; border-bottom:1px solid var(--baseline);
+  }
+  table.eod tbody tr:last-child td{border-bottom:none;}
+  table.eod tfoot td{font-weight:700; border-top:2px solid var(--ink); border-bottom:none; padding-top:12px;}
+  .tablewrap{overflow-x:auto; background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px 18px;}
+
+  .funnel-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:10px;
+    padding:20px 20px 18px; margin-bottom:14px;
+  }
+  .funnel-head{display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:4px; flex-wrap:wrap;}
+  .funnel-head .name{font-weight:600; font-size:15px;}
+  .funnel-head .meta{font-size:12.5px; color:var(--muted);}
+  .stack{display:flex; height:34px; border-radius:6px; overflow:hidden; margin:14px 0 10px; border:1px solid var(--border);}
+  .seg{height:100%; display:flex; align-items:center; justify-content:center; font-size:11.5px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden;}
+  .seg.avancou{background:var(--good);}
+  .seg.andamento{background:var(--warning); color:#3a2d00;}
+  .seg.naoatendeu{background:var(--serious);}
+  .seg.perda{background:var(--critical);}
+  .legend{display:flex; gap:16px; flex-wrap:wrap; font-size:12px; color:var(--ink-2);}
+  .legend .lg{display:flex; align-items:center; gap:6px;}
+  .legend .dot{width:9px; height:9px; border-radius:2px; flex:none;}
+  .legend .dot.avancou{background:var(--good);}
+  .legend .dot.andamento{background:var(--warning);}
+  .legend .dot.naoatendeu{background:var(--serious);}
+  .legend .dot.perda{background:var(--critical);}
+
+  .highlight{
+    display:flex; gap:14px; align-items:flex-start;
+    background:var(--good-bg); border:1px solid var(--border); border-radius:10px;
+    padding:16px 18px; margin-bottom:14px;
+  }
+  .highlight .badge{
+    flex:none; font-size:11px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;
+    color:var(--good); background:var(--surface); border:1px solid var(--good);
+    border-radius:20px; padding:4px 10px; white-space:nowrap;
+  }
+  .highlight p{margin:0; font-size:14px; color:var(--ink-2);}
+  .highlight strong{color:var(--ink);}
+
+  .callout{
+    background:var(--serious-bg); border:1px solid var(--border); border-radius:10px;
+    padding:18px 20px; display:flex; gap:14px; align-items:flex-start;
+  }
+  .callout .badge{
+    flex:none; font-size:11px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;
+    color:var(--serious); background:var(--surface); border:1px solid var(--serious);
+    border-radius:20px; padding:4px 10px; white-space:nowrap;
+  }
+  .callout p{margin:0; font-size:14px; color:var(--ink-2);}
+  .callout strong{color:var(--ink);}
+
+  .strategy{display:flex; flex-direction:column; gap:14px;}
+  .why{
+    display:grid; grid-template-columns:34px 1fr; gap:14px;
+    background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px 18px;
+  }
+  .why .n{
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    font-size:20px; color:var(--accent); font-weight:600;
+  }
+  .why h4{margin:0 0 4px; font-size:14.5px; font-weight:600;}
+  .why p{margin:0; font-size:13.5px; color:var(--ink-2);}
+  .why .date{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; margin-left:8px;}
+
+  .plan{display:flex; flex-direction:column; gap:0; border:1px solid var(--border); border-radius:10px; overflow:hidden;}
+  .plan-item{
+    display:grid; grid-template-columns:40px 1fr; gap:14px;
+    background:var(--surface); padding:16px 18px; border-bottom:1px solid var(--border);
+  }
+  .plan-item:last-child{border-bottom:none;}
+  .plan-item .rank{
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    font-size:19px; color:var(--muted); font-weight:600;
+  }
+  .plan-item h4{margin:0 0 3px; font-size:14px; font-weight:600;}
+  .plan-item p{margin:0; font-size:13px; color:var(--ink-2);}
+  .priority{
+    display:inline-block; font-size:10px; text-transform:uppercase; letter-spacing:0.04em;
+    font-weight:700; padding:2px 7px; border-radius:10px; margin-left:8px; vertical-align:middle;
+  }
+  .priority.alta{background:var(--critical-bg); color:var(--critical);}
+  .priority.media{background:var(--warning-bg); color:#8a6200;}
+  @media (prefers-color-scheme:dark){ .priority.media{color:var(--warning);} }
+  :root[data-theme="dark"] .priority.media{color:var(--warning);}
+
+  footer{
+    margin-top:60px; padding-top:20px; border-top:1px solid var(--border);
+    font-size:12px; color:var(--muted); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+  @media print{
+    :root{ color-scheme:light; }
+    body{ background:#fff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .wrap{ max-width:100%; padding:0 8px; }
+    @page{ size:A4; margin:14mm 12mm; }
+
+    .masthead{ break-after:avoid; }
+    section{ break-inside:auto; }
+    .section-head{ break-after:avoid; break-inside:avoid; }
+    h1, h2, h3, h4{ break-after:avoid; }
+
+    .stat-row{ break-inside:avoid; }
+    .stat{ break-inside:avoid; }
+    .chart-grid{ break-inside:avoid; }
+    .chart-card{ break-inside:avoid; }
+    .layer-list{ break-inside:avoid; }
+    .layer{ break-inside:avoid; }
+    .tablewrap{ break-inside:avoid; }
+    table.eod tr{ break-inside:avoid; }
+    .funnel-card{ break-inside:avoid; }
+    .highlight{ break-inside:avoid; }
+    .callout{ break-inside:avoid; }
+    .why{ break-inside:avoid; }
+    .plan-item{ break-inside:avoid; }
+    .strategy{ break-inside:auto; }
+    .plan{ break-inside:auto; }
+
+    footer{ break-before:avoid; }
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="masthead">
+    <div class="eyebrow">Relatório interno de performance</div>
+    <h1 class="display">{{Cliente}} — Tráfego pago em {{mês}}</h1>
+    <div class="sub">
+      <span>Conta <b>{{act_XXXXXXXXXXX}}</b></span>
+      <span>Período <b>01–{{dia final}}/{{mês}}/{{ano}}</b></span>
+      <span>Preparado por <b>Mileny Galvão</b></span>
+    </div>
+  </div>
+
+  <!-- 01 RESUMO -->
+  <section>
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2>Resumo do mês</h2>
+    </div>
+    <p class="lede">{{1-2 frases de contexto: o mês foi estável, teve virada de chave, etc.}}</p>
+
+    <div class="stat-row">
+      <div class="stat">
+        <span class="label">Investido no mês</span>
+        <span class="value tnum">R$ {{total}}</span>
+        <span class="note">{{N}} campanhas ativas</span>
+      </div>
+      <div class="stat">
+        <span class="label">Leads gerados</span>
+        <span class="value tnum">{{N}}</span>
+        <span class="note">via formulário nativo</span>
+      </div>
+      <div class="stat">
+        <span class="label">CPL médio do mês (blended)</span>
+        <span class="value tnum">R$ {{X}}</span>
+        <span class="delta serious">{{nota se incluir verba de topo de funil sem lead direto}}</span>
+      </div>
+      <div class="stat">
+        <span class="label">CPL só das campanhas de captação</span>
+        <span class="value tnum">R$ {{X}}</span>
+        <span class="note">{{o que foi tirado do cálculo e por quê}}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 EVOLUCAO SEMANAL — usar só se houver dado semanal relevante -->
+  <section>
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2>Como o mês evoluiu semana a semana</h2>
+    </div>
+    <p class="lede">{{leitura da tendência — ex: fadiga de público, CPL subindo/caindo}}</p>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h3>Investido / semana</h3>
+        <div class="bars">
+          <!-- repetir .bar-col pra cada semana, altura = % do maior valor -->
+          <div class="bar-col"><span class="v tnum">{{valor}}</span><div class="bar" style="height:{{%}}"></div></div>
+        </div>
+        <div class="bar-labels"><span>S1</span><span>S2</span><span>S3</span></div>
+      </div>
+      <div class="chart-card">
+        <h3>Leads / semana</h3>
+        <div class="bars"></div>
+        <div class="bar-labels"></div>
+      </div>
+      <div class="chart-card">
+        <h3>CPL / semana</h3>
+        <!-- usar classe .bar.hi (verde, bom) ou .bar.lo (laranja, ruim) pra marcar semanas de destaque -->
+        <div class="bars"></div>
+        <div class="bar-labels"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 VIRADA DE CHAVE — SÓ incluir se houve mudança estrutural real no mês. Senão, apagar a seção inteira e renumerar. -->
+  <section>
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2>{{nome curto da mudança}}</h2>
+    </div>
+    <p class="lede">{{1-2 frases: o que mudou e quando}}</p>
+
+    <div class="layer-list">
+      <!-- repetir .layer pra cada camada/fase da estrutura nova -->
+      <div class="layer">
+        <div class="name">{{nome da camada}}<span class="tag">{{tipo/objetivo}}</span></div>
+        <div class="desc">{{o que essa camada faz e por quê}}</div>
+        <div class="budget tnum">R$ {{orçamento}}/dia</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 CRM -->
+  <section>
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2>Cruzando com o CRM</h2>
+    </div>
+    <p class="lede">Separei por status: <b style="color:var(--good)">avançou</b>, <b style="color:#8a6200">em andamento</b>, <b style="color:var(--serious)">não atendeu</b> e <b style="color:var(--critical)">perda</b>.</p>
+
+    <!-- repetir .funnel-card pra cada campanha relevante -->
+    <div class="funnel-card">
+      <div class="funnel-head">
+        <span class="name">{{nome da campanha}}</span>
+        <span class="meta tnum">R$ {{gasto}} · {{N}} leads · CPL R$ {{X}}</span>
+      </div>
+      <div class="stack">
+        <div class="seg avancou" style="width:{{%}}"></div>
+        <div class="seg andamento" style="width:{{%}}">{{%}}</div>
+        <div class="seg naoatendeu" style="width:{{%}}">{{%}}</div>
+        <div class="seg perda" style="width:{{%}}">{{%}}</div>
+      </div>
+      <div class="legend">
+        <span class="lg"><span class="dot avancou"></span>Avançou — {{N}} ({{%}})</span>
+        <span class="lg"><span class="dot andamento"></span>Em andamento — {{N}} ({{%}})</span>
+        <span class="lg"><span class="dot naoatendeu"></span>Não atendeu — {{N}} ({{%}})</span>
+        <span class="lg"><span class="dot perda"></span>Perda — {{N}} ({{%}})</span>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <span class="badge">{{ex: Melhor ângulo}}</span>
+      <p>{{destaque de criativo/campanha com dado real}}</p>
+    </div>
+
+    <div class="callout">
+      <span class="badge">{{ex: Gargalo real}}</span>
+      <p>{{problema identificado, sem generalizar demais}}</p>
+    </div>
+
+    <!-- se a Mileny mandar um caso real (nome+UTM de um lead específico), usar aqui em vez de generalizar -->
+  </section>
+
+  <!-- 05 PONTOS DE ATENCAO — sempre em 1a pessoa: "eu observei", "eu já fiz", "eu sugeri" -->
+  <section>
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2>Pontos de atenção</h2>
+    </div>
+    <p class="lede"><strong style="color:var(--ink)">{{N}} alertas que eu observei acompanhando o time de perto</strong> — não são ajuste de campanha, mas entram no plano da mesma forma:</p>
+
+    <p class="narrative" style="margin-bottom:10px;"><strong>A) {{título curto do ponto}}</strong> — {{de onde veio essa observação: comercial, conta, criativo}}.</p>
+    <div class="strategy" style="margin-bottom:24px;">
+      <div class="why">
+        <span class="n">↳</span>
+        <div>
+          <h4>O que já fiz, e o que falta</h4>
+          <p><strong>Já feito:</strong><br>• {{ação 1}}</p>
+          <p style="margin-top:10px;"><strong>Falta fazer:</strong><br>• {{ação 2}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 ESTRATEGIA — decisões datadas, em ordem cronológica -->
+  <section>
+    <div class="section-head">
+      <span class="section-num">06</span>
+      <h2>O que usei, e por quê</h2>
+    </div>
+    <p class="lede">{{N}} decisões, em ordem, cada uma resolvendo o que a anterior deixou exposto:</p>
+
+    <div class="strategy">
+      <div class="why">
+        <span class="n">1</span>
+        <div>
+          <h4>{{nome da decisão}} <span class="date">{{DD/MM}}</span></h4>
+          <p>{{problema → o que eu fiz → resultado esperado, em 1a pessoa}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 PLANO DO PROXIMO MES — agrupar por prioridade, Alta primeiro -->
+  <section>
+    <div class="section-head">
+      <span class="section-num">07</span>
+      <h2>Plano para {{próximo mês}}</h2>
+    </div>
+    <p class="lede">{{1 frase de contexto}}</p>
+
+    <div class="plan">
+      <div class="plan-item">
+        <span class="rank">1</span>
+        <div>
+          <h4>{{ação}}<span class="priority alta">Alta</span></h4>
+          <p>{{por que é prioridade + o que fazer}}</p>
+        </div>
+      </div>
+      <!-- ... todos os "Alta" primeiro, depois "Média" ... -->
+    </div>
+  </section>
+
+  <footer>
+    <span>Fontes: Meta Ads (conta {{act_XXXXXXXXXXX}}) · CRM exportado por Mileny · {{outras fontes}}</span>
+    <span>{{data do relatório}}</span>
+  </footer>
+
+</div>

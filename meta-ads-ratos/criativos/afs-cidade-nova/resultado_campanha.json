@@ -1,0 +1,208 @@
+{
+  "campaign_id": "120249315653180726",
+  "adset_id": "120249315653820726",
+  "pinos": [
+    [
+      "Cidade Nova",
+      -12.22596,
+      -38.96103
+    ],
+    [
+      "Campo Limpo",
+      -12.21499,
+      -38.97149
+    ],
+    [
+      "Parque Ipê",
+      -12.21336,
+      -38.95812
+    ],
+    [
+      "Pampalona",
+      -12.22516,
+      -38.9797
+    ],
+    [
+      "Gabriela",
+      -12.23052,
+      -38.98486
+    ],
+    [
+      "Jardim Cruzeiro",
+      -12.24309,
+      -38.97933
+    ],
+    [
+      "Baraúnas",
+      -12.23553,
+      -38.96761
+    ],
+    [
+      "Queimadinha",
+      -12.2402,
+      -38.9611
+    ]
+  ],
+  "confirmacao": {
+    "campanha": {
+      "id": "120249315653180726",
+      "name": "[TRÁFEGO] Cardápio Web | Pedir agora | 12 e 13/09",
+      "status": "PAUSED",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC",
+      "is_adset_budget_sharing_enabled": false
+    },
+    "conjunto": {
+      "name": "8 Bairros | 18-55 | IG | Sáb e Dom 12h-19h",
+      "status": "PAUSED",
+      "effective_status": "IN_PROCESS",
+      "lifetime_budget": "10000",
+      "start_time": "2026-09-12T12:00:00-0300",
+      "end_time": "2026-09-13T19:00:00-0300",
+      "pacing_type": [
+        "day_parting"
+      ],
+      "adset_schedule": [
+        {
+          "days": [
+            0,
+            6
+          ],
+          "start_minute": 720,
+          "end_minute": 1140,
+          "timezone_type": "USER"
+        }
+      ],
+      "optimization_goal": "LINK_CLICKS",
+      "billing_event": "IMPRESSIONS",
+      "destination_type": "WEBSITE",
+      "targeting": {
+        "age_max": 55,
+        "age_min": 18,
+        "geo_locations": {
+          "custom_locations": [
+            {
+              "distance_unit": "kilometer",
+              "latitude": -12.21336,
+              "longitude": -38.95812,
+              "radius": 1,
+              "primary_city_id": 252968,
+              "region_id": 442,
+              "country": "BR"
+            },
+            {
+              "distance_unit": "kilometer",
+              "latitude": -12.21499,
+              "longitude": -38.97149,
+              "radius": 1,
+              "primary_city_id": 252968,
+              "region_id": 442,
+              "country": "BR"
+            },
+            {
+              "distance_unit": "kilometer",
+              "latitude": -12.22516,
+              "longitude": -38.9797,
+              "radius": 1,
+              "primary_city_id": 252968,
+              "region_id": 442,
+              "country": "BR"
+            },
+            {
+              "distance_unit": "kilometer",
+              "latitude": -12.22596,
+              "longitude": -38.96103,
+              "radius": 1,
+              "primary_city_id": 252968,
+              "region_id": 442,
+              "country": "BR"
+            },
+            {
+              "distance_unit": "kilometer",
+              "latitude": -12.23052,
+              "longitude": -38.98486,
+              "radius": 1,
+              "primary_city_id": 252968,
+              "region_id": 442,
+              "country": "BR"
+            },
+            {
+              "distance_unit": "kilometer",
+              "latitude": -12.23553,
+              "longitude": -38.96761,
+              "radius": 1,
+              "primary_city_id": 252968,
+              "region_id": 442,
+              "country": "BR"
+            },
+            {
+              "distance_unit": "kilometer",
+              "latitude": -12.2402,
+              "longitude": -38.9611,
+              "radius": 1,
+              "primary_city_id": 252968,
+              "region_id": 442,
+              "country": "BR"
+            },
+            {
+              "distance_unit": "kilometer",
+              "latitude": -12.24309,
+              "longitude": -38.97933,
+              "radius": 1,
+              "primary_city_id": 252968,
+              "region_id": 442,
+              "country": "BR"
+            }
+          ],
+          "location_types": [
+            "frequently_in",
+            "home",
+            "recent"
+          ]
+        },
+        "targeting_automation": {
+          "advantage_audience": 0
+        },
+        "publisher_platforms": [
+          "instagram"
+        ],
+        "instagram_positions": [
+          "stream",
+          "story",
+          "explore",
+          "reels",
+          "explore_home",
+          "profile_feed",
+          "ig_search"
+        ]
+      },
+      "id": "120249315653820726"
+    },
+    "estimativa": {
+      "data": [
+        {
+          "estimate_mau_lower_bound": 80200,
+          "estimate_mau_upper_bound": 94400,
+          "estimate_ready": true,
+          "daily_outcomes_curve": [
+            {
+              "spend": 0,
+              "reach": 0,
+              "impressions": 0,
+              "actions": 0
+            }
+          ],
+          "estimate_dau": 0
+        }
+      ]
+    },
+    "checks": {
+      "so_instagram": true,
+      "8_pinos_1km": true,
+      "day_parting": true,
+      "horario_12_19": true,
+      "vitalicio_100": true,
+      "pausados": true
+    }
+  }
+}

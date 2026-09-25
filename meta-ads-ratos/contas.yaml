@@ -1,0 +1,570 @@
+# ============================================================================
+# Meta Ads Ratos — Cadastro de Contas | Mileny Galvão
+# Consolidado em 2026-07-16 (merge da cópia global + cópia OneDrive)
+# ============================================================================
+#
+# segmento:
+#   franquia     = venda de franquia (usa funil espiral obrigatoriamente)
+#   loja-rede    = lojas físicas de rede (tráfego local geolocalizado)
+#   b2b          = leads para compradores/revendedores industriais
+#   moveis-premium = móveis de alto padrão (lead gen + conversão WhatsApp)
+#   hospedagem   = aluguel temporada (sazonalidade, tráfego direto/conversão)
+#   construtora  = imobiliário/MCMV (lead qualificado por renda, ciclo longo, medir por venda)
+#   geral        = outros nichos sem estratégia fixa
+#   interno      = contas internas — não usar nos agentes
+#
+# Chaves da rotina diária (ads-diario):
+#   diario: false            = fora da varredura diária
+#   metrica_lead: "..."      = como medir lead (conversas | conversoes_site | padrão "lead")
+#   acoes_lead: [...]        = action_types que contam como lead na rotina (sobrepõe o padrão)
+#   cpl_alvo / gasto_min_alerta = réguas de alerta
+#
+# ============================================================================
+
+clientes:
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # FRANQUIAS — Venda de Franquia | Funil Espiral obrigatório
+  # Agente: Franquias
+  # ════════════════════════════════════════════════════════════════════════════
+
+  maroma:
+    diario: false
+    ex_cliente: true  # ENCERRADO 27/08/2026 — nao e mais cliente da Mileny
+    nome: "Maroma Sorvetes"
+    conta_anuncio: "act_415178886238609"
+    pagina_facebook: "113196515221447"  # "Maroma Express Franquias" (validada na API 2026-07-16)
+    pagina_principal: "1691547534433452"  # "Maroma Sorvetes" (página da marca)
+    instagram_id: "17841461017450219"
+    instagram_username: "@maromaexpress"
+    instagram_secundario_id: "17841402087865422"
+    instagram_secundario_username: "@maromasorvetes"
+    instagram_dono_id: ""
+    instagram_dono_username: "@marcelohabitzreuter"
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "Conta principal Maroma. Ver também: 4mr (conta antiga). @marcelohabitzreuter ID pendente — nunca usado em anúncio"
+
+  4mr:
+    diario: false
+    ex_cliente: true  # ENCERRADO 27/08/2026 — mesma marca da Maroma
+    nome: "4MR Franchising (Maroma antiga)"
+    conta_anuncio: "act_2318479808545860"
+    pagina_facebook: "113196515221447"
+    instagram_id: "17841461017450219"
+    instagram_username: "@maromaexpress"
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "4MR FRANCHISING LTDA — conta antiga da Maroma, mesma página e Instagram"
+
+  bem-querer-donuts:
+    nome: "Bem Querer Donuts"
+    conta_anuncio: "act_558544133731250"
+    pagina_facebook: "104530824375678"
+    instagram_id: "17841420116071556"
+    instagram_username: "@bemquererdonuts"
+    instagram_dono_id: ""
+    instagram_dono_username: "@ogabriel.lopess"
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "@ogabriel.lopess ID pendente — nunca usado em anúncio ainda"
+
+  kascao:
+    diario: false
+    ex_cliente: true  # 27/08/2026 — a operacao Kascao roda SOMENTE na CA02 (kascao-ca2). Conta antiga, so consulta historica.
+    nome: "Kascão Sorvetes"
+    conta_anuncio: "act_1093478876162187"
+    pagina_facebook: "167959616608948"
+    instagram_id: ""
+    instagram_username: "@sorveteskascao"
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "CA 01 antiga — leads desqualificados. Migrado para CA 02 (kascao-ca2)"
+
+  kascao-ca2:
+    nome: "Kascão Sorvetes — CA 02"
+    conta_anuncio: "act_1435086545094716"
+    pagina_facebook: "167959616608948"
+    instagram_id: "17841400868855663"
+    instagram_username: "@sorveteskascao"
+    moeda: "BRL"
+    segmento: "franquia"
+    metrica_lead: "conversoes_site"  # lead cai na LP Sults; a acao padrao 'lead' NAO existe nesta conta
+    acoes_lead:  # sem isso a rotina reportava 0 lead todo dia (real: 22 leads/30d a R$274 em 04/09/2026)
+      - "offsite_conversion.custom.897557073427778"  # "Lead - Obrigado Kascao Express (PageView URL)"
+    investimento_inicial: 200000.00  # a partir de R$200 mil (LP expresskascao.com.br, 27/08/2026)
+    payback_meses: "18-24"
+    orcamento_ciclo_valor: 250.00  # TETO da conta: nao passar de R$250/dia (Mileny, 15/09/2026)
+    orcamento_ciclo_dias: 1        # a rotina alerta RITMO_ACIMA_DO_ORCAMENTO quando a media 7d passa de R$275/dia
+    notas: "80% DOS FRANQUEADOS SAO MULTIFRANQUEADOS — quem compra ja opera franquia e quer mais uma unidade, nao e o iniciante. Angulo forte = retorno/operacao/replicabilidade, nao realizacao de sonho; LAL de franqueados e o publico mais valioso. Loja 80m2, potencial R$1mi/ano. Conta nova criada 2026-06-26. Funil espiral do zero. instagram_id obtido do criativo 1559276865914515 em 07/08/2026. LAL de franqueados PRONTA (conferido 10/09/2026): audiencia 'LAL 1% Franqueados Kascao BR' (1,2-1,4mi) a partir da semente 'SEMENTE — Franqueados Kascao' (~1.000), no conjunto 120248715518630090 — PAUSADO desde 30/06 dentro da campanha de formulario nativo 120248713274580090. Nunca gastou"
+
+  kascao-express:
+    diario: false  # fora de uso — toda a operacao Kascao roda somente na CA 02 (kascao-ca2)
+    nome: "Kascão Express (Cative)"
+    conta_anuncio: "act_1454472809715194"
+    pagina_facebook: ""
+    instagram_id: ""
+    instagram_username: ""
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "Franquia de sorvete (grupo Kascão). Conta NÃO usada atualmente — operação ativa é a CA 02 (kascao-ca2, act_1435086545094716). Se voltar a usar, completar page_id e instagram_id"
+
+  bem-cosmeticos:
+    nome: "Bem Cosméticos"
+    conta_anuncio: "act_1380120559666538"
+    pagina_facebook: "1007153692471056"
+    instagram_id: "17841421903546219"
+    instagram_username: "@bem.franquias"
+    instagram_principal_id: "17841457923551299"
+    instagram_principal_username: "@bemcosmeticos.oficial"
+    pagina_principal: "111300215190992"
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "PAUSADA em 27/08/2026 — campanhas paradas, gasto zero e esperado; nao tratar como alerta na rotina diaria. Ticket do investimento pendente (a Mileny passa quando reativar). Dois perfis: @bemcosmeticos.oficial (principal) e @bem.franquias (franquias). Usar @bem.franquias para anúncios de venda de franquia"
+
+  facilmart:
+    nome: "Facilmart"
+    conta_anuncio: "act_1294244655407947"
+    pagina_facebook: "674740345733579"
+    instagram_id: ""
+    instagram_username: "@facilmart.al"
+    moeda: "BRL"
+    segmento: "franquia"
+    investimento_inicial: 58000.00  # a partir de R$58 mil (LP facilmart.com.br, 27/08/2026)
+    payback_meses: "12-18"
+    notas: "FRANQUIA MAIS BARATA DA CARTEIRA (R$58 mil) — NAO aplicar aqui a regua de ticket alto: CPL baixo nesta conta nao e alerta como e na Boali (R$300 mil) ou AFS (R$270 mil). Loja de conveniencia 100% autonoma em condominios/empresas/alto fluxo. Faturamento medio R$22 mil/mes, lucro liquido ate 25%, royalties 5%. Perfil: busca renda recorrente, valoriza processo, aceita acompanhar a operacao — a LP diz 'nao e para quem busca lucro rapido sem gestao', bom filtro para usar na copy. Instagram ID pendente — vincular @facilmart.al na conta de anuncio"
+
+  sou-coluna:
+    nome: "Sou Coluna"
+    conta_anuncio: "act_2241070896041174"
+    pagina_facebook: "103615585321067"
+    instagram_id: "17841439038994364"
+    instagram_username: "@soucoluna"
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "Tratamento especializado de coluna. NAO EXIGE FORMACAO NA AREA DA SAUDE — a LP (soucoluna.com/franquia) diz que nao e indispensavel conhecimento tecnico previo e que o treinamento supre; portanto NAO restringir publico a fisioterapeuta/quiropraxista, isso encolhe a campanha a toa. Angulo forte = setor em alta com barreira tecnica baixa. Faturamento medio R$1,5mi/ano, lucratividade 25%. Investimento inicial e payback NAO publicados na LP — pegar com a franqueadora. Conta exibida como 'Franquias' no Ads Manager — é a conta da Sou Coluna"
+
+  dona-baunilha:
+    diario: false
+    ex_cliente: true  # ENCERRADO 27/08/2026 — nao e mais cliente da Mileny
+    nome: "Dona Baunilha Doceria"
+    conta_anuncio: "act_1308428274748894"
+    pagina_facebook: "269025273239114"
+    instagram_id: ""
+    instagram_username: "@donabaunilhadoceria"
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "Instagram ID pendente — vincular @donabaunilhadoceria na conta de anuncio"
+
+  acai-fruit-show:
+    nome: "Açaí Fruit Show"
+    conta_anuncio: "act_835633356015496"
+    pagina_facebook: "635135693023206"
+    instagram_id: "17841409335988444"
+    instagram_username: "@acaifruitshowfranquias"
+    moeda: "BRL"
+    segmento: "franquia"
+    investimento_inicial: 270000.00  # a partir de R$270 mil (LP franquia.acaifruitshow.com.br, 27/08/2026)
+    payback_meses: "12+"
+    google_ads_conta: "921-298-7280"   # ID de cliente (9212987280), informado pela Mileny em 10/09/2026
+    google_ads_notas: "Conta CRIADA EM 10/09/2026 e ZERADA (nunca rodou). Mileny ja tem acesso no painel, mas NAO esta conectada ao Supermetrics (time milenygalvao25) — sem leitura via API. As 2 tags da LP, AW-17870619483 (global) e AW-11260484754 (event snippet), NAO sao desta conta: sao heranca de terceiro e devem ser removidas do site. Formulario da LP e embed do proprio CRM (forms.napratica.ai = CRM AI FIRST), ja recebe gclid/utm por querystring."
+    notas: "Ticket R$270 mil — mesma faixa da Boali: CPL BAIXO E ALERTA, nao vitoria; julgar por lead qualificado no CRM. Faturamento medio R$100 mil/mes, lucro 17-22%, loja 70m2. Diferenciais da marca: SEM royalties sobre faturamento e operacao com poucos funcionarios — o par 'sem royalties + payback 12 meses' e o argumento economico mais forte e merece teste como mecanismo unico. Conta para venda de franquias AFS (ACAI FRUIT SHOW FRANQUEADORA LTDA). Não confundir com acai-fruit-show-industria (act_1092055801580226, B2B). Ver também: lojas físicas (acai-loja-fsa, acai-teixeira, afs-teixeira-ste, acai-ste)"
+
+  slimcenter:
+    diario: false
+    ex_cliente: true  # ENCERRADO 27/08/2026 — nao e mais cliente da Mileny
+    nome: "Slimcenter Franchising"
+    conta_anuncio: "act_2199959517141712"
+    pagina_facebook: "459873187210917"
+    instagram_id: "17841466275329730"
+    instagram_username: "@slimcenteroficial"
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "page_id e instagram_id obtidos do criativo 3413351058847087. lead_gen_form_id: 1498254601697313"
+
+  cheirin-bao:
+    nome: "Cheirin Bao MT"
+    conta_anuncio: "act_884652616778712"
+    pagina_facebook: "639778989482866"
+    instagram_id: "17841400169946431"
+    instagram_username: "@cheirinbao"
+    instagram_dono_username: "@schroedereduardo"
+    moeda: "BRL"
+    segmento: "franquia"
+    metrica_lead: "lead"  # formulario nativo (QUALITY_LEAD)
+    acoes_lead:  # 13/09/2026: sem isso a rotina contava so o formulario e ignorava os cadastros da LP da campanha 12
+      - "lead"
+      - "offsite_conversion.custom.2554956741641990"  # "[M] LEAD/LP FRANQUEADOS" (PageView em poscadastro.cheirinbao.com.br/franqueados/), o evento que a campanha 12 otimiza. NUNCA usar "offsite_conversion.fb_pixel_custom": nesta conta o balde traz lead_qualificado do CRM (142 em 30d), nao cadastro novo
+    pixel_id: "2525428314626049"  # "Novo CB - 07/26" — e o pixel que mede a LP bl.cheirinbao.com.br (via GTM-KLFFMKML server-side/Stape). NAO confundir com 1113125670113540, que e do site institucional cheirinbao.com.br e do CAPI.
+    notas: "Funil Espiral montado 28/07/2026. NAO julgar essa conta por CPL — julgar por lead QUALIFICADO do CRM (a Mileny manda o ranking). VERBA: somar SEMPRE por effective_status — a conta tem dezenas de conjuntos ACTIVE dentro de campanhas pausadas e somar por status da R$5.524 falso; o real e R$1.142/dia (01/09/2026). Campanha 12 [SITE] [FRANQUEADOS] ativa desde 01/09 leva pro site com UTM por franqueado (Raissa/Santoro) pra resolver atribuicao no CRM; a pagina de obrigado poscadastro.cheirinbao.com.br AINDA NAO TEM RASTREAMENTO — pendente instalar o GTM-KLFFMKML la. Medido em 25/08: conjunto RAISSA (120257017816020212) tinha CPL R$36 e so 13% de qualificacao (23 leads -> 3 qualificados), enquanto o mesmo criativo no '04 - LAL —FRANQUEADOS' (120256940815900212) qualifica 43% a R$137/qualificado. Publico de engajamento/video-view enche de curioso; lookalike de base boa (RD, ETAPA COF, franqueados, LEAD_QUALIFICADO CAPI) traz quem anda no funil — por isso a verba foi 300->150 no RAISSA e 260->410 no 04 LAL. ACOMPANHAR no diario: (1) taxa de qualificacao por conjunto, nao so CPL; (2) gasto diario (teto R$1.000/dia, estava em R$1.230); (3) frequencia do quente; (4) conjunto quente = '01 - Leads Quente + Geo' (120256940806870212) — criativo novo entra NELE, nao em conjunto isolado (teste de 24/08 com conjuntos isolados 06/07 queimou R$44 em 4h30 sem chance de aprender). Leads Quente exclui BASE LEADS RD + franqueados (nao pagar recadastro). Form nativo NAO passa UTM: cruzar get_leads (ad_id) com RD por telefone."
+
+  cheirin-bao-mkt:
+    nome: "Cheirin Bao — MKT (marca/lojas)"
+    conta_anuncio: "act_1398047248415230"
+    pagina_facebook: "639778989482866"  # "Emporio Mineiro Cheirin Bao" (via promote_pages, 17/08/2026)
+    instagram_id: "17841400169946431"
+    instagram_username: "@cheirinbao"
+    moeda: "BRL"
+    segmento: "loja-rede"
+    notas: "Conta da MARCA (nao e a de franquia act_884652616778712). Acesso liberado ao system user em 17/08/2026. Campanha 120239073906520288 [TRAFEGO] [VISITAS AO PERFIL] [lojas][ABO]: 7 conjuntos, 1 por praca (Guarulhos, Campo Grande, Barra, Niteroi, Ribeirao Preto, ABC, Centro do Rio), 25 lojas pinadas em raio de 3km, 30-55, Instagram-only, R$400/dia. Rate limit agressivo (subcode 2446079) — usar sleep 2s entre escritas e retry de 60/120/180s. Criativo de post do IG NAO sobe via API (CTA VIEW_INSTAGRAM_PROFILE = erro 3; sem CTA a API exige link, subcode 2061015): a Mileny cria 1 ad no painel e o creative_id e replicado nos outros conjuntos."
+
+  up-lavanderia:
+    diario: false
+    ex_cliente: true  # ENCERRADO 27/08/2026 — nao e mais cliente da Mileny
+    nome: "Up Lavanderia"
+    conta_anuncio: "act_960523610286507"
+    pagina_facebook: "918069498052264"
+    instagram_id: "17841472791963645"
+    instagram_username: "@up_lavanderia"
+    instagram_franquias_id: ""
+    instagram_franquias_username: "@uplavanderiafranchising_"
+    pagina_franquias: "984878891385059"
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "@uplavanderiafranchising_ ID pendente — nunca usado em anuncio ainda"
+
+  ponto-alpha:
+    nome: "Ponto Alpha Café"
+    conta_anuncio: "act_1174054934178844"
+    pagina_facebook: "683322041532599"
+    instagram_id: "17841460716329850"
+    instagram_username: "@pontoalphacafe"
+    instagram_dono_id: "17841401596433081"
+    instagram_dono_username: "@silvadelucas"
+    moeda: "BRL"
+    segmento: "franquia"
+    metrica_lead: "conversoes_site"  # leads via site: custom conversions 'lead webinar' e 'webinar nova'
+    acoes_lead:  # sem isso a rotina contava 0 lead todo dia (a acao padrao 'lead' nao existe nesta conta)
+      - "offsite_conversion.custom.748385968314493"   # WEBINAR NOVA
+      - "offsite_conversion.custom.1216939777063621"  # LEAD WEBINAR
+    notas: "Usar @pontoalphacafe para anúncios. @silvadelucas é o dono (Lucas Silva). Leads medidos por conversão customizada do site, não pela ação padrão 'lead'. Existem outras 4 conversões customizadas vivas na conta: LEAD LP INVEST. (1602984097659409, 27 conv/30d — confirmar com a Mileny se entra na conta de leads), WEBINAR 05/04, WEBINAR LP.05/04 e LEAD WEBINAR 04/03 (residuais)"
+
+  boali:
+    nome: "Boali (Franquias)"
+    conta_anuncio: "act_295475086762368"
+    pagina_facebook: "110751468238380"
+    instagram_id: "17841452681323339"
+    instagram_username: ""
+    moeda: "BRL"
+    segmento: "franquia"
+    notas: "TRANSFORMANDO HABITOS FRANCHISING LTDA. Acesso liberado no BM 2026-07-14. Conta com histórico de gestão anterior (prefixos PX/XF). Investimento a partir de R$300 mil, LP: franquiasaudavelboali.com.br. Funil Espiral a construir. Instagram username pendente"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # REDE AÇAÍ — Lojas Físicas | Tráfego Local Geolocalizado
+  # Agente: Geral
+  # ════════════════════════════════════════════════════════════════════════════
+
+  acai-loja-fsa:
+    nome: "Açaí Fruit Show — Loja FSA (Fraga/Maia)"
+    conta_anuncio: "act_1441561347702342"
+    pagina_facebook: "1054692934384492"
+    instagram_id: "17841473604061459"
+    instagram_username: "@acaifruitshowfragamaia"
+    moeda: "BRL"
+    segmento: "loja-rede"
+    notas: "BM com 3 lojas físicas associadas. Tráfego local (raio 1-3km). Conversão: visita ao perfil / WhatsApp"
+
+  acai-teixeira:
+    nome: "Açaí Fruit Show — Teixeira de Freitas"
+    conta_anuncio: "act_766482893061196"
+    pagina_facebook: "738359459365811"
+    instagram_id: "17841476160771866"
+    instagram_username: "@acaifruitshowtxf"
+    moeda: "BRL"
+    segmento: "loja-rede"
+    notas: "Loja física em Teixeira de Freitas. Tráfego local geolocalizado"
+
+  afs-ste:
+    nome: "Açaí Fruit Show — STE"
+    conta_anuncio: "act_3747638972035376"
+    pagina_facebook: ""
+    instagram_id: ""
+    instagram_username: "@acaifruitshowste"
+    moeda: "BRL"
+    segmento: "loja-rede"
+    notas: "STE NAO E Teixeira de Freitas — sao lojas diferentes (corrigido 28/08/2026 pela Mileny). Conta 'Trafego Pago STE', razao social SPM ADORNO LTDA, no portfolio proprio 'acaifruitshow.ste' (494450557023634). A entrada antiga 'acai-ste' foi removida: cadastrava act_494450557023634, que e o ID do PORTFOLIO e nao de conta de anuncio — por isso nunca respondia na API. Pendente: page_id e instagram_id."
+
+  afs-ipatinga-centro:
+    nome: "AFS Ipatinga Centro"
+    conta_anuncio: "act_1433702714293666"
+    pagina_facebook: ""
+    instagram_id: ""
+    instagram_username: "@acaifruitshowcentroipa"
+    moeda: "BRL"
+    segmento: "loja-rede"
+    notas: "Cadastrada 2026-07-28. Endereço: Rua Belo Horizonte, 288, Loja 01, Centro, Ipatinga/MG, CEP 35160-034. Campanha solicitada: 'Domingo é dia de Fruit Show' — trafego de loja aos domingos de agosto/2026 (02,09,16,23,30), R$20/domingo, 11h-21h, raio bairros ao redor, CTA Saiba mais. ACESSO JA LIBERADO (confirmado 28/08/2026 — a conta aparece pro token e ja gastou R$1.367,76). Pendente: pagina_facebook e instagram_id numerico, e criativos."
+
+  afs-tomba-fsa:
+    diario: false  # conta DESATIVADA pela Meta (disable_reason 1) — sem gasto possivel
+    nome: "Açaí Fruit Show — Loja Tomba (Feira de Santana)"
+    conta_anuncio: "act_1396372809122061"
+    pagina_facebook: "1217373171465383"
+    instagram_id: "17841441193880089"
+    instagram_username: "@acaifruitshowtomba"
+    moeda: "BRL"
+    segmento: "loja-rede"
+    notas: "Cadastrada 2026-08-10. Conta 'C01- tomba' criada 10/08 11h28 no BM 'Açaí Frui Show Tomba' (1576988000873624), razao social ACAI FRUIT SHOW MB LTDA. BLOQUEADA: account_status 2 / disable_reason 1 (ADS_INTEGRITY_POLICY) — a API recusa qualquer criacao ('Somente contas ativas podem criar ou editar anuncios'). Precisa pedir revisao na Qualidade da Conta. Conta pre-paga com saldo R$0; min_daily_budget R$5,14. Pagina e IG (@acaifruitshowtomba, 54 seguidores) acessiveis pelo system user, MAS o BM nao tem owned_pages e promote_pages da conta esta vazio — confirmar vinculo da pagina ao BM antes do build. Endereco: Praca Macario Barreto, 126 - Tomba, Feira de Santana/BA, CEP 44090-288 (lat -12.28243, lng -38.95731). Tel +55 31 99113-1983. Loja irma: acai-loja-fsa (Fraga Maia), usar como template."
+
+  afs-osasco:
+    nome: "Açaí Fruit Show — Loja Osasco (SP)"
+    conta_anuncio: "act_1075513944839445"
+    pagina_facebook: "1309426062248408"
+    instagram_id: "17841466580616871"
+    instagram_username: ""
+    moeda: "BRL"
+    segmento: "loja-rede"
+    notas: "Cadastrada 2026-09-04. ACESSO OK — conta 'C01 OSASCO' (criada 31/08/2026, razao social ACAI FRUIT SHOW INDUSTRIA E COMERCIO DE ALIMENTOS LTDA) chega pela parceria do BM Mileny Marketing (1453030282528473) como conta de cliente. Nao aparece em me/adaccounts nem em assigned_ad_accounts do system user, e assigned_users da conta vem VAZIO, mas a leitura direta funciona (mesmo padrao de acesso via parceria). Sempre passar --account explicito: scripts que iteram me/adaccounts nao pegam esta conta. Conta ativa (status 1, disable_reason 0), pre-paga, saldo R$1.946,20, spend_cap R$1.757,00, min_daily_budget R$5,21, fuso America/Sao_Paulo. PAGINA E IG NAO ATRIBUIDOS ao system user: promote_pages vazio e a leitura de metadados do IG falha — mas o instagram_id 17841466580616871 foi extraido dos criativos ativos e funciona para montar anuncio (mesmo caso de Mantena/Tomba, onde promote_pages vazio nao era gate). Pendente: instagram_username, e atribuir pagina+IG ao system user para leitura de metadados. Em 03/09/2026 18h ja subiram 2 campanhas ATIVAS por fora: [Trafego_perfil] (OUTCOME_TRAFFIC, 120252648786750472) e [Reconhecimento_inauguracao] (OUTCOME_AWARENESS, 120252648472080472), com 3 anuncios de Reels/imagem no Instagram. Revisar antes de criar estrutura nova. Padrao da loja: trafego local geolocalizado, so Instagram."
+
+  afs-mantena:
+    nome: "Açaí Fruit Show — Loja Mantena (MG)"
+    conta_anuncio: "act_1984385632259800"
+    pagina_facebook: "1332437986612101"
+    instagram_id: "17841437791016896"
+    instagram_username: "@acaifruitshowmantena"
+    moeda: "BRL"
+    segmento: "loja-rede"
+    notas: "Cadastrada 2026-08-25. Conta 'CA01 MANTENA' criada no mesmo dia, dentro do BM acaifruitshow.fsa (1391827282125899), razao social ACAI FRUIT SHOW INDUSTRIA E COMERCIO DE ALIMENTOS LTDA. Conta ativa (status 1), pre-paga, saldo R$0, min_daily_budget R$5,21, nunca gastou. Pagina e IG acessiveis pelo system user com ADVERTISE (promote_pages vazio, mas isso nao e gate). Perfil novo: 10 seguidores. Geo Meta da cidade: key 259174 (Mantena, Minas Gerais) — publico Instagram do municipio inteiro (raio 0): 17.400-20.500 em 18-65, 12.600-14.800 em 18-45. Raio acima de 0 so e aceito a partir de 16km, e ja pula para 60-70 mil (pega cidades vizinhas). Endereco: Av. Jose Mol, 21 — Mantena/MG. Inauguracao 04/09/2026 a partir das 12h (ofertas: 100 Copos Show para os primeiros clientes, e compre 1 ganhe outro no dia). DECISAO 25/08 (Mileny): a campanha da inauguracao NAO roda nesta conta — roda na conta da loja principal, act_1441561347702342 (CA - LOJA FSA), usando a pagina e o Instagram de Mantena. Politica da rede: centralizar tudo na conta principal. Testado e confirmado que a conta da FSA cria criativo com a pagina e o instagram_user_id de Mantena sem precisar vincular nada — as edges instagram_accounts e connected_instagram_accounts da FSA vem VAZIAS e isso nao e gate (mesmo caso do promote_pages). Build valendo: criativos/afs-mantena/build_na_fsa.py. Os scripts build_inauguracao.py e build_anuncios.py criaram a versao nesta conta, que ficou PAUSED e sem uso (saldo R$0, nao gasta). Pendente: credito na conta da FSA e ativar os 3 niveis la."
+
+  afs-cidade-nova:
+    nome: "Açaí Fruit Show — Loja Cidade Nova (Feira de Santana)"
+    conta_anuncio: "act_4213499778794589"
+    pagina_facebook: "1063959303475481"
+    instagram_id: "17841422939839762"
+    instagram_username: "@acaifruitshowcidadenova"
+    moeda: "BRL"
+    segmento: "loja-rede"
+    notas: "Cadastrada 2026-09-11. Conta 'CA - AFS Cidade Nova' (criada 11/05/2026) no BM proprio 'BM - AFS Cidade Nova' (2380809952399532). Ativa, POS-PAGA no cartao VISA *3667 da loja, sem spend_cap, fuso America/Sao_Paulo, min_daily_budget R$5,17. SEM PIXEL — trafego para site otimiza por LINK_CLICKS. Pagina ja esta em promote_pages. NAO confundir com a loja Fraga Maia (acai-loja-fsa, Av. Fraga Maia 4620): sao duas lojas no bairro Cidade Nova. Endereco: Av. Antonio Carlos Magalhaes (ACM), 133 - Cidade Nova, Feira de Santana/BA, CEP 44053-268 (iFood: lat -12.223046, lng -38.963892). iFood: https://www.ifood.com.br/delivery/feira-de-santana-ba/acai-fruit-show-cidade-nova-cidade-nova/03d66526-124c-4e4d-9c27-f6d88ffcc354 (turnos 12h-20h seg-sab, 12h-19h30 dom). CARDAPIO WEB (destino que a loja prefere desde 11/09): https://app.cardapioweb.com/acaifruitshow — o slug nao diz a loja, mas a pagina e 'ACAI FRUIT SHOW - CIDADE NOVA', CNPJ 66.704.626/0001-97, tel (75) 98249-4664. Contato da loja: Cristhielly Canela. Historico por fora (painel, mai-jun/26): inauguracao 22/05 com 3 pinos de 1km, reconhecimento 13h-16h e 'Ifood 07/06' (LPV, ORDER_NOW). 90d ate 10/09: R$77,60, 243 cliques no link a R$0,32, CPM R$5,92 (FB+IG). Padrao da loja: pinos de bairro, so Instagram, horario de tarde."
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # REDE AÇAÍ — Indústria / B2B | Leads para Compradores e Revendedores
+  # Agente: Geral
+  # ════════════════════════════════════════════════════════════════════════════
+
+  saborazzi:
+    nome: "Saborazzi"
+    conta_anuncio: "act_1228392968496426"
+    pagina_facebook: "547634995103719"
+    instagram_id: "17841460945934240"
+    instagram_username: "@saborazzi"
+    moeda: "BRL"
+    segmento: "b2b"
+    notas: "Indústria de recheios de açaí. Objetivo: leads para compradores (lojas, distribuidores). Não é venda de franquia"
+    recarga_ciclo_dias: 28
+    orcamento_ciclo_valor: 500.00
+    orcamento_ciclo_dias: 28
+    boleto:
+      valor: 500.00
+      ciclo_dias: 28
+      vencimento_ancora: "2026-09-15"   # terça
+      envio_dias_antes: 5               # envio na quinta anterior (10/09)
+      forma: prepago
+
+  trendpel:
+    nome: "TrendPel"
+    conta_anuncio: "act_1548505645839424"
+    pagina_facebook: "553316994533123"
+    instagram_id: "17841469526451152"
+    instagram_username: "@trendpel.ind"
+    moeda: "BRL"
+    segmento: "b2b"
+    notas: "Indústria de embalagens — mesma rede Açaí Fruit Show. Objetivo: leads para compradores industriais"
+    recarga_ciclo_dias: 28
+    orcamento_ciclo_valor: 1000.00
+    orcamento_ciclo_dias: 28
+    boleto:
+      valor: 1000.00
+      ciclo_dias: 28
+      vencimento_ancora: "2026-09-22"   # terça
+      envio_dias_antes: 5               # envio na quinta anterior (17/09)
+      forma: prepago
+
+  acai-fruit-show-industria:
+    nome: "Açaí Fruit Show — Indústria"
+    conta_anuncio: "act_1092055801580226"
+    pagina_facebook: ""
+    instagram_id: ""
+    instagram_username: "@acaifruitshow"
+    moeda: "BRL"
+    segmento: "b2b"
+    notas: "Indústria/revendedores AFS (ACAI FRUIT SHOW INDUSTRIA E COMERCIO DE ALIMENTOS LTDA, distinta da conta de franquia act_835633356015496). Acesso liberado em 21/07/2026 via novo token do sistema — confirmar page_id/instagram_id na próxima varredura."
+    recarga_ciclo_dias: 28
+    orcamento_ciclo_valor: 1500.00
+    orcamento_ciclo_dias: 28
+    boleto:
+      valor: 1500.00
+      ciclo_dias: 28
+      vencimento_ancora: "2026-09-17"   # quinta
+      envio_dias_antes: 7               # envio na quinta anterior (10/09)
+      forma: cartao                     # ATENCAO 14/09/2026: cartao REMOVIDO pela Tainara em 09/09 — conta pos-paga
+                                        # sem cartao; paga faturas por boleto (R$750). Sem cartao a API recusa
+                                        # criar/editar anuncio (subcode 1359188). Antes era VISA *3859 — pos-pago, nao tem saldo pre-pago:
+                                        # o sinal real e status PENDENCIA_PAGAMENTO / valor_a_faturar,
+                                        # nao a data de recarga. O calendario aqui e so a previsao.
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # MÓVEIS PREMIUM | Leads qualificados + conversão WhatsApp/formulário
+  # Agente: Geral
+  # ════════════════════════════════════════════════════════════════════════════
+
+  desygn-moveis:
+    nome: "Desygn Móveis Jardim"
+    conta_anuncio: "act_982771069275570"
+    pagina_facebook: "100829522450054"
+    instagram_id: "17841411830186739"
+    instagram_username: "@desygnmoveisjardim"
+    moeda: "BRL"
+    segmento: "moveis-premium"
+    metrica_lead: "conversas"  # roda só Direct e WhatsApp — medir por conversa iniciada, não por lead
+    acoes_lead:  # conversa do Direct + lead do form de site = contato total (04/09/2026)
+      - "onsite_conversion.messaging_conversation_started_7d"
+      - "lead"
+    notas: "Móveis de alto padrão. CPL ideal R$15, máx R$30. Campanhas apenas de Direct (IG) e WhatsApp — não usar ação 'lead' como métrica"
+
+  casa-jardim-moveis:
+    nome: "Casa e Jardim Móveis"
+    conta_anuncio: "act_2578472415647576"
+    pagina_facebook: "209439352252188"
+    instagram_id: "17841439830147395"
+    instagram_username: "@casajardim_moveis"
+    moeda: "BRL"
+    segmento: "moveis-premium"
+    notas: "Confirmar se é cliente separado da Maderarte. Histórico: campanhas da Maderarte também rodaram nesta conta (a varredura diária cobria os dois aqui)"
+
+  maderarte:
+    nome: "Maderarte Móveis"
+    conta_anuncio: "act_404462037064566"
+    pagina_facebook: "122101821338008471"
+    instagram_id: "17841435705174028"
+    instagram_username: "@moveis_maderarte"
+    moeda: "BRL"
+    segmento: "moveis-premium"
+    notas: "Móveis para área externa (varanda e piscina). Conversão via WhatsApp. Ticket: ~R$9.000"
+
+  varanda-piscina:
+    diario: false  # aguardando: falta atribuir a conta ao usuario do sistema relatorios-automacoes
+    nome: "Varanda e Piscina"
+    conta_anuncio: "act_2042758642979442"
+    pagina_facebook: ""
+    instagram_id: ""
+    instagram_username: ""
+    moeda: "BRL"
+    segmento: "moveis-premium"
+    notas: "SEM ACESSO via token atual — solicitar permissão via BM. Dados pendentes"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # HOSPEDAGEM | Aluguel de Temporada | Sazonalidade
+  # Agente: Geral
+  # ════════════════════════════════════════════════════════════════════════════
+
+  casa-de-vidro-paraty:
+    nome: "Casa de Vidro Paraty"
+    conta_anuncio: "act_792396727164193"
+    pagina_facebook: "949028168287242"
+    instagram_id: "17841472733937596"
+    instagram_username: "@casadevidro.paraty"
+    moeda: "BRL"
+    segmento: "hospedagem"
+    metrica_lead: "conversas"  # roda só Direct e WhatsApp — medir por conversa iniciada, não por lead
+    acoes_lead:  # sem isso a rotina acusava SEM_LEADS critico todo dia (falso: mede por conversa)
+      - "onsite_conversion.messaging_conversation_started_7d"
+    whatsapp: "5511969565817"  # o do promoted_object dos conjuntos. NÃO usar o 553197681409 que está fixo dentro do criativo 1058479113508257 (bug de 25/08)
+    notas: "Conta ACTIVE (account_status 1, conferido 10/09/2026) — a pendência UNSETTLED de agosto saiu. Conversão: WhatsApp (click-to-WhatsApp), campanha no ar é [GEO-PIN/WHATS] 120249402919690510 desde 10/09/2026. O teste de Direct (IG) de 12/08 foi abandonado. Pinos geográficos: ver aprendizados.md 10/09 — `recent` e `travel_in` foram descontinuados em location_types, só `home` é aceito"
+
+  chales-dos-ipes:
+    nome: "Chalés dos Ipês"
+    conta_anuncio: "act_4043200105892241"
+    pagina_facebook: "633279443209223"
+    instagram_id: "17841455122295987"
+    instagram_username: "@nositiodosipes"
+    moeda: "BRL"
+    segmento: "hospedagem"
+    notas: "Conversão: WhatsApp"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # GERAL | Outros nichos
+  # ════════════════════════════════════════════════════════════════════════════
+
+  qualyfibras:
+    nome: "QualyFibras"
+    conta_anuncio: "act_860340477797814"
+    pagina_facebook: "2003632369946731"  # "Qualy Fibras" (validada na API 2026-07-16)
+    instagram_id: "17841408490304575"
+    instagram_username: "@qualyfibras"
+    moeda: "BRL"
+    segmento: "geral"
+    notas: "Loja de móveis do mesmo dono da Desygn — móveis mais em conta, NÃO assinados (não é premium; não usar a linguagem de alto padrão da Desygn). Segunda page 115565824842093 NÃO acessível via token (validado 2026-07-16) — não usar em anúncios"
+
+  alpha-business-academy:
+    diario: false  # nao confirmada pela Mileny na lista de clientes da rotina (jul/2026)
+    nome: "Alpha Business Academy"
+    conta_anuncio: "act_940770918351047"
+    pagina_facebook: ""
+    instagram_id: ""
+    instagram_username: ""
+    moeda: "BRL"
+    segmento: "geral"
+    notas: "CA02 ligada ao grupo do Ponto Alpha. Cadastrada em jul/2026 — confirmar se entra na rotina"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # CONSTRUTORA | Imobiliário — lead qualificado por renda, ciclo longo
+  # Agente: Geral
+  # ════════════════════════════════════════════════════════════════════════════
+
+  ap-ponto:
+    nome: "AP Ponto Construtora"
+    conta_anuncio: "act_1043516946010441"  # "AP Ponto 2020" — a conta que roda
+    pagina_facebook: "198169833565944"
+    instagram_id: "17841401339383360"
+    instagram_username: "@apponto"
+    pixel_id: "211205516600655"  # "Pixel de AP Ponto 2020", do portfolio deles
+    moeda: "BRL"
+    segmento: "construtora"
+    metrica_lead: "conversoes_site"  # maior parte da verba otimiza pelo evento custom 'agradecimento_lps_rmbh' (pagina de obrigado), nao pela acao 'lead'
+    acoes_lead:  # sem isso a rotina conta so o formulario nativo (13 de 196 na semana) e acusa CPL falso de R$800
+      - "lead"
+      # 04/09/2026: era "offsite_conversion.fb_pixel_custom" (balde generico). Desde 27/08 o CAPI
+      # do CV manda Contact/Schedule/SubmitApplication/AnaliseCredito pro mesmo pixel e caiam todos
+      # nesse balde — a rotina passou a contar o MESMO lead varias vezes (1.105 leads / CPL R$29,83
+      # quando o real era 777 / R$42,42 nos 30d ate 03/09). Usar o evento NOMEADO do site.
+      - "offsite_conversion.fb_pixel_custom.agradecimento_lps_rmbh"
+    # 16/09/2026 (Mileny): anuncio de site sobe com a UTM FIXA no link, que e a que o CV CRM le.
+    # Sem url_tags com macro, ate o rastreamento mudar. Nao "corrigir" sem ela pedir.
+    utm_padrao: "?utm_source=MetaAds&utm_medium=122&utm_campaign=MetaAds"
+    cpl_alvo: 40.00
+    notas: "Construtora MCMV na regiao de BH (Contagem/Vespasiano) — Ponto Lis, Blenda, Luna, Ametista. Cliente desde 21/08/2026, R$5.000/mes de gestao. AVALIAR POR CUSTO POR VENDA, NUNCA POR CPL (combinado na proposta) — CRM e o CV CRM (apponto.cvcrm.com.br), que guarda o lead_id da Meta. Token com MANAGE nas 2 contas e MANAGE_LEADS na pagina (validado 25/08/2026). Formulario nativo 'AP Ponto | Unificado MQL + FGTS | MAR26' (1275643754440969) e o de CPL mais barato da conta. Ver tambem: ap-ponto-mp (conta parada). Material completo em OneDrive\\Area de Trabalho\\CLAUDE CODE\\clientes\\ap-ponto\\"
+
+  ap-ponto-mp:
+    diario: false  # conta parada — zero gasto desde antes de 18/08/2026
+    nome: "AP Ponto — MP (testes)"
+    conta_anuncio: "act_1582449803889873"
+    pagina_facebook: "198169833565944"
+    instagram_id: "17841401339383360"
+    instagram_username: "@apponto"
+    moeda: "BRL"
+    segmento: "construtora"
+    notas: "Segunda conta do portfolio AP Ponto (609854092925940). Parada: R$3.393,17 gastos na vida toda, 4 campanhas todas pausadas (CTWA + testes de LP automatica por empreendimento). Sem limite de gasto configurado. Definir com a Mileny se reaproveita para testes ou arquiva"
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # INTERNO | Não usar nos agentes
+  # ════════════════════════════════════════════════════════════════════════════
+
+  mileny-pessoal:
+    diario: false  # conta interna — fora da rotina
+    nome: "Mileny Galvão (pessoal)"
+    conta_anuncio: "act_661199856856202"
+    pagina_facebook: ""
+    instagram_id: ""
+    instagram_username: "@milenygalvao"
+    moeda: "BRL"
+    segmento: "interno"
+
+  estrategia-marketing:
+    diario: false  # conta interna — fora da rotina
+    nome: "Estratégia de Marketing"
+    conta_anuncio: "act_1363522254675158"
+    pagina_facebook: ""
+    instagram_id: ""
+    instagram_username: ""
+    moeda: "BRL"
+    segmento: "interno"
+    notas: "Conta interna sem anúncios ativos"

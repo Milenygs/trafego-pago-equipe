@@ -1,0 +1,15 @@
+{
+  "slug": "meta-ads-api-automation",
+  "category": "ads",
+  "tags": [
+    "meta",
+    "ads",
+    "api",
+    "automation"
+  ],
+  "installation": {
+    "supports": [
+      "claude"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "skill-sexy-canvas",
+  "category": "copywriting",
+  "tags": ["copy", "ads", "meta", "trafego", "gatilhos", "persuasao"],
+  "installation": {
+    "supports": ["claude"]
+  }
+}

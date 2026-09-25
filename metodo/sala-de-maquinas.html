@@ -1,0 +1,304 @@
+<title>Sala de Máquinas</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&family=Zilla+Slab:wght@500;600;700&display=swap">
+<style>
+  :root{
+    --paper:#E9E6E3;
+    --surface:#FCFBFA;
+    --surface-2:#F3F0EE;
+    --ink:#20171A;
+    --ink-soft:#55494D;
+    --ink-faint:#82767A;
+    --accent:#7D2B37;
+    --accent-soft:#F3E2E4;
+    --line:#D5CFCC;
+    --line-strong:#B4ACA8;
+    --ok:#2F6B4A;
+    --ok-soft:#E2EEE7;
+    --warn:#8A5D12;
+    --warn-soft:#F5EAD6;
+    --slab:"Zilla Slab",Georgia,serif;
+    --sans:"Public Sans","Helvetica Neue",Arial,sans-serif;
+    --mono:"DM Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#100C0E;
+      --surface:#1A1416;
+      --surface-2:#221B1E;
+      --ink:#E8E1E3;
+      --ink-soft:#A2969A;
+      --ink-faint:#7D7276;
+      --accent:#DB7C88;
+      --accent-soft:#2C1A1D;
+      --line:#2C2326;
+      --line-strong:#453A3D;
+      --ok:#7BC49B;
+      --ok-soft:#152619;
+      --warn:#D8A84E;
+      --warn-soft:#2A2113;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#100C0E;
+    --surface:#1A1416;
+    --surface-2:#221B1E;
+    --ink:#E8E1E3;
+    --ink-soft:#A2969A;
+    --ink-faint:#7D7276;
+    --accent:#DB7C88;
+    --accent-soft:#2C1A1D;
+    --line:#2C2326;
+    --line-strong:#453A3D;
+    --ok:#7BC49B;
+    --ok-soft:#152619;
+    --warn:#D8A84E;
+    --warn-soft:#2A2113;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16.5px;
+    line-height:1.6;
+    padding-inline:20px;
+    padding-block:0;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:840px;margin:0 auto;padding-block:46px 110px;display:flex;flex-direction:column;gap:54px}
+
+  .tag{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0}
+
+  h1{
+    font-family:var(--slab);
+    font-weight:700;
+    font-size:clamp(40px,8.5vw,64px);
+    line-height:.98;
+    letter-spacing:-.025em;
+    margin:0;
+    text-wrap:balance;
+  }
+  .open{display:flex;flex-direction:column;gap:18px}
+  .deck{font-size:19px;line-height:1.5;color:var(--ink-soft);max-width:58ch;margin:0}
+  .deck strong{color:var(--ink);font-weight:600}
+  .byline{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);margin:0;padding-top:10px;border-top:1px solid var(--line)}
+
+  section{display:flex;flex-direction:column;gap:16px}
+  h2{font-family:var(--slab);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.02em;margin:0;text-wrap:balance}
+  h2 .n{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--accent);letter-spacing:.06em;display:block;margin-bottom:6px}
+  p{margin:0;max-width:64ch}
+  .soft{color:var(--ink-soft)}
+
+  .scroller{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;min-width:560px}
+  th,td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line);vertical-align:top;font-size:15.5px;line-height:1.42}
+  th{
+    font-family:var(--mono);
+    font-size:10px;
+    font-weight:500;
+    letter-spacing:.11em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    border-bottom:1.5px solid var(--line-strong);
+    white-space:nowrap;
+  }
+  tbody tr:last-child td{border-bottom:0}
+  td.w{font-family:var(--mono);font-size:12px;color:var(--ink);white-space:nowrap;letter-spacing:.02em}
+  td.m{color:var(--ink-soft)}
+  .pill{
+    display:inline-block;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    padding:3px 7px;
+    white-space:nowrap;
+  }
+  .pill.on{background:var(--ok-soft);color:var(--ok)}
+  .pill.off{background:var(--warn-soft);color:var(--warn)}
+
+  /* mesa */
+  .mesa{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+  .mesa h3{font-family:var(--slab);font-weight:600;font-size:21px;margin:0;letter-spacing:-.01em}
+  .asks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
+  .ask{display:grid;grid-template-columns:26px 1fr;gap:0 12px}
+  .ask .k{font-family:var(--mono);font-size:12px;color:var(--accent);padding-top:2px}
+  .ask b{font-weight:600;font-size:16.5px;display:block;line-height:1.35}
+  .ask span{font-size:15px;line-height:1.45;color:var(--ink-soft);display:block;margin-top:2px}
+  .out{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);letter-spacing:.03em;border-top:1px dashed var(--line-strong);padding-top:12px;margin:0}
+
+  /* gates */
+  .gates{display:flex;flex-direction:column;gap:14px}
+  .gate{background:var(--surface);border:1px solid var(--line);padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+  .gate.g3{border-color:var(--accent);border-width:1px 1px 1px 3px}
+  .ghead{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
+  .gcode{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--surface);background:var(--ink);padding:3px 7px}
+  .gate.g3 .gcode{background:var(--accent)}
+  .ghead h3{font-family:var(--sans);font-weight:700;font-size:18px;margin:0;letter-spacing:-.01em;flex:1 1 200px}
+  .gate p{font-size:15.5px;line-height:1.48;color:var(--ink-soft)}
+  .fail{font-family:var(--mono);font-size:11.5px;color:var(--accent);letter-spacing:.02em;margin:0}
+
+  /* oferta */
+  .fases{display:flex;flex-direction:column;gap:1px;background:var(--line)}
+  .fase{background:var(--surface);padding:17px 20px;display:grid;grid-template-columns:92px 1fr;gap:0 16px}
+  .fase .fn{font-family:var(--mono);font-size:11.5px;color:var(--accent);letter-spacing:.04em;padding-top:3px}
+  .fase b{font-weight:700;font-size:17px;display:block;letter-spacing:-.01em}
+  .fase p{font-size:15.5px;line-height:1.45;color:var(--ink-soft);margin:5px 0 0}
+  .fase em{font-style:normal;font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);display:block;margin-top:7px;letter-spacing:.02em}
+
+  .contrato{background:var(--accent-soft);border:1px solid var(--accent);padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+  .contrato h3{font-family:var(--sans);font-weight:700;font-size:18px;margin:0}
+  .contrato ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+  .contrato li{font-size:15.5px;line-height:1.45}
+  .contrato li b{font-weight:600}
+  .contrato p{font-size:15px;line-height:1.45;color:var(--ink-soft)}
+
+  .closer{
+    border-top:1px solid var(--line);
+    padding-top:26px;
+    font-family:var(--slab);
+    font-weight:600;
+    font-size:23px;
+    line-height:1.32;
+    letter-spacing:-.015em;
+    max-width:48ch;
+  }
+
+  @media (max-width:560px){
+    body{font-size:16px}
+    .fase{grid-template-columns:1fr;gap:4px}
+    .ask{grid-template-columns:1fr;gap:2px}
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="open">
+    <p class="tag">Sistema operacional · o circuito fechado na prática</p>
+    <h1>Sala de Máquinas</h1>
+    <p class="deck">O método diz <strong>por quê</strong>. Isto aqui diz <strong>quando, quem deve o quê, e o que não passa.</strong> São quatro camadas: o ritmo, os portões, as dívidas de cada lado e a oferta que sai disso. Sem essas quatro, método vira pasta bonita.</p>
+    <p class="byline">Mileny Galvão · setembro de 2026</p>
+  </header>
+
+  <section>
+    <h2><span class="n">Camada 1</span>O ritmo</h2>
+    <p class="soft">Cada frequência resolve um tipo de problema. Misturar é o que faz a semana virar apagar incêndio: decisão de estratégia no meio do diário nunca sai boa.</p>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Quando</th><th>O que se resolve</th><th>O que nunca se resolve aqui</th><th>Estado</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="w">Diário · 9h</td><td>Saldo, anúncio reprovado, aprendizado limitado, anomalia de gasto</td><td class="m">Estratégia e criativo</td><td><span class="pill on">no ar</span></td></tr>
+          <tr><td class="w">Semanal · A Mesa</td><td>Onde falta munição, o que sobe, o que o comercial devolveu</td><td class="m">Ajuste fino de lance</td><td><span class="pill off">a criar</span></td></tr>
+          <tr><td class="w">Mensal · por conta</td><td>Leitura do período, plano por prioridade, estado do circuito</td><td class="m">Decisão de peça individual</td><td><span class="pill on">no ar</span></td></tr>
+          <tr><td class="w">Por cliente novo</td><td>Diagnóstico, veredito de prontidão, montagem do funil</td><td class="m">Escala</td><td><span class="pill on">no ar</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="soft">O diário e o mensal já rodam. O buraco é o semanal — e é exatamente onde o criativo nasce e onde o checklist é usado.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">Camada 2</span>A Mesa, uma vez por semana</h2>
+    <p class="soft">Uma hora, mesmo dia, toda semana, conta por conta. Três perguntas e nada mais — é o que impede a reunião de virar conversa sobre métrica.</p>
+    <div class="mesa">
+      <h3>As três perguntas</h3>
+      <ul class="asks">
+        <li class="ask"><span class="k">01</span><div><b>Qual camada está sem munição?</b><span>Camada sem peça ativa vem primeiro. Depois, frequência acima de 2,5. Depois, camada com um criativo só. O dado vem da conta, não do calendário.</span></div></li>
+        <li class="ask"><span class="k">02</span><div><b>O comercial devolveu classificação essa semana?</b><span>Se não devolveu, isso vira a pendência número um da conta — antes de qualquer criativo. Circuito aberto é problema maior que criativo velho.</span></div></li>
+        <li class="ask"><span class="k">03</span><div><b>O que sobe, e o que volta para a edição?</b><span>Toda peça pronta passa pelo checklist aqui, na frente de todo mundo. Reprovou no portão 1, volta com a pendência escrita.</span></div></li>
+      </ul>
+      <p class="out">Saída obrigatória · pauta da semana · peças aprovadas e pausadas no Gerenciador · lista de pendências por número para o editor · contas com circuito aberto</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">Camada 3</span>Os três portões</h2>
+    <p class="soft">Um portão por etapa do método. Portão não é burocracia: é o que te protege de ser cobrada por um resultado que depende de alguém que não entregou a parte dele.</p>
+    <div class="gates">
+
+      <div class="gate">
+        <div class="ghead"><span class="gcode">P1</span><h3>Entrada — o diagnóstico antes da verba</h3></div>
+        <p>Nenhuma campanha sobe sem o formulário de diagnóstico respondido. Se o funil não sustenta tráfego — atendimento lento, oferta confusa, ninguém responsável pelo lead — o veredito é "não suba ainda", e isso é dito antes de pegar o dinheiro.</p>
+        <p class="fail">Reprovou · a entrega do mês vira arrumar o funil, não rodar anúncio</p>
+      </div>
+
+      <div class="gate">
+        <div class="ghead"><span class="gcode">P2</span><h3>Produção — o checklist "Vale o scroll?"</h3></div>
+        <p>Treze itens, três portões internos, usado na Mesa. Portão 1 eliminatório: se a peça não para o scroll, não vira anúncio. O resumo de pendências sai por número e vai direto para quem edita — sem discussão de gosto.</p>
+        <p class="fail">Reprovou · a peça volta para o roteiro, a verba fica onde está</p>
+      </div>
+
+      <div class="gate g3">
+        <div class="ghead"><span class="gcode">P3</span><h3>Circuito — a classificação dos últimos 30 dias</h3></div>
+        <p>Este é o que falta hoje e o que mais te protege. Se o comercial do cliente não devolveu a classificação dos leads no período, o relatório mensal sai com o selo <strong>circuito aberto</strong> — e nele o CPL deixa de ser tratado como medida de sucesso, porque não há como saber se o lead barato era bom.</p>
+        <p class="fail">Aberto · a conta entra em modo estrutura e a cobrança de resultado fica suspensa até o dado voltar</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">Camada 4</span>Quem deve o quê</h2>
+    <p class="soft">A tabela que muda a conversa comercial. O cliente tem três dívidas, e todas estão no caminho crítico:</p>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Etapa</th><th>Dono</th><th>Entrega</th><th>Prazo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="w">Diagnóstico</td><td><strong>Cliente</strong></td><td class="m">Formulário respondido antes da verba</td><td class="m">Antes de subir</td></tr>
+          <tr><td class="w">Matéria-prima</td><td><strong>Comercial do cliente</strong></td><td class="m">As seis perguntas das objeções reais</td><td class="m">Mensal</td></tr>
+          <tr><td class="w">Roteiro e variantes</td><td>Você</td><td class="m">Pauta, roteiro e as três versões de copy</td><td class="m">Semanal</td></tr>
+          <tr><td class="w">Gravação</td><td>Editor ou cliente</td><td class="m">Peça bruta no formato pedido</td><td class="m">Semanal</td></tr>
+          <tr><td class="w">Portão e subida</td><td>Você</td><td class="m">Checklist, nomeação, campanha pausada</td><td class="m">Semanal</td></tr>
+          <tr><td class="w">Classificação</td><td><strong>Comercial do cliente</strong></td><td class="m">Lead marcado: atendeu, capital, reunião, contrato</td><td class="m">Contínuo · 30 dias</td></tr>
+          <tr><td class="w">Reentrada</td><td>Você</td><td class="m">Evento de conversão e ângulo novo no banco</td><td class="m">Contínuo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">Camada 5</span>A oferta que sai disso</h2>
+    <p class="soft">A oferta não é inventada: é o método vendido em fases. Cada fase tem um começo, um fim e uma medida própria — e nenhuma promete o que a seguinte entrega.</p>
+    <div class="fases">
+      <div class="fase"><span class="fn">Fase 0</span><div><b>Diagnóstico</b><p>Curto e com veredito. Pode terminar em "não suba ainda" — e terminar assim é entrega, não perda de cliente. É o que separa você de quem aceita qualquer verba.</p><em>Mede-se por · prontidão, não por resultado</em></div></div>
+      <div class="fase"><span class="fn">Fase 1</span><div><b>Estrutura · 30 a 45 dias</b><p>Funil por camadas, primeiros ângulos, criativos passando pelo checklist, campanhas no ar. Aqui se mede volume e qualidade percebida pelo comercial — não CPL, e isso é dito na proposta.</p><em>Mede-se por · funil completo e lead que o comercial aprova</em></div></div>
+      <div class="fase"><span class="fn">Fase 2</span><div><b>Circuito · contínuo</b><p>Conversão offline ligada, banco de ângulos girando, diário de alterações, relatório mensal. Só entra aqui quem devolve classificação. É a fase que sustenta recorrência alta, porque é onde o histórico da conta vira ativo que não se leva embora.</p><em>Mede-se por · custo por lead aprovado e por contrato</em></div></div>
+    </div>
+    <div class="contrato">
+      <h3>O contrato de dados</h3>
+      <p>A parte da proposta que quase ninguém tem coragem de escrever — e que muda a relação de fornecedor para parceiro com contrapartida:</p>
+      <ol>
+        <li><b>Diagnóstico respondido</b> antes da primeira campanha.</li>
+        <li><b>Seis perguntas por mês</b> respondidas por quem atende os leads.</li>
+        <li><b>Lead classificado no CRM</b> em até 30 dias: atendeu, tinha capital, virou reunião, virou contrato.</li>
+      </ol>
+      <p>Em troca: campanha estruturada por consciência, criativo saindo da objeção real, conversão devolvida à plataforma, e todo ajuste registrado num diário que o cliente acompanha. Sem as três, a entrega continua — mas o circuito fica aberto, e isso aparece no relatório.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">Camada 6</span>O que precisa virar automático</h2>
+    <p class="soft">Manual que depende de lembrar não é sistema. Três coisas saem do papel e vão para a rotina que já roda:</p>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>O quê</th><th>Onde entra</th><th>Efeito</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="w">Data da Mesa</td><td class="m">Tarefa recorrente semanal</td><td class="m">Cobra sozinha no resumo da manhã até acontecer</td></tr>
+          <tr><td class="w">Estado do circuito</td><td class="m">Uma linha por conta no extrato diário</td><td class="m">Conta com classificação vencida aparece antes de virar discussão</td></tr>
+          <tr><td class="w">Saúde do banco de ângulos</td><td class="m">Alerta quando zerar ângulo novo</td><td class="m">Dispara o envio do briefing antes da fadiga criativa</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="closer">Um método que depende de disciplina falha na primeira semana cheia. O que sustenta é o portão: o que não passa, não passa sozinho.</p>
+
+</div>

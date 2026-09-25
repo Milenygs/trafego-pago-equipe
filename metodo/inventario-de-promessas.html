@@ -1,0 +1,315 @@
+<title>Inventário de Promessas</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --paper:#E7E7E4;
+    --surface:#FAFAF8;
+    --surface-2:#F0F0EC;
+    --ink:#1A1A18;
+    --ink-soft:#53534D;
+    --ink-faint:#83837C;
+    --accent:#2B4C7E;
+    --accent-soft:#E0E7F0;
+    --line:#D3D3CE;
+    --line-strong:#B0B0A9;
+    --yes:#2C6A45;
+    --yes-bg:#E1EEE6;
+    --mid:#8A6012;
+    --mid-bg:#F4EAD6;
+    --no:#9A3430;
+    --no-bg:#F6E3E1;
+    --black:"Archivo Black",Impact,sans-serif;
+    --sans:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E0E0D;
+      --surface:#181817;
+      --surface-2:#201F1E;
+      --ink:#E7E7E2;
+      --ink-soft:#A0A099;
+      --ink-faint:#7C7C75;
+      --accent:#8FB0DA;
+      --accent-soft:#1A2330;
+      --line:#282826;
+      --line-strong:#3D3D39;
+      --yes:#78C39A;
+      --yes-bg:#15251B;
+      --mid:#D8A94E;
+      --mid-bg:#2A2113;
+      --no:#E08079;
+      --no-bg:#2C1917;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E0E0D;
+    --surface:#181817;
+    --surface-2:#201F1E;
+    --ink:#E7E7E2;
+    --ink-soft:#A0A099;
+    --ink-faint:#7C7C75;
+    --accent:#8FB0DA;
+    --accent-soft:#1A2330;
+    --line:#282826;
+    --line-strong:#3D3D39;
+    --yes:#78C39A;
+    --yes-bg:#15251B;
+    --mid:#D8A94E;
+    --mid-bg:#2A2113;
+    --no:#E08079;
+    --no-bg:#2C1917;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16.5px;
+    line-height:1.58;
+    padding-inline:20px;
+    padding-block:0;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding-block:46px 100px;display:flex;flex-direction:column;gap:52px}
+
+  .tag{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin:0}
+  h1{font-family:var(--black);font-weight:400;font-size:clamp(38px,8vw,62px);line-height:.98;letter-spacing:-.022em;margin:0;text-wrap:balance}
+  .open{display:flex;flex-direction:column;gap:18px}
+  .deck{font-size:19px;line-height:1.48;color:var(--ink-soft);max-width:58ch;margin:0}
+  .deck strong{color:var(--ink);font-weight:600}
+  .byline{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin:0;padding-top:10px;border-top:1px solid var(--line)}
+
+  section{display:flex;flex-direction:column;gap:15px}
+  h2{font-family:var(--sans);font-weight:700;font-size:28px;line-height:1.12;letter-spacing:-.022em;margin:0;text-wrap:balance}
+  p{margin:0;max-width:64ch}
+  .soft{color:var(--ink-soft)}
+
+  .alerta{background:var(--no-bg);border:1px solid var(--no);border-left-width:3px;padding:18px 20px;display:flex;flex-direction:column;gap:9px}
+  .alerta h3{font-family:var(--sans);font-weight:700;font-size:19px;margin:0;letter-spacing:-.012em}
+  .alerta p{font-size:16px;line-height:1.47}
+  .alerta b{font-weight:600}
+
+  /* fases */
+  .fases{display:flex;flex-direction:column;gap:14px}
+  .fase{background:var(--surface);border:1px solid var(--line);padding:18px 20px;display:flex;flex-direction:column;gap:12px}
+  .fase.f-yes{border-left:3px solid var(--yes)}
+  .fase.f-mid{border-left:3px solid var(--mid)}
+  .fase.f-no{border-left:3px solid var(--no)}
+  .fhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .fnum{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+  .fhead h3{font-family:var(--sans);font-weight:700;font-size:20px;letter-spacing:-.015em;margin:0;flex:1 1 200px;line-height:1.2}
+  .st{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:4px 8px 3px;white-space:nowrap}
+  .st.yes{background:var(--yes-bg);color:var(--yes)}
+  .st.mid{background:var(--mid-bg);color:var(--mid)}
+  .st.no{background:var(--no-bg);color:var(--no)}
+  .linhas{display:flex;flex-direction:column;gap:9px}
+  .l{display:grid;grid-template-columns:104px 1fr;gap:0 14px;align-items:baseline}
+  .l dt{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint)}
+  .l dd{margin:0;font-size:15.5px;line-height:1.46;color:var(--ink-soft)}
+  .l dd b{color:var(--ink);font-weight:600}
+  .l.key dd{color:var(--ink)}
+  dl{margin:0}
+
+  /* regra */
+  .regra{background:var(--accent-soft);border:1px solid var(--accent);border-left-width:3px;padding:18px 20px;display:flex;flex-direction:column;gap:9px}
+  .regra h3{font-family:var(--sans);font-weight:700;font-size:19px;margin:0;letter-spacing:-.012em}
+  .regra p{font-size:16px;line-height:1.47}
+  .regra b{font-weight:600}
+
+  /* ordem */
+  .ordem{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0}
+  .passo{display:grid;grid-template-columns:34px 1fr;gap:0 14px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .ordem li:last-child .passo{border-bottom:0}
+  .pn{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums;padding-top:2px}
+  .passo b{font-weight:700;font-size:17px;letter-spacing:-.012em;display:block;line-height:1.25}
+  .passo span{display:block;color:var(--ink-soft);font-size:15.5px;line-height:1.45;margin-top:3px;max-width:60ch}
+  .passo em{font-style:normal;font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;color:var(--ink-faint);display:block;margin-top:6px;text-transform:uppercase}
+
+  /* tabela */
+  .scroller{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;min-width:540px}
+  th,td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line);vertical-align:top;font-size:15.5px;line-height:1.42}
+  th{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-faint);border-bottom:1.5px solid var(--line-strong);white-space:nowrap}
+  tbody tr:last-child td{border-bottom:0}
+  td.k{font-family:var(--mono);font-size:12px;color:var(--ink);white-space:nowrap}
+  td.s{color:var(--ink-soft)}
+
+  /* promessas */
+  .promessas{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1px;background:var(--line)}
+  .col{background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:11px}
+  .col h3{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin:0}
+  .col.ok h3{color:var(--yes)}
+  .col.nope h3{color:var(--no)}
+  .col ul{margin:0;padding-left:17px;display:flex;flex-direction:column;gap:7px}
+  .col li{font-size:15.5px;line-height:1.42;color:var(--ink-soft)}
+  .col li b{color:var(--ink);font-weight:600}
+
+  .closer{border-top:1px solid var(--line);padding-top:26px;font-family:var(--sans);font-weight:700;font-size:23px;line-height:1.3;letter-spacing:-.02em;max-width:48ch}
+
+  @media (max-width:560px){
+    body{font-size:16px}
+    .l{grid-template-columns:1fr;gap:2px}
+    .passo{grid-template-columns:1fr;gap:3px}
+    .promessas{grid-template-columns:1fr}
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="open">
+    <p class="tag">Inventário · o que dá para prometer hoje</p>
+    <h1>Inventário de Promessas</h1>
+    <p class="deck">Esteira de seis fases só se vende depois de existir. Este documento faz a conta honesta: <strong>o que já está construído, o que falta, quanto custa construir e o que pode ser prometido hoje sem mentir.</strong></p>
+    <p class="byline">Base · a esteira de 6 fases avaliada contra a operação real da carteira</p>
+  </header>
+
+  <section>
+    <h2>Primeiro, o alerta</h2>
+    <div class="alerta">
+      <h3>Duas das seis fases são de outro nicho</h3>
+      <p><b>Produto de entrada de R$ 47 a 97 e esteira de LTV/recompra</b> vêm de infoproduto e e-commerce. Franquia de R$ 89.900 não tem isca de R$ 47 — e não tem segunda compra: quem assina, assina uma vez. Móveis sob medida e hospedagem também não têm produto de entrada.</p>
+      <p>Vender a fase 2 como está significa <b>mexer no produto do cliente</b>, que é outro serviço, com outra responsabilidade. E a fase 6 só faz sentido no pedaço varejo da carteira. Adotar as seis por completo é prometer trabalho que o seu nicho não pede.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>A conta, fase por fase</h2>
+    <p class="soft">Status medido contra o que roda hoje de verdade — não contra o que dá para montar numa semana boa.</p>
+    <div class="fases">
+
+      <article class="fase f-yes">
+        <div class="fhead"><span class="fnum">01</span><h3>Diagnóstico</h3><span class="st yes">pronto</span></div>
+        <dl class="linhas">
+          <div class="l"><dt>Já existe</dt><dd>Formulário estruturado que o prospect responde antes da verba, <b>mais</b> a auditoria de funil medida — atendimento cronometrado, site testado no 4G, oferta testada em cinco segundos.</dd></div>
+          <div class="l"><dt>Falta</dt><dd>Só formatação: o mapa de gargalos e o CAC alvo como entregável com a sua cara. O CAC alvo depende de dois números que só o cliente tem — ticket e taxa de fechamento.</dd></div>
+          <div class="l"><dt>Esforço</dt><dd>Baixo. Um dia de trabalho de formatação, uma vez, serve para todos.</dd></div>
+          <div class="l key"><dt>Promete hoje?</dt><dd><b>Sim.</b> É sua entrada mais forte e já está mais afiada que a da esteira, porque a sua é medida e a de lá é declarada.</dd></div>
+        </dl>
+      </article>
+
+      <article class="fase f-no">
+        <div class="fhead"><span class="fnum">02</span><h3>Engenharia da oferta</h3><span class="st no">outro nicho</span></div>
+        <dl class="linhas">
+          <div class="l"><dt>Já existe</dt><dd>O que se aproveita você já tem por outro caminho: clareza de oferta e recusa de público no bloco A da auditoria, e ganchos validados no banco de ângulos.</dd></div>
+          <div class="l"><dt>Falta</dt><dd>Nada que valha construir. Produto de entrada e isca paga não existem em franquia nem em ticket alto sob medida.</dd></div>
+          <div class="l"><dt>Substituir por</dt><dd><b>Posicionamento de oferta</b> — qual dor, qual prova, qual público é recusado por escrito. Isso você já entrega, só não estava no papel com nome.</dd></div>
+          <div class="l key"><dt>Promete hoje?</dt><dd><b>Não — e não deveria querer.</b> Prometer mexer no produto do cliente é assumir um resultado que não é seu.</dd></div>
+        </dl>
+      </article>
+
+      <article class="fase f-mid">
+        <div class="fhead"><span class="fnum">03</span><h3>Qualificação</h3><span class="st mid">parcial · mais perto</span></div>
+        <dl class="linhas">
+          <div class="l"><dt>Já existe</dt><dd>O fluxo de Direct com rodízio de vendedores integrado ao CRM já está desenhado e funcionando num cliente. Make e CRM já estão na sua mão.</dd></div>
+          <div class="l"><dt>Falta</dt><dd>Dois passos: virar aquele fluxo num <b>template replicável</b>, e só depois o agente de triagem.</dd></div>
+          <div class="l"><dt>Como construir</dt><dd>O agente <b>não precisa nascer com IA</b>. Regra determinística — pergunta de qualificação, etiqueta, roteia — resolve a maior parte e não quebra sozinha. Modelo de linguagem entra só onde há texto aberto para classificar.</dd></div>
+          <div class="l"><dt>Esforço</dt><dd>Médio. Uma a duas semanas dentro de um cliente piloto, não em laboratório.</dd></div>
+          <div class="l key"><dt>Promete hoje?</dt><dd><b>Qualificação por Direct, sim</b> — você tem caso rodando. <b>Agente de IA, ainda não.</b></dd></div>
+        </dl>
+      </article>
+
+      <article class="fase f-mid">
+        <div class="fhead"><span class="fnum">04</span><h3>Conversão</h3><span class="st mid">parcial</span></div>
+        <dl class="linhas">
+          <div class="l"><dt>Já existe</dt><dd>Conversão offline devolvida à plataforma em duas contas, CRM integrado, formulário nativo, remarketing por camada de consciência — que é a sequência estruturada da esteira, com outro nome e melhor lógica.</dd></div>
+          <div class="l"><dt>Falta</dt><dd>Padronizar o script de atendimento em etapas como entregável. Não falta ferramenta nova: o CRM que você já opera cobre o que a esteira pede.</dd></div>
+          <div class="l"><dt>Cuidado</dt><dd>Script de atendimento é <b>consultoria comercial</b>. Você escreve; quem executa é o vendedor do cliente. Prometer fechamento aqui é assumir a performance de um time que não é seu.</dd></div>
+          <div class="l key"><dt>Promete hoje?</dt><dd><b>Sim</b>, menos operar o CRM do cliente e menos taxa de fechamento.</dd></div>
+        </dl>
+      </article>
+
+      <article class="fase f-yes">
+        <div class="fhead"><span class="fnum">05</span><h3>Escala com dados</h3><span class="st yes">mais forte que a esteira</span></div>
+        <dl class="linhas">
+          <div class="l"><dt>Já existe</dt><dd>Extrato diário, relatório mensal, diário de alterações e um portal onde o cliente acompanha a própria conta. Isso é melhor do que painel de terceiro, porque é o ambiente dele e não uma aba que ele nunca abre.</dd></div>
+          <div class="l"><dt>Falta</dt><dd>CAC real e taxa de fechamento. E isto <b>não é problema de ferramenta</b>: nenhum painel calcula custo por contrato se o comercial não classificar o lead.</dd></div>
+          <div class="l"><dt>Esforço</dt><dd>Baixo do seu lado. O gargalo está no cliente — é o portão do circuito.</dd></div>
+          <div class="l key"><dt>Promete hoje?</dt><dd><b>Sim, com a cláusula.</b> Custo por lead aprovado e por contrato só existe com classificação devolvida.</dd></div>
+        </dl>
+      </article>
+
+      <article class="fase f-no">
+        <div class="fhead"><span class="fnum">06</span><h3>Recompra e LTV</h3><span class="st no">não existe · depende do nicho</span></div>
+        <dl class="linhas">
+          <div class="l"><dt>Onde aplica</dt><dd>Só no pedaço de varejo e e-commerce da carteira. Em franquia, a venda é única — o valor recorrente é da franqueadora com o franqueado, e isso é outro jogo.</dd></div>
+          <div class="l"><dt>Como construir</dt><dd>Versão 1 <b>sem automação nenhuma</b>: lista de quem comprou, público personalizado, campanha de recompra. Se a recompra aparecer, aí sim vale automatizar. Automatizar antes é construir esteira para um fluxo que talvez não exista.</dd></div>
+          <div class="l"><dt>Esforço</dt><dd>Baixo na versão 1. Alto se começar pela automação — que é como quase todo mundo começa e por isso abandona.</dd></div>
+          <div class="l key"><dt>Promete hoje?</dt><dd><b>Não.</b> Construir primeiro num cliente de varejo, medir, e só então virar oferta.</dd></div>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>A regra que evita a promessa vazia</h2>
+    <div class="regra">
+      <h3>O ativo se constrói uma vez, dentro de um cliente que paga por ele</h3>
+      <p>Cada fase tem um <b>ativo reutilizável</b> — um template, um fluxo, um formato de entregável — que se constrói uma única vez e depois se aplica em toda conta nova. O erro clássico é tentar construir os seis ativos antes de vender, em laboratório, sem cliente real: some o prazo, some a motivação, e a esteira fica pela metade.</p>
+      <p>O caminho inverso funciona: escolhe-se <b>uma conta piloto</b>, constrói-se ali o ativo que falta, cobra-se por ele como escopo, e ele sai de lá pronto para repetir. O piloto paga a construção. A segunda conta paga margem.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ordem de construção</h2>
+    <p class="soft">Por quantas contas cada peça destrava, não por qual é mais interessante de montar.</p>
+    <ol class="ordem">
+      <li><div class="passo"><span class="pn">1</span><div><b>Formatar os entregáveis do diagnóstico</b><span>Mapa de gargalos e CAC alvo com a sua identidade. É o que você mostra na primeira reunião e é o que já está pronto por dentro.</span><em>Destrava · toda proposta nova · esforço baixo</em></div></div></li>
+      <li><div class="passo"><span class="pn">2</span><div><b>Virar o fluxo de qualificação em template</b><span>Pegar o que já roda num cliente e transformar em algo que se instala em qualquer conta de conversa, com o roteamento e as etiquetas prontos.</span><em>Destrava · todas as contas que vendem por conversa · esforço médio</em></div></div></li>
+      <li><div class="passo"><span class="pn">3</span><div><b>Cobrar a classificação como cláusula, não como favor</b><span>Custo zero, efeito maior de todos: é o que transforma relatório de CPL em relatório de custo por contrato. Entra na proposta, não na conversa de corredor.</span><em>Destrava · a promessa de dado real · esforço nenhum</em></div></div></li>
+      <li><div class="passo"><span class="pn">4</span><div><b>Recompra versão 1 num cliente de varejo</b><span>Público de quem comprou, campanha de recompra, medir. Sem automação, sem ferramenta nova.</span><em>Destrava · o pedaço varejo da carteira · esforço baixo</em></div></div></li>
+      <li><div class="passo"><span class="pn">5</span><div><b>Agente de triagem, por último</b><span>Só depois da regra determinística rodando em duas ou mais contas. Se o fluxo simples já filtra bem, o modelo entra como melhoria, não como aposta.</span><em>Destrava · escala de atendimento · esforço alto</em></div></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Quem paga a ferramenta</h2>
+    <p class="soft">A decisão que decide a sua margem, e que quase ninguém toma no começo:</p>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Tipo</th><th>Onde a assinatura fica</th><th>Por quê</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="k">Automação e chatbot</td><td class="s">Conta do cliente, você com acesso de operação</td><td class="s">Custo recorrente por cliente destrói margem se você absorve — e você vira refém de cancelamento</td></tr>
+          <tr><td class="k">CRM</td><td class="s">Conta do cliente, sempre</td><td class="s">É o dado dele. Você opera e lê, nunca hospeda</td></tr>
+          <tr><td class="k">Conector de relatório</td><td class="s">Sua conta</td><td class="s">É sua ferramenta de produção, usada em toda a carteira</td></tr>
+          <tr><td class="k">Portal e diário</td><td class="s">Sua conta</td><td class="s">É seu produto. Se fosse dele, ele te troca e leva junto</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>O que pode ir na proposta hoje</h2>
+    <div class="promessas">
+      <div class="col ok">
+        <h3>Já pode prometer</h3>
+        <ul>
+          <li><b>Auditoria de funil medida</b>, com veredito e escolha do destino da campanha</li>
+          <li><b>Estrutura de campanha por nível de consciência</b>, com criativo saindo de objeção real</li>
+          <li><b>Qualificação por Direct</b> com roteamento para o time de vendas</li>
+          <li><b>Conversão offline devolvida à plataforma</b>, para otimizar por venda</li>
+          <li><b>Diário de alterações e portal</b> onde o cliente acompanha</li>
+          <li><b>Checklist de aprovação de criativo</b>, com pendências por escrito</li>
+        </ul>
+      </div>
+      <div class="col nope">
+        <h3>Ainda não prometa</h3>
+        <ul>
+          <li><b>Agente de IA de triagem</b> — construir o determinístico primeiro</li>
+          <li><b>Esteira de LTV e recompra</b> — não existe caso feito ainda</li>
+          <li><b>Produto de entrada e isca</b> — não é o seu serviço</li>
+          <li><b>Taxa de fechamento</b> — depende do time comercial do cliente</li>
+          <li><b>Painel de CAC real</b> sem a cláusula de classificação assinada</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <p class="closer">Prometer o que ainda não existe é o jeito mais rápido de perder a conta no mês três. Vender o que já está de pé é o jeito mais rápido de construir o resto pago.</p>
+
+</div>

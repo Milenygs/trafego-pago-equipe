@@ -1,0 +1,8 @@
+{
+  "slug": "skill-persona-profunda",
+  "category": "copywriting",
+  "tags": ["persona", "icp", "avatar", "copy", "psicologia", "marketing"],
+  "installation": {
+    "supports": ["claude"]
+  }
+}

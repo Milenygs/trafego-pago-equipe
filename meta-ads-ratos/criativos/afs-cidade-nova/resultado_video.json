@@ -1,0 +1,20 @@
+{
+  "video_id": "2663255340756426",
+  "arquivo": "O TEU AÇAÍ FAVORITO.mp4",
+  "thumbnail": "https://scontent-gru1-2.xx.fbcdn.net/v/t15.5256-10/806336443_1082510901144241_4747754141401031980_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3495b&_nc_ohc=UtXFSbL8TQMQ7kNvwHYsGkq&_nc_oc=AdpoMmmh6eCa52CsdnlGSUHXbp_K8ccuUmny7y_P2zRl8bELQP_S1A_5F5FPQW03YyY&_nc_zt=23&_nc_ht=scontent-gru1-2.xx&edm=AF0wKlEEAAAA&_nc_gid=uPZcGqV0c7nXfEv1RPMu3g&_nc_tpa=Q5bMBQKHICWNf2ZUMxB4092hpOLDbEKmE2lRTgTwwRiLN_gDQwWvKbxPHrZqc8EkiG2f4VPvF5DFMJKf8A&oh=00_AQLnjrUD_ECHH027irsE9DrmmSg_7YKSMIct4XJQ_9IA7A&oe=6AAA4B60",
+  "status": {
+    "video_status": "ready",
+    "uploading_phase": {
+      "status": "complete"
+    },
+    "processing_phase": {
+      "status": "complete"
+    },
+    "publishing_phase": {
+      "status": "complete",
+      "publish_status": "published",
+      "publish_time": "2026-09-11T19:59:00+0000"
+    }
+  },
+  "length": 18.552
+}

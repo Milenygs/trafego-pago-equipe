@@ -1,0 +1,669 @@
+<title>A Mesa de Pauta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F3F4F1; --surface:#FBFBF9; --ink:#1B2124; --muted:#5A6468; --line:#D6DAD7; --soft:#E8EBE8;
+  --c1:#3F6E9E; --c2:#3D8577; --c3:#A8741F; --c4:#B24A30;
+  --c1-bg:#E3ECF5; --c2-bg:#E0EFEB; --c3-bg:#F4EAD7; --c4-bg:#F6E3DD;
+  --ok:#2E6B45; --ok-bg:#E1EEE5; --warn:#9A5B00; --warn-bg:#F5EAD6; --block:#8E2F2F; --block-bg:#F5E1E0;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#13171A; --surface:#1A1F23; --ink:#E4E8E6; --muted:#9BA5A9; --line:#2C3438; --soft:#232A2E;
+    --c1:#7FA9D6; --c2:#6FC0AE; --c3:#D9A64E; --c4:#E7836A;
+    --c1-bg:#1D2A38; --c2-bg:#1B2F2B; --c3-bg:#33291A; --c4-bg:#35211C;
+    --ok:#7CC69C; --ok-bg:#16271D; --warn:#E0A24A; --warn-bg:#2C2314; --block:#E48A8A; --block-bg:#321B1B;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#13171A; --surface:#1A1F23; --ink:#E4E8E6; --muted:#9BA5A9; --line:#2C3438; --soft:#232A2E;
+  --c1:#7FA9D6; --c2:#6FC0AE; --c3:#D9A64E; --c4:#E7836A;
+  --c1-bg:#1D2A38; --c2-bg:#1B2F2B; --c3-bg:#33291A; --c4-bg:#35211C;
+  --ok:#7CC69C; --ok-bg:#16271D; --warn:#E0A24A; --warn-bg:#2C2314; --block:#E48A8A; --block-bg:#321B1B;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;padding-inline:20px;padding-block:0 64px}
+.wrap{max-width:1080px;margin:0 auto}
+h1,h2,h3,h4{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15}
+p{margin:0}
+a{color:var(--c1)}
+a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+.mono{font-family:var(--mono)}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+header{padding-block:44px 28px;display:grid;gap:14px;border-bottom:1px solid var(--line)}
+header h1{font-size:clamp(34px,5vw,52px);font-weight:700;letter-spacing:-.01em}
+.lede{max-width:70ch;font-size:16.5px}
+.lede em{font-style:normal;background:var(--soft);padding:0 4px;border-radius:3px}
+.thermo{display:grid;grid-template-columns:repeat(4,1fr);margin-top:10px;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.thermo div{padding:10px 12px;display:grid;gap:2px}
+.thermo b{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.thermo span{font-size:13px;color:var(--muted)}
+.t1{background:var(--c1-bg)} .t1 b{color:var(--c1)}
+.t2{background:var(--c2-bg)} .t2 b{color:var(--c2)}
+.t3{background:var(--c3-bg)} .t3 b{color:var(--c3)}
+.t4{background:var(--c4-bg)} .t4 b{color:var(--c4)}
+.facts{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px;color:var(--muted)}
+.facts strong{color:var(--ink);font-weight:600}
+.sources-used{display:flex;flex-wrap:wrap;gap:6px}
+.sources-used span{font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:3px;padding:2px 7px;color:var(--muted);background:var(--surface)}
+
+section{padding-block:40px 0;display:grid;gap:18px}
+.q-head{display:grid;gap:4px}
+.q-head .label{color:var(--c4)}
+section h2{font-size:26px;font-weight:700}
+.intro{max-width:72ch;color:var(--muted)}
+
+ol.order{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+ol.order li{display:grid;grid-template-columns:44px minmax(140px,190px) 1fr;gap:6px 18px;padding-block:14px;border-bottom:1px solid var(--line);align-items:baseline}
+ol.order .n{font-family:var(--display);font-size:24px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+ol.order .who{font-weight:600}
+ol.order .who small{display:block;font-weight:400;color:var(--muted);font-size:12.5px}
+ol.order .what{display:grid;gap:4px}
+ol.order .what p:last-child{color:var(--muted);font-size:14px}
+.order-rest{font-size:14px;color:var(--muted);max-width:78ch}
+
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--soft)}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+.matrix{min-width:980px}
+.matrix tbody th{width:118px;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;font-weight:500}
+tr.r1 th{color:var(--c1);background:var(--c1-bg)}
+tr.r2 th{color:var(--c2);background:var(--c2-bg)}
+tr.r3 th{color:var(--c3);background:var(--c3-bg)}
+tr.r4 th{color:var(--c4);background:var(--c4-bg)}
+td .cta{display:block;margin-top:4px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.circuit{min-width:720px}
+.circuit td:first-child{font-weight:600;white-space:nowrap}
+.circuit td:last-child{color:var(--muted)}
+.seal{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:3px;white-space:nowrap;display:inline-block}
+.s-closed{background:var(--ok-bg);color:var(--ok)}
+.s-part{background:var(--warn-bg);color:var(--warn)}
+.s-open{background:var(--block-bg);color:var(--block)}
+
+.niche{padding-block:48px 0;display:grid;gap:26px}
+.niche-head{display:grid;gap:6px;padding-bottom:12px;border-bottom:2px solid var(--ink)}
+.niche-head h2{font-size:28px}
+.niche-head p{color:var(--muted);max-width:74ch;font-size:14.5px}
+.client{display:grid;gap:12px}
+.client-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}
+.client-head h3{font-size:21px;font-weight:700}
+.client-head .mono{font-size:12px;color:var(--muted)}
+.hole{max-width:80ch;font-size:14.5px}
+.hole b{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--warn);margin-right:6px;font-weight:500}
+.done{font-size:13.5px;color:var(--muted);max-width:80ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px;display:grid;gap:10px;align-content:start}
+.card-top{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:3px;white-space:nowrap}
+.k1{background:var(--c1-bg);color:var(--c1)} .k2{background:var(--c2-bg);color:var(--c2)}
+.k3{background:var(--c3-bg);color:var(--c3)} .k4{background:var(--c4-bg);color:var(--c4)}
+.fmt{border:1px solid var(--line);color:var(--muted)}
+.st-data{background:var(--ink);color:var(--surface)}
+.st-hip{border:1px dashed var(--muted);color:var(--muted)}
+.st-wait{border:1px solid var(--warn);color:var(--warn)}
+.st-block{border:1px solid var(--block);color:var(--block)}
+.card h4{font-size:17px;font-weight:700}
+.angle{font-size:15px;font-style:italic}
+.hook{display:grid;gap:3px;padding-top:8px;border-top:1px solid var(--soft)}
+.hook p{font-size:14px}
+.src{font-size:12.5px;color:var(--muted)}
+.src b{font-weight:600;color:var(--muted)}
+.method{font-size:12.5px;color:var(--ink);background:var(--soft);border-radius:4px;padding:8px 10px}
+.method b{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:500;color:var(--muted);margin-right:4px}
+
+.script{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px;display:grid;gap:16px}
+.script-head{display:grid;gap:4px}
+.script-head .mono{font-size:13px}
+.script-head h4{font-size:19px}
+.tc{display:grid;border-top:1px solid var(--line)}
+.tc > div{display:grid;grid-template-columns:92px 1fr;gap:14px;padding-block:10px;border-bottom:1px solid var(--line)}
+.tc .t{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
+.tc .t b{display:block;color:var(--ink);font-weight:500;font-size:11px;letter-spacing:.05em}
+.tc p + p{margin-top:4px}
+.gap{background:var(--soft);font-family:var(--mono);font-size:12.5px;padding:0 4px;border-radius:3px}
+.variants{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.variant{border:1px solid var(--line);border-radius:5px;padding:12px;display:grid;gap:8px;align-content:start}
+.variant > .label{color:var(--ink)}
+.field{display:grid;gap:1px}
+.field span{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.04em}
+.field p{font-size:14px}
+.gate{font-size:13.5px;display:grid;gap:4px}
+.gate ul{margin:0;padding-left:18px;display:grid;gap:3px}
+.gate .mono{font-size:12px}
+.interview{margin:0;padding-left:0;list-style:none;border-top:1px solid var(--line)}
+.interview li{display:grid;grid-template-columns:92px 1fr;gap:14px;padding-block:10px;border-bottom:1px solid var(--line)}
+.interview .t{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;padding-top:3px}
+
+.collect{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.collect div{border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:var(--surface);display:grid;gap:4px}
+.collect b{font-weight:600}
+.collect p{font-size:13.5px;color:var(--muted)}
+.rule{border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:14px 16px;max-width:80ch;font-size:14.5px}
+.rule b{font-weight:600}
+footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);display:grid;gap:6px;max-width:92ch}
+
+@media (max-width:640px){
+  ol.order li{grid-template-columns:34px 1fr}
+  ol.order .what{grid-column:2}
+  .thermo{grid-template-columns:repeat(2,1fr)}
+  .tc > div,.interview li{grid-template-columns:1fr;gap:4px}
+  .cards{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+
+<header>
+  <span class="label">A Mesa semanal · Funil Espiral · 14/09/2026</span>
+  <h1>A Mesa de Pauta</h1>
+  <p class="lede">A primeira Mesa da carteira, feita com o que você montou no sábado. A página segue as três perguntas da Sala de Máquinas: <em>qual camada está sem munição</em>, <em>o comercial devolveu classificação</em>, <em>o que sobe e o que volta pra edição</em>. Conteúdo começa em ângulo, e ângulo de verdade vem do comercial. O que não tem essa fonte está marcado como <strong>hipótese</strong>: serve pra levar ao cliente, não pra subir.</p>
+  <div class="thermo" role="list" aria-label="As quatro camadas do Funil Espiral">
+    <div class="t1" role="listitem"><b>Camada 1 · frio</b><span>oportunidade, modelo · sem CTA</span></div>
+    <div class="t2" role="listitem"><b>Camada 2 · aquecimento</b><span>desejo, bastidor · sem CTA</span></div>
+    <div class="t3" role="listitem"><b>Camada 3 · fundador</b><span>história, valores · sem CTA</span></div>
+    <div class="t4" role="listitem"><b>Camada 4 · convite</b><span>prova real + verificação</span></div>
+  </div>
+  <div class="sources-used" aria-label="Material usado">
+    <span>conteudo · skill</span><span>Matéria-Prima</span><span>Vale o scroll?</span><span>Circuito Fechado</span><span>Sala de Máquinas</span><span>Antes da Verba</span><span>Inventário de Promessas</span><span>franquia · Funil Espiral</span><span>prompt de análise de criativo</span>
+  </div>
+  <div class="facts">
+    <span><strong>14</strong> contas lidas no FlowTraffic (anúncios ativos, 30 dias, sync de hoje)</span>
+    <span><strong>6</strong> de 9 contas com circuito aberto ou parcial</span>
+    <span><strong>2</strong> roteiros prontos · <strong>1</strong> roteiro de entrevista</span>
+    <span>Nada criado na Meta, nada gravado no banco de ângulos</span>
+  </div>
+</header>
+
+<section id="municao">
+  <div class="q-head"><span class="label">Pergunta 1 da Mesa</span><h2>Qual camada está sem munição?</h2></div>
+  <p class="intro">A ordem é a da Sala de Máquinas: camada sem peça ativa, depois frequência acima de 2,5, depois camada com um criativo só. O número de cada linha vem da conta, não do calendário.</p>
+  <ol class="order">
+    <li><span class="n">1</span>
+      <span class="who">Kascão CA 02<small>franquia · R$ 200 mil</small></span>
+      <div class="what"><p><strong>Fase 3 (fundador) nunca existiu</strong> e a fase 2 está com zero anúncios. Buraco aberto, o mais caro da carteira.</p><p>Antes de gravar: liberar a página 167959616608948 no BM. Sem isso, nenhum anúncio sobe (subcode 1885499).</p></div></li>
+    <li><span class="n">2</span>
+      <span class="who">AP Ponto<small>construtora MCMV</small></span>
+      <div class="what"><p><strong>O Belo lança em 19/09 sem nenhuma peça.</strong> E o Direct dos 17 anos já roda com frequência 2,51.</p><p>O gargalo é UGC: o lote de 19/08 levou visita→lead de 2,8% para 9,5% no mesmo dia.</p></div></li>
+    <li><span class="n">3</span>
+      <span class="who">Boali<small>franquia · R$ 359 mil</small></span>
+      <div class="what"><p><strong>Nenhum vídeo ativo alimenta o quente.</strong> Os públicos de vídeo do CP 04 são listas fixas de 82 Reels de 2022-23.</p><p>Os vídeos que foram pra edição em 11/09 só fecham o buraco se o público de visualização for criado marcando esses vídeos, no painel.</p></div></li>
+    <li><span class="n">4</span>
+      <span class="who">Desygn<small>móveis premium</small></span>
+      <div class="what"><p><strong>Quente de Direct com frequência 2,57</strong>, 4 anúncios e R$ 4.076 em 30 dias. Fadiga.</p><p>A fonte de ângulo já existe e ninguém usa: as conversas das 4 vendedoras do rodízio.</p></div></li>
+    <li><span class="n">5</span>
+      <span class="who">Ponto Alpha<small>franquia</small></span>
+      <div class="what"><p><strong>Um anúncio só carrega a conta:</strong> "Vídeos franquia", R$ 4.614 e 220 cadastros.</p><p>CPL em torno de R$ 21, um quinto do webinar, e sem classificação do comercial. Primeiro a pergunta 2, depois a peça.</p></div></li>
+    <li><span class="n">6</span>
+      <span class="who">Açaí Fruit Show<small>franquia · R$ 270 mil</small></span>
+      <div class="what"><p><strong>CP 09 [EXPANSÃO] sem cadastro</strong> com 2 anúncios. O mecanismo econômico da marca (sem royalties) ainda não tem peça própria.</p><p>O comercial reclamou do lead em 02/09. Pela Antes da Verba, a auditoria vem antes de trocar criativo.</p></div></li>
+    <li><span class="n">7</span>
+      <span class="who">Cheirin Bão MT<small>franquia</small></span>
+      <div class="what"><p><strong>Munição de sobra e banco zerado:</strong> 30 anúncios ativos no espiral, 0 ângulo novo. Aqui o buraco é ângulo, não peça.</p></div></li>
+    <li><span class="n">8</span>
+      <span class="who">Facilmart<small>franquia · R$ 58 mil</small></span>
+      <div class="what"><p><strong>Camada 2 fraca:</strong> o CP 02 roda 2 anúncios (um é vídeo baixado do Instagram) e 0 cadastro. O fundo faz 282.</p></div></li>
+  </ol>
+  <p class="order-rest">Em manutenção, sem buraco urgente: Casa de Vidro (o teste de público lê em 16/09, criativo novo só depois), Grupo TFS B2B, lojas AFS, Cheirin Lojas e QualyFibras. Sou Coluna e Bem Querer não têm anúncio ativo no painel. Conferir se estão paradas de propósito.</p>
+</section>
+
+<section id="circuito">
+  <div class="q-head"><span class="label">Pergunta 2 da Mesa</span><h2>O comercial devolveu classificação?</h2></div>
+  <p class="intro">Portão P3 da Sala de Máquinas. Conta sem classificação nos últimos 30 dias sai com o selo <strong>circuito aberto</strong>: o CPL deixa de medir sucesso, e o ângulo da pauta continua hipótese. É a pendência número um da conta, antes de qualquer criativo. Estado pelo que está registrado no histórico; confirme na Mesa.</p>
+  <div class="scroll">
+    <table class="circuit">
+      <thead><tr><th scope="col">Conta</th><th scope="col">Estado</th><th scope="col">O que voltou por último</th><th scope="col">O que falta pra fechar</th></tr></thead>
+      <tbody>
+        <tr><td>Boali</td><td><span class="seal s-closed">fechado</span></td><td>Export do pipeline em 10/09, com código do lead Meta e anúncio no UTM Content</td><td>Repetir o export a cada 30 dias</td></tr>
+        <tr><td>AP Ponto</td><td><span class="seal s-closed">fechado</span></td><td>Base do CV CRM (27/08) e CAPI de venda funcionando (07/09)</td><td>Motivos de perda do Sales, pra virar ângulo</td></tr>
+        <tr><td>Cheirin Bão MT</td><td><span class="seal s-part">parcial</span></td><td>Ranking de qualificados (25/08) e cruzamento com o CRM (13/09)</td><td>O CAPI envia, mas não casa com o lead (13/09)</td></tr>
+        <tr><td>Açaí Fruit Show</td><td><span class="seal s-part">parcial</span></td><td>Reclamação do comercial (02/09) e 9 desqualificados por CAPI (18/08)</td><td>Confirmar o mapeamento de capital no CRM e medir o tempo até a primeira ligação</td></tr>
+        <tr><td>Casa de Vidro</td><td><span class="seal s-part">parcial</span></td><td>Lote manual de 12 contatos qualificados (19/08)</td><td>Novo lote: nada registrado desde 19/08</td></tr>
+        <tr><td>Kascão CA 02</td><td><span class="seal s-open">aberto</span></td><td>Nenhuma classificação registrada</td><td>Pedir a classificação dos leads da LP Sults</td></tr>
+        <tr><td>Ponto Alpha</td><td><span class="seal s-open">aberto</span></td><td>Nenhuma</td><td>Classificar os 67 leads de 04 a 10/09 (CPL R$ 24)</td></tr>
+        <tr><td>Facilmart</td><td><span class="seal s-open">aberto</span></td><td>Nenhuma</td><td>Ticket baixo, mas o dado continua valendo pra escolher ângulo</td></tr>
+        <tr><td>Desygn</td><td><span class="seal s-open">aberto</span></td><td>Nenhuma. A fase 2 do fluxo RD (CAPI de qualificado) está pendente</td><td>As vendedoras marcarem a conversa qualificada no RD</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="nichos">
+  <div class="q-head"><span class="label">Tradução</span><h2>O Espiral traduzido por nicho</h2></div>
+  <p class="intro">O espiral foi escrito pra franquia. Nos outros nichos, a lógica de consciência progressiva continua a mesma, mas o que cada camada mostra muda. Cada célula sai do que já aprendemos na conta daquele nicho. A última coluna de cada nicho é onde o Circuito Fechado ainda está furado.</p>
+  <div class="scroll">
+    <table class="matrix">
+      <thead><tr>
+        <th scope="col">Camada</th>
+        <th scope="col">Franquia ticket alto</th>
+        <th scope="col">Franquia ticket baixo</th>
+        <th scope="col">Construtora MCMV</th>
+        <th scope="col">Hospedagem alto padrão</th>
+        <th scope="col">Móveis</th>
+        <th scope="col">Indústria B2B</th>
+        <th scope="col">Loja local</th>
+      </tr></thead>
+      <tbody>
+        <tr class="r1"><th scope="row">1 · frio</th>
+          <td>Oportunidade e modelo. Depoimento funciona até no frio (Boali: R$ 74,60 contra R$ 118,52).<span class="cta">sem CTA</span></td>
+          <td>Renda recorrente com processo, não "lucro rápido".<span class="cta">sem CTA</span></td>
+          <td>A parcela cabe. Falar da parcela, nunca da renda: a Meta não segmenta renda, o criativo filtra.<span class="cta">sem CTA</span></td>
+          <td>O lugar pelos sentidos: drone, piscina, baía.<span class="cta">sem CTA</span></td>
+          <td>A peça e o design. O post orgânico já é a munição.<span class="cta">sem CTA</span></td>
+          <td>A dor do comprador: fornecedor, margem, freezer parado.<span class="cta">sem CTA</span></td>
+          <td>Novidade no bairro, inauguração.<span class="cta">alcance no raio</span></td>
+        </tr>
+        <tr class="r2"><th scope="row">2 · aquecer</th>
+          <td>Dia a dia da loja, fila, painel de pedidos.<span class="cta">sem CTA</span></td>
+          <td>A operação autônoma na prática.<span class="cta">sem CTA</span></td>
+          <td>Evolução de Obras, a série que traz comentário de compra no orgânico.<span class="cta">sem CTA</span></td>
+          <td>A experiência: o chef, o barco, "ninguém mais desembarca".<span class="cta">sem CTA</span></td>
+          <td>O detalhe de fabricação e a peça no ambiente.<span class="cta">sem CTA</span></td>
+          <td>Fábrica e logística própria.<span class="cta">sem CTA</span></td>
+          <td>O produto e o desejo.<span class="cta">visita ao perfil</span></td>
+        </tr>
+        <tr class="r3"><th scope="row">3 · fundador</th>
+          <td>O fundador falando. Na Boali é o ângulo campeão (Rodrigo).<span class="cta">sem CTA</span></td>
+          <td>Quem desenhou o modelo e pra quem ele não é.<span class="cta">sem CTA</span></td>
+          <td>A casa: 17 anos, mais de 6.800 chaves.<span class="cta">sem CTA</span></td>
+          <td>A casa inteira, não suíte nem pousada.<span class="cta">sem CTA</span></td>
+          <td>O designer e a assinatura (Estúdio Galho).<span class="cta">sem CTA</span></td>
+          <td>A história de quem fabrica.<span class="cta">sem CTA</span></td>
+          <td>A história da loja e do dono (aniversário).<span class="cta">sem CTA</span></td>
+        </tr>
+        <tr class="r4"><th scope="row">4 · convite</th>
+          <td>Prova real com o preço cedo. Rodrigo com preço: 21,4% de avanço contra 4,5% da conta.<span class="cta">verificação de região</span></td>
+          <td>Franqueada real e indicação de condomínio. CPL baixo não é alerta aqui.<span class="cta">verificação de região</span></td>
+          <td>Cliente real com a chave. A simulação é o passo (só 6% simulavam).<span class="cta">simular a parcela</span></td>
+          <td>Datas. O preço vai na mensagem de boas-vindas: é a triagem antes do atendimento (buraco 1 do Circuito).<span class="cta">WhatsApp</span></td>
+          <td>Conversa com a vendedora.<span class="cta">Direct / WhatsApp</span></td>
+          <td>Condição de revenda por praça.<span class="cta">formulário</span></td>
+          <td>Oferta com data e a segunda compra (buraco 2 do Circuito).<span class="cta">pedir agora</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="portao">
+  <div class="q-head"><span class="label">Pergunta 3 da Mesa</span><h2>O que sobe, e o que volta pra edição</h2></div>
+  <p class="intro">Toda pauta abaixo passa pelo <strong>Vale o scroll?</strong> antes de subir. O portão 1 (itens 01 a 03) é eliminatório: se a peça não para o scroll, volta pro roteiro e a verba fica onde está. As pendências dos roteiros estão citadas pelo número do checklist.</p>
+</section>
+
+<!-- ============================ FRANQUIAS ============================ -->
+<div class="niche" id="franquias">
+  <div class="niche-head">
+    <span class="label">Nicho</span>
+    <h2>Franquias</h2>
+    <p>Regras que atravessam as peças: nunca faturamento, retorno ou payback, nem em depoimento (item 12). Escassez territorial, nunca financeira (05). Abre com tensão, não com credencial (08). O público errado é recusado por escrito, com o preço cedo (Antes da Verba, A2). E a falta não fica na conta do leitor: o texto mostra que ele já provou que consegue.</p>
+  </div>
+
+  <div class="client">
+    <div class="client-head"><h3>Kascão CA 02</h3><span class="mono">act_1435086545094716 · a partir de R$ 200 mil · circuito aberto</span></div>
+    <p class="hole"><b>Buraco</b>A auditoria de 10/09 achou o espiral pela metade: fase 3 nunca existiu, fase 2 sem anúncio. Os 4 vídeos do Maurício (caminhão, frota própria, produção, cozinhas complexas) já servem de munição da fase 2 sem gravar nada novo.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top"><span class="chip k3">Camada 3</span><span class="chip fmt">vídeo · fundador</span><span class="chip st-hip">hipótese</span><span class="chip st-block">página travada</span></div>
+        <h4>Por que a segunda unidade é Kascão</h4>
+        <p class="angle">"Já tenho franquia. Por que abrir mais uma dessa marca, e não de outra?"</p>
+        <div class="hook"><span class="label">Gancho verbal · prova</span><p>"Oito em cada dez franqueados da Kascão já tinham franquia quando assinaram."</p></div>
+        <div class="hook"><span class="label">Gancho visual</span><p>O fundador na frente da frota própria, com o caminhão no quadro.</p></div>
+        <p class="src"><b>Fonte:</b> nota da conta, 80% dos franqueados são multifranqueados. O perfil é dado; a objeção é hipótese.</p>
+        <p class="method"><b>Item 03</b>Troque o logo por outra sorveteria: "frota própria" e "8 em 10 multifranqueados" continuam sendo só da Kascão. Passa.</p>
+      </article>
+    </div>
+    <div class="script">
+      <div class="script-head">
+        <span class="label">Roteiro de entrevista · o insumo que falta pra fase 3</span>
+        <h4>Seis perguntas pro fundador, cada uma vira um bloco</h4>
+        <p class="src">Não dá pra escrever a fala do fundador sem a história dele. Grave a entrevista inteira em vertical, com celular e luz natural, e a peça sai da edição das respostas. A pergunta 2 é a mesma lógica do Matéria-Prima: a frase dele, não a tradução. Confirmar se o fundador é o Maurício dos vídeos de frota.</p>
+      </div>
+      <ol class="interview">
+        <li><span class="t">0-3s · gancho</span><p>Quantos dos seus franqueados já tinham outra franquia quando assinaram?</p></li>
+        <li><span class="t">3-12s · conexão</span><p>O que um multifranqueado pergunta na primeira conversa que um iniciante nunca pergunta? <span class="gap">essa resposta também é coleta de ângulo</span></p></li>
+        <li><span class="t">12-30s · mecanismo</span><p>Por que a Kascão tem frota e produção próprias? O que isso tira das costas de quem opera?</p></li>
+        <li><span class="t">12-30s · tensão</span><p>O que costuma dar errado quando alguém abre a segunda unidade de uma marca qualquer?</p></li>
+        <li><span class="t">30-45s · prova</span><p>Conte de um franqueado que abriu a segunda Kascão: por que ele voltou pra mesma marca?</p></li>
+        <li><span class="t">filtro</span><p>Pra quem a Kascão não é?</p></li>
+      </ol>
+      <p class="src"><b>Conflito pra você decidir:</b> a nota da conta diz que o ângulo forte é "retorno e replicabilidade", e o item 12 proíbe retorno. Esta pauta fica só com operação e replicabilidade.</p>
+    </div>
+  </div>
+
+  <div class="client">
+    <div class="client-head"><h3>Boali</h3><span class="mono">act_295475086762368 · R$ 359 mil (valor do AD04) · circuito fechado</span></div>
+    <p class="hole"><b>Buraco</b>O quente só colhe engajamento de perfil, porque nenhum vídeo novo entra nos públicos de vídeo. No CRM (15/07–10/09), o único criativo com sinal forte é o que diz o preço: Rodrigo com 21,4% de avanço. O mais barato por lead, Mary e Bruno, custou R$ 6.827 por lead que avançou.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top"><span class="chip k1">Camada 1</span><span class="chip fmt">vídeo · pino de loja</span><span class="chip st-hip">hipótese</span></div>
+        <h4>O outro lado do balcão</h4>
+        <p class="angle">"Conheço a Boali como cliente. Nunca pensei que dava pra ser dono."</p>
+        <div class="hook"><span class="label">Gancho verbal · qualificação</span><p>"Se você já pediu na Boali do <span class="gap">shopping da praça</span>, essa conversa é sobre o outro lado do balcão."</p></div>
+        <div class="hook"><span class="label">Gancho visual</span><p>O balcão da loja real da praça da onda 1, com o painel de pedidos aceso.</p></div>
+        <p class="src"><b>Fonte:</b> a sua tese geográfica de 10/09 (quem mora perto da loja já conhece a marca), no ar em CP 07/08. A CP 06, com cidade sem loja, fez 19 leads e zero avanço. Uma versão por praça, e o público de vídeo criado marcando essas peças.</p>
+        <p class="method"><b>Item 04</b>Risco B2C: o balcão atrai quem quer pedir. A primeira frase precisa falar de dono, não de cliente, senão a peça vira anúncio de loja.</p>
+      </article>
+      <article class="card">
+        <div class="card-top"><span class="chip k4">Camada 4</span><span class="chip fmt">vídeo · depoimento</span><span class="chip st-data">dado de CRM</span></div>
+        <h4>Preço e giro nos primeiros três segundos</h4>
+        <p class="angle">"R$ 359 mil numa loja de comida saudável. Isso tem saída?"</p>
+        <div class="hook"><span class="label">Gancho verbal · prova</span><p>"Investimento a partir de R$ 359 mil. Agora olha o painel de pedidos."</p></div>
+        <div class="hook"><span class="label">Gancho visual</span><p>Outro franqueado, dentro da loja dele, com o painel de retirada no quadro, como no AD14 (691 pedidos).</p></div>
+        <p class="src"><b>Fonte:</b> CRM 10/09. A hipótese de que a copy com preço qualifica mais já está em teste limpo no AD14. Esta pauta é a segunda munição com a mesma estrutura, com outro rosto. Circuito fechado aqui: o próximo export mostra se ela anda.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="client">
+    <div class="client-head"><h3>Açaí Fruit Show Franquias</h3><span class="mono">act_835633356015496 · R$ 270 mil · circuito parcial</span></div>
+    <p class="hole"><b>Buraco</b>CP 09 [EXPANSÃO] com 2 anúncios e 0 cadastro. O lead errado de agosto veio da promessa de sonhador ("abriram sem experiência"). Já o hook de dor de quem opera (margem, ponto, custo fixo) filtrou. 52% das unidades são de quem já era franqueado.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top"><span class="chip k4">Camada 4</span><span class="chip fmt">vídeo · franqueada multiunidade</span><span class="chip st-hip">hipótese</span></div>
+        <h4>O sócio que não trabalha</h4>
+        <p class="angle">"Já pago royalty todo mês na franquia que tenho. Mais uma, mais um sócio?"</p>
+        <div class="hook"><span class="label">Gancho verbal · contradição</span><p>"Quem já tem franquia sabe quanto pesa o royalty sobre o faturamento todo mês. Aqui não tem."</p></div>
+        <div class="hook"><span class="label">Gancho visual</span><p>Uma franqueada com mais de uma unidade, no balcão da loja mais movimentada dela.</p></div>
+        <p class="src"><b>Fonte:</b> a nota da conta ("sem royalties" é o argumento econômico que merece teste como mecanismo único) e a lista de franqueados de 08/08. Payback de 12 meses fica fora da copy (item 12).</p>
+        <p class="method"><b>Antes da Verba</b>O comercial reclamou do lead em 02/09 e o tempo até a Gleice ligar nunca foi medido. Rodar o bloco C (C1: três mensagens cronometradas) antes de gravar: se o atendimento reprova, nenhum criativo resolve.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="client">
+    <div class="client-head"><h3>Cheirin Bão MT</h3><span class="mono">act_884652616778712 · território Gestor A · circuito parcial</span></div>
+    <p class="hole"><b>Buraco</b>Banco com 0 ângulo novo (mínimo 2). A próxima ação é mandar o Matéria-Prima pro comercial. Enquanto isso, existe um sinal de CRM que ainda não virou pauta.</p>
+    <p class="done">Já em produção: A01 militar ([PINOS] WILTON MILITAR, V1/V2/V3 entregues em 14/09).</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top"><span class="chip k4">Camada 4</span><span class="chip fmt">vídeo · depoimento</span><span class="chip st-data">dado de CRM</span><span class="chip st-hip">objeção a validar</span></div>
+        <h4>Da carteira assinada ao balcão, com outro rosto</h4>
+        <p class="angle">"Tenho CLT. Dá pra largar o salário garantido?"</p>
+        <div class="hook"><span class="label">Gancho verbal · identificação</span><p>"Eu tinha carteira assinada e medo de largar."</p></div>
+        <div class="hook"><span class="label">Gancho visual</span><p>Franqueado(a) atrás do balcão, olhando pra câmera na primeira frase.</p></div>
+        <p class="src"><b>Fonte:</b> ranking do CRM de 25/08. "Lookalike franqueada-clt" qualifica 50% (7 de 14). Pela tabela §5 do prompt de análise, quando o conceito está validado, você varia o ator e mantém o ângulo. Na copy, "a partir de R$ 300 mil", o número do anúncio de 14/09.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="client">
+    <div class="client-head"><h3>Facilmart</h3><span class="mono">act_1294244655407947 · R$ 58 mil · régua de ticket baixo · circuito aberto</span></div>
+    <p class="hole"><b>Buraco</b>O fundo funciona (CP 03 quente, 216 cadastros; indicação em condomínio, 66). A camada 2 não aquece: 2 anúncios, 0 cadastro, e um deles é vídeo baixado do Instagram.</p>
+  </div>
+  <div class="script">
+    <div class="script-head">
+      <span class="label">Roteiro pronto pra gravar · hipótese</span>
+      <h4>Quem cuida da loja sem funcionário</h4>
+      <p class="mono">PEÇA: AD03 [BASTIDOR] [VIDEO] quem cuida da loja autônoma</p>
+      <p class="src">Ângulo: "loja autônoma parece loja sozinha" · Camada 2 · Nível 3 · 30-40s · <b>Fonte:</b> a LP ("100% autônoma"; "não é para quem busca lucro rápido sem gestão"). A objeção ainda não foi confirmada pela franqueadora.</p>
+    </div>
+    <div class="tc">
+      <div><span class="t"><b>GANCHO</b>0-3s</span><div><p><strong>Visual:</strong> a loja sem ninguém atrás do balcão, um morador pagando sozinho no autoatendimento.</p><p><strong>Verbal:</strong> "Essa loja não tem funcionário. Então quem cuida dela?"</p></div></div>
+      <div><span class="t"><b>CONEXÃO</b>3-12s</span><p>"É a primeira pergunta de quem conhece o modelo. Loja autônoma parece loja sozinha. E não é."</p></div>
+      <div><span class="t"><b>MECANISMO</b>12-30s</span><p>Franqueado(a) repondo a gôndola e conferindo o estoque. "O cliente compra sozinho. O que a loja pede de você é gestão: repor, acompanhar, cuidar do ponto." <span class="gap">confirmar com a franqueadora como e com que frequência é a reposição</span></p></div>
+      <div><span class="t"><b>FECHO</b>30-40s</span><p>"Não é pra quem busca lucro rápido sem gestão. É pra quem gosta de processo." Camada 2, então sem CTA. O faturamento médio fica fora da peça.</p></div>
+    </div>
+    <div class="variants">
+      <div class="variant"><span class="label">V1 · ângulo puro</span>
+        <div class="field"><span>Texto principal</span><p>Loja sem funcionário não é loja sozinha. O cliente compra sozinho. A gestão é sua.</p></div>
+        <div class="field"><span>Título (28/40)</span><p>Quem cuida da loja autônoma?</p></div>
+        <div class="field"><span>Descrição (9/30)</span><p>Facilmart</p></div>
+      </div>
+      <div class="variant"><span class="label">V2 · convite leve</span>
+        <div class="field"><span>Texto principal</span><p>Loja sem funcionário não é loja sozinha. Veja como funciona a conveniência autônoma em condomínio.</p></div>
+        <div class="field"><span>Título (26/40)</span><p>Conheça o modelo Facilmart</p></div>
+        <div class="field"><span>Descrição (21/30)</span><p>Conveniência autônoma</p></div>
+      </div>
+      <div class="variant"><span class="label">V3 · autoridade e prova</span>
+        <div class="field"><span>Texto principal</span><p>Franquia de conveniência autônoma a partir de R$ 58 mil. Não é pra quem busca lucro rápido sem gestão.</p></div>
+        <div class="field"><span>Título (26/40)</span><p>Verifique Sua Região Agora</p></div>
+        <div class="field"><span>Descrição (21/30)</span><p>A partir de R$ 58 mil</p></div>
+      </div>
+    </div>
+    <div class="gate"><span class="label">Pendências do portão · Vale o scroll?</span>
+      <ul>
+        <li><span class="mono">01</span> O bloco do mecanismo só passa se a rotina de reposição for real. Confirmar com a franqueadora antes de gravar.</li>
+        <li><span class="mono">06</span> Estágio definido: camada 2, então só a V1 roda agora. V2 e V3 ficam pra quando a peça descer pro quente.</li>
+        <li><span class="mono">07</span> Público de topo ou engajamento, nunca o quente do CP 03.</li>
+        <li><span class="mono">12</span> Varrer narração e letreiro: nada de "R$ 22 mil por mês" nem "lucro de 25%".</li>
+        <li><span class="mono">13</span> Público novo com M na frente.</li>
+      </ul></div>
+  </div>
+
+  <div class="client">
+    <div class="client-head"><h3>Ponto Alpha · Sou Coluna · Bem Querer</h3><span class="mono">sem pauta de gravação por enquanto</span></div>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top"><span class="chip fmt">Ponto Alpha</span><span class="chip st-wait">circuito primeiro</span></div>
+        <h4>Um criativo carrega R$ 4.614</h4>
+        <p>Pela pergunta 2, a pendência número um é a classificação dos 67 leads de 04 a 10/09 (CPL R$ 24). Se o lead barato não anda, a próxima peça tem outro ângulo; se anda, é variação do mesmo vídeo.</p>
+        <p class="src"><b>Fonte:</b> histórico de 11/09 e a sync de hoje.</p>
+      </article>
+      <article class="card">
+        <div class="card-top"><span class="chip k4">Camada 4</span><span class="chip fmt">Sou Coluna</span><span class="chip st-hip">hipótese de LP</span></div>
+        <h4>Pra quando a conta voltar</h4>
+        <p class="angle">"Não sou da área da saúde. Isso me impede?"</p>
+        <p class="src"><b>Fonte:</b> a LP diz que conhecimento técnico prévio não é indispensável e o treinamento supre. Sem anúncio ativo no painel: confirmar se a conta está parada de propósito. A Bem Querer também está sem anúncio e sem dado pra pauta.</p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ CONSTRUTORA ============================ -->
+<div class="niche" id="construtora">
+  <div class="niche-head">
+    <span class="label">Nicho</span>
+    <h2>Construtora MCMV</h2>
+    <p>Aqui a camada 3 não é o fundador, é a casa (17 anos, mais de 6.800 chaves). O filtro de renda é o próprio criativo. É também a única conta em que o Facebook sai mais barato que o Instagram (feed R$ 36,95 contra R$ 48,71). Os itens 05 e 11 do checklist são de franquia: aqui o CTA é simular, não verificar região.</p>
+  </div>
+  <div class="client">
+    <div class="client-head"><h3>AP Ponto</h3><span class="mono">act_1043516946010441 · avaliar por venda, nunca por CPL · circuito fechado</span></div>
+    <p class="hole"><b>Buraco</b>O Belo ativa em 19/09 e não tem peça. O AD01 LEO dos 17 anos, no Direct, está com frequência 2,51: troque só o gancho e mantenha o corpo. A produção de UGC é o gargalo desde 19/08.</p>
+    <p class="done">Já feito, não repetir: Seis Peças (Ingrid "a chave é de verdade", Cintia "últimas seis", Vivi "adeus aluguel", "o segundo apartamento", cliente real "eu já peguei a minha", carrossel 17 anos).</p>
+  </div>
+  <div class="script">
+    <div class="script-head">
+      <span class="label">Roteiro pronto pra gravar · Belo, lançamento</span>
+      <h4>A parcela, não a renda</h4>
+      <p class="mono">PEÇA: AD07 [PARCELA] [VIDEO UGC] belo quanto cabe</p>
+      <p class="src">Ângulo: "acho que não ganho o suficiente pra financiar" · Camada 1 · Nível 3 · 30-45s · <b>Fonte:</b> a LP do Belo (R$ 250 mil; parcela Caixa de R$ 1.337 em 420 meses), a regra dos 30% (enquadra com cerca de R$ 4.500) e a sua decisão de 08/09 de falar da parcela. Composição de renda: 70% das vendas têm alguém ajudando (briefing de 07/08).</p>
+    </div>
+    <div class="tc">
+      <div><span class="t"><b>GANCHO</b>0-3s</span><div><p><strong>Visual:</strong> a pessoa segurando o celular com o comprovante do Pix do aluguel na tela.</p><p><strong>Verbal:</strong> "Quanto você paga de aluguel hoje? Guarda esse número."</p></div></div>
+      <div><span class="t"><b>CONEXÃO</b>3-12s</span><p>"Muita gente acha que precisa ganhar muito pra financiar. Mas o banco olha outra coisa: quanto da sua renda a parcela ocupa. Até 30%."</p></div>
+      <div><span class="t"><b>MECANISMO</b>12-30s</span><p>"No Belo, a parcela começa em R$ 1.337 na simulação da Caixa, em 420 meses. É a conta de quem tem renda familiar a partir de uns R$ 4.500. E renda familiar pode somar com quem mora com você."</p></div>
+      <div><span class="t"><b>PROVA + CTA</b>30-45s</span><p>"17 anos e mais de 6.800 chaves entregues. Toca em simular e vê a sua parcela."</p></div>
+    </div>
+    <div class="variants">
+      <div class="variant"><span class="label">V1 · ângulo puro</span>
+        <div class="field"><span>Texto principal</span><p>Quanto você paga de aluguel hoje? No Belo, a parcela começa em R$ 1.337 na simulação da Caixa.</p></div>
+        <div class="field"><span>Título (35/40)</span><p>Belo · parcela a partir de R$ 1.337</p></div>
+        <div class="field"><span>Descrição (19/30)</span><p>Lançamento AP Ponto</p></div>
+      </div>
+      <div class="variant"><span class="label">V2 · convite leve</span>
+        <div class="field"><span>Texto principal</span><p>O banco olha quanto a parcela ocupa da renda, e dá pra somar a renda de quem mora com você.</p></div>
+        <div class="field"><span>Título (30/40)</span><p>Veja se o Belo cabe no seu mês</p></div>
+        <div class="field"><span>Descrição (25/30)</span><p>Simulação sem compromisso</p></div>
+      </div>
+      <div class="variant"><span class="label">V3 · autoridade e prova</span>
+        <div class="field"><span>Texto principal</span><p>17 anos e mais de 6.800 chaves entregues. Belo: parcela a partir de R$ 1.337 (simulação Caixa, 420 meses).</p></div>
+        <div class="field"><span>Título (26/40)</span><p>Simule sua parcela do Belo</p></div>
+        <div class="field"><span>Descrição (18/30)</span><p>AP Ponto · 17 anos</p></div>
+      </div>
+    </div>
+    <div class="gate"><span class="label">Pendências do portão · Vale o scroll? e Antes da Verba</span>
+      <ul>
+        <li><span class="mono">02</span> O número que a pessoa repete pro cônjuge é a parcela. Ela precisa aparecer escrita na tela, não só falada.</li>
+        <li><span class="mono">12</span> Parcela é simulação, não promessa: "sujeito à análise de crédito" na legenda ou no letreiro final. Confirmar preço e parcela com a construtora (saíram do rascunho da LP de 08/09).</li>
+        <li><span class="mono">A3</span> Prova alcançável em dois toques: a LP do Belo precisa ter GTM e pixel antes do dia 19, e contato no <span class="mono">simulation-form</span>.</li>
+        <li>Verificação do anunciante: sem ela, qualquer update com geo é recusado (subcode 3858634). Nada de subsídio MCMV no texto: a AP Ponto é Faixa 3.</li>
+      </ul></div>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="card-top"><span class="chip k2">Camada 2</span><span class="chip fmt">série mensal · Reels</span><span class="chip st-data">dado do orgânico</span></div>
+      <h4>Evolução de Obras, um por empreendimento</h4>
+      <p class="angle">"Isso vai ficar pronto mesmo?"</p>
+      <div class="hook"><span class="label">Gancho verbal · demonstração</span><p>"No mês passado, aqui era só estrutura."</p></div>
+      <div class="hook"><span class="label">Gancho visual</span><p>O mesmo enquadramento da obra, antes e agora, lado a lado.</p></div>
+      <p class="src"><b>Fonte:</b> análise do Instagram de 21/08. Tem menos curtida que entrega de chaves e muito mais comentário com intenção de compra ("qual valor?", "e a entrada?"), boa parte sem resposta.</p>
+      <p class="method"><b>Antes da Verba · C1</b>Comentário de compra sem resposta há semanas é atendimento reprovado no orgânico. Quem responde tem que estar definido antes de a série virar anúncio.</p>
+    </article>
+    <article class="card">
+      <div class="card-top"><span class="chip k4">Camada 4</span><span class="chip fmt">vídeo UGC · casal ou família</span><span class="chip st-data">dado de venda</span></div>
+      <h4>Você não precisa comprovar sozinho</h4>
+      <p class="angle">"Minha renda sozinha não passa."</p>
+      <div class="hook"><span class="label">Gancho verbal · identificação</span><p>"A gente só conseguiu quando somou as duas rendas."</p></div>
+      <div class="hook"><span class="label">Gancho visual</span><p>Duas pessoas abrindo a porta do apartamento com a mesma chave.</p></div>
+      <p class="src"><b>Fonte:</b> 70% das vendas são "um cliente com outro ajudando" (briefing de 07/08). É o ângulo de recuperação da proposta que ainda não virou peça. Com o circuito fechado, os motivos de perda do Sales dizem se a composição de renda é mesmo onde o lead trava.</p>
+    </article>
+  </div>
+</div>
+
+<!-- ============================ HOSPEDAGEM ============================ -->
+<div class="niche" id="hospedagem">
+  <div class="niche-head">
+    <span class="label">Nicho</span>
+    <h2>Hospedagem alto padrão</h2>
+    <p>O tom é poético e sensorial, nunca ostentoso. Frase nova só entra depois de aprovada. O preço qualifica na porta, pelas mensagens de boas-vindas: é a triagem antes do atendimento que o Circuito Fechado aponta como buraco 1, e aqui ela já roda. O destino WhatsApp é decisão de auditoria: o site não mostrava de onde vinham os cadastros. Nesta conta, conversa barata também é alerta: foram R$ 2,41 por conversa e 2 aluguéis.</p>
+  </div>
+  <div class="client">
+    <div class="client-head"><h3>Casa de Vidro Paraty</h3><span class="mono">act_792396727164193 · a partir de R$ 10 mil a diária · circuito parcial</span></div>
+    <p class="hole"><b>Buraco</b>Um vídeo só ("A IA não vai substituir isso" V3) roda nos 4 conjuntos da GEO-PIN, com frequência 2,07 e subindo. O teste é de público, então criativo novo espera a leitura de 16/09.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top"><span class="chip k3">Camada 3</span><span class="chip fmt">vídeo · gastronomia e serviço</span><span class="chip st-hip">hipótese</span><span class="chip st-wait">frase aguardando aprovação</span></div>
+        <h4>Casa inteira, e ninguém vai pra cozinha</h4>
+        <p class="angle">"Uma casa inteira é ótimo. Mas quem cozinha? Quem arruma?"</p>
+        <div class="hook"><span class="label">Letreiro (aprovado em 21/08)</span><p>"Vocês só chegam. A casa cuida de todo o resto."</p></div>
+        <div class="hook"><span class="label">Gancho visual</span><p>O chef servindo à mesa, com a baía ao fundo. O vídeo de gastronomia da Experiência Instantânea já existe.</p></div>
+        <p class="src"><b>Fonte:</b> a sua correção de 25-26/08 (a copy era lida como suíte de pousada). Deixar claro que é casa inteira cria a pergunta seguinte, sobre o serviço. É inferência, não fala de hóspede. A fonte certa é a sua coleta: o que o hóspede pergunta no WhatsApp depois de ver o preço.</p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ MÓVEIS ============================ -->
+<div class="niche" id="moveis">
+  <div class="niche-head">
+    <span class="label">Nicho</span>
+    <h2>Móveis</h2>
+    <p>Aqui a conversa é o comercial: quem responde o Direct ouve a objeção antes de qualquer planilha. Desygn é alto padrão assinado. QualyFibras é do mesmo dono, mas não é premium e não usa essa linguagem.</p>
+  </div>
+  <div class="client">
+    <div class="client-head"><h3>Desygn Móveis</h3><span class="mono">act_982771069275570 · teto R$ 30 por contato · circuito aberto</span></div>
+    <p class="hole"><b>Buraco</b>O quente de Direct está em frequência 2,57. Das 9 campanhas ativas, 7 são impulsionamentos de post.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top"><span class="chip k2">Camada 2</span><span class="chip fmt">vídeo · demonstração</span><span class="chip st-hip">hipótese</span></div>
+        <h4>Sentar sem sentar</h4>
+        <p class="angle">"Nunca sentei nessa cadeira. Como sei que é confortável?"</p>
+        <div class="hook"><span class="label">Gancho verbal · demonstração</span><p>"Você nunca sentou nessa cadeira. Então olha isso."</p></div>
+        <div class="hook"><span class="label">Gancho visual</span><p>Close da trama da corda cedendo com o peso de quem senta. Depois, o corpo relaxando no encosto.</p></div>
+        <p class="src"><b>Fonte:</b> a Desygn atende o Brasil todo pelo Direct, sem filtro de cidade, então muitos compradores nunca veem a peça ao vivo. Validar com as 4 vendedoras do rodízio.</p>
+        <p class="method"><b>Item 03</b>Troque o logo: close de trama e peso real só funciona com a peça dela. Passa. Um post de ambiente bonito, não.</p>
+      </article>
+      <article class="card">
+        <div class="card-top"><span class="chip k1">Camada 1</span><span class="chip fmt">QualyFibras · post</span><span class="chip st-hip">hipótese</span></div>
+        <h4>O design que navega</h4>
+        <p class="angle">"Quero uma varanda bonita sem pagar o preço de loja assinada."</p>
+        <p class="src"><b>Fonte:</b> na conta, "Silhueta que navega" fez 28 cadastros e "Com tecido impermeável" fez 0. A forma atraiu mais que o atributo. A amostra é pequena. Não usar vocabulário de alto padrão.</p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ B2B ============================ -->
+<div class="niche" id="b2b">
+  <div class="niche-head">
+    <span class="label">Nicho</span>
+    <h2>Indústria B2B · Grupo TFS</h2>
+    <p>O comprador é dono de açaiteria, sorveteria ou distribuidora. Os anúncios que já rodam mostram que o ângulo de dor vem pronto no título ("Se você tem um freezer", "Nem toda calda entrega"). O que falta é vídeo, e o dado de quem comprou.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="card-top"><span class="chip k4">Camada 4</span><span class="chip fmt">AFS Indústria · vídeo por praça</span><span class="chip st-hip">hipótese</span><span class="chip st-block">sem cartão</span></div>
+      <h4>O revendedor da praça</h4>
+      <p class="angle">"Quero só um fornecedor, e que ele entregue aqui."</p>
+      <div class="hook"><span class="label">Gancho visual</span><p>Um revendedor real de Porto Seguro ou de Jequié abrindo o freezer abastecido.</p></div>
+      <p class="src"><b>Fonte:</b> "VD - SE VOCÊ TEM UM FREEZER" e "VC QUER SÓ UM FORNECEDOR" nas duas praças (122 e 74 cadastros). Bloqueio: o cartão foi removido em 09/09, e a API recusa criar anúncio.</p>
+    </article>
+    <article class="card">
+      <div class="card-top"><span class="chip k1">Camada 1</span><span class="chip fmt">Saborazzi · demonstração</span><span class="chip st-hip">hipótese</span></div>
+      <h4>A calda no copo de verdade</h4>
+      <p class="angle">"Calda é tudo igual."</p>
+      <div class="hook"><span class="label">Gancho visual</span><p>A calda escorrendo no copo montado, ao lado de uma calda comum, no mesmo tempo.</p></div>
+      <p class="src"><b>Fonte:</b> "NEM TODA CALDA ENTREGA" já roda como contradição, mas em card. Dos 8 anúncios, só 1 é vídeo (creme de avelã).</p>
+    </article>
+    <article class="card">
+      <div class="card-top"><span class="chip k1">Camada 1</span><span class="chip fmt">TrendPel · primeiro vídeo</span><span class="chip st-hip">hipótese</span></div>
+      <h4>O pote quente que chega inteiro</h4>
+      <p class="angle">"Embalagem é custo, não venda."</p>
+      <div class="hook"><span class="label">Gancho visual</span><p>O pote cheio, quente, virado de lado sem vazar.</p></div>
+      <p class="src"><b>Fonte:</b> são 13 anúncios ativos, todos cards estáticos, e "POTES QUENTES" e "EMBALAGEM TAMBÉM VENDE" já estão entre eles. Converter em vídeo a promessa que já está no ar.</p>
+    </article>
+  </div>
+</div>
+
+<!-- ============================ VAREJO ============================ -->
+<div class="niche" id="varejo">
+  <div class="niche-head">
+    <span class="label">Nicho</span>
+    <h2>Loja local</h2>
+    <p>O buraco 2 do Circuito Fechado mora aqui: o circuito fecha na primeira compra, e ninguém fala com quem já comprou. Pelo Inventário de Promessas, a recompra se constrói em versão 1, sem automação, num cliente piloto de varejo, e só vira oferta depois de medida.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="card-top"><span class="chip k4">Camada 4</span><span class="chip fmt">lojas AFS · recompra v1</span><span class="chip st-hip">hipótese</span></div>
+      <h4>O pedido de sempre</h4>
+      <p class="angle">"Já conheço. Não lembro de voltar."</p>
+      <div class="hook"><span class="label">Gancho verbal</span><p>"O seu pedido de sempre continua no cardápio."</p></div>
+      <p class="src"><b>Fonte:</b> Circuito Fechado (buraco 2) e Inventário de Promessas (recompra v1). Público: engajou com o perfil nos últimos 180 dias. Destino: o cardápio web que a Cidade Nova prefere desde 11/09. Uma loja piloto, não a rede inteira.</p>
+      <p class="method"><b>Não prometer</b>Recompra ainda não tem caso feito. Até medir na loja piloto, entra como teste, não como serviço.</p>
+    </article>
+    <article class="card">
+      <div class="card-top"><span class="chip k3">Camada 3</span><span class="chip fmt">lojas AFS · história da loja</span><span class="chip st-data">dado da conta</span></div>
+      <h4>O aniversário como formato fixo</h4>
+      <p class="angle">"É só mais uma açaiteria."</p>
+      <p class="src"><b>Fonte:</b> "AD01 - Aniversario Teixeira" é o único anúncio de loja com cadastro no período (5). Repetir a estrutura nas lojas que fazem aniversário no trimestre.</p>
+    </article>
+    <article class="card">
+      <div class="card-top"><span class="chip k2">Camada 2</span><span class="chip fmt">Cheirin Lojas · por praça</span><span class="chip st-hip">hipótese</span></div>
+      <h4>A loja do seu bairro tem dono</h4>
+      <p class="angle">"Cafeteria de rede é tudo igual."</p>
+      <div class="hook"><span class="label">Gancho visual</span><p>O franqueado da loja abrindo a porta de manhã.</p></div>
+      <p class="src"><b>Fonte:</b> a campanha já tem um conjunto por praça pra prestar contas ao franqueado. Uma peça com o rosto de cada praça aproveita a estrutura que existe.</p>
+    </article>
+  </div>
+</div>
+
+<section id="coleta">
+  <div class="q-head"><span class="label">Contrato de dados</span><h2>Onde buscar ângulo de verdade</h2></div>
+  <p class="intro">Hipótese enche a pauta. Só o comercial enche o banco. Pela Sala de Máquinas, as seis perguntas por mês são uma das três dívidas do cliente, não um favor. Mande o <a href="https://claude.ai/code/artifact/a54c0fb3-85f2-4cb7-9b67-883e94f38af0">Matéria-Prima</a> pra quem tem a conversa com o lead:</p>
+  <p class="rule"><b>A regra do Matéria-Prima:</b> resposta com a frase dele, não com a tradução. "Sem capital no momento" não vira nada. "Eu tenho o dinheiro, mas não posso sair do meu trabalho agora" vira vídeo na mesma semana.</p>
+  <div class="collect">
+    <div><b>Cheirin Bão</b><p>Comercial da franqueadora. Banco zerado, primeira da fila.</p></div>
+    <div><b>Boali</b><p>Daniel (reuniões). O circuito já fecha: falta só a frase.</p></div>
+    <div><b>Açaí Fruit Show</b><p>Gleice, junto com a auditoria do bloco C.</p></div>
+    <div><b>Kascão</b><p>A entrevista do fundador acima já cobre metade das 6 perguntas.</p></div>
+    <div><b>Desygn</b><p>As 4 vendedoras: as 10 perguntas que mais aparecem no Direct.</p></div>
+    <div><b>Ponto Alpha</b><p>A classificação dos 67 leads antes de qualquer peça.</p></div>
+    <div><b>Casa de Vidro</b><p>Você mesma: o que o hóspede pergunta depois de ver o preço.</p></div>
+    <div><b>AP Ponto</b><p>Os motivos de perda no CV CRM, que já existem pelo Sales.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Fontes:</strong> anúncios ativos e frequência pela sync do FlowTraffic de 14/09/2026 (últimos 30 dias, frequência máxima por anúncio); <span class="mono">meta-ads-ratos/historico.md</span> até 14/09; <span class="mono">contas.yaml</span>; skill <span class="mono">conteudo</span> e banco de ângulos; <span class="mono">materia-prima.html</span>; <span class="mono">checklist-vale-o-scroll.html</span>; <span class="mono">metodo/</span> (Circuito Fechado, Sala de Máquinas, Antes da Verba, Inventário de Promessas); skills <span class="mono">franquia</span> e <span class="mono">casa-de-vidro-paraty</span>; <span class="mono">prompt-analise-criativo.md</span>.</p>
+  <p>O estado do circuito vem do que está registrado no histórico, não de consulta ao CRM. Nenhum ângulo foi gravado em <span class="mono">conteudo/angulos/</span>: hipótese só vira ângulo "novo" depois que o comercial confirmar a frase.</p>
+</footer>
+
+</div>

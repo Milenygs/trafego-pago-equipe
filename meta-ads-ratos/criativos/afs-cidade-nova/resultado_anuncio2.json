@@ -1,0 +1,27 @@
+{
+  "creative_id": "1703280530972480",
+  "ad_id": "120249315823930726",
+  "nome": "AD02 - BANANA E MORANGO [VIDEO]",
+  "video_id": "1469796078344074",
+  "variante": "A",
+  "link": "https://app.cardapioweb.com/acaifruitshow",
+  "checks": {
+    "botao_pedir_agora": true,
+    "link_cardapio": true,
+    "ig_da_loja": true,
+    "ia_desligada": true,
+    "recursos_opt_out": 83,
+    "anuncio_pausado": true,
+    "previews": {
+      "INSTAGRAM_STANDARD": true,
+      "INSTAGRAM_STORY": true,
+      "INSTAGRAM_REELS": true
+    }
+  },
+  "anuncio": {
+    "name": "AD02 - BANANA E MORANGO [VIDEO]",
+    "status": "PAUSED",
+    "effective_status": "IN_PROCESS",
+    "id": "120249315823930726"
+  }
+}

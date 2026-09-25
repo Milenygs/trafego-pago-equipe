@@ -1,0 +1,354 @@
+<title>Tutoriais do Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F4F6F7; --surface:#FFFFFF; --ink:#172026; --muted:#56646B; --line:#D9E0E3; --soft:#EAF0F1;
+  --accent:#0E7490; --accent-soft:#DDF0F4; --warn:#9A5B00; --warn-soft:#F7EBD7; --ok:#2E6B45;
+  --display:"Sora","Segoe UI",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#10171B; --surface:#172127; --ink:#E3EAED; --muted:#98A7AE; --line:#28353C; --soft:#1D2A30;
+    --accent:#4FC3DA; --accent-soft:#16323A; --warn:#E3A84E; --warn-soft:#2E2515; --ok:#7CC69C;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#10171B; --surface:#172127; --ink:#E3EAED; --muted:#98A7AE; --line:#28353C; --soft:#1D2A30;
+  --accent:#4FC3DA; --accent-soft:#16323A; --warn:#E3A84E; --warn-soft:#2E2515; --ok:#7CC69C;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;padding-inline:18px;padding-block:0 72px}
+.wrap{max-width:980px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.15;text-wrap:balance}
+p{margin:0}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+header{padding-block:40px 24px;display:grid;gap:12px}
+header h1{font-size:clamp(30px,5vw,44px);font-weight:700}
+.lede{max-width:66ch;font-size:17px;color:var(--muted)}
+.lede strong{color:var(--ink)}
+
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:8px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:grid;gap:8px;align-content:start}
+.panel h2{font-size:17px}
+.panel ol,.panel ul{margin:0;padding-left:20px;display:grid;gap:5px;font-size:15px}
+.panel b{font-weight:600}
+.panel.warn{background:var(--warn-soft);border-color:transparent}
+.panel.warn h2{color:var(--warn)}
+
+nav.index{display:flex;flex-wrap:wrap;gap:8px;margin-block:28px 8px}
+nav.index a{font-size:14px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+nav.index a span{font-family:var(--mono);color:var(--accent);margin-right:6px}
+
+.video{margin-top:40px;display:grid;gap:14px}
+.video-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.video-head .num{font-family:var(--mono);font-size:13px;color:var(--accent)}
+.video-head h2{font-size:24px;margin-top:2px}
+.video-head .meta{font-size:14px;color:var(--muted);margin-top:4px}
+.copy-all{background:var(--accent);color:#fff;border:0;border-radius:6px;padding:8px 14px;font-weight:600;font-size:14px}
+:root:not([data-theme="light"]) .copy-all{color:#0B1316}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .copy-all{color:#fff}}
+:root[data-theme="light"] .copy-all{color:#fff}
+.goal{font-size:15px;color:var(--muted);max-width:72ch}
+
+.scenes{display:grid;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.scene{display:grid;grid-template-columns:44px minmax(0,1fr) minmax(0,1.35fr);border-top:1px solid var(--line)}
+.scene:first-child{border-top:0}
+.scene .n{font-family:var(--mono);font-size:13px;color:var(--muted);padding:14px 0 14px 14px}
+.scene .screen{padding:14px 16px;border-right:1px solid var(--line);font-size:15px;display:grid;gap:4px;align-content:start}
+.scene .screen .label{color:var(--accent)}
+.scene .say{padding:14px 16px;display:grid;gap:8px;align-content:start;background:var(--soft)}
+.scene .say p{font-size:16px}
+.say-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.copy{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:5px;padding:3px 10px;font-size:13px}
+.copy.done{border-color:var(--ok);color:var(--ok)}
+.tip{font-size:13.5px;color:var(--warn)}
+.ui{font-weight:600}
+
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);display:grid;gap:6px}
+
+@media (max-width:720px){
+  .scene{grid-template-columns:34px minmax(0,1fr)}
+  .scene .screen{border-right:0}
+  .scene .say{grid-column:1 / -1}
+  .scene .n{padding-left:10px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header>
+  <span class="label">FlowTraffic · roteiro de gravação</span>
+  <h1>Tutoriais do Portal</h1>
+  <p class="lede">Seis vídeos curtos pra orientar o cliente. <strong>Grave a tela em silêncio</strong> seguindo a coluna "Na tela" e parando 2 segundos em cada cena. Depois gere a voz no Clipchamp com a coluna "Narração".</p>
+
+  <div class="how">
+    <section class="panel warn">
+      <h2>Antes de gravar</h2>
+      <ol>
+        <li><b>Publique</b> a versão nova no Lovable. O vídeo 6 depende do Roteiro e das Variantes nas pautas.</li>
+        <li>Na Pauta de Conteúdo da AP Ponto, passe <b>uma pauta para Aprovado</b> e ligue <b>Visível para o cliente</b>. Sem isso, a tela do cliente fica vazia.</li>
+        <li>Confirme com a AP Ponto que os números deles podem aparecer, ou tape valores e nomes na edição.</li>
+        <li>Abra uma <b>janela anônima</b> (Ctrl + Shift + N) e entre com o login de demonstração.</li>
+        <li>Ative o <b>Não perturbe</b> do Windows, feche o WhatsApp e deixe o navegador em <b>tela cheia</b> (F11).</li>
+      </ol>
+    </section>
+    <section class="panel">
+      <h2>Voz de IA no Clipchamp</h2>
+      <ol>
+        <li>Importe a gravação e arraste pra linha do tempo.</li>
+        <li>No menu da esquerda, abra <b>Gravar e criar → Texto para fala</b>.</li>
+        <li>Escolha o idioma <b>Português (Brasil)</b> e uma voz. Deixe a velocidade entre 0,9 e 1,0.</li>
+        <li>Cole a narração de <b>uma cena</b>, gere, e posicione o áudio no início daquela cena.</li>
+        <li>Repita cena a cena. Um áudio por cena facilita acertar o tempo com os cliques.</li>
+        <li>Ligue as <b>legendas automáticas</b> e exporte em 1080p.</li>
+      </ol>
+    </section>
+  </div>
+
+  <nav class="index" aria-label="Vídeos">
+    <a href="#v1"><span>1</span>Primeiro acesso</a>
+    <a href="#v2"><span>2</span>Dashboard</a>
+    <a href="#v3"><span>3</span>Quando os cadastros chegam</a>
+    <a href="#v4"><span>4</span>Criativos</a>
+    <a href="#v5"><span>5</span>Diário de Ações</a>
+    <a href="#v6"><span>6</span>Pauta e Análises</a>
+  </nav>
+</header>
+
+<!-- VIDEO 1 -->
+<section class="video" id="v1" data-video>
+  <div class="video-head">
+    <div><div class="num">Vídeo 1 · ~1 min</div><h2>Primeiro acesso</h2><div class="meta">Tela de login → Dashboard → menu lateral</div></div>
+    <button class="copy-all" type="button" data-copy-all>Copiar narração inteira</button>
+  </div>
+  <p class="goal">Objetivo: o cliente entra sozinho e sabe onde fica cada área.</p>
+  <div class="scenes">
+    <div class="scene"><span class="n">1</span>
+      <div class="screen"><span class="label">Na tela</span><p>Tela de login do flowtraffic.com.br, parada.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Este é o seu painel de resultados. Tudo o que acontece nos seus anúncios aparece aqui, sem você precisar configurar nada.</p></div></div>
+    <div class="scene"><span class="n">2</span>
+      <div class="screen"><span class="label">Na tela</span><p>Digite o e-mail e a senha.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Para entrar, use o e-mail e a senha que você recebeu no WhatsApp.</p></div></div>
+    <div class="scene"><span class="n">3</span>
+      <div class="screen"><span class="label">Na tela</span><p>Marque <span class="ui">Lembrar meus dados</span> e clique em <span class="ui">Entrar</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Marque Lembrar meus dados, para não precisar digitar de novo, e clique em Entrar. Se um dia esquecer a senha, é só chamar a gente no WhatsApp.</p></div></div>
+    <div class="scene"><span class="n">4</span>
+      <div class="screen"><span class="label">Na tela</span><p>Dashboard aberto. Passe o mouse devagar pelos itens do menu: <span class="ui">Dashboard, Diário de Ações, Criativos, Pauta de Conteúdo, Análises</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Pelo menu à esquerda você navega entre as áreas: Dashboard, Diário de Ações, Criativos, Pauta de Conteúdo e Análises. Nos próximos vídeos, a gente passa por cada uma delas.</p></div></div>
+    <div class="scene"><span class="n">5</span>
+      <div class="screen"><span class="label">Na tela</span><p>Mostre <span class="ui">Links úteis</span> (se a conta tiver) e o botão <span class="ui">Sair</span>, no pé do menu.</p><p class="tip">Sem links cadastrados, a seção não aparece: corte a primeira frase.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Aqui embaixo ficam os links úteis da sua conta e o botão Sair. No celular, o menu abre pelo ícone no topo da tela.</p></div></div>
+  </div>
+</section>
+
+<!-- VIDEO 2 -->
+<section class="video" id="v2" data-video>
+  <div class="video-head">
+    <div><div class="num">Vídeo 2 · ~2 min</div><h2>Dashboard: os números</h2><div class="meta">Menu Dashboard, de cima até as abas do fim da página</div></div>
+    <button class="copy-all" type="button" data-copy-all>Copiar narração inteira</button>
+  </div>
+  <p class="goal">Objetivo: o cliente entende os três números principais e sabe que o que decide é o cadastro que vira conversa com o comercial.</p>
+  <div class="scenes">
+    <div class="scene"><span class="n">1</span>
+      <div class="screen"><span class="label">Na tela</span><p>Topo do Dashboard, com o nome da conta.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>O Dashboard mostra o resultado dos seus anúncios no período escolhido. Quando você abre, ele já vem com os últimos trinta dias.</p></div></div>
+    <div class="scene"><span class="n">2</span>
+      <div class="screen"><span class="label">Na tela</span><p>Clique nas datas do seletor de período, mostre as opções e feche sem mudar.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Para ver outro intervalo, clique nas datas e escolha o período. Os números são comparados automaticamente com o período anterior.</p></div></div>
+    <div class="scene"><span class="n">3</span>
+      <div class="screen"><span class="label">Na tela</span><p>Aponte o botão <span class="ui">Sincronizar Período</span> e o texto <span class="ui">Atualizado em…</span> logo abaixo. Não precisa clicar.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Os dados se atualizam sozinhos todas as manhãs. Se quiser o número mais recente, clique em Sincronizar Período. A data e a hora da última atualização ficam logo abaixo do botão.</p></div></div>
+    <div class="scene"><span class="n">4</span>
+      <div class="screen"><span class="label">Na tela</span><p>Cartão de saldo ou de valor a faturar.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Este cartão mostra o saldo da conta, ou o valor a faturar, conforme a forma de pagamento.</p></div></div>
+    <div class="scene"><span class="n">5</span>
+      <div class="screen"><span class="label">Na tela</span><p>Os três cartões: <span class="ui">Valor investido, Leads (Cadastros), CPL (Custo por Lead)</span>. Pare em cada um.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Estes são os três números principais: quanto foi investido, quantos cadastros chegaram e quanto custou, em média, cada cadastro. A porcentagem mostra se subiu ou caiu em relação ao período anterior.</p></div></div>
+    <div class="scene"><span class="n">6</span>
+      <div class="screen"><span class="label">Na tela</span><p>Cartões de origem: <span class="ui">Leads pelo formulário, Leads pelo site (LP), Conversas iniciadas</span>. Só aparecem os que a conta usa.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Logo abaixo, os cadastros aparecem separados pela origem: pelo formulário do Instagram, pelo seu site, ou por conversa no WhatsApp e no Direct.</p></div></div>
+    <div class="scene"><span class="n">7</span>
+      <div class="screen"><span class="label">Na tela</span><p>Role pelas linhas de <span class="ui">CTR, CPC médio, CPM médio, Impressões, Alcance, Frequência</span> e passe o mouse em um cartão pra abrir a explicação.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Os outros números mostram o caminho até o cadastro: quantas pessoas viram o anúncio, quantas clicaram e quanto isso custou. Cada cartão tem uma explicação curta.</p></div></div>
+    <div class="scene"><span class="n">8</span>
+      <div class="screen"><span class="label">Na tela</span><p>Card <span class="ui">Funil de Performance</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>O Funil de Performance resume esse caminho numa linha só, do valor investido até os cadastros.</p></div></div>
+    <div class="scene"><span class="n">9</span>
+      <div class="screen"><span class="label">Na tela</span><p>Role até o fim e clique nas abas <span class="ui">Campanhas, Conjuntos, Anúncios</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>No fim da página, as abas trazem o detalhe por campanha, por conjunto e por anúncio.</p></div></div>
+    <div class="scene"><span class="n">10</span>
+      <div class="screen"><span class="label">Na tela</span><p>Volte ao topo, nos três cartões principais.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Um lembrete importante: custo por cadastro baixo, sozinho, não quer dizer resultado bom. O que decide é quantos desses cadastros viram conversa de verdade com o seu comercial. Por isso, o retorno do seu time sobre os cadastros faz tanta diferença no nosso trabalho.</p></div></div>
+  </div>
+</section>
+
+<!-- VIDEO 3 -->
+<section class="video" id="v3" data-video>
+  <div class="video-head">
+    <div><div class="num">Vídeo 3 · ~1 min 30</div><h2>Quando os cadastros chegam</h2><div class="meta">Dashboard → Insights de Performance</div></div>
+    <button class="copy-all" type="button" data-copy-all>Copiar narração inteira</button>
+  </div>
+  <p class="goal">Objetivo: o cliente usa o mapa pra organizar o atendimento e sabe quais criativos estão trazendo cadastro.</p>
+  <div class="scenes">
+    <div class="scene"><span class="n">1</span>
+      <div class="screen"><span class="label">Na tela</span><p>Role até <span class="ui">Insights de Performance</span> e pare no mapa <span class="ui">Cadastros por dia da semana e horário</span>.</p><p class="tip">Se o mapa estiver vazio nesta conta, grave este vídeo em outra conta que usa formulário.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Em Insights de Performance, este mapa mostra em que dia da semana e em que horário chegam os cadastros pelo formulário do Instagram. Quanto mais forte a cor, mais cadastros naquele horário.</p></div></div>
+    <div class="scene"><span class="n">2</span>
+      <div class="screen"><span class="label">Na tela</span><p>Passe o mouse num quadradinho forte até aparecer o número.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Passe o mouse em um quadradinho para ver o número exato. Os cadastros feitos pelo site não entram aqui, porque a Meta não informa o horário deles.</p></div></div>
+    <div class="scene"><span class="n">3</span>
+      <div class="screen"><span class="label">Na tela</span><p>Listas <span class="ui">Por dia</span> e <span class="ui">Por faixa de horário</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Logo abaixo ficam os totais por dia e por faixa de horário.</p></div></div>
+    <div class="scene"><span class="n">4</span>
+      <div class="screen"><span class="label">Na tela</span><p>Clique em <span class="ui">Gerar análise</span> e espere o texto aparecer.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Clique em Gerar análise para receber uma leitura em texto do que o mapa mostra.</p></div></div>
+    <div class="scene"><span class="n">5</span>
+      <div class="screen"><span class="label">Na tela</span><p>Deixe a análise na tela por alguns segundos.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Use isso junto com o seu comercial. Se os cadastros se concentram num horário, é nesse horário que vale ter alguém pronto para responder rápido. Cadastro que espera horas esfria.</p></div></div>
+    <div class="scene"><span class="n">6</span>
+      <div class="screen"><span class="label">Na tela</span><p>Role até o gráfico de cadastros por dia.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Este gráfico mostra quantos cadastros entraram em cada dia do período.</p></div></div>
+    <div class="scene"><span class="n">7</span>
+      <div class="screen"><span class="label">Na tela</span><p>Role até <span class="ui">Top Criativos Individuais</span> e pare nos cartões.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>E aqui estão os criativos que trouxeram cadastros com o menor custo. Entram só os anúncios que estão ativos e com pelo menos cinco cadastros no período. Quando o mesmo criativo roda em vários anúncios, ele aparece somado.</p></div></div>
+  </div>
+</section>
+
+<!-- VIDEO 4 -->
+<section class="video" id="v4" data-video>
+  <div class="video-head">
+    <div><div class="num">Vídeo 4 · ~1 min 30</div><h2>Criativos</h2><div class="meta">Menu Criativos → abas Galeria, Ângulos, Copies, Formato, Hooks</div></div>
+    <button class="copy-all" type="button" data-copy-all>Copiar narração inteira</button>
+  </div>
+  <p class="goal">Objetivo: o cliente encontra os anúncios e entende qual ideia está funcionando.</p>
+  <div class="scenes">
+    <div class="scene"><span class="n">1</span>
+      <div class="screen"><span class="label">Na tela</span><p>Menu <span class="ui">Criativos</span>, aba <span class="ui">Galeria</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Em Criativos você vê os seus anúncios, com a imagem ou o vídeo de cada um e os números ao lado.</p></div></div>
+    <div class="scene"><span class="n">2</span>
+      <div class="screen"><span class="label">Na tela</span><p>Mostre o filtro com <span class="ui">Ativos</span> e abra as opções <span class="ui">Pausados/Arquivados</span> e <span class="ui">Todos</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Por padrão aparecem só os anúncios ativos. Para ver os antigos, troque para Pausados e Arquivados, ou para Todos.</p></div></div>
+    <div class="scene"><span class="n">3</span>
+      <div class="screen"><span class="label">Na tela</span><p>Abra <span class="ui">Ordenar por:</span> e mostre as opções.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Em Ordenar por, você escolhe como listar: por taxa de cliques, investimento, conversões, cliques no link ou custo de mil impressões.</p></div></div>
+    <div class="scene"><span class="n">4</span>
+      <div class="screen"><span class="label">Na tela</span><p>Clique em um anúncio pra abrir a prévia. Feche.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Clique em um anúncio para ver como ele aparece para as pessoas.</p></div></div>
+    <div class="scene"><span class="n">5</span>
+      <div class="screen"><span class="label">Na tela</span><p>Aba <span class="ui">Ângulos</span>. Alterne <span class="ui">Agrupar por: Por criativo</span> e <span class="ui">Por ângulo/tema</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Na aba Ângulos, os anúncios são agrupados pelo mesmo criativo ou pelo mesmo tema. Assim dá para ver qual ideia funciona melhor, somando todos os lugares onde ela roda.</p></div></div>
+    <div class="scene"><span class="n">6</span>
+      <div class="screen"><span class="label">Na tela</span><p>Aba <span class="ui">Copies</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Em Copies ficam os textos dos anúncios, puxados direto da Meta, com os que tiveram melhor resposta.</p></div></div>
+    <div class="scene"><span class="n">7</span>
+      <div class="screen"><span class="label">Na tela</span><p>Aba <span class="ui">Formato</span>, depois aba <span class="ui">Hooks</span>, parando na coluna <span class="ui">Hook Rate</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Em Formato, a comparação entre imagem e vídeo. E em Hooks, quais vídeos seguram a atenção nos primeiros segundos. O Hook Rate mostra quantas pessoas assistiram pelo menos um quarto do vídeo.</p></div></div>
+  </div>
+</section>
+
+<!-- VIDEO 5 -->
+<section class="video" id="v5" data-video>
+  <div class="video-head">
+    <div><div class="num">Vídeo 5 · ~1 min</div><h2>Diário de Ações e próximos passos</h2><div class="meta">Menu Diário de Ações, até Próximos passos no fim</div></div>
+    <button class="copy-all" type="button" data-copy-all>Copiar narração inteira</button>
+  </div>
+  <p class="goal">Objetivo: o cliente acompanha o trabalho sem pedir relatório e sabe o que depende dele.</p>
+  <div class="scenes">
+    <div class="scene"><span class="n">1</span>
+      <div class="screen"><span class="label">Na tela</span><p>Menu <span class="ui">Diário de Ações</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>No Diário de Ações fica registrado tudo o que fazemos na sua conta: o que foi feito, por quê, e o resultado que esperamos.</p></div></div>
+    <div class="scene"><span class="n">2</span>
+      <div class="screen"><span class="label">Na tela</span><p>Abra o filtro de período (<span class="ui">Últimos 7 dias, Últimos 30 dias, Tudo</span>) e depois o de categoria.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Você pode filtrar pelos últimos sete ou trinta dias, ou ver tudo, e escolher uma categoria, como Criativo, Orçamento ou Público.</p></div></div>
+    <div class="scene"><span class="n">3</span>
+      <div class="screen"><span class="label">Na tela</span><p>Pare num registro com <span class="ui">Por quê</span> e <span class="ui">Resultado esperado</span> preenchidos.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Cada registro traz a data, a hora e a explicação da mudança. Assim você acompanha o trabalho em tempo real, sem precisar pedir relatório.</p></div></div>
+    <div class="scene"><span class="n">4</span>
+      <div class="screen"><span class="label">Na tela</span><p>Role até <span class="ui">Próximos passos</span>: os três contadores e as duas colunas.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>No fim da página, em Próximos passos, aparece o que está com a gente e o que depende de você.</p></div></div>
+    <div class="scene"><span class="n">5</span>
+      <div class="screen"><span class="label">Na tela</span><p>Pare na coluna <span class="ui">Sua responsabilidade</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Fique de olho na coluna Sua responsabilidade. É ali que a gente pede o que precisa para seguir: um vídeo, um acesso, ou o retorno do seu comercial sobre os cadastros.</p></div></div>
+  </div>
+</section>
+
+<!-- VIDEO 6 -->
+<section class="video" id="v6" data-video>
+  <div class="video-head">
+    <div><div class="num">Vídeo 6 · ~1 min 30</div><h2>Pauta de Conteúdo e Análises</h2><div class="meta">Menu Pauta de Conteúdo → menu Análises</div></div>
+    <button class="copy-all" type="button" data-copy-all>Copiar narração inteira</button>
+  </div>
+  <p class="goal">Objetivo: o cliente sabe o que gravar, até quando, e onde ler os pareceres.</p>
+  <div class="scenes">
+    <div class="scene"><span class="n">1</span>
+      <div class="screen"><span class="label">Na tela</span><p>Menu <span class="ui">Pauta de Conteúdo</span>, com a pauta aprovada na tela.</p><p class="tip">Grave só depois de publicar e aprovar uma pauta visível.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Na Pauta de Conteúdo ficam os próximos vídeos que vamos produzir para os seus anúncios.</p></div></div>
+    <div class="scene"><span class="n">2</span>
+      <div class="screen"><span class="label">Na tela</span><p>Aponte o formato, a prioridade, o <span class="ui">Gancho</span> e o <span class="ui">Ângulo</span> do cartão.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Cada pauta traz o formato, a prioridade, o gancho, que é a primeira frase do vídeo, e o ângulo, que é a dúvida que o vídeo responde.</p></div></div>
+    <div class="scene"><span class="n">3</span>
+      <div class="screen"><span class="label">Na tela</span><p>Abra o bloco <span class="ui">Roteiro</span>.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Abra o Roteiro para ver o vídeo inteiro, bloco por bloco, com o que mostrar e o que falar em cada momento.</p></div></div>
+    <div class="scene"><span class="n">4</span>
+      <div class="screen"><span class="label">Na tela</span><p>Abra <span class="ui">Variantes</span> e clique num botão de copiar.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Em Variantes estão os textos que vão acompanhar o vídeo no anúncio.</p></div></div>
+    <div class="scene"><span class="n">5</span>
+      <div class="screen"><span class="label">Na tela</span><p>Mostre <span class="ui">Para gravar até</span> e os títulos das etapas.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>A data mostra até quando precisamos do material gravado. E as pautas andam por etapas: aprovado, gravando, entregue e no ar.</p></div></div>
+    <div class="scene"><span class="n">6</span>
+      <div class="screen"><span class="label">Na tela</span><p>Menu <span class="ui">Análises</span>, com uma análise aberta.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>Em Análises ficam os nossos pareceres sobre os seus criativos e as suas páginas. Quando houver, a análise detalhada mostra o que funciona na peça e o que ajustar.</p></div></div>
+    <div class="scene"><span class="n">7</span>
+      <div class="screen"><span class="label">Na tela</span><p>Volte ao Dashboard e deixe parado.</p></div>
+      <div class="say"><div class="say-top"><span class="label">Narração</span><button class="copy" type="button">Copiar</button></div><p data-say>É isso. O painel é seu, pode entrar quando quiser. Qualquer dúvida, é só chamar a gente no WhatsApp.</p></div></div>
+  </div>
+</section>
+
+<footer>
+  <p>Nomes de botões e seções conferidos no código do portal em 15/09/2026. Os roteiros não citam número de nenhum cliente.</p>
+  <p>Tempos são estimativa de narração em velocidade normal. Se a voz ficar mais longa que a cena, deixe a gravação parada um pouco mais em vez de acelerar a fala.</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  function copyText(text, btn){
+    function done(){
+      var old = btn.textContent;
+      btn.classList.add('done'); btn.textContent = 'Copiado';
+      setTimeout(function(){ btn.classList.remove('done'); btn.textContent = old; }, 1800);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done, function(){ fallback(text); done(); });
+    } else { fallback(text); done(); }
+  }
+  function fallback(text){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly',''); ta.style.position = 'absolute'; ta.style.left = '-9999px';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta);
+  }
+  document.querySelectorAll('.scene').forEach(function(scene){
+    var btn = scene.querySelector('.copy'); var p = scene.querySelector('[data-say]');
+    if (btn && p) btn.addEventListener('click', function(){ copyText(p.textContent.trim(), btn); });
+  });
+  document.querySelectorAll('[data-video]').forEach(function(section){
+    var btn = section.querySelector('[data-copy-all]');
+    if (!btn) return;
+    btn.addEventListener('click', function(){
+      var all = Array.prototype.map.call(section.querySelectorAll('[data-say]'), function(p){ return p.textContent.trim(); }).join('\n\n');
+      copyText(all, btn);
+    });
+  });
+})();
+</script>

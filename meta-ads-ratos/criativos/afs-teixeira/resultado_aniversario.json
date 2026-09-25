@@ -1,0 +1,79 @@
+{
+  "video_id": "1450086996994053",
+  "creative_id": "28067974429521064",
+  "adset_id": "120251891024890584",
+  "ad_id": "120251891026310584",
+  "confirmacao": {
+    "campanha": {
+      "id": "120251890940370584",
+      "name": "Aniversário Teixeira",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE"
+    },
+    "conjunto": {
+      "id": "120251891024890584",
+      "name": "Teixeira de Freitas Cidade | 18-55 | IG",
+      "status": "ACTIVE",
+      "effective_status": "ACTIVE",
+      "lifetime_budget": "20000",
+      "budget_remaining": "20000",
+      "start_time": "2026-09-03T21:00:00+0000",
+      "end_time": "2026-09-12T02:59:00+0000",
+      "destination_type": "INSTAGRAM_PROFILE",
+      "optimization_goal": "LINK_CLICKS",
+      "targeting": {
+        "age_max": 55,
+        "age_min": 18,
+        "geo_locations": {
+          "cities": [
+            {
+              "country": "BR",
+              "distance_unit": "mile",
+              "key": "2684470",
+              "name": "Teixeira de Freitas",
+              "region": "Bahia",
+              "region_id": "442"
+            }
+          ],
+          "location_types": [
+            "frequently_in",
+            "home",
+            "recent"
+          ]
+        },
+        "targeting_automation": {
+          "advantage_audience": 0
+        },
+        "publisher_platforms": [
+          "instagram"
+        ],
+        "instagram_positions": [
+          "stream",
+          "story",
+          "explore",
+          "reels"
+        ]
+      }
+    },
+    "anuncio": {
+      "id": "120251891026310584",
+      "name": "AD01 - Aniversario Teixeira [VIDEO]",
+      "status": "ACTIVE",
+      "effective_status": "IN_PROCESS"
+    }
+  },
+  "log": [
+    "Subindo vídeo (65.7 MB)...",
+    "  video_id: 1450086996994053",
+    "  [1] status: processing",
+    "  [2] status: ready",
+    "  thumbnail: ok",
+    "Conjunto criado: 120251891024890584",
+    "  opt-out standard recusado: \n\n  Message: Call was not successful\n  Method:  POST\n  Path:    https://graph.facebook.com/v25.0/act_766482893061196/adcreatives\n  Params:  {'name': 'Creative -",
+    "Criativo criado (granular): 28067974429521064",
+    "Anúncio criado: 120251891026310584",
+    "Ativado: campanha 120251890940370584",
+    "Ativado: conjunto 120251891024890584",
+    "Ativado: anúncio 120251891026310584"
+  ]
+}

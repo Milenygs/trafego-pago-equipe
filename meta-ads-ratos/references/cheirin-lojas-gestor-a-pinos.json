@@ -1,0 +1,134 @@
+[
+  {
+    "codigo": "0344",
+    "rotulo": "0344 - SHOPPING TATUAPE",
+    "cidade_uf": "SAO PAULO, SP",
+    "endereco": "R GONCALVES CRESPO, 78",
+    "lat": -23.5389987,
+    "lng": -46.5763358,
+    "fonte": "json-sp-06/09"
+  },
+  {
+    "codigo": "0499",
+    "rotulo": "0499 - CHEIRIN BAO PAULISTA",
+    "cidade_uf": "SAO PAULO, SP",
+    "endereco": "AVENIDA PAULISTA, 2073",
+    "lat": -23.5590234,
+    "lng": -46.6597666,
+    "fonte": "json-sp-06/09"
+  },
+  {
+    "codigo": "0502",
+    "rotulo": "0502 - GUARATINGUETA",
+    "cidade_uf": "GUARATINGUETA, SP",
+    "endereco": "AVENIDA JUSCELINO KUBITSCHEK DE OLIVEIRA, 351",
+    "lat": -22.8163121,
+    "lng": -45.2017899,
+    "fonte": "json-sp-06/09"
+  },
+  {
+    "codigo": "1097",
+    "rotulo": "1097 - INGLESES (FLORIANOPOLIS, SC)",
+    "cidade_uf": "",
+    "endereco": "Rua Intendente Joao Nunes Vieira, 755, Ingleses, Florianopolis, SC, Brasil",
+    "lat": -27.4372764,
+    "lng": -48.3927179,
+    "fonte": "nominatim",
+    "match": "Rua Intendente João Nunes Vieira, Ingleses Centro, Ingleses, Ingleses do Rio Vermelho, Florianópolis, Santa Catarina, Região Sul, 88058-615, Brasil"
+  },
+  {
+    "codigo": "1133",
+    "rotulo": "1133 - STO ANDRÉ",
+    "cidade_uf": "SANTO ANDRE, SP",
+    "endereco": "AVENIDA DOUTOR ALBERTO BENEDETTI, 308",
+    "lat": -23.6677347,
+    "lng": -46.5274069,
+    "fonte": "json-sp-06/09"
+  },
+  {
+    "codigo": "1147",
+    "rotulo": "1147 - PARAÍSO",
+    "cidade_uf": "SAO PAULO, SP",
+    "endereco": "R CUBATAO, 212",
+    "lat": -23.5731713,
+    "lng": -46.6449589,
+    "fonte": "json-sp-06/09"
+  },
+  {
+    "codigo": "1206",
+    "rotulo": "1206 - SETOR MARISTA (GOIANIA, GO)",
+    "cidade_uf": "",
+    "endereco": "Avenida Portugal, 1148, Setor Marista, Goiania, GO, Brasil",
+    "lat": -16.6969379,
+    "lng": -49.2694463,
+    "fonte": "nominatim",
+    "match": "Harmonike - Estética Avançada, 1148, Avenida Portugal, Setor Marista, Goiânia, Goiás, Região Centro-Oeste, 74150-030, Brasil"
+  },
+  {
+    "codigo": "1384",
+    "rotulo": "1384 - ATIBAIA SP",
+    "cidade_uf": "ATIBAIA, SP",
+    "endereco": "R LUIZ ONOFRE DE AMORIM, 50",
+    "lat": -23.11694,
+    "lng": -46.55028,
+    "fonte": "json-sp-06/09"
+  },
+  {
+    "codigo": "1398",
+    "rotulo": "1398 - SHOPPING BOUGAINVILLE (GOIANIA, GO)",
+    "cidade_uf": "",
+    "endereco": "Rua 9, 1855, Setor Marista, Goiania, GO, Brasil",
+    "lat": -16.6989801,
+    "lng": -49.2651584,
+    "fonte": "nominatim",
+    "match": "Rua 9, Setor Marista, Goiânia, Goiás, Região Centro-Oeste, 74160-010, Brasil"
+  },
+  {
+    "codigo": "1458",
+    "rotulo": "1458 - PIER 21 (BRASILIA, DF)",
+    "cidade_uf": "BRASILIA, DF",
+    "endereco": "SCES Trecho 2 / Estrada Parque das Nacoes",
+    "lat": -15.8183118,
+    "lng": -47.8748139,
+    "fonte": "nominatim"
+  },
+  {
+    "codigo": "1517",
+    "rotulo": "1517 - BOSQUE MAIA",
+    "cidade_uf": "Guarulhos, SP",
+    "endereco": "Avenida Paulo Faccini, 1539",
+    "lat": -23.4552293,
+    "lng": -46.533002,
+    "fonte": "json-sp-06/09"
+  },
+  {
+    "codigo": "1645",
+    "rotulo": "1645 - CHEIRIN BAO VOTUPORANGA",
+    "cidade_uf": "",
+    "endereco": "Votuporanga, Sao Paulo, Brasil",
+    "lat": -20.4252908,
+    "lng": -49.972028,
+    "fonte": "nominatim",
+    "match": "Votuporanga, São Paulo, Região Sudeste, Brasil"
+  },
+  {
+    "codigo": "1672",
+    "rotulo": "1672 - MAXI SHOPPING (JUNDIAI, SP)",
+    "cidade_uf": "",
+    "endereco": "Maxi Shopping Jundiai, Avenida Antonio Frederico Ozanan, Jundiai, SP, Brasil",
+    "lat": -23.1694619,
+    "lng": -46.8920941,
+    "fonte": "nominatim",
+    "match": "Maxi Shopping Jundiaí, 6000, Avenida Antônio Frederico Ozanam, Ilha Verde, Vila Tito, Vila Rio Branco, Jundiaí, São Paulo, Região Sudeste, 13215-900, Brasil"
+  },
+  {
+    "codigo": "1682",
+    "rotulo": "1682 - SHOPPING PATIO BRASIL (BRASILIA, DF)",
+    "cidade_uf": "",
+    "endereco": "Shopping Patio Brasil, Setor Comercial Sul, Brasilia, DF, Brasil",
+    "lat": -15.796038,
+    "lng": -47.8920212,
+    "fonte": "nominatim",
+    "match": "Pátio Brasil Shopping, W3 Sul, Setor Comercial Sul, Brasília, Plano Piloto, Distrito Federal, Região Centro-Oeste, 70307-902, Brasil"
+  }
+]

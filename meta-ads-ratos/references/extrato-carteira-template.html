@@ -1,0 +1,499 @@
+﻿<!-- MODELO DO RELATORIO DIARIO 'Extrato da Carteira' (base: 31/08/2026).
+     Usado pela tarefa ExtratoCarteira-Mileny. Copiar o CSS e a estrutura;
+     trocar os dados pelos do digest do dia. -->
+<title>Extrato da Carteira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root{
+    --ground:#F4F5F2;
+    --surface:#FFFFFF;
+    --surface-2:#EDEFEA;
+    --ink:#171A17;
+    --ink-2:#3D443E;
+    --muted:#727A73;
+    --line:#DBDED7;
+    --line-strong:#C3C8BF;
+    --accent:#1F5C4B;
+    --accent-soft:#DCEAE2;
+    --ok:#2E7D5B;
+    --warn:#9A6A12;
+    --warn-soft:#F4E7CC;
+    --crit:#A02F22;
+    --crit-soft:#F3DCD8;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#101310;
+      --surface:#171B17;
+      --surface-2:#1E231E;
+      --ink:#E7EAE5;
+      --ink-2:#BFC6BE;
+      --muted:#8B948B;
+      --line:#2A302A;
+      --line-strong:#3A423A;
+      --accent:#79C4A4;
+      --accent-soft:#1C2E26;
+      --ok:#6FBF9B;
+      --warn:#D8A445;
+      --warn-soft:#33280F;
+      --crit:#E0705E;
+      --crit-soft:#3A1D18;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#101310;
+    --surface:#171B17;
+    --surface-2:#1E231E;
+    --ink:#E7EAE5;
+    --ink-2:#BFC6BE;
+    --muted:#8B948B;
+    --line:#2A302A;
+    --line-strong:#3A423A;
+    --accent:#79C4A4;
+    --accent-soft:#1C2E26;
+    --ok:#6FBF9B;
+    --warn:#D8A445;
+    --warn-soft:#33280F;
+    --crit:#E0705E;
+    --crit-soft:#3A1D18;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--ground);
+    color:var(--ink);
+    font-family:"Public Sans","Segoe UI",system-ui,sans-serif;
+    font-size:15px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1020px;margin:0 auto;padding:44px 22px 90px;}
+
+  h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:500;text-wrap:balance;margin:0;}
+  h1{font-size:clamp(34px,5vw,46px);line-height:1.08;letter-spacing:-.01em;}
+  h2{font-size:24px;line-height:1.2;}
+  h3{font-size:18px;line-height:1.25;}
+  p{margin:0;}
+  .num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;}
+  .eyebrow{
+    font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--muted);
+  }
+
+  /* ---------- header ---------- */
+  header{border-bottom:1px solid var(--line-strong);padding-bottom:26px;margin-bottom:34px;}
+  .head-top{display:flex;flex-wrap:wrap;gap:14px;align-items:baseline;justify-content:space-between;}
+  .period{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);}
+  .lede{margin-top:14px;max-width:62ch;color:var(--ink-2);font-size:15.5px;}
+
+  .kpis{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:1px;background:var(--line);border:1px solid var(--line);
+    margin-top:28px;
+  }
+  .kpi{background:var(--surface);padding:15px 16px 14px;}
+  .kpi .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;
+    font-size:23px;font-weight:500;letter-spacing:-.02em;display:block;margin-top:5px;}
+  .kpi .s{font-size:12px;color:var(--muted);margin-top:3px;display:block;}
+
+  /* ---------- sections ---------- */
+  section{margin-top:46px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+    border-bottom:1px solid var(--line-strong);padding-bottom:9px;margin-bottom:20px;}
+  .sec-head .count{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);}
+  .note{color:var(--muted);font-size:13.5px;max-width:70ch;}
+
+  /* ---------- runway ---------- */
+  .runway{display:flex;flex-direction:column;gap:1px;background:var(--line);
+    border:1px solid var(--line);}
+  .rw{background:var(--surface);padding:13px 16px;display:grid;
+    grid-template-columns:1.5fr 1fr 1.6fr;gap:14px;align-items:center;}
+  .rw .who{display:flex;flex-direction:column;gap:2px;min-width:0;}
+  .rw .who b{font-weight:600;font-size:14.5px;}
+  .rw .who span{font-size:12px;color:var(--muted);}
+  .rw .money{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;
+    font-size:14px;display:flex;flex-direction:column;gap:2px;}
+  .rw .money span{font-size:11.5px;color:var(--muted);font-family:"Public Sans",sans-serif;}
+  .meter{height:8px;background:var(--surface-2);border-radius:99px;overflow:hidden;margin-bottom:6px;}
+  .meter i{display:block;height:100%;border-radius:99px;}
+  .verdict{font-size:12.5px;font-weight:600;}
+  .st-crit .meter i{background:var(--crit);} .st-crit .verdict{color:var(--crit);}
+  .st-warn .meter i{background:var(--warn);} .st-warn .verdict{color:var(--warn);}
+  .st-ok   .meter i{background:var(--ok);}   .st-ok   .verdict{color:var(--ok);}
+  .st-off  .meter i{background:var(--line-strong);} .st-off .verdict{color:var(--muted);}
+
+  /* ---------- account blocks ---------- */
+  .acct{border:1px solid var(--line);background:var(--surface);margin-bottom:16px;}
+  .acct-head{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:baseline;
+    justify-content:space-between;padding:15px 18px;border-bottom:1px solid var(--line);}
+  .acct-head .id{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);}
+  .acct-stats{display:flex;gap:20px;flex-wrap:wrap;}
+  .stat{display:flex;flex-direction:column;}
+  .stat b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;
+    font-size:16px;font-weight:500;}
+  .stat span{font-size:11px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;}
+
+  .scroller{overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:520px;}
+  th{text-align:right;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;padding:9px 18px;border-bottom:1px solid var(--line);}
+  th:first-child{text-align:left;}
+  td{padding:9px 18px;border-bottom:1px solid var(--line);text-align:right;
+    font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;}
+  td:first-child{text-align:left;font-family:"Public Sans",sans-serif;}
+  tbody tr:last-child td{border-bottom:none;}
+  .dim{color:var(--muted);}
+  .flag{color:var(--crit);font-weight:600;}
+  .good{color:var(--ok);font-weight:600;}
+
+  .read{padding:14px 18px;background:var(--surface-2);border-top:1px solid var(--line);
+    font-size:13.5px;color:var(--ink-2);}
+  .read b{color:var(--ink);font-weight:600;}
+
+  /* ---------- day bars ---------- */
+  .days{display:flex;gap:5px;align-items:flex-end;height:34px;}
+  .days div{width:16px;background:var(--accent-soft);border-top:2px solid var(--accent);}
+  .days .partial{opacity:.45;}
+
+  /* ---------- actions ---------- */
+  ol.acts{list-style:none;counter-reset:a;padding:0;margin:0;
+    display:flex;flex-direction:column;gap:1px;background:var(--line);
+    border:1px solid var(--line);}
+  ol.acts li{background:var(--surface);padding:14px 18px;counter-increment:a;
+    display:grid;grid-template-columns:26px 1fr;gap:12px;}
+  ol.acts li::before{content:counter(a);font-family:"IBM Plex Mono",monospace;
+    font-size:12px;color:var(--accent);font-weight:600;padding-top:2px;
+    grid-column:1;grid-row:1;}
+  ol.acts li > *{grid-column:2;}
+  ol.acts b{display:block;font-weight:600;margin-bottom:2px;}
+  ol.acts p{font-size:13.5px;line-height:1.6;color:var(--ink-2);max-width:74ch;}
+  ol.acts li.done{background:var(--accent-soft);}
+  ol.acts li.done::before{content:"✓";color:var(--accent);}
+
+  /* ---------- otimizações por conta ---------- */
+  .opts{display:flex;flex-direction:column;gap:1px;background:var(--line);
+    border:1px solid var(--line);}
+  .opt{background:var(--surface);padding:18px 20px 20px;}
+  .opt h4{margin:0 0 10px;font-family:"Newsreader",Georgia,serif;font-weight:600;
+    font-size:17px;letter-spacing:.01em;}
+  .opt .do{font-weight:600;font-size:14.5px;line-height:1.5;margin-top:12px;
+    padding-left:14px;border-left:2px solid var(--accent);}
+  .opt .do:first-of-type{margin-top:0;}
+  .opt .why{font-size:14px;line-height:1.6;color:var(--ink-2);margin-top:6px;
+    padding-left:16px;max-width:72ch;}
+
+  td:first-child{min-width:210px;}
+
+  footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line-strong);
+    font-size:12.5px;color:var(--muted);}
+
+  @media (max-width:640px){
+    .rw{grid-template-columns:1fr;gap:8px;}
+    .acct-head{flex-direction:column;}
+  }
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="head-top">
+    <h1>Extrato da Carteira</h1>
+    <div class="period">28 ago (sex) → 31 ago (seg)</div>
+  </div>
+  <p class="lede">As contas de sempre: as de franquia, as lojas físicas da rede Açaí Fruit Show e a Desygn. Números de 28, 29 e 30 são dias fechados; <strong>31/08 está parcial</strong> — leitura feita às 6h24, então o dia de hoje entra só como sinal de que a conta está (ou não) entregando.</p>
+
+  <div class="kpis">
+    <div class="kpi"><span class="eyebrow">Investido</span><b class="v">R$ 9.223</b><span class="s">soma das 15 contas</span></div>
+    <div class="kpi"><span class="eyebrow">Leads franquia</span><b class="v">117</b><span class="s">CPL médio R$ 61,44</span></div>
+    <div class="kpi"><span class="eyebrow">Conversas Desygn</span><b class="v">93</b><span class="s">R$ 16,20 por conversa</span></div>
+    <div class="kpi"><span class="eyebrow">Contas paradas</span><b class="v" style="color:var(--crit)">5</b><span class="s">saldo zero ou desativada</span></div>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head">
+    <h2>Saldo — quem para primeiro</h2>
+    <span class="count">autonomia estimada pelo gasto médio de 28–30</span>
+  </div>
+  <p class="note" style="margin-bottom:18px">Contas pré-pagas param sozinhas quando o saldo zera, e a Meta usa o limite de gasto como espelho do saldo. Contas no cartão (Cheirin Bão, Boali, Facilmart, AFS Indústria) não entram nesse risco.</p>
+
+  <div class="runway">
+    <div class="rw st-crit">
+      <div class="who"><b>Ponto Alpha Café</b><span>pré-pago · última recarga 11/08</span></div>
+      <div class="money">R$ 0,00<span>limite de gasto atingido</span></div>
+      <div><div class="meter"><i style="width:2%"></i></div><div class="verdict">Já parou — R$ 11,62 na sexta e nada desde</div></div>
+    </div>
+    <div class="rw st-crit">
+      <div class="who"><b>Desygn Móveis Jardim</b><span>pré-pago · última recarga 27/08</span></div>
+      <div class="money">R$ 0,60<span>gasta ~R$ 502/dia</span></div>
+      <div><div class="meter"><i style="width:2%"></i></div><div class="verdict">Parando agora — R$ 1,68 hoje contra R$ 334 ontem</div></div>
+    </div>
+    <div class="rw st-crit">
+      <div class="who"><b>AFS Ipatinga Centro</b><span>pré-pago · recarregou 29/08</span></div>
+      <div class="money">R$ 20,83<span>gasta ~R$ 40/dia</span></div>
+      <div><div class="meter"><i style="width:5%"></i></div><div class="verdict">Meio dia de fôlego — a recarga de sexta já foi</div></div>
+    </div>
+    <div class="rw st-off">
+      <div class="who"><b>Açaí Teixeira de Freitas</b><span>pré-pago · última recarga 27/07</span></div>
+      <div class="money">R$ 0,00<span>sem entrega</span></div>
+      <div><div class="meter"><i style="width:100%"></i></div><div class="verdict">Parada há 34 dias</div></div>
+    </div>
+    <div class="rw st-off">
+      <div class="who"><b>AFS STE</b><span>pré-pago · última recarga 18/06</span></div>
+      <div class="money">R$ 0,00<span>sem entrega</span></div>
+      <div><div class="meter"><i style="width:100%"></i></div><div class="verdict">Parada há 73 dias</div></div>
+    </div>
+    <div class="rw st-off">
+      <div class="who"><b>AFS Mantena</b><span>conta nova, nunca gastou</span></div>
+      <div class="money">R$ 0,00<span>por decisão</span></div>
+      <div><div class="meter"><i style="width:100%"></i></div><div class="verdict">Esperado — a inauguração roda na conta da FSA</div></div>
+    </div>
+    <div class="rw st-off">
+      <div class="who"><b>AFS Tomba</b><span>conta desativada pela Meta</span></div>
+      <div class="money">—<span>política de integridade</span></div>
+      <div><div class="meter"><i style="width:100%"></i></div><div class="verdict">Precisa de pedido de revisão</div></div>
+    </div>
+    <div class="rw st-warn">
+      <div class="who"><b>AFS Franquia</b><span>pré-pago · recarregou 24/08</span></div>
+      <div class="money">R$ 1.424,71<span>gasta ~R$ 233/dia</span></div>
+      <div><div class="meter"><i style="width:20%"></i></div><div class="verdict">≈ 6 dias — recarregar até sexta</div></div>
+    </div>
+    <div class="rw st-ok">
+      <div class="who"><b>Saborazzi</b><span>pré-pago · recarregou 14/08</span></div>
+      <div class="money">R$ 350,85<span>gasta ~R$ 20/dia</span></div>
+      <div><div class="meter"><i style="width:57%"></i></div><div class="verdict">≈ 17 dias</div></div>
+    </div>
+    <div class="rw st-ok">
+      <div class="who"><b>Loja FSA (Fraga Maia)</b><span>pré-pago · recarregou 26/08</span></div>
+      <div class="money">R$ 705,73<span>gasta ~R$ 33/dia</span></div>
+      <div><div class="meter"><i style="width:72%"></i></div><div class="verdict">≈ 21 dias</div></div>
+    </div>
+    <div class="rw st-ok">
+      <div class="who"><b>TrendPel</b><span>pré-pago · recarregou 25/08</span></div>
+      <div class="money">R$ 819,80<span>gasta ~R$ 34/dia</span></div>
+      <div><div class="meter"><i style="width:80%"></i></div><div class="verdict">≈ 24 dias</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <!-- Franquias: SEM bloco .acct (tabela + leitura) por conta — pedido da Mileny em 11/09/2026
+       ("não tem necessidade de enviar a parte Franquias, já pode pular para otimizações").
+       A seção vai direto para os .opt; o número de cada conta vai no .why.
+       Franquia sem gasto no dia entra numa linha .note no fim da seção. -->
+  <div class="sec-head"><h2>Franquias — otimizações por conta</h2><span class="count">5 contas · R$ 7.188,66 · 117 leads</span></div>
+  <p class="note" style="margin-bottom:16px">O que mexer em cada uma, com o número que justifica. Nada aqui foi aplicado — é a lista para você aprovar.</p>
+
+  <div class="opts">
+    <article class="opt">
+      <h4>Cheirin Bão</h4>
+      <p class="do">Cortar cerca de R$ 160 por dia da campanha 11, de consciência.</p>
+      <p class="why">É o que traz a conta dos R$ 1.161 por dia de volta ao teto de R$ 1.000 combinado, e é o corte mais barato que existe ali: essa campanha gastou R$ 383 em três dias sem gerar um lead. Ela é topo de funil, então a perda é de alcance, não de resultado.</p>
+      <p class="do">Puxar o ranking de qualificados antes de remanejar verba entre a 09 e a 05.</p>
+      <p class="why">A 05 está R$ 16 mais barata por lead que a 09, mas nesta conta o CPL não decide nada — quem decide é a taxa de qualificação do CRM. Sem o ranking, mover verba pela diferença de CPL pode empurrar dinheiro justamente para onde entra mais curioso.</p>
+    </article>
+
+    <article class="opt">
+      <h4>Boali</h4>
+      <p class="do">Mover cerca de R$ 200 por dia do CP 04 para o CP 05.</p>
+      <p class="why">No mesmo período, o CP 04 pagou R$ 192 por lead e o CP 05 pagou R$ 55. É a maior diferença de eficiência dentro de uma mesma conta em toda a carteira, e os dois já estão rodando — não é teste, é realocação.</p>
+      <p class="do">Trocar o criativo do CP 04 ou encurtar a janela de 180 para 90 dias.</p>
+      <p class="why">Frequência de 1,71 e CPM de R$ 86 dizem a mesma coisa: a base de 180 dias já viu tudo o que existe e agora a Meta está pagando caro para mostrar de novo para as mesmas pessoas.</p>
+    </article>
+
+    <article class="opt">
+      <h4>Facilmart</h4>
+      <p class="do">Escalar o CP 03 quente entre 20% e 30%.</p>
+      <p class="why">R$ 12,73 por lead com frequência de 1,10 é sinal de que ainda há público para alcançar. Subidas maiores que 30% de uma vez costumam derrubar a eficiência, então o caminho é aumentar aos poucos e conferir o CPL a cada dois dias. E aqui CPL baixo não é alerta: a franquia custa R$ 58 mil, é a mais barata da carteira.</p>
+    </article>
+
+    <article class="opt">
+      <h4>Açaí Fruit Show — Franquia</h4>
+      <p class="do">Qualificar os 12 leads no CRM antes de aumentar qualquer verba.</p>
+      <p class="why">Pagar de R$ 30 a R$ 47 por lead numa franquia de R$ 270 mil é o padrão de quem está atraindo curioso, não comprador. É a mesma faixa de ticket da Boali, que paga R$ 119 pelo lead. Enquanto o comercial não devolver a qualificação, aumentar verba aqui é aumentar volume de gente que não compra.</p>
+      <p class="do">Criativo novo no CP 10 e recarga programada para quinta-feira.</p>
+      <p class="why">A campanha principal já está em frequência 1,74, e o saldo da conta dá seis dias no ritmo atual de R$ 233 por dia.</p>
+    </article>
+
+    <article class="opt">
+      <h4>Ponto Alpha Café</h4>
+      <p class="do">Recarregar e, na mesma hora, subir o limite de gasto da conta.</p>
+      <p class="why">O limite está travado exatamente no valor já gasto, R$ 115.629,25 de R$ 115.629,26. Nesse estado, pôr saldo não destrava a entrega — a conta continua parada até o limite subir. Os dois ajustes precisam andar juntos.</p>
+    </article>
+  </div>
+</section>
+
+<!-- Grupo TFS (TrendPel, Saborazzi, AFS Indústria): seção VOLTOU em 18/09/2026, pedido da Mileny.
+     Modelo abaixo tirado do extrato de 14/09/2026 — trocar pelos dados do dia. -->
+<section>
+  <div class="sec-head"><h2>Grupo TFS — indústria e revenda</h2><span class="count">3 contas · R$ 104,27 · 45 leads</span></div>
+
+  <div class="acct">
+    <div class="acct-head">
+      <div><h3>TrendPel</h3><div class="id">act_1548505645839424 · pré-pago · saldo R$ 296,90</div></div>
+      <div class="acct-stats">
+        <div class="stat"><b>R$ 40,66</b><span>gasto</span></div>
+        <div class="stat"><b>24</b><span>leads</span></div>
+        <div class="stat"><b>R$ 1,69</b><span>CPL</span></div>
+      </div>
+    </div>
+    <div class="scroller"><table>
+      <thead><tr><th>Campanha</th><th>Gasto</th><th>Leads</th><th>CPL</th><th>CTR</th></tr></thead>
+      <tbody>
+        <tr><td>[LEADS][FORMULARIOMETA][REGABER/REGPRO]</td><td>40,66</td><td>24</td><td class="good">1,69</td><td>3,97%</td></tr>
+      </tbody>
+    </table></div>
+    <div class="read">A melhor semana da conta: CPL de 7 dias em R$ 1,65, contra R$ 2,58 nos 30 dias. Nada a mexer na mídia. O cuidado é o dinheiro: a folga dá ~8 dias e o próximo boleto (R$ 1.000) só sai quinta, vencendo 22/09. <b>Se o pagamento atrasar um dia, a conta para.</b></div>
+  </div>
+
+  <div class="acct">
+    <div class="acct-head">
+      <div><h3>Açaí Fruit Show — Indústria</h3><div class="id">act_1092055801580226 · cartão · sem limite</div></div>
+      <div class="acct-stats">
+        <div class="stat"><b>R$ 37,58</b><span>gasto</span></div>
+        <div class="stat"><b>9</b><span>leads</span></div>
+        <div class="stat"><b>R$ 4,18</b><span>CPL</span></div>
+      </div>
+    </div>
+    <div class="scroller"><table>
+      <thead><tr><th>Campanha</th><th>Gasto</th><th>Leads</th><th>CPL</th><th>CTR</th></tr></thead>
+      <tbody>
+        <tr><td>[LEADS][PORTOSEGURO][FORMS2.0]</td><td>18,45</td><td>7</td><td class="good">2,64</td><td>3,15%</td></tr>
+        <tr><td>[LEADS][JEQUIE][FORMS2.0]</td><td>19,13</td><td>2</td><td class="flag">9,56</td><td>2,01%</td></tr>
+      </tbody>
+    </table></div>
+    <div class="read">Porto Seguro faz 7 dos 9 leads com metade da verba, e Jequié gasta o mesmo para trazer 2. <b>Sugestão:</b> criativo próprio para Jequié ou tirar R$ 5/dia de lá e pôr em Porto Seguro.</div>
+  </div>
+  <!-- Saborazzi: mesmo formato de bloco .acct -->
+</section>
+
+<section>
+  <div class="sec-head"><h2>Lojas físicas — rede Açaí Fruit Show</h2><span class="count">6 contas · R$ 222,86 · campanhas de topo</span></div>
+  <p class="note" style="margin-bottom:18px">Aqui a métrica não é lead: são campanhas de reconhecimento e visita ao perfil para loja de rua. Quatro das seis contas estão sem saldo.</p>
+
+  <div class="acct">
+    <div class="acct-head">
+      <div><h3>Loja FSA (Fraga Maia) — conta principal da rede</h3><div class="id">act_1441561347702342 · pré-pago · saldo R$ 705,73</div></div>
+      <div class="acct-stats">
+        <div class="stat"><b>R$ 101,47</b><span>gasto</span></div>
+        <div class="stat"><b>27.150</b><span>impressões</span></div>
+        <div class="stat"><b>R$ 3,74</b><span>CPM</span></div>
+      </div>
+    </div>
+    <div class="scroller"><table>
+      <thead><tr><th>Campanha</th><th>Gasto</th><th>Impressões</th><th>CPM</th><th>Freq.</th></tr></thead>
+      <tbody>
+        <tr><td>[INAUG] Reconhecimento — Mantena</td><td>72,22</td><td>23.469</td><td class="good">3,08</td><td class="flag">1,74</td></tr>
+        <tr><td>[INAUG] Tráfego Perfil — Mantena</td><td>29,25</td><td>3.681</td><td>7,95</td><td>1,59</td></tr>
+      </tbody>
+    </table></div>
+    <div class="read"><b>O voo da inauguração termina 01/09 — três dias antes da inauguração.</b> Os dois conjuntos estão com verba vitalícia e data de fim em 01/09 às 23h59: sobram R$ 43,66 no reconhecimento e R$ 10,78 no tráfego de perfil. Dos R$ 1.000 reservados para a ação, foram gastos R$ 260,47 — e do jeito que está, nada roda em 02, 03 e 04/09, que são os dias que decidem presença no evento. Detalhe que muda a estratégia: o reconhecimento já alcançou <b>18.213 pessoas</b> numa cidade cujo público de 18-65 no Instagram é de 17 a 20 mil — <b>Mantena inteira já foi alcançada</b>.</div>
+  </div>
+
+  <div class="acct">
+    <div class="acct-head">
+      <div><h3>AFS Ipatinga Centro</h3><div class="id">act_1433702714293666 · pré-pago · saldo R$ 20,83</div></div>
+      <div class="acct-stats">
+        <div class="stat"><b>R$ 121,39</b><span>gasto</span></div>
+        <div class="stat"><b>36.443</b><span>impressões</span></div>
+        <div class="stat"><b>R$ 3,33</b><span>CPM</span></div>
+      </div>
+    </div>
+    <div class="scroller"><table>
+      <thead><tr><th>Campanha</th><th>Gasto</th><th>Impressões</th><th>CPM</th><th>Freq.</th></tr></thead>
+      <tbody>
+        <tr><td>Vaga de Emprego</td><td>65,80</td><td>8.311</td><td>7,92</td><td class="flag">2,20</td></tr>
+        <tr><td>Reconhecimento — Domingo (ago)</td><td>39,21</td><td>17.626</td><td class="good">2,22</td><td>1,38</td></tr>
+        <tr><td>Reconhecimento — Domingo 02/08</td><td>16,38</td><td>10.506</td><td class="good">1,56</td><td>1,11</td></tr>
+      </tbody>
+    </table></div>
+    <div class="read">Foi a loja que mais gastou do grupo e a que mais acelerou no domingo (R$ 59). <b>Resolvido:</b> a campanha de vaga de emprego já tinha sido pausada no dia 30 às 14h26; a “Domingo — ago26” encerrou sozinha na data programada; e a “Domingo — 02/08”, que estava sem data de fim e continuaria a R$ 20/dia em setembro anunciando promoção de agosto, <b>foi pausada agora</b>. A conta fica sem campanha ativa — o que está certo, já que o saldo é de R$ 20,83 e a ação de agosto acabou.</div>
+  </div>
+
+  <div class="acct">
+    <div class="acct-head">
+      <div><h3>Teixeira de Freitas · STE · Mantena · Tomba</h3><div class="id">4 contas sem entrega no período</div></div>
+      <div class="acct-stats">
+        <div class="stat"><b>R$ 0,00</b><span>gasto</span></div>
+      </div>
+    </div>
+    <div class="read"><b>Teixeira</b> (saldo zero desde 27/07) e <b>STE</b> (desde 18/06) estão paradas por falta de recarga — duas lojas sem nenhuma mídia local há mais de um mês. <b>Mantena</b> está zerada por decisão, já que a inauguração roda na conta da FSA. <b>Tomba</b> segue desativada pela Meta e depende de pedido de revisão na Qualidade da Conta.</div>
+  </div>
+
+  <h3 style="margin:34px 0 6px">Mantena: raio maior ou criativo novo?</h3>
+  <p class="note" style="margin-bottom:16px">A pergunta tem uma resposta clara nos números — e uma coisa mais urgente que as duas.</p>
+
+  <div class="acct">
+    <div class="acct-head">
+      <div><h3>Onde a campanha está</h3><div class="id">reconhecimento + tráfego de perfil · encerra 01/09 23h59</div></div>
+      <div class="acct-stats">
+        <div class="stat"><b>18.213</b><span>pessoas alcançadas</span></div>
+        <div class="stat"><b>17–20 mil</b><span>público da cidade</span></div>
+        <div class="stat"><b>2,45</b><span>frequência</span></div>
+        <div class="stat"><b class="flag">R$ 54,44</b><span>verba restante</span></div>
+      </div>
+    </div>
+    <div class="read">Dos R$ 1.000 reservados para a inauguração, R$ 260,47 foram gastos. O resto não vai sair sozinho: as duas campanhas terminam <b>01/09</b>.</div>
+  </div>
+
+  <ol class="acts">
+    <li class="done"><b>Campanha da reta final criada — falta o criativo</b><p>Está montada e pausada, esperando as peças: <b>[INAUG] Reta Final | Mantena</b>, R$ 740 de verba vitalícia, <b>de 01/09 até 04/09 às 23h59</b>, Mantena cidade, 18 a 65, só Instagram, otimizada para clique no link como a de perfil que já entrega. <b>Sem limite de frequência</b>, que era o pedido. Hoje continua rodando o que já está no ar; a reta final entra amanhã, com R$ 185 por dia em vez de R$ 148 diluídos em cinco dias. Assim que os criativos chegarem, subo os anúncios, ativo e pauso as duas campanhas antigas — descontando da verba o que elas tiverem gasto até lá, para o total da ação fechar nos R$ 1.000.</p></li>
+    <li><b>Raio maior: não resolve o que você quer</b><p>O reconhecimento já alcançou 18.213 pessoas num público de 17 a 20 mil — a cidade inteira já foi impactada, não existe gente nova em Mantena para achar. E a Meta só aceita raio a partir de 16 km, que pula direto para 60–70 mil pessoas de cidades vizinhas: público que não atravessa a região por 100 copos grátis. Se quiser testar mesmo assim, faça em <b>conjunto separado, com R$ 100–150 e só nos dois últimos dias</b>, para não contaminar a leitura da cidade.</p></li>
+    <li><b>Criativo novo: é o que resolve — em sequência, não em variação</b><p>Como a cidade toda já foi alcançada, todo real daqui pra frente é frequência sobre as mesmas 18 mil pessoas. Repetir a mesma peça cinco vezes cansa; repetir com informação nova vira lembrete. Uma peça por dia: <b>02/09</b> o produto e o “vem aí”; <b>03/09</b> “é amanhã” com as ofertas (100 Copos Show para os primeiros e compre 1 leve 2); <b>04/09</b> “é hoje, a partir das 12h” com o endereço na Av. José Mol, 21.</p></li>
+    <li><b>Soltar o limite de frequência nos dois últimos dias</b><p>O conjunto de reconhecimento está com teto de 3 impressões por dia. Na véspera e no dia da inauguração, repetição é o objetivo — subir para 4–5 ou tirar o teto.</p></li>
+    <li><b>Passar peso para o tráfego de perfil no dia 04</b><p>O reconhecimento já fez o trabalho dele (CPM R$ 3,50, cidade coberta). O tráfego de perfil vem com CTR de 1,85% e é o que permite a pessoa salvar o endereço, ver o horário e perguntar no Direct — no dia, ele vale mais que mais alcance.</p></li>
+  </ol>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Desygn Móveis Jardim</h2><span class="count">1 conta · R$ 1.506,92 · 93 conversas</span></div>
+
+  <div class="acct">
+    <div class="acct-head">
+      <div><h3>Direct e WhatsApp + site</h3><div class="id">act_982771069275570 · pré-pago · saldo R$ 0,60</div></div>
+      <div class="acct-stats">
+        <div class="stat"><b>93</b><span>conversas</span></div>
+        <div class="stat"><b>R$ 16,20</b><span>por conversa</span></div>
+        <div class="stat"><b>21</b><span>leads de site</span></div>
+        <div class="stat"><b>R$ 30,10</b><span>CPL site</span></div>
+      </div>
+    </div>
+    <div class="scroller"><table>
+      <thead><tr><th>Campanha</th><th>Gasto</th><th>Conversas</th><th>Custo/conversa</th><th>CTR</th></tr></thead>
+      <tbody>
+        <tr><td>Post impulsionado · “Existem peças que definem…”</td><td>169,30</td><td>28</td><td class="good">6,05</td><td>4,37%</td></tr>
+        <tr><td>Post impulsionado · “A sofisticação do Volupta…”</td><td>141,29</td><td>21</td><td class="good">6,73</td><td>3,41%</td></tr>
+        <tr><td>Post impulsionado · “Um design que captura o vento…”</td><td>142,50</td><td>13</td><td>10,96</td><td>2,97%</td></tr>
+        <tr><td>Engajamento quente · IG Msg (15/06)</td><td>302,29</td><td>21</td><td>14,39</td><td>3,02%</td></tr>
+        <tr><td>Post impulsionado · “A leveza de uma canoa…”</td><td>149,54</td><td>7</td><td class="flag">21,36</td><td>2,69%</td></tr>
+        <tr><td>Site · Público comprador CBO (v2)</td><td>602,01</td><td>3</td><td class="dim">é de site</td><td>5,89%</td></tr>
+      </tbody>
+    </table></div>
+    <div class="read">Conversa a R$ 16,20 está dentro da régua (ideal R$ 15, teto R$ 30). O achado do período: <b>os posts impulsionados estão trazendo conversa mais barata que a campanha dedicada de mensagem</b> — R$ 6,05 e R$ 6,73 contra R$ 14,39 do “Engajamento quente IG Msg”, que é a que mais gasta entre as de mensagem. A campanha de site é outra métrica e vai bem: 20 leads a R$ 30,10. <b>Mas a conta está com R$ 0,60 de saldo</b> e gastou R$ 1,68 hoje contra R$ 334 ontem — está parando enquanto você lê isto.</div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>O que eu faria hoje</h2><span class="count">em ordem de urgência</span></div>
+  <ol class="acts">
+    <li><b>Recarregar Desygn e Ponto Alpha</b><p>São as duas paradas por dinheiro, não por performance. A Desygn queima R$ 500/dia e está com R$ 0,60 — cada hora parada é conversa perdida a R$ 16. O Ponto Alpha está sem entrega desde sexta.</p></li>
+    <li><b>Boali: tirar verba do CP 04 e pôr no CP 05</b><p>R$ 192 por lead com frequência 1,71 contra R$ 55 no lookalike de qualificados. É a maior diferença de eficiência dentro de uma mesma conta em toda a carteira.</p></li>
+    <li><b>Cheirin Bão: cortar o excedente do teto</b><p>Média de R$ 1.161/dia contra R$ 1.000/dia combinados. Reduzir onde não dói: o 11 (consciência) gastou R$ 383 sem lead — é topo, mas é o corte mais barato.</p></li>
+    <li><b>Mantena: estender o voo até 04/09</b><p>As duas campanhas da inauguração terminam em 01/09, três dias antes do evento, com R$ 740 dos R$ 1.000 sem sair. Depois de estender, entra a sequência de criativo por dia — o plano completo está na seção das lojas.</p></li>
+    <li class="done"><b>Ipatinga: campanhas de agosto encerradas</b><p>Feito. A vaga de emprego já estava pausada desde o dia 30; a “Domingo — ago26” encerrou na data; a “Domingo — 02/08” estava sem data de fim e foi pausada agora, antes de virar o mês gastando R$ 20/dia.</p></li>
+    <li><b>AFS Franquia: qualificar os 12 leads antes de escalar</b><p>CPL de R$ 47 num ticket de R$ 270 mil é barato demais para ser bom. Sem o retorno do comercial, aumentar verba aqui é aumentar volume de curioso.</p></li>
+    <li><b>Decidir Teixeira e STE</b><p>Mais de um mês sem mídia local. Ou recarrega, ou tira da rotina — hoje elas só ocupam linha no relatório.</p></li>
+  </ol>
+</section>
+
+<footer>
+  Dados puxados direto da API da Meta em 31/08/2026, 6h24. Período 28/08 a 31/08 — os três primeiros dias fechados, 31/08 parcial. Contas em cartão não têm saldo pré-pago e por isso não aparecem na régua de autonomia. Cheirin Bão MKT (conta da marca) ficou de fora a pedido.
+</footer>
+
+</div>
+
+

@@ -1,0 +1,379 @@
+<title>O Circuito Fechado</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=Martian+Mono:wght@400;600;700&display=swap">
+<style>
+  :root{
+    --paper:#E4E9EC;
+    --surface:#FAFCFC;
+    --surface-2:#EFF3F5;
+    --ink:#111C25;
+    --ink-soft:#45565F;
+    --ink-faint:#74848D;
+    --accent:#B03A16;
+    --accent-soft:#F6E2DA;
+    --line:#C8D2D7;
+    --line-strong:#A4B2B9;
+    --mono:"Martian Mono",ui-monospace,"SF Mono",Menlo,monospace;
+    --serif:"Literata",Georgia,"Times New Roman",serif;
+    --sans:"Archivo","Helvetica Neue",Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0A1117;
+      --surface:#131D25;
+      --surface-2:#1A252E;
+      --ink:#DCE6EB;
+      --ink-soft:#94A5AE;
+      --ink-faint:#71828B;
+      --accent:#E8794C;
+      --accent-soft:#2E1C14;
+      --line:#223039;
+      --line-strong:#35454F;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0A1117;
+    --surface:#131D25;
+    --surface-2:#1A252E;
+    --ink:#DCE6EB;
+    --ink-soft:#94A5AE;
+    --ink-faint:#71828B;
+    --accent:#E8794C;
+    --accent-soft:#2E1C14;
+    --line:#223039;
+    --line-strong:#35454F;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--serif);
+    font-size:17px;
+    line-height:1.62;
+    padding-inline:20px;
+    padding-block:0;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:790px;margin:0 auto;padding-block:46px 110px;display:flex;flex-direction:column;gap:58px}
+
+  .tag{
+    font-family:var(--mono);
+    font-size:10px;
+    font-weight:600;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--accent);
+  }
+
+  /* ---- opener ---- */
+  .open{display:flex;flex-direction:column;gap:20px}
+  h1{
+    font-family:var(--mono);
+    font-weight:700;
+    font-size:clamp(29px,6.4vw,52px);
+    line-height:1.02;
+    letter-spacing:-.045em;
+    margin:0;
+    text-wrap:balance;
+  }
+  .deck{font-size:19px;line-height:1.5;color:var(--ink-soft);max-width:58ch;margin:0}
+  .deck strong{color:var(--ink);font-weight:600}
+  .byline{
+    font-family:var(--sans);
+    font-size:12.5px;
+    font-weight:500;
+    letter-spacing:.04em;
+    color:var(--ink-faint);
+    margin:0;
+    padding-top:10px;
+    border-top:1px solid var(--line);
+  }
+
+  section{display:flex;flex-direction:column;gap:16px}
+  h2{
+    font-family:var(--sans);
+    font-weight:700;
+    font-size:27px;
+    line-height:1.16;
+    letter-spacing:-.02em;
+    margin:0;
+    text-wrap:balance;
+  }
+  p{margin:0;max-width:62ch}
+  .soft{color:var(--ink-soft)}
+  .pull{
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:20px;
+    line-height:1.38;
+    margin:0;
+    padding-left:18px;
+    border-left:3px solid var(--accent);
+    max-width:52ch;
+  }
+
+  /* ---- tables ---- */
+  .scroller{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;min-width:520px}
+  th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{
+    font-family:var(--mono);
+    font-size:9.5px;
+    font-weight:600;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    border-bottom:1.5px solid var(--line-strong);
+  }
+  th:last-child{color:var(--accent)}
+  tbody tr:last-child td{border-bottom:0}
+  td:first-child{font-family:var(--sans);font-size:13.5px;font-weight:600;color:var(--ink-faint);white-space:nowrap}
+  td.old{color:var(--ink-soft);font-size:15.5px;line-height:1.4}
+  td.new{color:var(--ink);font-size:15.5px;line-height:1.4;font-weight:500}
+
+  /* ---- circuit ---- */
+  .circuit{display:flex;flex-direction:column;gap:0;border-left:2px solid var(--line-strong);padding-left:0}
+  .stage{
+    display:grid;
+    grid-template-columns:56px 1fr;
+    gap:0 18px;
+    padding:20px 18px 20px 0;
+    border-bottom:1px solid var(--line);
+    position:relative;
+  }
+  .stage::before{
+    content:"";
+    position:absolute;
+    left:-6px;top:26px;
+    width:10px;height:10px;
+    background:var(--paper);
+    border:2px solid var(--line-strong);
+    border-radius:50%;
+  }
+  .stage.key::before{background:var(--accent);border-color:var(--accent)}
+  .stno{
+    font-family:var(--mono);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.02em;
+    color:var(--ink-faint);
+    padding:4px 0 0 16px;
+    font-variant-numeric:tabular-nums;
+  }
+  .stage.key .stno{color:var(--accent)}
+  .stage h3{font-family:var(--sans);font-weight:700;font-size:18px;margin:0;line-height:1.25;letter-spacing:-.01em}
+  .stage p{font-size:16px;line-height:1.5;color:var(--ink-soft);margin:7px 0 0;max-width:56ch}
+  .stage .does{
+    font-family:var(--mono);
+    font-size:10.5px;
+    letter-spacing:.04em;
+    color:var(--ink-faint);
+    margin:9px 0 0;
+    text-transform:uppercase;
+  }
+  .loop{
+    margin-left:-2px;
+    background:var(--accent-soft);
+    border:1px solid var(--accent);
+    border-left-width:3px;
+    padding:16px 18px;
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+  }
+  .loop .arrow{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--accent);line-height:1.1;flex:none}
+  .loop p{font-family:var(--sans);font-size:15.5px;line-height:1.45;font-weight:500;color:var(--ink);margin:0}
+
+  /* ---- promises ---- */
+  .nots{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .not{
+    background:var(--surface);
+    border:1px solid var(--line);
+    padding:15px 18px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+  }
+  .not b{font-family:var(--sans);font-weight:700;font-size:16.5px;letter-spacing:-.01em}
+  .not span{font-size:15.5px;line-height:1.45;color:var(--ink-soft)}
+
+  /* ---- standing / gaps ---- */
+  .standing{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:1px;background:var(--line)}
+  .standing li{background:var(--surface);padding:14px 16px}
+  .standing b{display:block;font-family:var(--sans);font-weight:600;font-size:15px;line-height:1.3;margin-bottom:3px}
+  .standing span{font-size:14px;line-height:1.42;color:var(--ink-soft)}
+
+  .gap{
+    border-top:2px solid var(--accent);
+    background:var(--surface);
+    padding:18px 20px;
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+  }
+  .gap h3{font-family:var(--sans);font-weight:700;font-size:18px;margin:0;letter-spacing:-.01em}
+  .gap p{font-size:15.5px;line-height:1.48;color:var(--ink-soft)}
+  .gaps{display:flex;flex-direction:column;gap:14px}
+
+  .closer{
+    border-top:1px solid var(--line);
+    padding-top:26px;
+    font-family:var(--sans);
+    font-weight:700;
+    font-size:23px;
+    line-height:1.3;
+    letter-spacing:-.02em;
+    max-width:46ch;
+  }
+
+  @media (max-width:520px){
+    body{font-size:16px}
+    .stage{grid-template-columns:1fr;gap:6px;padding-left:16px}
+    .stno{padding-left:0}
+    .standing{grid-template-columns:1fr}
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="open">
+    <p class="tag">Método de operação · setembro de 2026</p>
+    <h1>O Circuito Fechado</h1>
+    <p class="deck">A diferença entre apertar botão e fazer estratégia não é a quantidade de ajuste no Gerenciador. É <strong>de onde vem a informação que decide o ajuste.</strong> Quem aperta botão só tem o que a plataforma mostra. Eu trabalho com o que o comercial descobriu — e devolvo isso para dentro da campanha.</p>
+    <p class="byline">Mileny Galvão · gestão de tráfego para franquias, varejo e ticket alto</p>
+  </header>
+
+  <section>
+    <h2>O ponto de virada</h2>
+    <p class="soft">A plataforma sabe quem clicou e quem preencheu. Ela não sabe quem atendeu o telefone, quem tinha o capital, quem foi à reunião e quem assinou. Essa informação existe — mas mora no comercial do cliente, e quase nunca volta para a campanha.</p>
+    <p class="soft">Enquanto não volta, o algoritmo otimiza para o lead mais fácil de conseguir. Em ticket alto, o lead mais fácil costuma ser o pior: responde rápido, não tem capital, e queima o tempo de quem vende. É por isso que CPL baixo em produto caro é alerta, não vitória.</p>
+    <p class="pull">Circuito fechado é isso: todo lead volta classificado, e essa classificação reentra na campanha por dois caminhos.</p>
+  </section>
+
+  <section>
+    <h2>Onde o dinheiro é realmente decidido</h2>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th></th><th>Gestão por botão</th><th>Circuito fechado</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Fonte da verdade</td><td class="old">CPL e CTR na tela do Gerenciador</td><td class="new">Classificação do comercial no CRM</td></tr>
+          <tr><td>O que o algoritmo aprende</td><td class="old">Que houve um lead</td><td class="new">Que houve reunião e contrato</td></tr>
+          <tr><td>De onde sai o criativo</td><td class="old">Calendário e referência de concorrente</td><td class="new">Objeção real registrada na venda</td></tr>
+          <tr><td>Quando a campanha muda</td><td class="old">Quando a métrica da tela cai</td><td class="new">Quando o comercial reclama do lead</td></tr>
+          <tr><td>O que o cliente enxerga</td><td class="old">Print de relatório no fim do mês</td><td class="new">Diário de alterações, acompanhável</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>As quatro etapas</h2>
+    <p class="soft">Nenhuma existe sozinha. A etapa 3 é onde a maioria das operações abre o circuito e nunca mais fecha.</p>
+    <div class="circuit">
+
+      <div class="stage">
+        <span class="stno">01</span>
+        <div>
+          <h3>Diagnóstico, antes do primeiro real</h3>
+          <p>O cliente responde um formulário estruturado antes de existir campanha: produto, ticket, quem atende, em quanto tempo responde, o que acontece depois do lead. Se o funil não sustenta tráfego, a campanha não sobe — e eu digo isso antes de pegar o dinheiro.</p>
+          <p class="does">Entrega · diagnóstico estratégico e veredito de prontidão</p>
+        </div>
+      </div>
+
+      <div class="stage">
+        <span class="stno">02</span>
+        <div>
+          <h3>Estrutura por nível de consciência</h3>
+          <p>Campanha organizada por quanto a pessoa já sabe, não por micro-segmentação. O conjunto é o degrau; o criativo é a munição dentro dele. Sobe pausada, só Instagram, sem expansão automática de público — o que protege o perfil de quem realmente compra.</p>
+          <p class="does">Entrega · funil em camadas, ativação sempre manual</p>
+        </div>
+      </div>
+
+      <div class="stage key">
+        <span class="stno">03</span>
+        <div>
+          <h3>Classificação pelo comercial</h3>
+          <p>O lead volta com nome e situação: atendeu, tinha capital, virou reunião, virou contrato. É aqui que o circuito fecha ou fica aberto para sempre. Sem esse retorno, todo o resto vira palpite caro — inclusive o meu.</p>
+          <p class="does">Depende do cliente · é o que eu peço em troca</p>
+        </div>
+      </div>
+
+      <div class="stage key">
+        <span class="stno">04</span>
+        <div>
+          <h3>Reentrada, por dois caminhos</h3>
+          <p>A classificação volta para dentro da campanha em duas frentes. Como <strong>evento de conversão</strong>, para a plataforma parar de otimizar por lead e passar a otimizar por venda. E como <strong>ângulo de criativo</strong>: a objeção que travou a assinatura vira o roteiro do vídeo seguinte.</p>
+          <p class="does">Entrega · conversão offline e banco de ângulos alimentado</p>
+        </div>
+      </div>
+
+      <div class="loop">
+        <span class="arrow" aria-hidden="true">↑</span>
+        <p>A saída da etapa 4 é a entrada da etapa 2. É essa volta que separa estratégia de operação de botão — e é a única parte que nenhum concorrente consegue copiar, porque ela depende do histórico da conta, não da ferramenta.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>O que eu não prometo</h2>
+    <p class="soft">Isso não é modéstia, é o contrato. Prometer o que não está sob meu controle é como se perde cliente no mês três.</p>
+    <ul class="nots">
+      <li class="not"><b>Não prometo venda.</b><span>Venda é do comercial. O que eu entrego é gente certa chegando com frequência previsível, e o dado de quem chegou. Se o atendimento demora três horas, nenhum anúncio salva.</span></li>
+      <li class="not"><b>Não prometo CPL baixo.</b><span>Em ticket alto, CPL caindo costuma significar que o anúncio ficou fácil demais de responder. Eu persigo lead que o comercial classifica como bom, mesmo custando mais caro.</span></li>
+      <li class="not"><b>Não prometo seguidor.</b><span>Seguidor é consequência de conteúdo, não de verba. Quem quer audiência compra outra coisa.</span></li>
+      <li class="not"><b>Não prometo resultado sem retorno do comercial.</b><span>Sem a etapa 3, o circuito fica aberto e eu viro gestora de botão como qualquer outra. Esse é o único item em que eu dependo do cliente — e eu cobro.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>O que já está de pé</h2>
+    <p class="soft">Isto não é plano, é o que roda hoje na carteira. É também o argumento: boa parte do que o mercado vende como diferencial de agência premium já é rotina aqui.</p>
+    <ul class="standing">
+      <li><b>Diagnóstico antes da campanha</b><span>Formulário estruturado que o prospect preenche antes de existir verba.</span></li>
+      <li><b>Funil por consciência</b><span>Quatro camadas, criativo como munição, ativação manual.</span></li>
+      <li><b>Conversão offline ligada</b><span>O evento de venda do CRM volta para a plataforma.</span></li>
+      <li><b>Diário de alterações</b><span>Toda mudança em campanha fica registrada e visível ao cliente.</span></li>
+      <li><b>Banco de ângulos</b><span>Objeção do comercial vira roteiro; peça testada volta com resultado.</span></li>
+      <li><b>Checklist de aprovação</b><span>Treze itens antes de qualquer peça subir. Reprovou, volta para a edição.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Os dois buracos</h2>
+    <p class="soft">O circuito não está completo. Onde ele abre hoje:</p>
+    <div class="gaps">
+      <div class="gap">
+        <h3>Triagem antes do atendimento</h3>
+        <p>Hoje o lead cai direto no comercial e a filtragem é humana. Uma pergunta de qualificação antes do WhatsApp tira o curioso antes de queimar tempo de venda — e melhora a etapa 3, porque o comercial passa a classificar menos gente e com mais atenção.</p>
+      </div>
+      <div class="gap">
+        <h3>Segunda compra e reativação</h3>
+        <p>O circuito fecha na primeira venda e para ali. Em franquia isso pesa menos, porque a venda é única. Em varejo e e-commerce é dinheiro parado: ninguém está medindo recompra nem reativando quem já comprou.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Por que isso sustenta preço</h2>
+    <p class="soft">Não é cobrar mais pelo mesmo serviço. É que o que se entrega deixa de ser gestão de anúncio:</p>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th></th><th>Quem compra gestão</th><th>Quem compra circuito</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Recebe</td><td class="old">Ajuste de campanha e relatório</td><td class="new">Decisão registrada, dado do comercial devolvido ao algoritmo e criativo saindo da venda real</td></tr>
+          <tr><td>Troca de gestor</td><td class="old">Por R$ 200 a menos</td><td class="new">Perde o histórico que faz a conta funcionar</td></tr>
+          <tr><td>Discussão do mês</td><td class="old">Por que o CPL subiu</td><td class="new">Qual objeção atacar no próximo criativo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="closer">Apertar botão é o que sobra quando o circuito está aberto.</p>
+
+</div>

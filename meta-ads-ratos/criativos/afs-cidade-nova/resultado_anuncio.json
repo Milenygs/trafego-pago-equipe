@@ -1,0 +1,27 @@
+{
+  "creative_id": "2140316976552744",
+  "ad_id": "120249315821840726",
+  "nome": "AD01 - O TEU AÇAÍ FAVORITO [VIDEO]",
+  "video_id": "2663255340756426",
+  "variante": "A",
+  "link": "https://app.cardapioweb.com/acaifruitshow",
+  "checks": {
+    "botao_pedir_agora": true,
+    "link_cardapio": true,
+    "ig_da_loja": true,
+    "ia_desligada": true,
+    "recursos_opt_out": 83,
+    "anuncio_pausado": true,
+    "previews": {
+      "INSTAGRAM_STANDARD": true,
+      "INSTAGRAM_STORY": true,
+      "INSTAGRAM_REELS": true
+    }
+  },
+  "anuncio": {
+    "name": "AD01 - O TEU AÇAÍ FAVORITO [VIDEO]",
+    "status": "PAUSED",
+    "effective_status": "IN_PROCESS",
+    "id": "120249315821840726"
+  }
+}
