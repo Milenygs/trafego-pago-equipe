@@ -1,0 +1,695 @@
+[
+ {
+  "id": "120251548516690156",
+  "name": "[VV 50%] NIVEL 2 - RECUSOU O FUNDO + RODRIGO VENDER FRANQUIA 180D",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 2300,
+  "approximate_count_upper_bound": 2700,
+  "retention_days": 180,
+  "time_created": 1790940926
+ },
+ {
+  "id": "120251445532540156",
+  "name": "IG_DIRECT_365D (Boali)",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 1100,
+  "approximate_count_upper_bound": 1300,
+  "retention_days": 365,
+  "time_created": 1790363286
+ },
+ {
+  "id": "120251445531230156",
+  "name": "FORM_ENVIOU_30D (Boali)",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 30,
+  "time_created": 1790363264
+ },
+ {
+  "id": "120251445526980156",
+  "name": "FORM_ABRIU_NAO_ENVIOU_90D (Boali)",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 90,
+  "time_created": 1790363241
+ },
+ {
+  "id": "120251445501230156",
+  "name": "CRM_FUNDO_PIPELINE_ATIVO_25-09 (lista, sem aguardando pagamento)",
+  "subtype": "CUSTOM",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 0,
+  "time_created": 1790363070
+ },
+ {
+  "id": "120251264895210156",
+  "name": "CAPI_LEAD_DESQUALIFICADO_180D (CRM)",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 180,
+  "time_created": 1789420551
+ },
+ {
+  "id": "120250962270470156",
+  "name": "VIDEO_75_BOALI_180D - NIVEL 1- 2",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 39700,
+  "approximate_count_upper_bound": 46700,
+  "retention_days": 180,
+  "time_created": 1787665527
+ },
+ {
+  "id": "120250616234290156",
+  "name": "VIDEO VIEW - THRUPLAY 365D",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 5100,
+  "approximate_count_upper_bound": 6000,
+  "retention_days": 365,
+  "time_created": 1786385980
+ },
+ {
+  "id": "120250113249130156",
+  "name": "SITE_25%_30D",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 30,
+  "time_created": 1784670629
+ },
+ {
+  "id": "120250113243800156",
+  "name": "IG_ENGAJ_BOALI_30D",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 7100,
+  "approximate_count_upper_bound": 8300,
+  "retention_days": 30,
+  "time_created": 1784670582
+ },
+ {
+  "id": "120250113239270156",
+  "name": "IG_VIDEO_75%_BOALI_30D",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 30,
+  "time_created": 1784670528
+ },
+ {
+  "id": "120250113239260156",
+  "name": "IG_VIDEO_75%_BOALI_7D",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 7,
+  "time_created": 1784670528
+ },
+ {
+  "id": "120250061945140156",
+  "name": "LAL 2% BR - QUALIFICADOS+VENDAS",
+  "subtype": "LOOKALIKE",
+  "approximate_count_lower_bound": 2400000,
+  "approximate_count_upper_bound": 2900000,
+  "retention_days": 0,
+  "time_created": 1784473709
+ },
+ {
+  "id": "120250060672790156",
+  "name": "LAL 1% BR - QUALIFICADOS+VENDAS",
+  "subtype": "LOOKALIKE",
+  "approximate_count_lower_bound": 1300000,
+  "approximate_count_upper_bound": 1500000,
+  "retention_days": 0,
+  "time_created": 1784467342
+ },
+ {
+  "id": "120250060590620156",
+  "name": "SEMENTE - QUALIFICADOS+VENDAS CRM - 17/07",
+  "subtype": "CUSTOM",
+  "approximate_count_lower_bound": 2200,
+  "approximate_count_upper_bound": 2600,
+  "retention_days": 0,
+  "time_created": 1784467167
+ },
+ {
+  "id": "120250023868990156",
+  "name": "Semelhante (2%) - Meta_Ads_Clientes.csv",
+  "subtype": "LOOKALIKE",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 0,
+  "time_created": 1784297134
+ },
+ {
+  "id": "120250023861530156",
+  "name": "Meta_Ads_Clientes.csv",
+  "subtype": "CUSTOM",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 0,
+  "time_created": 1784297094
+ },
+ {
+  "id": "120250023479700156",
+  "name": "IG_ENGAJ__BOALI_60D",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 19700,
+  "approximate_count_upper_bound": 23200,
+  "retention_days": 60,
+  "time_created": 1784295593
+ },
+ {
+  "id": "120249998803170156",
+  "name": "VIDEO VIEW THRUPLAY 60D",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 21900,
+  "approximate_count_upper_bound": 25800,
+  "retention_days": 60,
+  "time_created": 1784212141
+ },
+ {
+  "id": "120249998788590156",
+  "name": "VIDEO VIEW THRUPLAY 90D",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 41300,
+  "approximate_count_upper_bound": 48600,
+  "retention_days": 90,
+  "time_created": 1784212093
+ },
+ {
+  "id": "120249998764420156",
+  "name": "VIDEO VIEW THRUPLAY 180D",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 111200,
+  "approximate_count_upper_bound": 130800,
+  "retention_days": 180,
+  "time_created": 1784212025
+ },
+ {
+  "id": "120249998735970156",
+  "name": "VIDEO VIEW THRUPLAY 365D",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 42400,
+  "approximate_count_upper_bound": 49900,
+  "retention_days": 365,
+  "time_created": 1784211952
+ },
+ {
+  "id": "120249450543920156",
+  "name": "CADASTROS 30DD MADS",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 30,
+  "time_created": 1782846429
+ },
+ {
+  "id": "120248901662670156",
+  "name": "SITE VIEWS 30 DDD",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 30,
+  "time_created": 1782329479
+ },
+ {
+  "id": "120248717660850156",
+  "name": "VIEWS ABF 2026",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 30,
+  "time_created": 1782160570
+ },
+ {
+  "id": "120248261807790156",
+  "name": "VIEWS 15DD LP controle",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 15,
+  "time_created": 1781707135
+ },
+ {
+  "id": "120248261665140156",
+  "name": "VIEWS 7DD LP controle",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 7,
+  "time_created": 1781707076
+ },
+ {
+  "id": "120248189431470156",
+  "name": "Semelhante (1%) - VIews de cortes SOCIOS + ABERTURAS + CONTEÚDOS FQ",
+  "subtype": "LOOKALIKE",
+  "approximate_count_lower_bound": -1,
+  "approximate_count_upper_bound": -1,
+  "retention_days": 0,
+  "time_created": 1781641308
+ },
+ {
+  "id": "120248189421280156",
+  "name": "VIews de cortes SOCIOS + ABERTURAS + CONTEÚDOS FQ",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 2500,
+  "approximate_count_upper_bound": 2900,
+  "retention_days": 365,
+  "time_created": 1781641286
+ },
+ {
+  "id": "120248060674010156",
+  "name": "VISITANTES 20260612wellempabr",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 30,
+  "time_created": 1781545650
+ },
+ {
+  "id": "120247157671390156",
+  "name": "CLICOU NO BOTÃO TESTE PG TESTE06",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 15,
+  "time_created": 1780697715
+ },
+ {
+  "id": "120247152581040156",
+  "name": "Semelhante (1%) - VIEWS URL IRON MAN FLORIPA",
+  "subtype": "LOOKALIKE",
+  "approximate_count_lower_bound": -1,
+  "approximate_count_upper_bound": -1,
+  "retention_days": 0,
+  "time_created": 1780692672
+ },
+ {
+  "id": "120246767398910156",
+  "name": "VIEWS URL IRON MAN FLORIPA",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 7,
+  "time_created": 1780339444
+ },
+ {
+  "id": "120243050981220156",
+  "name": "95% VÍDEOS FOCO EM FRANQUIA",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 90,
+  "time_created": 1775837159
+ },
+ {
+  "id": "120238982678540156",
+  "name": "PQ ENGAJADO RB",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 276500,
+  "approximate_count_upper_bound": 325300,
+  "retention_days": 365,
+  "time_created": 1767989767
+ },
+ {
+  "id": "120237819095770156",
+  "name": "Semelhante (BR, 1%) - PEPA - IG RODRIGO 180DD",
+  "subtype": "LOOKALIKE",
+  "approximate_count_lower_bound": -1,
+  "approximate_count_upper_bound": -1,
+  "retention_days": 0,
+  "time_created": 1765475077
+ },
+ {
+  "id": "120237818938630156",
+  "name": "Semelhante (BR, 1%) - CADASTRO REALIZADO",
+  "subtype": "LOOKALIKE",
+  "approximate_count_lower_bound": -1,
+  "approximate_count_upper_bound": -1,
+  "retention_days": 0,
+  "time_created": 1765474834
+ },
+ {
+  "id": "120237818661500156",
+  "name": "CADASTRO REALIZADO",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 180,
+  "time_created": 1765474610
+ },
+ {
+  "id": "120236761297380156",
+  "name": "Vistou Site Franquia",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 180,
+  "time_created": 1764082698
+ },
+ {
+  "id": "120224942173180156",
+  "name": "PEPA C - BOALI 180DD",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 54400,
+  "approximate_count_upper_bound": 64000,
+  "retention_days": 180,
+  "time_created": 1747326326
+ },
+ {
+  "id": "120224942147330156",
+  "name": "PEPA - BOALI 180DD",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 103600,
+  "approximate_count_upper_bound": 121800,
+  "retention_days": 180,
+  "time_created": 1747326304
+ },
+ {
+  "id": "120224941274030156",
+  "name": "Semelhante (BR, 1%) - Leads Março - Maio",
+  "subtype": "LOOKALIKE",
+  "approximate_count_lower_bound": -1,
+  "approximate_count_upper_bound": -1,
+  "retention_days": 0,
+  "time_created": 1747324897
+ },
+ {
+  "id": "120210120730550156",
+  "name": "PageView - 14DD",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 14,
+  "time_created": 1718637969
+ },
+ {
+  "id": "120210120730530156",
+  "name": "PageView - 7DD",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 7,
+  "time_created": 1718637968
+ },
+ {
+  "id": "120210120730520156",
+  "name": "PageView - 1DD",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 1,
+  "time_created": 1718637968
+ },
+ {
+  "id": "120208567533340156",
+  "name": "Leads Março - Maio",
+  "subtype": "CUSTOM",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 0,
+  "time_created": 1714570590
+ },
+ {
+  "id": "120207899320800156",
+  "name": "PEPA C - IG RODRIGO 180DD",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 180,
+  "time_created": 1712941034
+ },
+ {
+  "id": "120207899312750156",
+  "name": "PEPA - IG RODRIGO 180DD",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 180,
+  "time_created": 1712941006
+ },
+ {
+  "id": "120207899192700156",
+  "name": "SEGUIDORES - IG Rodrigo",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 38300,
+  "approximate_count_upper_bound": 45000,
+  "retention_days": 0,
+  "time_created": 1712940740
+ },
+ {
+  "id": "120207589325560156",
+  "name": "PageView - 90DD",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 90,
+  "time_created": 1712109654
+ },
+ {
+  "id": "120207589301750156",
+  "name": "PageView - 60DD",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 60,
+  "time_created": 1712109603
+ },
+ {
+  "id": "120207589301740156",
+  "name": "PageView - 30DD",
+  "subtype": "WEBSITE",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 20,
+  "retention_days": 30,
+  "time_created": 1712109603
+ },
+ {
+  "id": "120207589273580156",
+  "name": "VV 90% - 7DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 7,
+  "time_created": 1712109371
+ },
+ {
+  "id": "120207589273570156",
+  "name": "VV 90% - 14DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 14,
+  "time_created": 1712109371
+ },
+ {
+  "id": "120207589273560156",
+  "name": "VV 90% - 30DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 30,
+  "time_created": 1712109371
+ },
+ {
+  "id": "120207589273550156",
+  "name": "VV 90% - 60DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 60,
+  "time_created": 1712109371
+ },
+ {
+  "id": "120207589273520156",
+  "name": "VV 90% - 90DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 90,
+  "time_created": 1712109370
+ },
+ {
+  "id": "120207589273510156",
+  "name": "VV 90% - 180DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 180,
+  "time_created": 1712109370
+ },
+ {
+  "id": "120207589273500156",
+  "name": "VV 90% - 365DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 365,
+  "time_created": 1712109370
+ },
+ {
+  "id": "120207589086950156",
+  "name": "VV 50% - 7DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 7,
+  "time_created": 1712108727
+ },
+ {
+  "id": "120207589086940156",
+  "name": "VV 50% - 14DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 14,
+  "time_created": 1712108727
+ },
+ {
+  "id": "120207589086930156",
+  "name": "VV 50% - 30DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 30,
+  "time_created": 1712108727
+ },
+ {
+  "id": "120207589086920156",
+  "name": "VV 50% - 60DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 60,
+  "time_created": 1712108727
+ },
+ {
+  "id": "120207589086910156",
+  "name": "VV 50% - 90DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 90,
+  "time_created": 1712108727
+ },
+ {
+  "id": "120207589086900156",
+  "name": "VV 50% - 180DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 180,
+  "time_created": 1712108727
+ },
+ {
+  "id": "120207589086850156",
+  "name": "VV 50% - 365DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 365,
+  "time_created": 1712108726
+ },
+ {
+  "id": "120207589041790156",
+  "name": "VV 25% - 14DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 14,
+  "time_created": 1712108447
+ },
+ {
+  "id": "120207589041780156",
+  "name": "VV 25% - 30DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 20,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 30,
+  "time_created": 1712108447
+ },
+ {
+  "id": "120207589041720156",
+  "name": "VV 25% - 60DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 60,
+  "time_created": 1712108446
+ },
+ {
+  "id": "120207589041660156",
+  "name": "VV 25% - 90DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 90,
+  "time_created": 1712108446
+ },
+ {
+  "id": "120207589041620156",
+  "name": "VV 25% - 180DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 180,
+  "time_created": 1712108446
+ },
+ {
+  "id": "120207589041610156",
+  "name": "VV 25% - 365DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 365,
+  "time_created": 1712108446
+ },
+ {
+  "id": "120207589012540156",
+  "name": "ThruPlay - 180DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 180,
+  "time_created": 1712108257
+ },
+ {
+  "id": "120207589012530156",
+  "name": "ThruPlay - 365DD",
+  "subtype": "ENGAGEMENT",
+  "approximate_count_lower_bound": 1000,
+  "approximate_count_upper_bound": 1000,
+  "retention_days": 365,
+  "time_created": 1712108256
+ },
+ {
+  "id": "120207588975520156",
+  "name": "PEPA C - 180DD",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 32300,
+  "approximate_count_upper_bound": 38100,
+  "retention_days": 180,
+  "time_created": 1712108080
+ },
+ {
+  "id": "120207588971870156",
+  "name": "SEGUIDORES IG - BOALI",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 5100,
+  "approximate_count_upper_bound": 6000,
+  "retention_days": 0,
+  "time_created": 1712108052
+ },
+ {
+  "id": "120207588957680156",
+  "name": "PEPA - 180DD",
+  "subtype": "IG_BUSINESS",
+  "approximate_count_lower_bound": 63500,
+  "approximate_count_upper_bound": 74700,
+  "retention_days": 180,
+  "time_created": 1712108023
+ }
+]

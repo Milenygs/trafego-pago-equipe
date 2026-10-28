@@ -1,0 +1,925 @@
+{
+ "120251313225380156": {
+  "id": "120251313225380156",
+  "name": "[FRIO] [PIN LOJAS CAPITAL] [FORMS] SP CAPITAL 25 LOJAS 2KM",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    },
+    {
+     "id": "120251264895210156",
+     "name": "CAPI_LEAD_DESQUALIFICADO_180D (CRM)"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "custom_locations": [
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.48025,
+      "longitude": -46.60274,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.48304,
+      "longitude": -46.6447,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.51571,
+      "longitude": -46.61805,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.53557,
+      "longitude": -46.5826,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.5369,
+      "longitude": -46.61851,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.53768,
+      "longitude": -46.67199,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.54171,
+      "longitude": -46.57667,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.54673,
+      "longitude": -46.63863,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.54744,
+      "longitude": -46.75707,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.55113,
+      "longitude": -46.72196,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.55405,
+      "longitude": -46.65268,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.55552,
+      "longitude": -46.68968,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.55785,
+      "longitude": -46.65895,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.56581,
+      "longitude": -46.6508,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.57038,
+      "longitude": -46.66142,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.57629,
+      "longitude": -46.6582,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.58441,
+      "longitude": -46.72507,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.5871,
+      "longitude": -46.67688,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.5953,
+      "longitude": -46.68668,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.59909,
+      "longitude": -46.63721,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.60274,
+      "longitude": -46.7188,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.60602,
+      "longitude": -46.66656,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.60899,
+      "longitude": -46.69662,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.61028,
+      "longitude": -46.66664,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     },
+     {
+      "distance_unit": "kilometer",
+      "latitude": -23.63406,
+      "longitude": -46.64113,
+      "radius": 2,
+      "primary_city_id": 269969,
+      "region_id": 460,
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  }
+ },
+ "120250112177130156": {
+  "id": "120250112177130156",
+  "name": "[180D] [PEPA + VV + SITE] [ON_VIDEO] — 3",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    }
+   ],
+   "excluded_geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "267027",
+      "name": "Rio de Janeiro",
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     }
+    ],
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  }
+ },
+ "120250111279470156": {
+  "id": "120250111279470156",
+  "name": "[FRIO] LAL 1% QUALIFICADOS+VENDAS 30-55",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    },
+    {
+     "id": "120251264895210156",
+     "name": "CAPI_LEAD_DESQUALIFICADO_180D (CRM)"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120250060672790156",
+     "name": "LAL 1% BR - QUALIFICADOS+VENDAS"
+    }
+   ],
+   "excluded_geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "267027",
+      "name": "Rio de Janeiro",
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     }
+    ],
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 1,
+    "custom_audience": 0
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  }
+ },
+ "120249976014280156": {
+  "id": "120249976014280156",
+  "name": "[BR] [WELLNESS x EMPREENDEDOR] [30-55]",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    },
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    },
+    {
+     "id": "120251264895210156",
+     "name": "CAPI_LEAD_DESQUALIFICADO_180D (CRM)"
+    }
+   ],
+   "excluded_geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "267027",
+      "name": "Rio de Janeiro",
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     }
+    ],
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home"
+    ]
+   },
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home"
+    ]
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  }
+ },
+ "120249949945780156": {
+  "id": "120249949945780156",
+  "name": "[QUENTE 180D] [FORMS - CADASTROS] [ON_AD]",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207588971870156",
+     "name": "SEGUIDORES IG - BOALI"
+    },
+    {
+     "id": "120207589012530156",
+     "name": "ThruPlay - 365DD"
+    },
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589041610156",
+     "name": "VV 25% - 365DD"
+    },
+    {
+     "id": "120207589086850156",
+     "name": "VV 50% - 365DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120207589325560156",
+     "name": "PageView - 90DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    },
+    {
+     "id": "120251548516690156",
+     "name": "[VV 50%] NIVEL 2 - RECUSOU O FUNDO + RODRIGO VENDER FRANQUIA 180D"
+    }
+   ],
+   "excluded_geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "267027",
+      "name": "Rio de Janeiro",
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     }
+    ],
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  }
+ },
+ "120249949929600156": {
+  "id": "120249949929600156",
+  "name": "[180D] [PEPA + VV + SITE] [ON_VIDEO]",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    }
+   ],
+   "excluded_geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "267027",
+      "name": "Rio de Janeiro",
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     }
+    ],
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  }
+ }
+}

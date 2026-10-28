@@ -106,6 +106,15 @@ Duas fontes, as duas obrigatórias:
    `historico\AAAA-MM.md` da mesma pasta (o mais recente fica no topo).
    O antigo `meta-ads-ratos/historico.md` está congelado desde 17/09/2026.
 
+3. **Registro automático do log da Meta** (desde 28/10/2026, pedido da Mileny: "todas
+   as nossas ações nas contas devem ser registradas e compartilhadas entre nós duas"):
+   `$HOME\OneDrive\Carteira\_Central\registro-log\AAAA-MM-DD.json`, data de HOJE. O
+   `registrar_log.py` roda antes de você e já gravou no `historico\` de cada cliente as
+   mudanças feitas no painel por Mileny e Tainara, com autor e hora de Brasília, e
+   "motivo: a preencher". Use esse arquivo como a lista de "o que mudou", junto com o
+   `decisoes.md`. Se precisar ler o log da Meta direto, lembre que `event_time` vem em
+   **UTC**: subtraia 3 horas antes de escrever qualquer horário (erro de 28/10/2026).
+
 Classifique cada conta antes de escrever qualquer leitura:
 
 - **janela limpa** — nada mexido no período. A média de 3 dias vale como veredito.
@@ -199,6 +208,11 @@ Ordem das seções, igual ao modelo:
    a fazer em relatório anterior. Se nada foi mexido na semana, escreva uma linha
    dizendo isso e siga — a seção nunca é omitida, porque a ausência de mudança
    também é informação.
+   Logo abaixo da tabela, um bloco **"Mudanças sem motivo"**: as entradas automáticas
+   (`registro automático do log da Meta` no `historico\`) que continuam com "Motivo: a
+   preencher", agrupadas por quem fez (Mileny / Tainara), com conta, data e o que mudou.
+   É a cobrança combinada em 28/10/2026, para nenhuma das duas precisar cobrar a outra.
+   Sem pendência, uma linha dizendo isso.
 3. **Saldo — quem para primeiro** — autonomia estimada, ordenada da mais crítica
    para a mais folgada, com as classes `st-crit`, `st-warn`, `st-ok`, `st-off`.
    Use **o menor entre saldo e folga do limite de gasto**. Contas no cartão não

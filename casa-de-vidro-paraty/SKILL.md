@@ -252,8 +252,14 @@ segmentações, frases e fotos. Execução na API via `meta-ads-ratos`.
     espaço completo" + chamada de WhatsApp.
   - **A — `905074225778543`, PAUSED** (4 ads), copy "Raro. Inteiro. Só de
     vocês." Fica de reserva para comparar argumento depois.
-  - **Instagram dela não é legível por API:** `ads_get_ig_accounts` nessa conta
-    devolve `[]`. Se ela pedir "usa o texto do post", pedir o texto colado.
+  - **Instagram dela ficou legível em 26/09/2026** pela Graph API direta
+    (`GET /17841472733937596/media` + `/{media}/insights`: reach, saved, shares,
+    views). O `ads_get_ig_accounts` do conector segue `[]`, então testar pela Graph
+    antes de pedir texto colado.
+- **Funil de 26/09/2026:** topo com video view do "Onde o verão 1" (mesmos pinos
+  da WHATS) + engajamento com o Reel "Nosso refúgio no paraíso!" (bairros alto
+  padrão SP-RJ-MG) e fundo com conjunto QUENTE na WHATS. Visita ao perfil não
+  roda nessa conta (2016153). Estado e IDs no `decisoes.md` da Carteira.
 
 ## Identidade da Marca
 
@@ -320,7 +326,10 @@ destinos." (família+noivado) · "O essencial elevado ao máximo." (todos) ·
 tem outro ritmo." (todos, sensorial)
 
 **Legenda (texto do anúncio):** as 3 dos públicos + "Para quem sabe que uma casa
-inteira vale mais do que um hotel." (todos)
+inteira vale mais do que um hotel." (todos) + (aprovadas em 28/09/2026, vídeo
+Culinária) "A mesa já está posta." · "O café da manhã é servido no deck, de frente
+para a baía de Paraty Mirim. E a gastronomia caiçara da casa acompanha o dia, com
+cardápio personalizado, criado para vocês."
 
 Usar SOMENTE frases deste banco (são aprovadas pelo cliente). Frase nova =
 propor e marcar como "aguardando aprovação".

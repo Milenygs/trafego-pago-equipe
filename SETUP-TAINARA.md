@@ -61,3 +61,18 @@ Sempre que a Mileny avisar que mudou alguma skill, abra o Claude Code e digite:
 - Nada é aplicado nas contas sem o ok da Mileny.
 - Na pasta Carteira, registre no `decisoes.md` e no `historico\` só o que a Mileny aprovou.
   Não apague nem mova arquivos: o que muda aí muda no computador dela também.
+
+## Registro das ações (desde 28/10/2026)
+
+Tudo o que nós duas fazemos nas contas fica registrado **na `OneDrive\Carteira`**, para as duas verem.
+
+- **Abra o Claude Code sempre dentro de `OneDrive\Carteira`** (ou da pasta do cliente). Nunca
+  trabalhe na cópia `02-carteira-clientes-meta` do pacote em zip: ela é antiga e não sincroniza.
+  Se ainda tiver essa cópia no seu computador, pode apagar.
+- **Mexeu pelo Claude:** ele registra na hora no `historico\` e no `decisoes.md` do cliente.
+- **Mexeu direto no Gerenciador:** às 7h do dia seguinte o registro automático grava a mudança no
+  `historico\` do cliente, com o seu nome e o horário, e "Motivo: a preencher". Abra o Claude na
+  Carteira e diga: *"registra: pausei a campanha X da Facilmart porque Y"*. Ele completa a linha.
+  O Extrato da manhã lista as mudanças que ainda estão sem motivo.
+- **Relatório da manhã:** não gere o extrato no seu computador. O do dia fica em
+  `OneDrive\Carteira\_Central\extrato\extrato-AAAA-MM-DD.html`. Abra pelo navegador.

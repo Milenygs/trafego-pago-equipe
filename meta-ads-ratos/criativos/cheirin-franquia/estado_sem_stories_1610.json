@@ -1,0 +1,2757 @@
+{
+ "anuncios": {
+  "120258456755400212": {
+   "rotulo": "VD07 - franqueada_raissa",
+   "nome": "VD07 - franqueada_raissa",
+   "conjunto": "120257337905370212",
+   "criativo_antigo": "28925995500364188",
+   "spec": {
+    "object_story_spec": {
+     "page_id": "639778989482866",
+     "instagram_user_id": "17841400169946431",
+     "video_data": {
+      "video_id": "1463729912309347",
+      "image_hash": "e63c70fa1b03aff6bdf1f91ce7310272",
+      "call_to_action": {
+       "type": "SIGN_UP",
+       "value": {
+        "lead_gen_form_id": "1106977512033195",
+        "link": "http://fb.me/"
+       }
+      }
+     }
+    },
+    "degrees_of_freedom_spec": {
+     "creative_features_spec": {
+      "adapt_to_placement": {
+       "enroll_status": "OPT_OUT"
+      },
+      "add_text_overlay": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ads_with_benefits": {
+       "enroll_status": "OPT_OUT"
+      },
+      "advantage_plus_creative": {
+       "enroll_status": "OPT_OUT"
+      },
+      "app_highlights": {
+       "enroll_status": "OPT_OUT"
+      },
+      "audio": {
+       "enroll_status": "OPT_OUT"
+      },
+      "auto_promotion_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "biz_ai": {
+       "enroll_status": "OPT_OUT"
+      },
+      "carousel_to_video": {
+       "enroll_status": "OPT_OUT"
+      },
+      "catalog_feed_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "creative_stickers": {
+       "enroll_status": "OPT_OUT"
+      },
+      "customize_product_recommendation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "cv_transformation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "description_automation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "dha_optimization": {
+       "enroll_status": "OPT_OUT"
+      },
+      "dynamic_cta_text": {
+       "enroll_status": "OPT_OUT"
+      },
+      "dynamic_partner_content": {
+       "enroll_status": "OPT_OUT"
+      },
+      "enable_ncs_testimonials": {
+       "enroll_status": "OPT_OUT"
+      },
+      "enhance_cta": {
+       "enroll_status": "OPT_OUT"
+      },
+      "fb_feed_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "fb_reels_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "fb_story_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "feed_caption_optimization": {
+       "enroll_status": "OPT_OUT"
+      },
+      "generate_cta": {
+       "enroll_status": "OPT_OUT"
+      },
+      "hide_price": {
+       "enroll_status": "OPT_OUT"
+      },
+      "hyperlink_formatting": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_feed_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_glados_feed": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_reels_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_stream_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_video_native_subtitle": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_animation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_auto_crop": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_background_gen": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_banner": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_brightness_and_contrast": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_end_card": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_enhancement": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_templates": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_text_translation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_touchups": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_uncrop": {
+       "enroll_status": "OPT_OUT"
+      },
+      "inline_comment": {
+       "enroll_status": "OPT_OUT"
+      },
+      "local_store_extension": {
+       "enroll_status": "OPT_OUT"
+      },
+      "media_liquidity_animated_image": {
+       "enroll_status": "OPT_OUT"
+      },
+      "media_order": {
+       "enroll_status": "OPT_OUT"
+      },
+      "media_type_automation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "multi_creative_post_carousel": {
+       "enroll_status": "OPT_OUT"
+      },
+      "multi_photo_to_video": {
+       "enroll_status": "OPT_OUT"
+      },
+      "music_generation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "pac_genai_recomposition": {
+       "enroll_status": "OPT_OUT"
+      },
+      "pac_recomposition": {
+       "enroll_status": "OPT_OUT"
+      },
+      "pac_relaxation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "product_browsing": {
+       "enroll_status": "OPT_OUT"
+      },
+      "product_extensions": {
+       "enroll_status": "OPT_OUT"
+      },
+      "product_metadata_automation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "product_tags": {
+       "enroll_status": "OPT_OUT"
+      },
+      "profile_card": {
+       "enroll_status": "OPT_OUT"
+      },
+      "profile_extension": {
+       "enroll_status": "OPT_OUT"
+      },
+      "replace_media_text": {
+       "enroll_status": "OPT_OUT"
+      },
+      "reveal_details_over_time": {
+       "enroll_status": "OPT_OUT"
+      },
+      "show_destination_blurbs": {
+       "enroll_status": "OPT_OUT"
+      },
+      "show_summary": {
+       "enroll_status": "OPT_OUT"
+      },
+      "site_extensions": {
+       "enroll_status": "OPT_OUT"
+      },
+      "standard_enhancements_catalog": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_extraction_for_headline": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_extraction_for_tap_target": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_formatting_optimization": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_generation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_optimizations": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_overlay_translation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_translation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "translate_voiceover": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_auto_crop": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_filtering": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_highlight": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_highlights": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_to_image": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_uncrop": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_uncrop_9x16_to_9x18": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_voiceover": {
+       "enroll_status": "OPT_OUT"
+      },
+      "wa_mm_image_filtering": {
+       "enroll_status": "OPT_OUT"
+      },
+      "wa_mm_text_truncation_length": {
+       "enroll_status": "OPT_OUT"
+      }
+     }
+    }
+   },
+   "erro": null,
+   "criativo_novo": "1855068388709815",
+   "trocado": true
+  },
+  "120258142884420212": {
+   "rotulo": "[PINO SP] AD30 [PROVA] multifranqueado 4 lojas",
+   "nome": "[PINO SP] AD30 [PROVA] multifranqueado 4 lojas",
+   "conjunto": "120257337905370212",
+   "criativo_antigo": "1407684954211808",
+   "spec": {
+    "object_story_spec": {
+     "page_id": "639778989482866",
+     "instagram_user_id": "17841400169946431",
+     "video_data": {
+      "video_id": "1433104588916701",
+      "title": "Verifique Sua Região Agora",
+      "message": "Eram duas lojas. Agora são quatro.\n\nNeste vídeo, um franqueado Cheirin Bão conta como virou multifranqueado. Para ele, o trabalho é a quatro mãos: a franqueadora entra com informação e ferramentas, e o franqueado coloca em prática.\n\nPara quem quer crescer junto com a rede.\n\nInvestimento a partir de R$ 300 mil.\nVerifique se a sua região ainda está disponível.",
+      "link_description": "A partir de R$ 300 mil",
+      "image_hash": "d3e9a9ed615628ddbe301aab23cd3558",
+      "call_to_action": {
+       "type": "SIGN_UP",
+       "value": {
+        "lead_gen_form_id": "1106977512033195",
+        "link": "http://fb.me/"
+       }
+      }
+     }
+    },
+    "degrees_of_freedom_spec": {
+     "creative_features_spec": {
+      "adapt_to_placement": {
+       "enroll_status": "OPT_OUT"
+      },
+      "add_text_overlay": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ads_with_benefits": {
+       "enroll_status": "OPT_OUT"
+      },
+      "advantage_plus_creative": {
+       "enroll_status": "OPT_OUT"
+      },
+      "app_highlights": {
+       "enroll_status": "OPT_OUT"
+      },
+      "audio": {
+       "enroll_status": "OPT_OUT"
+      },
+      "auto_promotion_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "biz_ai": {
+       "enroll_status": "OPT_OUT"
+      },
+      "carousel_to_video": {
+       "enroll_status": "OPT_OUT"
+      },
+      "catalog_feed_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "creative_stickers": {
+       "enroll_status": "OPT_OUT"
+      },
+      "customize_product_recommendation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "cv_transformation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "description_automation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "dha_optimization": {
+       "enroll_status": "OPT_OUT"
+      },
+      "dynamic_cta_text": {
+       "enroll_status": "OPT_OUT"
+      },
+      "dynamic_partner_content": {
+       "enroll_status": "OPT_OUT"
+      },
+      "enable_ncs_testimonials": {
+       "enroll_status": "OPT_OUT"
+      },
+      "enhance_cta": {
+       "enroll_status": "OPT_OUT"
+      },
+      "fb_feed_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "fb_reels_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "fb_story_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "feed_caption_optimization": {
+       "enroll_status": "OPT_OUT"
+      },
+      "generate_cta": {
+       "enroll_status": "OPT_OUT"
+      },
+      "hide_price": {
+       "enroll_status": "OPT_OUT"
+      },
+      "hyperlink_formatting": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_feed_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_glados_feed": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_reels_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_stream_tag": {
+       "enroll_status": "OPT_OUT"
+      },
+      "ig_video_native_subtitle": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_animation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_auto_crop": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_background_gen": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_banner": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_brightness_and_contrast": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_end_card": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_enhancement": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_templates": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_text_translation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_touchups": {
+       "enroll_status": "OPT_OUT"
+      },
+      "image_uncrop": {
+       "enroll_status": "OPT_OUT"
+      },
+      "inline_comment": {
+       "enroll_status": "OPT_OUT"
+      },
+      "local_store_extension": {
+       "enroll_status": "OPT_OUT"
+      },
+      "media_liquidity_animated_image": {
+       "enroll_status": "OPT_OUT"
+      },
+      "media_order": {
+       "enroll_status": "OPT_OUT"
+      },
+      "media_type_automation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "multi_creative_post_carousel": {
+       "enroll_status": "OPT_OUT"
+      },
+      "multi_photo_to_video": {
+       "enroll_status": "OPT_OUT"
+      },
+      "music_generation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "pac_genai_recomposition": {
+       "enroll_status": "OPT_OUT"
+      },
+      "pac_recomposition": {
+       "enroll_status": "OPT_OUT"
+      },
+      "pac_relaxation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "product_browsing": {
+       "enroll_status": "OPT_OUT"
+      },
+      "product_extensions": {
+       "enroll_status": "OPT_OUT"
+      },
+      "product_metadata_automation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "product_tags": {
+       "enroll_status": "OPT_OUT"
+      },
+      "profile_card": {
+       "enroll_status": "OPT_OUT"
+      },
+      "profile_extension": {
+       "enroll_status": "OPT_OUT"
+      },
+      "replace_media_text": {
+       "enroll_status": "OPT_OUT"
+      },
+      "reveal_details_over_time": {
+       "enroll_status": "OPT_OUT"
+      },
+      "show_destination_blurbs": {
+       "enroll_status": "OPT_OUT"
+      },
+      "show_summary": {
+       "enroll_status": "OPT_OUT"
+      },
+      "site_extensions": {
+       "enroll_status": "OPT_OUT"
+      },
+      "standard_enhancements_catalog": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_extraction_for_headline": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_extraction_for_tap_target": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_formatting_optimization": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_generation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_optimizations": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_overlay_translation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "text_translation": {
+       "enroll_status": "OPT_OUT"
+      },
+      "translate_voiceover": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_auto_crop": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_filtering": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_highlight": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_highlights": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_to_image": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_uncrop": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_uncrop_9x16_to_9x18": {
+       "enroll_status": "OPT_OUT"
+      },
+      "video_voiceover": {
+       "enroll_status": "OPT_OUT"
+      },
+      "wa_mm_image_filtering": {
+       "enroll_status": "OPT_OUT"
+      },
+      "wa_mm_text_truncation_length": {
+       "enroll_status": "OPT_OUT"
+      }
+     }
+    }
+   },
+   "erro": null,
+   "criativo_novo": "1434022764874304",
+   "trocado": true
+  }
+ },
+ "conjuntos": {
+  "120257337905370212": {
+   "rotulo": "PINO SP",
+   "antes": [
+    "stream",
+    "story",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed",
+    "ig_search"
+   ],
+   "depois": [
+    "stream",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed",
+    "ig_search"
+   ],
+   "plataformas": [
+    "instagram"
+   ],
+   "targeting": {
+    "age_max": 55,
+    "age_min": 30,
+    "excluded_custom_audiences": [
+     {
+      "id": "120233836786710212",
+      "name": "CHEIRIN BÃO - FRANQUEADOS - BASE RD"
+     },
+     {
+      "id": "120234070196910212",
+      "name": "BASE LEADS - CHEIRIN BÃO - RD"
+     },
+     {
+      "id": "120257459142480212",
+      "name": "SITE_LEADDESQUALIFICADO_90D (CAPI)"
+     }
+    ],
+    "geo_locations": {
+     "custom_locations": [
+      {
+       "distance_unit": "mile",
+       "latitude": -12.0927056,
+       "longitude": -45.7700413,
+       "radius": 1,
+       "primary_city_id": 2684551,
+       "region_id": 442,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -12.1464385,
+       "longitude": -44.9973812,
+       "radius": 1,
+       "primary_city_id": 244162,
+       "region_id": 442,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -12.8870213,
+       "longitude": -38.2983489,
+       "radius": 1,
+       "primary_city_id": 2684455,
+       "region_id": 442,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -12.9032743,
+       "longitude": -38.3385231,
+       "radius": 1,
+       "primary_city_id": 2684455,
+       "region_id": 442,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -12.9368925,
+       "longitude": -38.3950462,
+       "radius": 1,
+       "primary_city_id": 267730,
+       "region_id": 442,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -12.9704431,
+       "longitude": -38.4742566,
+       "radius": 1,
+       "primary_city_id": 267730,
+       "region_id": 442,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -13.0096121,
+       "longitude": -38.5299678,
+       "radius": 1,
+       "primary_city_id": 267730,
+       "region_id": 442,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -15.796038,
+       "longitude": -47.8920212,
+       "radius": 2,
+       "primary_city_id": 245683,
+       "region_id": 444,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -15.8183118,
+       "longitude": -47.8748139,
+       "radius": 2,
+       "primary_city_id": 245683,
+       "region_id": 444,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -16.3244871,
+       "longitude": -48.9486913,
+       "radius": 1,
+       "primary_city_id": 241991,
+       "region_id": 462,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -16.3597994,
+       "longitude": -49.49952,
+       "radius": 1,
+       "primary_city_id": 255298,
+       "region_id": 462,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -16.4412938,
+       "longitude": -39.0742633,
+       "radius": 1,
+       "primary_city_id": 265409,
+       "region_id": 442,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -16.6607903,
+       "longitude": -49.2591053,
+       "radius": 1,
+       "primary_city_id": 254063,
+       "region_id": 462,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -16.6938394,
+       "longitude": -49.2212319,
+       "radius": 1,
+       "primary_city_id": 254063,
+       "region_id": 462,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -16.6969379,
+       "longitude": -49.2694463,
+       "radius": 2,
+       "primary_city_id": 254063,
+       "region_id": 462,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -16.6989801,
+       "longitude": -49.2651584,
+       "radius": 2,
+       "primary_city_id": 254063,
+       "region_id": 462,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -17.5601666,
+       "longitude": -52.5491503,
+       "radius": 1,
+       "primary_city_id": 260131,
+       "region_id": 462,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -18.172398,
+       "longitude": -47.927105,
+       "radius": 1,
+       "primary_city_id": 894776,
+       "region_id": 462,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -18.7114549,
+       "longitude": -40.39755,
+       "radius": 1,
+       "primary_city_id": 261530,
+       "region_id": 445,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -18.718148,
+       "longitude": -39.8483664,
+       "radius": 1,
+       "primary_city_id": 269879,
+       "region_id": 445,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -19.535284,
+       "longitude": -40.6312854,
+       "radius": 1,
+       "primary_city_id": 249278,
+       "region_id": 445,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -20.2394684,
+       "longitude": -40.2740046,
+       "radius": 1,
+       "primary_city_id": 270761,
+       "region_id": 445,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -20.3341562,
+       "longitude": -40.3037802,
+       "radius": 1,
+       "primary_city_id": 274261,
+       "region_id": 445,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -20.3921051,
+       "longitude": -40.3180242,
+       "radius": 1,
+       "primary_city_id": 274261,
+       "region_id": 445,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -20.4252908,
+       "longitude": -49.972028,
+       "radius": 2,
+       "primary_city_id": 274501,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -20.6708869,
+       "longitude": -40.4968761,
+       "radius": 1,
+       "primary_city_id": 254446,
+       "region_id": 445,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -20.82063,
+       "longitude": -49.38951,
+       "radius": 1,
+       "primary_city_id": 269661,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -21.1756,
+       "longitude": -47.81167,
+       "radius": 1,
+       "primary_city_id": 266876,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -21.18046,
+       "longitude": -47.80707,
+       "radius": 1,
+       "primary_city_id": 266876,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -21.20365,
+       "longitude": -47.80435,
+       "radius": 1,
+       "primary_city_id": 266876,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -21.21239,
+       "longitude": -47.81677,
+       "radius": 1,
+       "primary_city_id": 266876,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -21.22649,
+       "longitude": -47.83293,
+       "radius": 1,
+       "primary_city_id": 266876,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -21.2618,
+       "longitude": -48.49331,
+       "radius": 1,
+       "primary_city_id": 260470,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -21.48548,
+       "longitude": -51.54264,
+       "radius": 1,
+       "primary_city_id": 250996,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -21.86303,
+       "longitude": -47.48748,
+       "radius": 1,
+       "primary_city_id": 265177,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.29711,
+       "longitude": -48.5456,
+       "radius": 1,
+       "primary_city_id": 256588,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.31548,
+       "longitude": -49.0664,
+       "radius": 1,
+       "primary_city_id": 244454,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.33846,
+       "longitude": -49.05304,
+       "radius": 1,
+       "primary_city_id": 244454,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.4132,
+       "longitude": -47.55359,
+       "radius": 1,
+       "primary_city_id": 266985,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.43652,
+       "longitude": -46.98257,
+       "radius": 1,
+       "primary_city_id": 260363,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.57259,
+       "longitude": -47.16482,
+       "radius": 1,
+       "primary_city_id": 242875,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.74125,
+       "longitude": -47.33053,
+       "radius": 1,
+       "primary_city_id": 241913,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.74673,
+       "longitude": -47.33412,
+       "radius": 1,
+       "primary_city_id": 241913,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.75757,
+       "longitude": -47.41642,
+       "radius": 1,
+       "primary_city_id": 267873,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.76845,
+       "longitude": -47.14881,
+       "radius": 1,
+       "primary_city_id": 263063,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.81226,
+       "longitude": -47.16889,
+       "radius": 1,
+       "primary_city_id": 271516,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -22.8163121,
+       "longitude": -45.2017899,
+       "radius": 2,
+       "primary_city_id": 254467,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.82088,
+       "longitude": -47.03543,
+       "radius": 1,
+       "primary_city_id": 247071,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.86309,
+       "longitude": -47.21353,
+       "radius": 1,
+       "primary_city_id": 254719,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.87796,
+       "longitude": -48.44303,
+       "radius": 1,
+       "primary_city_id": 245628,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.89152,
+       "longitude": -47.0627,
+       "radius": 1,
+       "primary_city_id": 247071,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.90248,
+       "longitude": -47.0604,
+       "radius": 1,
+       "primary_city_id": 247071,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.92389,
+       "longitude": -45.46167,
+       "radius": 1,
+       "primary_city_id": 263875,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.93007,
+       "longitude": -47.05399,
+       "radius": 1,
+       "primary_city_id": 247071,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -22.95488,
+       "longitude": -46.54054,
+       "radius": 1,
+       "primary_city_id": 245655,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.05429,
+       "longitude": -45.60446,
+       "radius": 1,
+       "primary_city_id": 272181,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.08884,
+       "longitude": -47.21789,
+       "radius": 1,
+       "primary_city_id": 255192,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.10083,
+       "longitude": -45.70694,
+       "radius": 1,
+       "primary_city_id": 246237,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.11295,
+       "longitude": -47.21734,
+       "radius": 1,
+       "primary_city_id": 255192,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.11691,
+       "longitude": -47.21964,
+       "radius": 1,
+       "primary_city_id": 255192,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -23.11694,
+       "longitude": -46.55028,
+       "radius": 2,
+       "primary_city_id": 242981,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -23.1694619,
+       "longitude": -46.8920941,
+       "radius": 2,
+       "primary_city_id": 257242,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.17944,
+       "longitude": -45.88694,
+       "radius": 1,
+       "primary_city_id": 269667,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.18544,
+       "longitude": -46.87451,
+       "radius": 1,
+       "primary_city_id": 257242,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.19797,
+       "longitude": -46.86701,
+       "radius": 1,
+       "primary_city_id": 257242,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.2041,
+       "longitude": -45.89824,
+       "radius": 1,
+       "primary_city_id": 269667,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.21998,
+       "longitude": -45.89162,
+       "radius": 1,
+       "primary_city_id": 269667,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.2316,
+       "longitude": -45.89709,
+       "radius": 1,
+       "primary_city_id": 269667,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.24608,
+       "longitude": -47.05755,
+       "radius": 1,
+       "primary_city_id": 246215,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.30587,
+       "longitude": -45.96235,
+       "radius": 1,
+       "primary_city_id": 256166,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.35307,
+       "longitude": -47.84585,
+       "radius": 1,
+       "primary_city_id": 272151,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.3948,
+       "longitude": -46.32208,
+       "radius": 1,
+       "primary_city_id": 242887,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.43471,
+       "longitude": -45.07544,
+       "radius": 1,
+       "primary_city_id": 273161,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.44614,
+       "longitude": -46.4173,
+       "radius": 1,
+       "primary_city_id": 254529,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.45466,
+       "longitude": -46.55675,
+       "radius": 1,
+       "primary_city_id": 254529,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -23.4552293,
+       "longitude": -46.533002,
+       "radius": 2,
+       "primary_city_id": 254529,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.45641,
+       "longitude": -46.5674,
+       "radius": 1,
+       "primary_city_id": 254529,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.46915,
+       "longitude": -46.51864,
+       "radius": 1,
+       "primary_city_id": 254529,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.47963,
+       "longitude": -46.6024,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.48097,
+       "longitude": -46.54083,
+       "radius": 1,
+       "primary_city_id": 254529,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.48648,
+       "longitude": -46.55051,
+       "radius": 1,
+       "primary_city_id": 254529,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.49462,
+       "longitude": -46.61054,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.50229,
+       "longitude": -46.62999,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.50338,
+       "longitude": -46.63584,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.50641,
+       "longitude": -46.71811,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.50917,
+       "longitude": -46.19168,
+       "radius": 1,
+       "primary_city_id": 260332,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.51451,
+       "longitude": -47.46576,
+       "radius": 1,
+       "primary_city_id": 271407,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.52509,
+       "longitude": -46.68839,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.52518,
+       "longitude": -46.54675,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.52534,
+       "longitude": -46.19931,
+       "radius": 1,
+       "primary_city_id": 260332,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.52807,
+       "longitude": -47.1371,
+       "radius": 1,
+       "primary_city_id": 270096,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.52955,
+       "longitude": -46.63736,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.53471,
+       "longitude": -46.76878,
+       "radius": 1,
+       "primary_city_id": 261985,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.53509,
+       "longitude": -46.45413,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -23.5389987,
+       "longitude": -46.5763358,
+       "radius": 2,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.54587,
+       "longitude": -46.54369,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.5475,
+       "longitude": -46.63611,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -23.5590234,
+       "longitude": -46.6597666,
+       "radius": 2,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.56135,
+       "longitude": -46.68759,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -23.5731713,
+       "longitude": -46.6449589,
+       "radius": 2,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.58442,
+       "longitude": -46.67371,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.58736,
+       "longitude": -48.04434,
+       "radius": 1,
+       "primary_city_id": 255811,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.59228,
+       "longitude": -46.68041,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.59659,
+       "longitude": -46.64768,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.60226,
+       "longitude": -46.69157,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.60289,
+       "longitude": -46.66411,
+       "radius": 1,
+       "primary_city_id": 269969,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.6094,
+       "longitude": -46.57271,
+       "radius": 1,
+       "primary_city_id": 269009,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.62553,
+       "longitude": -46.50013,
+       "radius": 1,
+       "primary_city_id": 268652,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.64797,
+       "longitude": -46.53962,
+       "radius": 1,
+       "primary_city_id": 268652,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.66366,
+       "longitude": -46.50744,
+       "radius": 1,
+       "primary_city_id": 268652,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -23.6677347,
+       "longitude": -46.5274069,
+       "radius": 2,
+       "primary_city_id": 268652,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.67,
+       "longitude": -46.45465,
+       "radius": 1,
+       "primary_city_id": 259874,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.68363,
+       "longitude": -46.55717,
+       "radius": 1,
+       "primary_city_id": 268965,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.68975,
+       "longitude": -46.56133,
+       "radius": 1,
+       "primary_city_id": 268965,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.69268,
+       "longitude": -46.55033,
+       "radius": 1,
+       "primary_city_id": 268965,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.69389,
+       "longitude": -46.565,
+       "radius": 1,
+       "primary_city_id": 268965,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.69405,
+       "longitude": -46.62559,
+       "radius": 1,
+       "primary_city_id": 250771,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.70936,
+       "longitude": -46.55358,
+       "radius": 1,
+       "primary_city_id": 268965,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.78476,
+       "longitude": -45.62622,
+       "radius": 1,
+       "primary_city_id": 259400,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.96083,
+       "longitude": -46.33361,
+       "radius": 1,
+       "primary_city_id": 268866,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.968,
+       "longitude": -46.38392,
+       "radius": 1,
+       "primary_city_id": 270299,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -23.97712,
+       "longitude": -46.2227,
+       "radius": 1,
+       "primary_city_id": 254526,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -24.00876,
+       "longitude": -46.41502,
+       "radius": 1,
+       "primary_city_id": 265605,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -24.09885,
+       "longitude": -46.62878,
+       "radius": 1,
+       "primary_city_id": 260403,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -24.27897,
+       "longitude": -46.94738,
+       "radius": 1,
+       "primary_city_id": 263663,
+       "region_id": 460,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -26.4791893,
+       "longitude": -49.0847144,
+       "radius": 1,
+       "primary_city_id": 256443,
+       "region_id": 459,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -26.7376073,
+       "longitude": -49.1753457,
+       "radius": 1,
+       "primary_city_id": 264554,
+       "region_id": 459,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -26.9157293,
+       "longitude": -49.0685165,
+       "radius": 1,
+       "primary_city_id": 244887,
+       "region_id": 459,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -27.107657,
+       "longitude": -48.613299,
+       "radius": 1,
+       "primary_city_id": 255793,
+       "region_id": 459,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "kilometer",
+       "latitude": -27.4372764,
+       "longitude": -48.3927179,
+       "radius": 2,
+       "primary_city_id": 253249,
+       "region_id": 459,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -27.6005901,
+       "longitude": -48.6132772,
+       "radius": 1,
+       "primary_city_id": 269712,
+       "region_id": 459,
+       "country": "BR"
+      },
+      {
+       "distance_unit": "mile",
+       "latitude": -28.4802777,
+       "longitude": -48.9981679,
+       "radius": 1,
+       "primary_city_id": 272978,
+       "region_id": 459,
+       "country": "BR"
+      }
+     ],
+     "location_types": [
+      "home",
+      "recent"
+     ]
+    },
+    "targeting_automation": {
+     "advantage_audience": 0,
+     "individual_setting": {
+      "geo": 0
+     }
+    },
+    "publisher_platforms": [
+     "instagram"
+    ],
+    "instagram_positions": [
+     "stream",
+     "story",
+     "explore",
+     "reels",
+     "explore_home",
+     "profile_feed",
+     "ig_search"
+    ],
+    "device_platforms": [
+     "mobile",
+     "desktop"
+    ]
+   },
+   "erro": null,
+   "feito": true
+  },
+  "120258418032850212": {
+   "rotulo": "✅16 QUENTE + LAL",
+   "antes": [
+    "stream",
+    "story",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed"
+   ],
+   "depois": [
+    "stream",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed"
+   ],
+   "plataformas": [
+    "instagram"
+   ],
+   "targeting": {
+    "age_max": 55,
+    "age_min": 30,
+    "excluded_custom_audiences": [
+     {
+      "id": "120233836786710212",
+      "name": "CHEIRIN BÃO - FRANQUEADOS - BASE RD"
+     },
+     {
+      "id": "120234070196910212",
+      "name": "BASE LEADS - CHEIRIN BÃO - RD"
+     },
+     {
+      "id": "120248081540700212",
+      "name": "BL | Leads Perdidos CRM - Cheirin | 27.MAR.26"
+     },
+     {
+      "id": "120256528143040212",
+      "name": "CHEIRIN BAO - CRM PIPELINE 05/08"
+     },
+     {
+      "id": "120256989043910212",
+      "name": "LEAD_FORMS_90D"
+     },
+     {
+      "id": "120257459142480212",
+      "name": "SITE_LEADDESQUALIFICADO_90D (CAPI)"
+     },
+     {
+      "id": "120258142893940212",
+      "name": "M | FORM ABRIU E NAO ENVIOU 90D"
+     },
+     {
+      "id": "120258142894270212",
+      "name": "M | FORM ENVIOU 90D"
+     },
+     {
+      "id": "120258142894390212",
+      "name": "M | VIDEO FRANQUIA ANUNCIOS 75% 180D"
+     }
+    ],
+    "custom_audiences": [
+     {
+      "id": "120234774548750212",
+      "name": "[PIXEL] - PAGEVIEW - 180D"
+     },
+     {
+      "id": "120234889309030212",
+      "name": "[VV] - 95%"
+     },
+     {
+      "id": "120234889518910212",
+      "name": "Semelhante (BR, 1%) - SEGMENTAÇÃO BL + CHEIRIN BÃO - ETAPA COF EM DIANTE"
+     },
+     {
+      "id": "120253567902650212",
+      "name": "IG_VIDEO_EDU_50%_180D"
+     },
+     {
+      "id": "120253568067060212",
+      "name": "IG_ENGAJ_EDU_180D"
+     },
+     {
+      "id": "120256487711990212",
+      "name": "Semelhante (BR, 1%) - LEAD_QUALIFICADO (CAPI correto)"
+     },
+     {
+      "id": "120257500073500212",
+      "name": "Semelhante (BR, 1%) - COMPRADORES + QUALIFICADOS 09/09/2026"
+     },
+     {
+      "id": "120258417970600212",
+      "name": "[IG CB FRANQUIAS] Engajou post - 120D"
+     },
+     {
+      "id": "120258417971050212",
+      "name": "[IG CB FRANQUIAS] Enviou mensagem - 120D"
+     },
+     {
+      "id": "120258417971430212",
+      "name": "[IG CB FRANQUIAS] Envolvimento todos - 120D"
+     },
+     {
+      "id": "120258417972290212",
+      "name": "[IG CB FRANQUIAS] Salvou - 120D"
+     },
+     {
+      "id": "120258417973400212",
+      "name": "[IG CB FRANQUIAS] Visitou - 120D"
+     },
+     {
+      "id": "120258417973520212",
+      "name": "[IG CHEIRIN BÃO] Envolvimento todos - 120D"
+     },
+     {
+      "id": "120258418286650212",
+      "name": "IG_VIDEO_SELEÇÃONIVEL3_120D"
+     }
+    ],
+    "geo_locations": {
+     "cities": [
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "241991",
+       "name": "Anápolis",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "242415",
+       "name": "Aracaju",
+       "region": "Sergipe",
+       "region_id": "461"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "243550",
+       "name": "Balneário Camboriú",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "244887",
+       "name": "Blumenau",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "245683",
+       "name": "Brasília",
+       "region": "Federal District",
+       "region_id": "444"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "247054",
+       "name": "Campina Grande",
+       "region": "Paraíba",
+       "region_id": "451"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "250158",
+       "name": "Criciúma",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "252968",
+       "name": "Feira de Santana",
+       "region": "Bahia",
+       "region_id": "442"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "253249",
+       "name": "Florianópolis",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "254063",
+       "name": "Goiânia",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "255675",
+       "name": "Itajaí",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "256537",
+       "name": "Jataí",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "256863",
+       "name": "João Pessoa",
+       "region": "Paraíba",
+       "region_id": "451"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "256952",
+       "name": "Joinville",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "260819",
+       "name": "Mossoró",
+       "region": "Rio Grande do Norte",
+       "region_id": "455"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "261132",
+       "name": "Natal",
+       "region": "Rio Grande do Norte",
+       "region_id": "455"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "267187",
+       "name": "Rio Verde",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "267730",
+       "name": "Salvador",
+       "region": "Bahia",
+       "region_id": "442"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "270761",
+       "name": "Serra",
+       "region": "Espírito Santo",
+       "region_id": "445"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "272278",
+       "name": "Teresina",
+       "region": "Piauí",
+       "region_id": "453"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "274261",
+       "name": "Vila Velha",
+       "region": "Espírito Santo",
+       "region_id": "445"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "274425",
+       "name": "Vitória",
+       "region": "Espírito Santo",
+       "region_id": "445"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "894776",
+       "name": "Catalao",
+       "region": "Goiás",
+       "region_id": "462"
+      }
+     ],
+     "regions": [
+      {
+       "key": "460",
+       "name": "São Paulo (state)",
+       "country": "BR"
+      }
+     ],
+     "location_types": [
+      "home",
+      "recent"
+     ]
+    },
+    "targeting_relaxation_types": {
+     "lookalike": 0,
+     "custom_audience": 0
+    },
+    "targeting_automation": {
+     "advantage_audience": 0,
+     "individual_setting": {
+      "geo": 0
+     }
+    },
+    "publisher_platforms": [
+     "instagram"
+    ],
+    "instagram_positions": [
+     "stream",
+     "story",
+     "explore",
+     "reels",
+     "explore_home",
+     "profile_feed"
+    ],
+    "device_platforms": [
+     "mobile",
+     "desktop"
+    ]
+   },
+   "erro": null,
+   "feito": true
+  },
+  "120257017816020212": {
+   "rotulo": "VD02 Raissa",
+   "antes": [
+    "stream",
+    "story",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed"
+   ],
+   "depois": [
+    "stream",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed"
+   ],
+   "plataformas": [
+    "instagram"
+   ],
+   "targeting": {
+    "age_max": 55,
+    "age_min": 30,
+    "excluded_custom_audiences": [
+     {
+      "id": "120233836786710212",
+      "name": "CHEIRIN BÃO - FRANQUEADOS - BASE RD"
+     },
+     {
+      "id": "120234070196910212",
+      "name": "BASE LEADS - CHEIRIN BÃO - RD"
+     },
+     {
+      "id": "120248081540700212",
+      "name": "BL | Leads Perdidos CRM - Cheirin | 27.MAR.26"
+     },
+     {
+      "id": "120257459142480212",
+      "name": "SITE_LEADDESQUALIFICADO_90D (CAPI)"
+     }
+    ],
+    "custom_audiences": [
+     {
+      "id": "120250057218750212",
+      "name": "LIVE JOEL"
+     },
+     {
+      "id": "120252854133590602",
+      "name": "IG_VIDEO_CHEIRIN_75% 60D"
+     },
+     {
+      "id": "120256231479830212",
+      "name": "IG_VIDEO_JOEL_180D_50%"
+     },
+     {
+      "id": "120256487700540212",
+      "name": "SITE_LEADQUALIFICADO_90D_v2 (CAPI correto)"
+     },
+     {
+      "id": "120256487711990212",
+      "name": "Semelhante (BR, 1%) - LEAD_QUALIFICADO (CAPI correto)"
+     },
+     {
+      "id": "120257500073500212",
+      "name": "Semelhante (BR, 1%) - COMPRADORES + QUALIFICADOS 09/09/2026"
+     }
+    ],
+    "geo_locations": {
+     "cities": [
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "241991",
+       "name": "Anápolis",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "242415",
+       "name": "Aracaju",
+       "region": "Sergipe",
+       "region_id": "461"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "243550",
+       "name": "Balneário Camboriú",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "244887",
+       "name": "Blumenau",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "245683",
+       "name": "Brasília",
+       "region": "Federal District",
+       "region_id": "444"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "247054",
+       "name": "Campina Grande",
+       "region": "Paraíba",
+       "region_id": "451"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "250158",
+       "name": "Criciúma",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "252968",
+       "name": "Feira de Santana",
+       "region": "Bahia",
+       "region_id": "442"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "253249",
+       "name": "Florianópolis",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "254063",
+       "name": "Goiânia",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "255675",
+       "name": "Itajaí",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "256537",
+       "name": "Jataí",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "256863",
+       "name": "João Pessoa",
+       "region": "Paraíba",
+       "region_id": "451"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "256952",
+       "name": "Joinville",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "260819",
+       "name": "Mossoró",
+       "region": "Rio Grande do Norte",
+       "region_id": "455"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "261132",
+       "name": "Natal",
+       "region": "Rio Grande do Norte",
+       "region_id": "455"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "267187",
+       "name": "Rio Verde",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "267730",
+       "name": "Salvador",
+       "region": "Bahia",
+       "region_id": "442"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "270761",
+       "name": "Serra",
+       "region": "Espírito Santo",
+       "region_id": "445"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "272278",
+       "name": "Teresina",
+       "region": "Piauí",
+       "region_id": "453"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "274261",
+       "name": "Vila Velha",
+       "region": "Espírito Santo",
+       "region_id": "445"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "274425",
+       "name": "Vitória",
+       "region": "Espírito Santo",
+       "region_id": "445"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "894776",
+       "name": "Catalao",
+       "region": "Goiás",
+       "region_id": "462"
+      }
+     ],
+     "regions": [
+      {
+       "key": "460",
+       "name": "São Paulo (state)",
+       "country": "BR"
+      }
+     ],
+     "location_types": [
+      "home",
+      "recent"
+     ]
+    },
+    "targeting_relaxation_types": {
+     "lookalike": 0,
+     "custom_audience": 0
+    },
+    "targeting_automation": {
+     "advantage_audience": 0,
+     "individual_setting": {
+      "geo": 0
+     }
+    },
+    "publisher_platforms": [
+     "instagram"
+    ],
+    "instagram_positions": [
+     "stream",
+     "story",
+     "explore",
+     "reels",
+     "explore_home",
+     "profile_feed"
+    ],
+    "device_platforms": [
+     "mobile",
+     "desktop"
+    ]
+   },
+   "erro": null,
+   "feito": true
+  },
+  "120256940847150212": {
+   "rotulo": "Santoro",
+   "antes": [
+    "stream",
+    "story",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed",
+    "ig_search"
+   ],
+   "depois": [
+    "stream",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed",
+    "ig_search"
+   ],
+   "plataformas": [
+    "instagram"
+   ],
+   "targeting": {
+    "age_max": 55,
+    "age_min": 30,
+    "excluded_custom_audiences": [
+     {
+      "id": "120233836786710212",
+      "name": "CHEIRIN BÃO - FRANQUEADOS - BASE RD"
+     },
+     {
+      "id": "120248081540700212",
+      "name": "BL | Leads Perdidos CRM - Cheirin | 27.MAR.26"
+     }
+    ],
+    "custom_audiences": [
+     {
+      "id": "120250057218750212",
+      "name": "LIVE JOEL"
+     },
+     {
+      "id": "120252854133590602",
+      "name": "IG_VIDEO_CHEIRIN_75% 60D"
+     },
+     {
+      "id": "120256231479830212",
+      "name": "IG_VIDEO_JOEL_180D_50%"
+     },
+     {
+      "id": "120256487700540212",
+      "name": "SITE_LEADQUALIFICADO_90D_v2 (CAPI correto)"
+     },
+     {
+      "id": "120256487711990212",
+      "name": "Semelhante (BR, 1%) - LEAD_QUALIFICADO (CAPI correto)"
+     },
+     {
+      "id": "120257500073500212",
+      "name": "Semelhante (BR, 1%) - COMPRADORES + QUALIFICADOS 09/09/2026"
+     }
+    ],
+    "geo_locations": {
+     "cities": [
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "241991",
+       "name": "Anápolis",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "242415",
+       "name": "Aracaju",
+       "region": "Sergipe",
+       "region_id": "461"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "243550",
+       "name": "Balneário Camboriú",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "244887",
+       "name": "Blumenau",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "245683",
+       "name": "Brasília",
+       "region": "Federal District",
+       "region_id": "444"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "247054",
+       "name": "Campina Grande",
+       "region": "Paraíba",
+       "region_id": "451"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "250158",
+       "name": "Criciúma",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "252968",
+       "name": "Feira de Santana",
+       "region": "Bahia",
+       "region_id": "442"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "253249",
+       "name": "Florianópolis",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "254063",
+       "name": "Goiânia",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "255675",
+       "name": "Itajaí",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "256537",
+       "name": "Jataí",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "256863",
+       "name": "João Pessoa",
+       "region": "Paraíba",
+       "region_id": "451"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "256952",
+       "name": "Joinville",
+       "region": "Santa Catarina",
+       "region_id": "459"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "260819",
+       "name": "Mossoró",
+       "region": "Rio Grande do Norte",
+       "region_id": "455"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "261132",
+       "name": "Natal",
+       "region": "Rio Grande do Norte",
+       "region_id": "455"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "267187",
+       "name": "Rio Verde",
+       "region": "Goiás",
+       "region_id": "462"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "267730",
+       "name": "Salvador",
+       "region": "Bahia",
+       "region_id": "442"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "270761",
+       "name": "Serra",
+       "region": "Espírito Santo",
+       "region_id": "445"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "272278",
+       "name": "Teresina",
+       "region": "Piauí",
+       "region_id": "453"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "274261",
+       "name": "Vila Velha",
+       "region": "Espírito Santo",
+       "region_id": "445"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "274425",
+       "name": "Vitória",
+       "region": "Espírito Santo",
+       "region_id": "445"
+      },
+      {
+       "country": "BR",
+       "distance_unit": "mile",
+       "key": "894776",
+       "name": "Catalao",
+       "region": "Goiás",
+       "region_id": "462"
+      }
+     ],
+     "regions": [
+      {
+       "key": "460",
+       "name": "São Paulo (state)",
+       "country": "BR"
+      }
+     ],
+     "location_types": [
+      "home",
+      "recent"
+     ]
+    },
+    "targeting_relaxation_types": {
+     "lookalike": 0,
+     "custom_audience": 0
+    },
+    "targeting_automation": {
+     "advantage_audience": 0
+    },
+    "publisher_platforms": [
+     "instagram"
+    ],
+    "instagram_positions": [
+     "stream",
+     "story",
+     "explore",
+     "reels",
+     "explore_home",
+     "profile_feed",
+     "ig_search"
+    ],
+    "device_platforms": [
+     "mobile",
+     "desktop"
+    ]
+   },
+   "erro": null,
+   "feito": true
+  }
+ }
+}

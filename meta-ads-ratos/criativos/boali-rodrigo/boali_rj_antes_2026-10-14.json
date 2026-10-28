@@ -1,0 +1,3677 @@
+[
+ {
+  "id": "120251445548640156",
+  "name": "[FUNDO] [CAPI LEAD_QUALIFICADO] ABRIU FORM + VIDEO 75 + DIRECT",
+  "status": "ACTIVE",
+  "effective_status": "CAMPAIGN_PAUSED",
+  "daily_budget": "5000",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 28,
+   "excluded_custom_audiences": [
+    {
+     "id": "120251264895210156",
+     "name": "CAPI_LEAD_DESQUALIFICADO_180D (CRM)"
+    },
+    {
+     "id": "120251445501230156",
+     "name": "CRM_FUNDO_PIPELINE_ATIVO_25-09 (lista, sem aguardando pagamento)"
+    },
+    {
+     "id": "120251445531230156",
+     "name": "FORM_ENVIOU_30D (Boali)"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120246767398910156",
+     "name": "VIEWS URL IRON MAN FLORIPA"
+    },
+    {
+     "id": "120250962270470156",
+     "name": "VIDEO_75_BOALI_180D - NIVEL 1- 2"
+    },
+    {
+     "id": "120251445526980156",
+     "name": "FORM_ABRIU_NAO_ENVIOU_90D (Boali)"
+    },
+    {
+     "id": "120251445532540156",
+     "name": "IG_DIRECT_365D (Boali)"
+    }
+   ],
+   "excluded_geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "267027",
+      "name": "Rio de Janeiro",
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "274425",
+      "name": "Vitória",
+      "region": "Espírito Santo",
+      "region_id": "445"
+     }
+    ],
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120251445536860156",
+   "name": "CP 10 - [FUNDO] [LISTA CRM + CAPI] [FORMS]"
+  }
+ },
+ {
+  "id": "120251445538910156",
+  "name": "[FUNDO] [LISTA CRM PIPELINE ATIVO] [FORMS] 30-55",
+  "status": "ACTIVE",
+  "effective_status": "CAMPAIGN_PAUSED",
+  "daily_budget": "5000",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 28,
+   "excluded_custom_audiences": [
+    {
+     "id": "120251264895210156",
+     "name": "CAPI_LEAD_DESQUALIFICADO_180D (CRM)"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    },
+    {
+     "id": "120243050981220156",
+     "name": "95% VÍDEOS FOCO EM FRANQUIA"
+    },
+    {
+     "id": "120247157671390156",
+     "name": "CLICOU NO BOTÃO TESTE PG TESTE06"
+    },
+    {
+     "id": "120248901662670156",
+     "name": "SITE VIEWS 30 DDD"
+    },
+    {
+     "id": "120250113239270156",
+     "name": "IG_VIDEO_75%_BOALI_30D"
+    },
+    {
+     "id": "120251445501230156",
+     "name": "CRM_FUNDO_PIPELINE_ATIVO_25-09 (lista, sem aguardando pagamento)"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 0
+   },
+   "targeting_automation": {
+    "advantage_audience": 0
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120251445536860156",
+   "name": "CP 10 - [FUNDO] [LISTA CRM + CAPI] [FORMS]"
+  }
+ },
+ {
+  "id": "120251116141510156",
+  "name": "00 - GEO RJ + 100 MIL HABITANTES - INTERESSES VIDA SAUDAVEL DE 30 A 55",
+  "status": "ACTIVE",
+  "effective_status": "CAMPAIGN_PAUSED",
+  "targeting": {
+   "age_max": 65,
+   "age_min": 25,
+   "excluded_custom_audiences": [
+    {
+     "id": "120251264895210156",
+     "name": "CAPI_LEAD_DESQUALIFICADO_180D (CRM)"
+    }
+   ],
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "242569",
+      "name": "Araruama",
+      "radius": 40,
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "246197",
+      "name": "Cabo Frio",
+      "radius": 40,
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "258596",
+      "name": "Macaé",
+      "radius": 40,
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "261275",
+      "name": "Niterói",
+      "radius": 40,
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "269976",
+      "name": "São Pedro da Aldeia",
+      "radius": 40,
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     }
+    ],
+    "location_types": [
+     "home"
+    ]
+   },
+   "brand_safety_content_filter_levels": [
+    "FACEBOOK_RELAXED",
+    "AN_RELAXED"
+   ],
+   "targeting_automation": {
+    "advantage_audience": 1,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ]
+  },
+  "campaign": {
+   "id": "120251116141380156",
+   "name": "CP 01 - [FRIO] [VIDEO_VIEW_THRUPLAY] [VIDEO_ATRAÇÃO_OPORTUNIDADE]"
+  }
+ },
+ {
+  "id": "120250849147410156",
+  "name": "[FRIO] [GEO] CIDADES 200-300K [SUL]",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "248896",
+      "name": "Chapecó",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "253418",
+      "name": "Foz do Iguaçu",
+      "region": "Paraná",
+      "region_id": "452"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "254228",
+      "name": "Gravataí",
+      "region": "Rio Grande do Sul",
+      "region_id": "456"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "255675",
+      "name": "Itajaí",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "269712",
+      "name": "São José",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120250653472910156",
+   "name": "CP 06 - [FRIO] [GEO] [FORMS]"
+  }
+ },
+ {
+  "id": "120250849139750156",
+  "name": "[FRIO] [GEO] CIDADES 200-300K [SUDESTE]",
+  "status": "ACTIVE",
+  "effective_status": "CAMPAIGN_PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "241518",
+      "name": "Alfenas",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "241913",
+      "name": "Americana",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "242546",
+      "name": "Araraquara",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "244661",
+      "name": "Belo Horizonte",
+      "radius": 10,
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "244911",
+      "name": "Boa Esperança",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "250084",
+      "name": "Cotia",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "250827",
+      "name": "Divinópolis",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "254137",
+      "name": "Governador Valadares",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "254526",
+      "name": "Guarujá",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "254719",
+      "name": "Hortolândia",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "255351",
+      "name": "Ipatinga",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "256166",
+      "name": "Jacareí",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "258144",
+      "name": "Lavras",
+      "radius": 10,
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "258269",
+      "name": "Limeira",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "259475",
+      "name": "Marília",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "261456",
+      "name": "Nova Lima",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "263698",
+      "name": "Petrópolis",
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "265708",
+      "name": "Presidente Prudente",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "269036",
+      "name": "São Carlos",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "271516",
+      "name": "Sumaré",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "272815",
+      "name": "Três Corações",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "272867",
+      "name": "Três Pontas",
+      "radius": 100,
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "273605",
+      "name": "Varginha",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "274483",
+      "name": "Volta Redonda",
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120250653472910156",
+   "name": "CP 06 - [FRIO] [GEO] [FORMS]"
+  }
+ },
+ {
+  "id": "120250849135240156",
+  "name": "[FRIO] [GEO] CIDADES 100-300K [CENTRO-OESTE-SUL]",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "248896",
+      "name": "Chapecó",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "250977",
+      "name": "Dourados",
+      "region": "Mato Grosso do Sul",
+      "region_id": "446"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "253418",
+      "name": "Foz do Iguaçu",
+      "region": "Paraná",
+      "region_id": "452"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "254228",
+      "name": "Gravataí",
+      "region": "Rio Grande do Sul",
+      "region_id": "456"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "255675",
+      "name": "Itajaí",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "267187",
+      "name": "Rio Verde",
+      "region": "Goiás",
+      "region_id": "462"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "267336",
+      "name": "Rondonópolis",
+      "region": "Mato Grosso",
+      "region_id": "448"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "2684469",
+      "name": "Sorriso",
+      "region": "Mato Grosso",
+      "region_id": "448"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "269712",
+      "name": "São José",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "273711",
+      "name": "Várzea Grande",
+      "region": "Mato Grosso",
+      "region_id": "448"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120250653472910156",
+   "name": "CP 06 - [FRIO] [GEO] [FORMS]"
+  }
+ },
+ {
+  "id": "120250849131810156",
+  "name": "[FRIO] [GEO] CIDADES 200-300K [NORTE]",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "2685170",
+      "name": "Parauapebas",
+      "region": "Pará",
+      "region_id": "450"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120250653472910156",
+   "name": "CP 06 - [FRIO] [GEO] [FORMS]"
+  }
+ },
+ {
+  "id": "120250849127860156",
+  "name": "[FRIO] [GEO] CIDADES 100-300K [NORTE-NORDESTE]",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "242463",
+      "name": "Araguaína",
+      "region": "Tocantins",
+      "region_id": "464"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "242506",
+      "name": "Arapiraca",
+      "region": "Alagoas",
+      "region_id": "439"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "246867",
+      "name": "Camaçari",
+      "region": "Bahia",
+      "region_id": "442"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "255160",
+      "name": "Imperatriz",
+      "region": "Maranhão",
+      "region_id": "447"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "257145",
+      "name": "Juazeiro do Norte",
+      "region": "Ceará",
+      "region_id": "443"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "259263",
+      "name": "Maracanaú",
+      "region": "Ceará",
+      "region_id": "443"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "260819",
+      "name": "Mossoró",
+      "region": "Rio Grande do Norte",
+      "region_id": "455"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "262718",
+      "name": "Parnamirim",
+      "region": "Rio Grande do Norte",
+      "region_id": "455"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "2685170",
+      "name": "Parauapebas",
+      "region": "Pará",
+      "region_id": "450"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120250653472910156",
+   "name": "CP 06 - [FRIO] [GEO] [FORMS]"
+  }
+ },
+ {
+  "id": "120250722668400156",
+  "name": "[FRIO] [GEO] CIDADES PEQUENAS ATE 220K [PRACAS ABERTAS]",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "242434",
+      "name": "Araçatuba",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "243550",
+      "name": "Balneário Camboriú",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "244254",
+      "name": "Barretos",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "245628",
+      "name": "Botucatu",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "245655",
+      "name": "Bragança Paulista",
+      "radius": 25,
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "248471",
+      "name": "Catanduva",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "250158",
+      "name": "Criciúma",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "250827",
+      "name": "Divinópolis",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "253324",
+      "name": "Formosa",
+      "region": "Goiás",
+      "region_id": "462"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "255098",
+      "name": "Ilhéus",
+      "region": "Bahia",
+      "region_id": "442"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "256029",
+      "name": "Itu",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "256443",
+      "name": "Jaraguá do Sul",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "256588",
+      "name": "Jaú",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "257448",
+      "name": "Lages",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "258144",
+      "name": "Lavras",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "258549",
+      "name": "Luziânia",
+      "region": "Goiás",
+      "region_id": "462"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "262024",
+      "name": "Ourinhos",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "262873",
+      "name": "Passo Fundo",
+      "region": "Rio Grande do Sul",
+      "region_id": "456"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "264484",
+      "name": "Poços de Caldas",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "266985",
+      "name": "Rio Claro",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "267726",
+      "name": "Salto",
+      "radius": 17,
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "2684836",
+      "name": "Águas Lindas de Goiás",
+      "region": "Goiás",
+      "region_id": "462"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "268934",
+      "name": "São Bento do Sul",
+      "region": "Santa Catarina",
+      "region_id": "459"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "269353",
+      "name": "São João del Rei",
+      "radius": 40,
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "271334",
+      "name": "Sobral",
+      "region": "Ceará",
+      "region_id": "443"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "272151",
+      "name": "Tatuí",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "272287",
+      "name": "Teresópolis",
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "272815",
+      "name": "Três Corações",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "272841",
+      "name": "Três Lagoas",
+      "region": "Mato Grosso do Sul",
+      "region_id": "446"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "272867",
+      "name": "Três Pontas",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "273605",
+      "name": "Varginha",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "274501",
+      "name": "Votuporanga",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ],
+    "medium_geo_areas": [
+     {
+      "key": "260334",
+      "country": "BR",
+      "name": "Mogi Mirim",
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     }
+    ]
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "explore",
+    "reels",
+    "explore_home",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120250653472910156",
+   "name": "CP 06 - [FRIO] [GEO] [FORMS]"
+  }
+ },
+ {
+  "id": "120250722186650156",
+  "name": "[QUENTE 180D] [FORMS - CADASTROS] [ON_AD] — DEPOIMENTO",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120207588971870156",
+     "name": "SEGUIDORES IG - BOALI"
+    },
+    {
+     "id": "120207589012530156",
+     "name": "ThruPlay - 365DD"
+    },
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589041610156",
+     "name": "VV 25% - 365DD"
+    },
+    {
+     "id": "120207589086850156",
+     "name": "VV 50% - 365DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120207589325560156",
+     "name": "PageView - 90DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949141410156",
+   "name": "CP 04 - [FORMS] [LEADS] [QUENTE_180D]"
+  }
+ },
+ {
+  "id": "120250721955080156",
+  "name": "[FRIO] LAL 1% QUALIFICADOS+VENDAS 30-55 — teste criativos",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120250060672790156",
+     "name": "LAL 1% BR - QUALIFICADOS+VENDAS"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 0
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ]
+  },
+  "campaign": {
+   "id": "120250111279010156",
+   "name": "CP 05 - [FRIO] [LAL QUALIFICADOS] [FORMS]"
+  }
+ },
+ {
+  "id": "120250653472860156",
+  "name": "[FRIO] [GEO] CIDADES SETADAS 30KM",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "genders": [
+    0
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "244454",
+      "name": "Bauru",
+      "radius": 30,
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "251729",
+      "name": "Eusébio",
+      "radius": 30,
+      "region": "Ceará",
+      "region_id": "443"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "252968",
+      "name": "Feira de Santana",
+      "radius": 30,
+      "region": "Bahia",
+      "region_id": "442"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "258622",
+      "name": "Macapá",
+      "radius": 30,
+      "region": "Amapá",
+      "region_id": "440"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "259493",
+      "name": "Maringá",
+      "radius": 30,
+      "region": "Paraná",
+      "region_id": "452"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "268652",
+      "name": "Santo André",
+      "radius": 30,
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "268965",
+      "name": "São Bernardo do Campo",
+      "radius": 30,
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "269263",
+      "name": "São Gonçalo",
+      "radius": 30,
+      "region": "Rio de Janeiro (state)",
+      "region_id": "454"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "269661",
+      "name": "São José do Rio Prêto",
+      "radius": 30,
+      "region": "São Paulo (state)",
+      "region_id": "460"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ]
+  },
+  "campaign": {
+   "id": "120250653472910156",
+   "name": "CP 06 - [FRIO] [GEO] [FORMS]"
+  }
+ },
+ {
+  "id": "120250129603870156",
+  "name": "[180D] [PEPA + VV + SITE] [ON_VIDEO] — 4",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949141240156",
+   "name": "CP 03 - [VIDEO_VIEW_THRUPLAY] [180D]"
+  }
+ },
+ {
+  "id": "120250112177130156",
+  "name": "[180D] [PEPA + VV + SITE] [ON_VIDEO] — 3",
+  "status": "ACTIVE",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949141240156",
+   "name": "CP 03 - [VIDEO_VIEW_THRUPLAY] [180D]"
+  }
+ },
+ {
+  "id": "120250112152420156",
+  "name": "[BR] [WELLNESS x EMPREENDEDOR] [30-55] — 4",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    },
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949140470156",
+   "name": "CP 01 - [FRIO] [TRAFEGO_LP] [VIDEO_OPORTUNIDADE]"
+  }
+ },
+ {
+  "id": "120250112147180156",
+  "name": "[BR] [WELLNESS x EMPREENDEDOR] [30-55] — 3",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    },
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949140470156",
+   "name": "CP 01 - [FRIO] [TRAFEGO_LP] [VIDEO_OPORTUNIDADE]"
+  }
+ },
+ {
+  "id": "120250112130960156",
+  "name": "[BR] [WELLNESS x EMPREENDEDOR] [30-55] — 2",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949140470156",
+   "name": "CP 01 - [FRIO] [TRAFEGO_LP] [VIDEO_OPORTUNIDADE]"
+  }
+ },
+ {
+  "id": "120250111823720156",
+  "name": "[365D] [ENGAJADOS + SEGUIDORES + VV] [ON_POST] — 3",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207588971870156",
+     "name": "SEGUIDORES IG - BOALI"
+    },
+    {
+     "id": "120207589012530156",
+     "name": "ThruPlay - 365DD"
+    },
+    {
+     "id": "120207589086850156",
+     "name": "VV 50% - 365DD"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949140630156",
+   "name": "CP 02 - [ENGAJAMENTO] [AQUECIMENTO_365D]"
+  }
+ },
+ {
+  "id": "120250111762570156",
+  "name": "[365D] [ENGAJADOS + SEGUIDORES + VV] [ON_POST] — 2",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207588971870156",
+     "name": "SEGUIDORES IG - BOALI"
+    },
+    {
+     "id": "120207589012530156",
+     "name": "ThruPlay - 365DD"
+    },
+    {
+     "id": "120207589086850156",
+     "name": "VV 50% - 365DD"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949140630156",
+   "name": "CP 02 - [ENGAJAMENTO] [AQUECIMENTO_365D]"
+  }
+ },
+ {
+  "id": "120250111279470156",
+  "name": "[FRIO] LAL 1% QUALIFICADOS+VENDAS 30-55",
+  "status": "ACTIVE",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    },
+    {
+     "id": "120251264895210156",
+     "name": "CAPI_LEAD_DESQUALIFICADO_180D (CRM)"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120250060672790156",
+     "name": "LAL 1% BR - QUALIFICADOS+VENDAS"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 1,
+    "custom_audience": 0
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120250111279010156",
+   "name": "CP 05 - [FRIO] [LAL QUALIFICADOS] [FORMS]"
+  }
+ },
+ {
+  "id": "120250110858360156",
+  "name": "[180D] [PEPA + VV + SITE] [ON_VIDEO] — 2",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949141240156",
+   "name": "CP 03 - [VIDEO_VIEW_THRUPLAY] [180D]"
+  }
+ },
+ {
+  "id": "120250024547160156",
+  "name": "[QUENTE 180D] [FORMS - CADASTROS] [ON_AD] — DEPOIMENTOS",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120207588971870156",
+     "name": "SEGUIDORES IG - BOALI"
+    },
+    {
+     "id": "120207589012530156",
+     "name": "ThruPlay - 365DD"
+    },
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589041610156",
+     "name": "VV 25% - 365DD"
+    },
+    {
+     "id": "120207589086850156",
+     "name": "VV 50% - 365DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120207589325560156",
+     "name": "PageView - 90DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949141410156",
+   "name": "CP 04 - [FORMS] [LEADS] [QUENTE_180D]"
+  }
+ },
+ {
+  "id": "120249992920030156",
+  "name": "[QUENTE 60D] [FORMS - CADASTROS] [ON_AD]  - IMG",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207589086920156",
+     "name": "VV 50% - 60DD"
+    },
+    {
+     "id": "120210120730550156",
+     "name": "PageView - 14DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    },
+    {
+     "id": "120243050981220156",
+     "name": "95% VÍDEOS FOCO EM FRANQUIA"
+    },
+    {
+     "id": "120246767398910156",
+     "name": "VIEWS URL IRON MAN FLORIPA"
+    },
+    {
+     "id": "120247157671390156",
+     "name": "CLICOU NO BOTÃO TESTE PG TESTE06"
+    },
+    {
+     "id": "120248060674010156",
+     "name": "VISITANTES 20260612wellempabr"
+    },
+    {
+     "id": "120248189421280156",
+     "name": "VIews de cortes SOCIOS + ABERTURAS + CONTEÚDOS FQ"
+    },
+    {
+     "id": "120248717660850156",
+     "name": "VIEWS ABF 2026"
+    },
+    {
+     "id": "120248901662670156",
+     "name": "SITE VIEWS 30 DDD"
+    },
+    {
+     "id": "120249998803170156",
+     "name": "VIDEO VIEW THRUPLAY 60D"
+    },
+    {
+     "id": "120250023479700156",
+     "name": "IG_ENGAJ__BOALI_60D"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 0
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949141410156",
+   "name": "CP 04 - [FORMS] [LEADS] [QUENTE_180D]"
+  }
+ },
+ {
+  "id": "120249976014280156",
+  "name": "[BR] [WELLNESS x EMPREENDEDOR] [30-55]",
+  "status": "ACTIVE",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "excluded_custom_audiences": [
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    },
+    {
+     "id": "120237818661500156",
+     "name": "CADASTRO REALIZADO"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    },
+    {
+     "id": "120251264895210156",
+     "name": "CAPI_LEAD_DESQUALIFICADO_180D (CRM)"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home"
+    ]
+   },
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6003068349915",
+       "name": "Men's Fitness (publicação)"
+      },
+      {
+       "id": "6003147242240",
+       "name": "Bem Estar"
+      },
+      {
+       "id": "6003152657675",
+       "name": "Wellness SPA"
+      },
+      {
+       "id": "6003254590688",
+       "name": "Spas (cuidados pessoais)"
+      },
+      {
+       "id": "6003382102565",
+       "name": "Alimentação saudável (cuidados pessoais)"
+      },
+      {
+       "id": "6003384248805",
+       "name": "Saúde e boa forma (fitness)"
+      },
+      {
+       "id": "6003421670257",
+       "name": "Wellness Coach"
+      },
+      {
+       "id": "6003559906449",
+       "name": "Fitness Girls"
+      },
+      {
+       "id": "6004115167424",
+       "name": "Exercício físico (fitness)"
+      }
+     ]
+    },
+    {
+     "interests": [
+      {
+       "id": "6003120739217",
+       "name": "Business networking"
+      },
+      {
+       "id": "6003325004380",
+       "name": "Startup (negócios e finanças)"
+      },
+      {
+       "id": "6003371567474",
+       "name": "Empreendedorismo (negócios e finanças)"
+      },
+      {
+       "id": "6003388314512",
+       "name": "Investimento (negócios e finanças)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home"
+    ]
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949140470156",
+   "name": "CP 01 - [FRIO] [TRAFEGO_LP] [VIDEO_OPORTUNIDADE]"
+  }
+ },
+ {
+  "id": "120249949945780156",
+  "name": "[QUENTE 180D] [FORMS - CADASTROS] [ON_AD]",
+  "status": "ACTIVE",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207588971870156",
+     "name": "SEGUIDORES IG - BOALI"
+    },
+    {
+     "id": "120207589012530156",
+     "name": "ThruPlay - 365DD"
+    },
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589041610156",
+     "name": "VV 25% - 365DD"
+    },
+    {
+     "id": "120207589086850156",
+     "name": "VV 50% - 365DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120207589325560156",
+     "name": "PageView - 90DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    },
+    {
+     "id": "120251548516690156",
+     "name": "[VV 50%] NIVEL 2 - RECUSOU O FUNDO + RODRIGO VENDER FRANQUIA 180D"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949141410156",
+   "name": "CP 04 - [FORMS] [LEADS] [QUENTE_180D]"
+  }
+ },
+ {
+  "id": "120249949929600156",
+  "name": "[180D] [PEPA + VV + SITE] [ON_VIDEO]",
+  "status": "ACTIVE",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207589012540156",
+     "name": "ThruPlay - 180DD"
+    },
+    {
+     "id": "120207589086900156",
+     "name": "VV 50% - 180DD"
+    },
+    {
+     "id": "120224942147330156",
+     "name": "PEPA - BOALI 180DD"
+    },
+    {
+     "id": "120224942173180156",
+     "name": "PEPA C - BOALI 180DD"
+    },
+    {
+     "id": "120236761297380156",
+     "name": "Vistou Site Franquia"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "story",
+    "reels",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949141240156",
+   "name": "CP 03 - [VIDEO_VIEW_THRUPLAY] [180D]"
+  }
+ },
+ {
+  "id": "120249949926420156",
+  "name": "[365D] [ENGAJADOS + SEGUIDORES + VV] [ON_POST]",
+  "status": "ACTIVE",
+  "effective_status": "CAMPAIGN_PAUSED",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 30,
+   "custom_audiences": [
+    {
+     "id": "120207588971870156",
+     "name": "SEGUIDORES IG - BOALI"
+    },
+    {
+     "id": "120207589012530156",
+     "name": "ThruPlay - 365DD"
+    },
+    {
+     "id": "120207589086850156",
+     "name": "VV 50% - 365DD"
+    },
+    {
+     "id": "120238982678540156",
+     "name": "PQ ENGAJADO RB"
+    }
+   ],
+   "excluded_geo_locations": {
+    "regions": [
+     {
+      "key": "438",
+      "name": "Acre (state)",
+      "country": "BR"
+     },
+     {
+      "key": "441",
+      "name": "Amazonas",
+      "country": "BR"
+     },
+     {
+      "key": "457",
+      "name": "Rondônia",
+      "country": "BR"
+     },
+     {
+      "key": "458",
+      "name": "Roraima",
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "geo_locations": {
+    "countries": [
+     "BR"
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 1
+   },
+   "publisher_platforms": [
+    "instagram"
+   ],
+   "instagram_positions": [
+    "stream",
+    "profile_feed",
+    "ig_search"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ]
+  },
+  "campaign": {
+   "id": "120249949140630156",
+   "name": "CP 02 - [ENGAJAMENTO] [AQUECIMENTO_365D]"
+  }
+ }
+]

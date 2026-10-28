@@ -1,0 +1,650 @@
+[
+ {
+  "id": "120246003834740358",
+  "name": "[BELO] Servidores Enfermagem Professores 25-60",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 60,
+   "age_min": 25,
+   "excluded_custom_audiences": [
+    {
+     "id": "120245517540390358",
+     "name": "M_AP_Ponto_Compradores_RMBH"
+    },
+    {
+     "id": "120245517540780358",
+     "name": "M_AP_Ponto_Exclusao_Complemento"
+    }
+   ],
+   "flexible_spec": [
+    {
+     "industries": [
+      {
+       "id": "6008888998983",
+       "name": "Education and Libraries"
+      },
+      {
+       "id": "6012903159383",
+       "name": "Healthcare and Medical Services"
+      },
+      {
+       "id": "6019621029983",
+       "name": "Government Employees (Global)"
+      }
+     ],
+     "work_positions": [
+      {
+       "id": "102268143164382",
+       "name": "Enfermeira Chefe"
+      },
+      {
+       "id": "103122973061151",
+       "name": "Professor"
+      },
+      {
+       "id": "110687332285785",
+       "name": "Técnico de Enfermagem"
+      },
+      {
+       "id": "112301005450413",
+       "name": "Pedagogo"
+      },
+      {
+       "id": "115970118412995",
+       "name": "Servidor público no Brasil"
+      },
+      {
+       "id": "121063687942792",
+       "name": "Enfermeira do Trabalho"
+      },
+      {
+       "id": "137813726259835",
+       "name": "Professora de Língua Inglesa"
+      },
+      {
+       "id": "139732142711124",
+       "name": "Professor de Educação Física"
+      },
+      {
+       "id": "140630402637577",
+       "name": "Enfermeiro"
+      },
+      {
+       "id": "140985615918781",
+       "name": "Professora de Ed. Infantil"
+      },
+      {
+       "id": "153495528089412",
+       "name": "Professor/Coordenador Pedagógico"
+      },
+      {
+       "id": "157410400963650",
+       "name": "Auxiliar técnico de enfermagem"
+      },
+      {
+       "id": "190567127622783",
+       "name": "AUXILIAR DE ENFERMAGEM/TECNICO EM ENFERMAGEM"
+      },
+      {
+       "id": "201153853387786",
+       "name": "Enfermeira"
+      },
+      {
+       "id": "208810049131419",
+       "name": "Auxiliar de Classe / Professora"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "244661",
+      "name": "Belo Horizonte",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "273969",
+      "name": "Vespasiano",
+      "radius": 20,
+      "region": "Minas Gerais",
+      "region_id": "449"
+     }
+    ],
+    "location_types": [
+     "frequently_in",
+     "home",
+     "recent"
+    ]
+   },
+   "brand_safety_content_filter_levels": [
+    "AN_RELAXED"
+   ],
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 0
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "facebook",
+    "instagram",
+    "audience_network"
+   ],
+   "facebook_positions": [
+    "feed",
+    "right_hand_column",
+    "story",
+    "facebook_reels"
+   ],
+   "instagram_positions": [
+    "stream",
+    "reels",
+    "profile_feed"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ],
+   "audience_network_positions": [
+    "classic",
+    "rewarded_video"
+   ]
+  }
+ },
+ {
+  "id": "120245933397060358",
+  "name": "[BELO][FORM] LAL Compradores RMBH | Leads Qualificados",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 54,
+   "age_min": 25,
+   "excluded_custom_audiences": [
+    {
+     "id": "120245517540390358",
+     "name": "M_AP_Ponto_Compradores_RMBH"
+    },
+    {
+     "id": "120245517540780358",
+     "name": "M_AP_Ponto_Exclusao_Complemento"
+    },
+    {
+     "id": "120245802351920358",
+     "name": "M_Belo_Leads_Obrigado_180D"
+    },
+    {
+     "id": "120245854125580358",
+     "name": "M_Form_Enviou_30D"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120245527645870358",
+     "name": "M_LAL_1_Compradores_RMBH"
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "244661",
+      "name": "Belo Horizonte",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "249756",
+      "name": "Contagem",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "273969",
+      "name": "Vespasiano",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 0
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "facebook",
+    "instagram",
+    "audience_network"
+   ],
+   "facebook_positions": [
+    "feed",
+    "story",
+    "facebook_reels"
+   ],
+   "instagram_positions": [
+    "stream",
+    "reels",
+    "profile_feed"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ],
+   "audience_network_positions": [
+    "classic",
+    "rewarded_video"
+   ]
+  }
+ },
+ {
+  "id": "120245854126000358",
+  "name": "[BELO][FORM] LAL Qualificados CAPI",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 60,
+   "age_min": 25,
+   "excluded_custom_audiences": [
+    {
+     "id": "120245517540390358",
+     "name": "M_AP_Ponto_Compradores_RMBH"
+    },
+    {
+     "id": "120245517540780358",
+     "name": "M_AP_Ponto_Exclusao_Complemento"
+    },
+    {
+     "id": "120245802351920358",
+     "name": "M_Belo_Leads_Obrigado_180D"
+    },
+    {
+     "id": "120245854125580358",
+     "name": "M_Form_Enviou_30D"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120245853125060358",
+     "name": "M_LAL_1_CAPI_Qualificados"
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "244661",
+      "name": "Belo Horizonte",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "249756",
+      "name": "Contagem",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     },
+     {
+      "country": "BR",
+      "distance_unit": "mile",
+      "key": "273969",
+      "name": "Vespasiano",
+      "region": "Minas Gerais",
+      "region_id": "449"
+     }
+    ],
+    "location_types": [
+     "home",
+     "recent"
+    ]
+   },
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 0
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "facebook",
+    "instagram",
+    "audience_network"
+   ],
+   "facebook_positions": [
+    "feed",
+    "story",
+    "facebook_reels"
+   ],
+   "instagram_positions": [
+    "stream",
+    "reels",
+    "profile_feed"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ],
+   "audience_network_positions": [
+    "classic",
+    "rewarded_video"
+   ]
+  }
+ },
+ {
+  "id": "120245790403680358",
+  "name": "[BELO] Interesse Imóvel 25-45",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 45,
+   "age_min": 25,
+   "excluded_custom_audiences": [
+    {
+     "id": "120245517540390358",
+     "name": "M_AP_Ponto_Compradores_RMBH"
+    },
+    {
+     "id": "120245517540780358",
+     "name": "M_AP_Ponto_Exclusao_Complemento"
+    }
+   ],
+   "flexible_spec": [
+    {
+     "interests": [
+      {
+       "id": "6002976176121",
+       "name": "Apartamento"
+      },
+      {
+       "id": "6002986908368",
+       "name": "Casa (imóveis)"
+      },
+      {
+       "id": "6003103732434",
+       "name": "Apartamento (imóveis)"
+      },
+      {
+       "id": "6003418314031",
+       "name": "Lar (casa e jardim)"
+      }
+     ]
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "273969",
+      "name": "Vespasiano",
+      "radius": 20,
+      "region": "Minas Gerais",
+      "region_id": "449"
+     }
+    ],
+    "location_types": [
+     "frequently_in",
+     "home",
+     "recent"
+    ]
+   },
+   "brand_safety_content_filter_levels": [
+    "AN_RELAXED"
+   ],
+   "targeting_automation": {
+    "advantage_audience": 0
+   },
+   "publisher_platforms": [
+    "facebook",
+    "instagram",
+    "audience_network"
+   ],
+   "facebook_positions": [
+    "feed",
+    "right_hand_column",
+    "story",
+    "facebook_reels"
+   ],
+   "instagram_positions": [
+    "stream",
+    "reels",
+    "profile_feed"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ],
+   "audience_network_positions": [
+    "classic",
+    "rewarded_video"
+   ]
+  }
+ },
+ {
+  "id": "120245790367990358",
+  "name": "[BELO] Remarketing 180D",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 25,
+   "excluded_custom_audiences": [
+    {
+     "id": "120245517540390358",
+     "name": "M_AP_Ponto_Compradores_RMBH"
+    },
+    {
+     "id": "120245517540780358",
+     "name": "M_AP_Ponto_Exclusao_Complemento"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "23847142265490357",
+     "name": "[M] View Video - Todos - 95% - 365D"
+    },
+    {
+     "id": "120245517541240358",
+     "name": "M_AP_Ponto_Qualificados_Sem_Vendas"
+    },
+    {
+     "id": "120245517750200358",
+     "name": "M_Site_Todos_180D"
+    },
+    {
+     "id": "120245519551400358",
+     "name": "M_MQL_Site_180D"
+    },
+    {
+     "id": "120245519552380358",
+     "name": "M_Simulacao_180D"
+    },
+    {
+     "id": "120245540043470358",
+     "name": "IG_ENGAJ_AP_PONTO_180D"
+    },
+    {
+     "id": "120245540058970358",
+     "name": "IG_VIDEO_AP_PONTO_50%_180D"
+    },
+    {
+     "id": "120245802352490358",
+     "name": "M_Site_Belo_180D"
+    },
+    {
+     "id": "120245854125540358",
+     "name": "M_Form_Abriu_Nao_Enviou_30D"
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "244661",
+      "name": "Belo Horizonte",
+      "radius": 17,
+      "region": "Minas Gerais",
+      "region_id": "449"
+     }
+    ],
+    "places": [
+     {
+      "key": "107928365902235",
+      "name": "Vespasiano",
+      "distance_unit": "kilometer",
+      "latitude": -19.691944444444,
+      "longitude": -43.922777777778,
+      "radius": 21,
+      "primary_city_id": 273969,
+      "region_id": 449,
+      "country": "BR"
+     }
+    ],
+    "location_types": [
+     "frequently_in",
+     "home",
+     "recent"
+    ]
+   },
+   "brand_safety_content_filter_levels": [
+    "AN_RELAXED"
+   ],
+   "targeting_relaxation_types": {
+    "lookalike": 0,
+    "custom_audience": 0
+   },
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 0
+    }
+   },
+   "publisher_platforms": [
+    "facebook",
+    "instagram",
+    "audience_network"
+   ],
+   "facebook_positions": [
+    "feed",
+    "right_hand_column",
+    "story",
+    "facebook_reels"
+   ],
+   "instagram_positions": [
+    "stream",
+    "reels",
+    "profile_feed"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ],
+   "audience_network_positions": [
+    "classic",
+    "rewarded_video"
+   ]
+  }
+ },
+ {
+  "id": "120245790363030358",
+  "name": "[BELO] LAL Compradores RMBH",
+  "effective_status": "ACTIVE",
+  "targeting": {
+   "age_max": 55,
+   "age_min": 25,
+   "excluded_custom_audiences": [
+    {
+     "id": "120245517540390358",
+     "name": "M_AP_Ponto_Compradores_RMBH"
+    },
+    {
+     "id": "120245517540780358",
+     "name": "M_AP_Ponto_Exclusao_Complemento"
+    }
+   ],
+   "custom_audiences": [
+    {
+     "id": "120245527645870358",
+     "name": "M_LAL_1_Compradores_RMBH"
+    }
+   ],
+   "geo_locations": {
+    "cities": [
+     {
+      "country": "BR",
+      "distance_unit": "kilometer",
+      "key": "273969",
+      "name": "Vespasiano",
+      "radius": 20,
+      "region": "Minas Gerais",
+      "region_id": "449"
+     }
+    ],
+    "location_types": [
+     "frequently_in",
+     "home",
+     "recent"
+    ]
+   },
+   "brand_safety_content_filter_levels": [
+    "AN_RELAXED"
+   ],
+   "targeting_automation": {
+    "advantage_audience": 0,
+    "individual_setting": {
+     "geo": 1
+    }
+   },
+   "publisher_platforms": [
+    "facebook",
+    "instagram",
+    "audience_network"
+   ],
+   "facebook_positions": [
+    "feed",
+    "right_hand_column",
+    "story",
+    "facebook_reels"
+   ],
+   "instagram_positions": [
+    "stream",
+    "reels",
+    "profile_feed"
+   ],
+   "device_platforms": [
+    "mobile",
+    "desktop"
+   ],
+   "audience_network_positions": [
+    "classic",
+    "rewarded_video"
+   ]
+  }
+ }
+]

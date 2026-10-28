@@ -12,3 +12,5 @@ $log = Join-Path $env:TEMP "ads-diario-$hoje.log"
 
 & python (Join-Path $scripts 'diario.py') varrer *> $log
 & python (Join-Path $scripts 'resumo_telegram.py') *>> $log
+# 3. Mudancas feitas no painel (Mileny e Tai) -> historico do cliente em Carteira (28/10/2026)
+& python (Join-Path $scripts 'registrar_log.py') *>> $log

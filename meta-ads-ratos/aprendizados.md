@@ -4,6 +4,139 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 
 ---
 
+### 2026-10-16 — Trocar o form de anúncio ativo: criativo novo no MESMO anúncio; público de form aceita form a mais
+**Regra:** o form fica no `call_to_action.value.lead_gen_form_id` do criativo, que é imutável. Para trocar sem perder o ID do anúncio:
+ler o criativo pelo ID, recriar com o mesmo `object_story_spec` (no `video_data`, mandar só `image_hash` e tirar o `image_url`),
+trocar o form, `degrees_of_freedom_spec` com os 8 recursos individuais em OPT_OUT (expande para 83) e `contextual_multi_ads` OPT_OUT,
+**conferir o form no criativo** e só então `POST /{ad_id} creative={"creative_id":...}`. O anúncio fica ACTIVE e vai para
+PENDING_REVIEW. Depois, os públicos com o form antigo como fonte: `POST /{audience_id}` com `rule` reenviada inteira
+(as 2 fontes `lead` + `ig_lead_generation` de cada form) foi aceito e mantém o ID do público, sem mexer nos conjuntos.
+Público de form criado com a **página** como fonte (formato antigo, `submit_form`/`close_form`) já pega todos os forms.
+**Contexto:** Boali 16/10, form com confirmação de telefone `1124250693654302` em 9 anúncios; públicos `120251732677900156` e
+`120251732678670156`. Listar `customaudiences` com `rule` em página de 25+ deu erro 1 ("reduce the amount of data"): listar
+só `id,name,subtype` e ler a regra um por um.
+
+---
+
+### 2026-10-15 — Anúncio de parceria com post do CRIADOR: permissão de conta "Approved" não basta (subcode 3867018)
+**Regra:** antes de montar anúncio com post que está só no perfil do criador, conferir (GET, não envia nada)
+`/{ig_da_marca}/branded_content_ad_permissions?creator_username=X`. Mesmo com `permission_status: Approved`, o criativo
+pelo caminho do media ID (`object_id` página da marca + `source_instagram_media_id` + `facebook_branded_content.sponsor_page_id`
++ `instagram_branded_content.sponsor_id` da marca + `branded_content.ad_format` 1) volta **subcode 3867018** ("@marca não tem
+parceria com @criador; selecione um post em que @marca tem parceria") se o post não tiver a marcação de parceria. Saídas: o
+criador marca parceria paga com a marca no post, ou manda o **código de anúncio de parceria**, ou a Mileny cria pelo painel.
+Post collab (aparece no perfil da marca) passa com `instagram_user_id` da marca e o criador como sponsor (campanha de 17/09 da MKT).
+O media ID do post do criador sai do `business_discovery.username(X){media{id,caption,timestamp,permalink}}` no IG da marca.
+`/{ig}/branded_content_advertisable_medias` foi descontinuado (#200).
+**Atualização de 16/10:** pelo painel o mesmo post passou. O criativo do painel tem **`instagram_user_id` = IG do CRIADOR**
+(17841400898805496) + `source_instagram_media_id` do post. A identidade é o criador, não a marca. Na próxima vez, testar
+pela API com `instagram_user_id` do criador antes de mandar para o painel.
+**Contexto:** Cheirin MKT 15/10, reel "Olha esse numero" do @schroedereduardo.
+
+### 2026-10-16 — Update de targeting reenvia tudo: reler o conjunto antes, senão desfaz o que o painel mudou
+**Regra:** `targeting` no update **substitui** o direcionamento inteiro. Antes de incluir/excluir público num conjunto que a
+Mileny pode ter mexido no painel, ler o targeting atual (`GET {adset}?fields=targeting`) e alterar só o que foi pedido.
+Nunca reenviar o targeting montado no script de criação.
+**Contexto:** Cheirin MKT 16/10: ao ativar pelo painel, a Mileny (ou o painel) tirou "Explorar" e ligou o Advantage+ de
+direcionamento detalhado; o update do Claude para incluir o público do Eduardo, 45 min depois, desfez as duas mudanças.
+
+### 2026-10-15 — Público de IG de outro perfil: #2654 / subcode 1713140 = origem não é ativo do negócio da conta
+**Regra:** criar público `IG_BUSINESS` com `ig_business` de um perfil que não pertence ao negócio da conta dá **#2654 /
+1713140** ("Nenhuma permissão na origem do evento"). Saída: **compartilhar** o público de uma conta que tem a origem
+(`POST /{audience_id}/adaccounts` com `adaccounts=["<id numérico>"]`; responde `success` sem id, então conferir na lista de
+públicos da conta de destino). Só dá para compartilhar público de conta que o token administra.
+**Contexto:** Cheirin MKT 15/10: @cheirinbaofranquias veio da MT por compartilhamento; Wilton (`ig_business` 1485692271546087,
+públicos na `act_825937812666250`) ficou de fora.
+
+### 2026-10-15 — Formulário nativo + imagem por posicionamento: o form vai em `asset_feed_spec.call_to_actions`
+**Regra:** anúncio de lead ad com imagem 4:5 no feed e 9:16 em stories/reels funciona assim: `object_story_spec` só com
+`page_id` + `instagram_user_id`; no `asset_feed_spec`, `link_urls: [{"website_url": "http://fb.me/"}]`,
+`call_to_action_types: ["SIGN_UP"]`, **`call_to_actions: [{"type": "SIGN_UP", "value": {"lead_gen_form_id": FORM, "link":
+"http://fb.me/"}}]`**, `ad_formats: ["SINGLE_IMAGE"]`, `optimization_type: "PLACEMENT"` e as `asset_customization_rules`
+(com `priority`). Aceito de primeira, com os 83 recursos de IA em OPT_OUT. **Depois de criar, conferir que o ID do form
+aparece no criativo** antes de criar o anúncio: sem ele, o anúncio iria para o fb.me vazio.
+**Contexto:** Cheirin MT 15/10, AD41 (script `criativos/cheirin-franquia/build_ad41_1510.py`). Ler criativos de painel com
+`asset_feed_spec` expandido via `/ads?fields=creative{asset_feed_spec}` dá #100/2446211; ler pelo ID do criativo funciona.
+
+---
+
+### 2026-10-15 — Imagem feed + story no mesmo anúncio: só um texto
+**Regra:** com `asset_customization_rules` (imagem 4:5 no feed e 9:16 em stories/reels), o `asset_feed_spec` aceita **um**
+corpo, **um** título e **uma** descrição. Com vários, a Meta recusa: subcode **1885878** ("Vários ativos bodies não podem
+ser aplicados à regra nº 1"). Para testar textos, fazer um anúncio por texto. Imagem 9:16 grande (4500×8000) pode ser
+reduzida para 1080×1920 antes do upload.
+**Contexto:** AP Ponto 15/10, `IMG Vantagens 60x v1`. Os criativos do Belo com 3 corpos e 5 títulos usam imagem única
+(`DEGREES_OF_FREEDOM`), por isso aceitam vários textos.
+
+---
+
+### 2026-10-14 — Público de formulário: fonte = o form (FB + IG), máximo de 90 dias; público de site: conferir o pixel
+**Regra:** público de formulário de cadastro se cria com `event_sources` = **o próprio form**, duas vezes
+(`{"type":"lead","id":FORM,"owner_id":PAGE}` e `{"type":"ig_lead_generation","id":FORM,"owner_id":PAGE}`), eventos
+`lead_generation_dropoff` (abriu e não enviou) e `lead_generation_submitted` (enviou), `prefill: true`, **sem `subtype`**.
+O formato antigo (fonte = Página, `submit_form`/`close_form`, com `subtype: ENGAGEMENT`) dá **#2654/1713151** ("nome do evento
+inválido"). Retenção máxima: **90 dias** (180 dá #2654/1713143). Em conta só de Instagram, sem a fonte `ig_lead_generation`
+o público perde os envios do IG.
+**Público WEBSITE com "20":** antes de culpar a leitura da API, conferir **qual pixel** está na regra e o `last_fired_time`
+dele (`dataset.py get --id`). O "20" sozinho não prova nada: público de site com menos de ~1.000 pessoas mostra 20 mesmo
+num pixel ativo. `delivery_status` 200 ("pronto") não prova que tem gente, e o `reachestimate` devolve -1 para qualquer
+público personalizado, então não serve de teste.
+**Contexto:** Boali 14/10. FORM ENVIOU 90D `120251732677900156`. Os públicos de site da Boali estavam no pixel
+`623640363239234`, parado desde 21/06/2026, enquanto a página dispara o `4253291668254806`. O formato do form veio da Cheirin (03/10).
+
+### 2026-10-09 — Anúncio feito no painel com "publicação existente do Instagram" nasce com `standard_enhancements` OPT_IN
+**Regra:** a Mileny subiu 6 anúncios pelo Gerenciador usando um post do Instagram, e todos vieram com
+`standard_enhancements` em OPT_IN; os duplicados para outros conjuntos vieram também com `translate_voiceover` OPT_IN.
+Correção que funcionou: **um criativo novo** com `object_id` (página) + `instagram_user_id` + `source_instagram_media_id`
+(o post orgânico) e `degrees_of_freedom_spec` com 8 recursos individuais em OPT_OUT (`advantage_plus_creative`,
+`enhance_cta`, `inline_comment`, `text_optimizations`, `video_auto_crop`, `video_filtering`, `video_uncrop`,
+`translate_voiceover`). A Meta expandiu para 83 campos OPT_OUT, e a mídia de anúncio no Instagram é a mesma dos
+originais, então a prova social continua no mesmo lugar. O mesmo criativo serve para os 6 anúncios, trocado com
+`POST /{ad_id} creative={"creative_id":...}`. O anúncio volta para revisão.
+**Também:** `create.py image` está quebrado (`AdAccount.create_ad_image() got an unexpected keyword argument 'files'`).
+Enquanto não for corrigido, subir imagem pelo SDK: `AdImage(parent_id=act)`, `[AdImage.Field.filename] = caminho`,
+`remote_create()`, e ler `[AdImage.Field.hash]`.
+**Contexto:** AFS Franquia 09/10, vídeo "Oportunidade de negócio" e AD-V9 Osasco.
+
+### 2026-10-08 — Conta UNSETTLED agora bloqueia até EDITAR conjunto (200 / subcode 2490592)
+**Regra:** com `account_status: 3` (pagamento pendente), a Meta recusa update de targeting em conjunto, ativo ou pausado,
+inclusive com `validate_only`: *"O status da conta de anúncios não permite o gerenciamento de anúncios"* (code 200,
+subcode 2490592). **Conta travada não serve de janela para editar sem reiniciar o aprendizado.** Deixar o build pronto e
+rodar logo depois que a conta voltar a `account_status: 1`. Antes de qualquer escrita, ler `account_status`.
+Isso **contradiz** o aprendizado de 13/08 (Casa de Vidro), em que a conta UNSETTLED ainda criava campanha e conjunto.
+**Contexto:** Boali 08/10. A Mileny pediu para excluir o Rio capital de todos os conjuntos "aproveitando que a conta
+está sem saldo". Os 26 conjuntos voltaram com 2490592 já no `validate_only`.
+
+---
+
+### 2026-09-26 — Público de vídeo de ANÚNCIO: usar o `video_id` de topo do criativo, não o do `object_story_spec`
+**Regra:** vídeo subido na conta de anúncios (o `video_id` dentro de `object_story_spec.video_data`) **não tem Página**
+e o público de engajamento recusa: **#2654 / subcode 1713216** ("this video isn't associated with a Page or New Page
+Experience"). Depois que o anúncio publica, o criativo ganha um campo **`video_id` de topo** (`GET {creative}?fields=
+video_id,effective_object_story_id`) com a **cópia do vídeo ligada ao post da Página**. Com esse ID, o formato legado
+passa: `subtype: ENGAGEMENT`, `retention_days`, `prefill: true`,
+`rule: [{"event_name":"video_view_50_percent","object_id":"<video_id de topo>"}]`. Para o público crescer com um
+video view novo, o criativo do VV usa o **mesmo** `video_id` da Página em `video_data`. Isso revê em parte o 08/09
+("por vídeo específico só pelo painel"): lá o vídeo era de post orgânico/ad sem a cópia da Página.
+Público com `event_sources` de tipos diferentes (page + ig_business) numa regra só dá **subcode 1870028**: uma regra por tipo.
+**Confirmado em 28/09:** em criativo criado pela API (`video_data` com vídeo recém-subido), o `video_id` de topo já
+aparece **segundos depois do POST do criativo**, sem esperar a publicação do anúncio (VV2: `1099402389725590` → Página
+`1610677820726768`). Dá para criar o público no mesmo build.
+**Cuidado (02/10, Boali):** logo depois do POST, o `video_id` de topo pode ser **o próprio ID do upload**, e criar o público
+com ele dá #2654. A cópia na Página chegou ~1 min depois, com outro ID. Esperar até o `video_id` de topo ser **diferente**
+do upload (`build_vv_nivel2.py`, `video_da_pagina`).
+**Contexto:** Casa de Vidro 26/09, `[IG_VIDEO_VERAO_50%] 180D` (`120249614027790510`) com o vídeo `1799657194568531`
+(o anúncio usava `1938277547122704`).
+
+### 2026-09-26 — Visita ao perfil (2016153) também na Casa de Vidro; e o IG dela ficou legível
+**Regra:** antes de montar campanha de visita ao perfil em conta que nunca rodou esse formato, contar com o risco do
+2016153 no ANÚNCIO (campanha e conjunto sobem). Casa de Vidro (@casadevidro.paraty, ~5-6 mil seguidores) caiu nele
+em 26/09. **Junto:** o `GET /{ig_id}/media` e `/{media}/insights` (reach, saved, shares, views) passaram a funcionar
+nessa conta com o token do sistema — o `ads_get_ig_accounts` do conector segue `[]`, então testar pela Graph API
+direta antes de pedir texto colado. Escolher post para anúncio por salvamento + compartilhamento, não por curtida.
+
+---
+
 ### 2026-09-24 — Vídeo com fala: TRANSCREVER antes de subir (quadros não bastam)
 **Regra:** antes de subir vídeo com fala, transcrever o áudio inteiro (`faster_whisper`, modelo `small`, `int8`, CPU, com
 `word_timestamps=True` para cortar) e conferir se a fala combina com o público do conjunto. A grade de quadros mostra texto na
@@ -27,6 +160,23 @@ mostrou 0. Antes de dizer "trouxe X leads" num conjunto de CRM, separar: lead de
 registro"). Os 4 leads conferidos no CRM estavam lá e nenhum era qualificado.
 
 ---
+
+### 2026-09-28 — Interesses de marca descontinuados (subcode 1870247): MRV, Tenda, imovelweb
+**Regra:** "MRV Engenharia" (6004139649906), "Construtora Tenda" (6002891575279) e "imovelweb" (6018886000820) ainda
+aparecem no `targeting.py interests`, mas o Meta **recusa** esses IDs em conjunto novo ou em update (subcode 1870247,
+"Algumas opções de direcionamento detalhado foram combinadas"). O erro traz a alternativa: MRV → "Desenvolvedores de
+imóveis" 6836751095756; Tenda → "Serviços e organizações de construção" 6803923102411; imovelweb → "Portais da web e
+anúncios de imóveis" 6788101567252. A busca de interesses não avisa que o ID morreu, então ler o `error_user_msg`.
+**Contexto:** AP Ponto 28/09, conjunto Momento de Vida do Belo. Conjuntos antigos que já tinham MRV/Tenda podem continuar
+entregando, mas não aceitam update de targeting sem trocar o ID.
+
+### 2026-09-28 — Conjunto com lookalike nasce com "Advantage semelhante" LIGADO se não mandar relaxation
+**Regra:** em todo conjunto com público personalizado ou lookalike, mandar
+`targeting_relaxation_types: {"lookalike": 0, "custom_audience": 0}` junto com
+`targeting_automation: {"advantage_audience": 0}`. Sem o relaxation, a Meta grava `lookalike: 1` e o painel mostra
+Advantage ligado, mesmo com o advantage_audience em 0.
+**Contexto:** AP Ponto, `[BELO][FORM] LAL Qualificados CAPI` saiu com lookalike 1 e a Mileny reclamou que os conjuntos
+estavam "com advantage ativado". Antes de criar conjunto numa conta, copiar o conjunto modelo que a Mileny indicar.
 
 ### 2026-09-24 — TODO conjunto sobe com geo, inclusive público personalizado/engajamento
 **Regra:** nunca criar conjunto sem `geo_locations`. Público de engajamento do IG
@@ -826,3 +976,8 @@ ponto-alpha:
 **Impacto pratico (importa quando o geo E o filtro):** `home` = quem MORA no raio; `frequently_in` = quem esta frequentemente ali, ou seja **quem trabalha no lugar**. Em pino de bairro rico (Jardins, Leblon) isso readmite garcom, manobrista, porteiro e comercio — justamente o publico que o pino queria excluir. Nao invalida o teste, mas suja: contar com isso ao ler o resultado, e nao prometer a ninguem que o conjunto pega "so quem mora".
 **O que NAO fazer:** insistir em remover. Ja custou 2 escritas + 2 releituras aqui; e default da plataforma, nao contaminacao de conta.
 **Contexto:** Casa de Vidro Paraty 08/09 — campanha `[GEO-PIN] ALTO PADRAO SP-RJ` (`120249369648020510`), conjunto `[PIN/MORA]` (`120249369649830510`) com 15 pinos de 2 km. O `[PIN/DESTINO]` (`120249369651930510`) ficou `["frequently_in","recent","travel_in"]` — nesse caso `frequently_in` atrapalha menos, porque em destino de lazer quem esta "frequentemente ali" ja e majoritariamente segunda residencia.
+
+### 2026-10-20 — Cheirin Bão: posicionamento fixo em Feed + Stories + Reels
+**Regra (Mileny, permanente, só Cheirin Bão):** todo conjunto da conta `act_884652616778712` fica só no Instagram com `instagram_positions: ["stream","story","reels"]` e `publisher_platforms: ["instagram"]`. Nada de `explore`, `explore_home`, `profile_feed` (Perfil) nem `ig_search`. Vale ao criar, duplicar ou editar conjunto.
+**Como aplicar:** o `targeting` da API substitui o spec inteiro. Ler o targeting atual, trocar só `instagram_positions`, tirar as chaves `effective_*` e `dt_consolidation_state`, regravar e reler para conferir geo, públicos, idade, `targeting_automation` e verba. Script de referência: ler o adset com `export_all_data()` (o SDK devolve objeto `Targeting`, não dict).
+**Contexto:** Stories saiu em 16-17/10 (leads de Stories de 16/10 não avançaram no CRM), leads de formulário despencaram (8, 3, 2 por dia) e a Mileny voltou Stories em 20/10, junto com a limpeza de Explorar, Perfil e Pesquisa nos 10 conjuntos ativos. `explore_home` sozinho a API recusa (2490392), mas dá para tirar os dois juntos.

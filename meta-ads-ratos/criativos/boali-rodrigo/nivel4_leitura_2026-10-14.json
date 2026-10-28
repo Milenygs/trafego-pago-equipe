@@ -1,0 +1,191 @@
+{
+ "camp": {
+  "id": "120251445536860156",
+  "name": "CP 10 - [FUNDO] [LISTA CRM + CAPI] [FORMS]",
+  "status": "PAUSED",
+  "effective_status": "PAUSED",
+  "objective": "OUTCOME_LEADS",
+  "buying_type": "AUCTION",
+  "special_ad_categories": []
+ },
+ "setA": {
+  "id": "120251445538910156",
+  "name": "[FUNDO] [LISTA CRM PIPELINE ATIVO] [FORMS] 30-55",
+  "status": "ACTIVE",
+  "optimization_goal": "LEAD_GENERATION",
+  "billing_event": "IMPRESSIONS",
+  "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+  "promoted_object": {
+   "page_id": "110751468238380",
+   "smart_pse_enabled": false
+  },
+  "destination_type": "ON_AD",
+  "daily_budget": "5000",
+  "is_dynamic_creative": false,
+  "multi_optimization_goal_weight": "UNDEFINED"
+ },
+ "120251425985370156": {
+  "id": "120251425985370156",
+  "name": "AD20 [FRANQUEADO] [VIDEO] MARCOS BABI RUA SHOPPING CORPORATIVA",
+  "status": "ACTIVE",
+  "creative": {
+   "id": "1450917803590212"
+  },
+  "tracking_specs": [
+   {
+    "action.type": [
+     "onsite_conversion"
+    ]
+   },
+   {
+    "action.type": [
+     "onsite_conversion"
+    ],
+    "conversion_id": [
+     "8677263759056071"
+    ]
+   },
+   {
+    "action.type": [
+     "link_click"
+    ],
+    "post": [
+     "1134632122569050"
+    ],
+    "post.wall": [
+     "110751468238380"
+    ]
+   },
+   {
+    "action.type": [
+     "post_interaction_gross"
+    ],
+    "page": [
+     "110751468238380"
+    ],
+    "post": [
+     "1134632122569050"
+    ]
+   },
+   {
+    "action.type": [
+     "post_engagement"
+    ],
+    "page": [
+     "110751468238380"
+    ],
+    "post": [
+     "1134632122569050"
+    ]
+   },
+   {
+    "action.type": [
+     "leadgen_quality_conversion"
+    ],
+    "fb_pixel": [
+     "4253291668254806"
+    ]
+   }
+  ],
+  "conversion_specs": [
+   {
+    "action.type": [
+     "leadgen"
+    ],
+    "leadgen": [
+     "152124737434386"
+    ]
+   }
+  ]
+ },
+ "120251425986930156": {
+  "id": "120251425986930156",
+  "name": "AD14 - DEPOIMENTO LOJA CHEIA 691",
+  "status": "ACTIVE",
+  "creative": {
+   "id": "1959958101342539"
+  },
+  "tracking_specs": [
+   {
+    "action.type": [
+     "onsite_conversion"
+    ]
+   },
+   {
+    "action.type": [
+     "onsite_conversion"
+    ],
+    "conversion_id": [
+     "8677263759056071"
+    ]
+   },
+   {
+    "action.type": [
+     "post_engagement"
+    ],
+    "page": [
+     "110751468238380"
+    ],
+    "post": [
+     "1122064863825776"
+    ]
+   },
+   {
+    "action.type": [
+     "post_interaction_gross"
+    ],
+    "page": [
+     "110751468238380"
+    ],
+    "post": [
+     "1122064863825776"
+    ]
+   },
+   {
+    "action.type": [
+     "link_click"
+    ],
+    "post": [
+     "1122064863825776"
+    ],
+    "post.wall": [
+     "110751468238380"
+    ]
+   }
+  ],
+  "conversion_specs": [
+   {
+    "action.type": [
+     "leadgen"
+    ],
+    "leadgen": [
+     "152124737434386"
+    ]
+   }
+  ]
+ },
+ "120207589325560156": {
+  "id": "120207589325560156",
+  "name": "PageView - 90DD",
+  "rule": "{\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":623640363239234}],\"retention_seconds\":7776000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"url\",\"operator\":\"i_contains\",\"value\":\"\"}]},\"template\":\"ALL_VISITORS\"}]}}",
+  "retention_days": 90
+ },
+ "120236761297380156": {
+  "id": "120236761297380156",
+  "name": "Vistou Site Franquia",
+  "rule": "{\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":623640363239234}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"operator\":\"or\",\"filters\":[{\"field\":\"url\",\"operator\":\"i_contains\",\"value\":\"franquiasaudavelboali.com.br\"}]},{\"field\":\"url\",\"operator\":\"i_contains\",\"value\":\"\"}]},\"template\":\"VISITORS_BY_URL\"}]}}",
+  "retention_days": 180
+ },
+ "120237818661500156": {
+  "id": "120237818661500156",
+  "name": "CADASTRO REALIZADO",
+  "rule": "{\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":623640363239234}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"operator\":\"or\",\"filters\":[{\"field\":\"url\",\"operator\":\"i_contains\",\"value\":\"franquiasaudavelboali.com.br\\/poscadastro\"}]},{\"field\":\"url\",\"operator\":\"i_contains\",\"value\":\"\"}]},\"template\":\"VISITORS_BY_URL\"}]}}",
+  "retention_days": 180
+ },
+ "120248901662670156": {
+  "id": "120248901662670156",
+  "name": "SITE VIEWS 30 DDD",
+  "rule": "{\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":4253291668254806}],\"retention_seconds\":2592000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"url\",\"operator\":\"i_contains\",\"value\":\"\"}]},\"template\":\"ALL_VISITORS\"}]}}",
+  "retention_days": 30
+ }
+}

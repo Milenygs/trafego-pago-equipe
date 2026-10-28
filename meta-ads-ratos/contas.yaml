@@ -196,7 +196,7 @@ clientes:
       - "lead"
       - "offsite_conversion.custom.2554956741641990"  # "[M] LEAD/LP FRANQUEADOS" (PageView em poscadastro.cheirinbao.com.br/franqueados/), o evento que a campanha 12 otimiza. NUNCA usar "offsite_conversion.fb_pixel_custom": nesta conta o balde traz lead_qualificado do CRM (142 em 30d), nao cadastro novo
     pixel_id: "2525428314626049"  # "Novo CB - 07/26" — e o pixel que mede a LP bl.cheirinbao.com.br (via GTM-KLFFMKML server-side/Stape). NAO confundir com 1113125670113540, que e do site institucional cheirinbao.com.br e do CAPI.
-    notas: "Funil Espiral montado 28/07/2026. NAO julgar essa conta por CPL — julgar por lead QUALIFICADO do CRM (a Mileny manda o ranking). VERBA: somar SEMPRE por effective_status — a conta tem dezenas de conjuntos ACTIVE dentro de campanhas pausadas e somar por status da R$5.524 falso; o real e R$1.142/dia (01/09/2026). Campanha 12 [SITE] [FRANQUEADOS] ativa desde 01/09 leva pro site com UTM por franqueado (Raissa/Santoro) pra resolver atribuicao no CRM; a pagina de obrigado poscadastro.cheirinbao.com.br AINDA NAO TEM RASTREAMENTO — pendente instalar o GTM-KLFFMKML la. Medido em 25/08: conjunto RAISSA (120257017816020212) tinha CPL R$36 e so 13% de qualificacao (23 leads -> 3 qualificados), enquanto o mesmo criativo no '04 - LAL —FRANQUEADOS' (120256940815900212) qualifica 43% a R$137/qualificado. Publico de engajamento/video-view enche de curioso; lookalike de base boa (RD, ETAPA COF, franqueados, LEAD_QUALIFICADO CAPI) traz quem anda no funil — por isso a verba foi 300->150 no RAISSA e 260->410 no 04 LAL. ACOMPANHAR no diario: (1) taxa de qualificacao por conjunto, nao so CPL; (2) gasto diario (teto R$1.000/dia, estava em R$1.230); (3) frequencia do quente; (4) conjunto quente = '01 - Leads Quente + Geo' (120256940806870212) — criativo novo entra NELE, nao em conjunto isolado (teste de 24/08 com conjuntos isolados 06/07 queimou R$44 em 4h30 sem chance de aprender). Leads Quente exclui BASE LEADS RD + franqueados (nao pagar recadastro). Form nativo NAO passa UTM: cruzar get_leads (ad_id) com RD por telefone."
+    notas: "Funil Espiral montado 28/07/2026. NAO julgar essa conta por CPL — julgar por lead QUALIFICADO do CRM (a Mileny manda o ranking). VERBA: somar SEMPRE por effective_status — a conta tem dezenas de conjuntos ACTIVE dentro de campanhas pausadas e somar por status da R$5.524 falso; o real e R$1.142/dia (01/09/2026). Campanha 12 [SITE] [FRANQUEADOS] ativa desde 01/09 leva pro site com UTM por franqueado (Raissa/Santoro) pra resolver atribuicao no CRM; a pagina de obrigado poscadastro.cheirinbao.com.br AINDA NAO TEM RASTREAMENTO — pendente instalar o GTM-KLFFMKML la. Medido em 25/08: conjunto RAISSA (120257017816020212) tinha CPL R$36 e so 13% de qualificacao (23 leads -> 3 qualificados), enquanto o mesmo criativo no '04 - LAL —FRANQUEADOS' (120256940815900212) qualifica 43% a R$137/qualificado. Publico de engajamento/video-view enche de curioso; lookalike de base boa (RD, ETAPA COF, franqueados, LEAD_QUALIFICADO CAPI) traz quem anda no funil — por isso a verba foi 300->150 no RAISSA e 260->410 no 04 LAL. ACOMPANHAR no diario: (1) taxa de qualificacao por conjunto, nao so CPL; (2) gasto diario (teto R$1.000/dia, estava em R$1.230); (3) frequencia do quente; (4) conjunto quente = '01 - Leads Quente + Geo' (120256940806870212) — criativo novo entra NELE, nao em conjunto isolado (teste de 24/08 com conjuntos isolados 06/07 queimou R$44 em 4h30 sem chance de aprender). Leads Quente exclui BASE LEADS RD + franqueados (nao pagar recadastro). Form nativo NAO passa UTM: cruzar get_leads (ad_id) com RD por telefone. REGRA DE POSICIONAMENTO (Mileny, 20/10/2026): TODO conjunto desta conta so em Instagram com Feed + Stories + Reels (instagram_positions = [stream, story, reels]). SEM Explorar, Explorar inicio, Perfil (profile_feed) nem Pesquisa (ig_search). Vale para conjunto novo, duplicado ou editado. Ao editar targeting, ler o spec inteiro e regravar so com instagram_positions trocado (targeting substitui tudo)."
 
   cheirin-bao-mkt:
     nome: "Cheirin Bao — MKT (marca/lojas)"
@@ -504,6 +504,23 @@ clientes:
     moeda: "BRL"
     segmento: "geral"
     notas: "CA02 ligada ao grupo do Ponto Alpha. Cadastrada em jul/2026 — confirmar se entra na rotina"
+
+  bm1-rsp-rayssa-medicina:
+    # 25/10/2026: system user atribuido pela Mileny — token le a conta e o pixel (testado). Rotina ligada.
+    nome: "Rayssa — Guia de Neuro (CA - Resumos Neuro)"
+    conta_anuncio: "act_2809392585963989"
+    pagina_facebook: "109631895199035"  # "Rayssa Patrocinio - MED" (dos anuncios de 2024)
+    instagram_id: ""
+    instagram_username: ""
+    pixel_id: "758414485526665"  # "Pixel - Resumos da Neuro", da BM 1 - RSP — o do historico de compras
+    moeda: "BRL"
+    segmento: "geral"
+    metrica_lead: "conversoes_site"
+    acoes_lead:  # a rotina conta COMPRA do site (Purchase do pixel), nao lead
+      - "offsite_conversion.fb_pixel_purchase"
+    cpl_alvo: 58.80  # aqui e CPA de compra: ROAS 2,5 com ticket R$147
+    gasto_min_alerta: 20.00
+    notas: "Infoproduto Guia de Referencia do Sistema Nervoso DIGITAL, R$147, checkout Hubla. BM 1 - RSP (3063877560301522). Pasta: Carteira\\outros\\bm1-rsp-rayssa-medicina (ler decisoes.md). Ate o system user ser atribuido, ler/criar pelo conector Meta Ads (login da Mileny). Historico 2023-24: R$216 mil, 2.829 compras, ROAS 2,36."
 
   # ════════════════════════════════════════════════════════════════════════════
   # CONSTRUTORA | Imobiliário — lead qualificado por renda, ciclo longo

@@ -56,6 +56,11 @@ if ($codeVarr -ne 0 -or -not (Test-Path $digest)) {
 }
 "--- digest OK: $digest ---" | Out-File $log -Append -Encoding utf8
 
+# Registro das mudancas de painel (28/10/2026). Ja roda as 7h; aqui de novo porque
+# se a tarefa das 7h falhar o Extrato precisa do arquivo do dia. Nao duplica:
+# o script guarda o que ja gravou em Carteira\_Central\registro-log\estado.json.
+& python (Join-Path $skills 'meta-ads-ratos\scripts\registrar_log.py') *>> $log
+
 $texto = Get-Content $prompt -Raw -Encoding UTF8
 
 # O relatorio leva ~10 min de geracao e a conexao ja caiu no meio ("Response
@@ -113,6 +118,12 @@ if ($html) {
         Copy-Item $html $destino -Force
         "--- copiado para $destino ---" | Out-File $log -Append -Encoding utf8
     }
+    # Copia na pasta compartilhada com a Tai (28/10/2026): ela le o mesmo extrato
+    # pelo OneDrive, sem gerar outro na maquina dela.
+    $pastaCentral = Join-Path $HOME 'OneDrive\Carteira\_Central\extrato'
+    New-Item -ItemType Directory -Force -Path $pastaCentral | Out-Null
+    Copy-Item $destino (Join-Path $pastaCentral "extrato-$hoje.html") -Force
+    "--- copia em $pastaCentral ---" | Out-File $log -Append -Encoding utf8
 } else {
     "!! nenhum HTML encontrado nos caminhos conhecidos" | Out-File $log -Append -Encoding utf8
 }
